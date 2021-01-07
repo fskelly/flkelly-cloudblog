@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CSA on Fletcher&#39;s Cloud Journey</title>
+    <link>https://cloud.fskelly.com/tags/csa/</link>
+    <description>Recent content in CSA on Fletcher&#39;s Cloud Journey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 07 Aug 2019 16:33:36 +0200</lastBuildDate>
+    
+	<atom:link href="https://cloud.fskelly.com/tags/csa/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Importance of Networking Azure</title>
+      <link>https://cloud.fskelly.com/post/2019/importance-of-networking-azure/</link>
+      <pubDate>Wed, 07 Aug 2019 16:33:36 +0200</pubDate>
+      
+      <guid>https://cloud.fskelly.com/post/2019/importance-of-networking-azure/</guid>
+      <description>As a start to this blog post, I think it is important to understand how I see my role as a CSA (Cloud Solution Architect) with my customer. I am primarily a trusted advisor and my customers respect what I have to say, I question and challenge my customers in a constructive way to approach the challenge or problem statement in a different way. I have an amazing role of using Azure as my LEGO playpen and then building a custom solution (LEGO model) to help my customers.</description>
+    </item>
+    
+    <item>
+      <title>Csa Tools of the Trade</title>
+      <link>https://cloud.fskelly.com/post/2019/csa-tools-of-the-trade/</link>
+      <pubDate>Tue, 09 Jul 2019 16:46:43 +0200</pubDate>
+      
+      <guid>https://cloud.fskelly.com/post/2019/csa-tools-of-the-trade/</guid>
+      <description>So a question I often get asked is &amp;ldquo;what tools or products do you use?&amp;quot;. So I decided to do a post around the tools and technologies that I personally use on a daily basis. So to start this is what people see on my screen on a daily basis.
+This is my most common tool, Visual Studio Code, the version shown above is actually the Insiders Build. The primary reason for this tool is that is a &amp;ldquo;container&amp;rdquo; for other tools and functionality.</description>
+    </item>
+    
+  </channel>
+</rss>

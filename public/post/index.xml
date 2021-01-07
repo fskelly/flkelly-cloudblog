@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Fletcher&#39;s Cloud Journey</title>
+    <link>https://cloud.fskelly.com/post/</link>
+    <description>Recent content in Posts on Fletcher&#39;s Cloud Journey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Jan 2021 15:57:04 +0200</lastBuildDate>
+    
+	<atom:link href="https://cloud.fskelly.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My New Blog Home with Azure Static Web App</title>
+      <link>https://cloud.fskelly.com/post/2021/my-new-blog-home/</link>
+      <pubDate>Tue, 05 Jan 2021 15:57:04 +0200</pubDate>
+      
+      <guid>https://cloud.fskelly.com/post/2021/my-new-blog-home/</guid>
+      <description>So, I have spent the last few days / weeks deciding the best way to host a blog. Now I have a decidedly &amp;ldquo;split personality&amp;rdquo;. By this I mean I like to segregate my work and personal hobbies. This can be quite beneficial as this allows me to test a few things.
+A few key decisions  Must be version controlled - good practice and forces me to get more familiar with git.</description>
+    </item>
+    
+    <item>
+      <title>Importance of Networking Azure</title>
+      <link>https://cloud.fskelly.com/post/2019/importance-of-networking-azure/</link>
+      <pubDate>Wed, 07 Aug 2019 16:33:36 +0200</pubDate>
+      
+      <guid>https://cloud.fskelly.com/post/2019/importance-of-networking-azure/</guid>
+      <description>As a start to this blog post, I think it is important to understand how I see my role as a CSA (Cloud Solution Architect) with my customer. I am primarily a trusted advisor and my customers respect what I have to say, I question and challenge my customers in a constructive way to approach the challenge or problem statement in a different way. I have an amazing role of using Azure as my LEGO playpen and then building a custom solution (LEGO model) to help my customers.</description>
+    </item>
+    
+    <item>
+      <title>Csa Tools of the Trade</title>
+      <link>https://cloud.fskelly.com/post/2019/csa-tools-of-the-trade/</link>
+      <pubDate>Tue, 09 Jul 2019 16:46:43 +0200</pubDate>
+      
+      <guid>https://cloud.fskelly.com/post/2019/csa-tools-of-the-trade/</guid>
+      <description>So a question I often get asked is &amp;ldquo;what tools or products do you use?&amp;quot;. So I decided to do a post around the tools and technologies that I personally use on a daily basis. So to start this is what people see on my screen on a daily basis.
+This is my most common tool, Visual Studio Code, the version shown above is actually the Insiders Build. The primary reason for this tool is that is a &amp;ldquo;container&amp;rdquo; for other tools and functionality.</description>
+    </item>
+    
+    <item>
+      <title>Network Security Group Change Alerting</title>
+      <link>https://cloud.fskelly.com/post/2019/network-security-group-change-alerting/</link>
+      <pubDate>Wed, 20 Feb 2019 08:21:49 +0200</pubDate>
+      
+      <guid>https://cloud.fskelly.com/post/2019/network-security-group-change-alerting/</guid>
+      <description>So, I was with a customer and they are asking for a fairly standard alert.
+&amp;ldquo;Please alert me when an NSG is added or modified&amp;rdquo;. Seems simply enough, however this is not as simply as you think. So I used my favourite search and found the following, “How to receive an email on Azure Network Security Group Rule changes“, this is great content and after testing, it works exactly as expected.</description>
+    </item>
+    
+  </channel>
+</rss>
