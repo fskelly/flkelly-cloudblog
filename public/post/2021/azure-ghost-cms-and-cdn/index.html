@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme=""><head>
-    <title> Fletcher Kelly | nsg </title>
+    <title> Fletcher Kelly | Azure Ghost Cms and Cdn </title>
 
     
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.79.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -29,10 +29,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://cloud.fskelly.com/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://cloud.fskelly.com/favicons/favicon-16x16.png">
 
-    <link rel="canonical" href="https://cloud.fskelly.com/tags/nsg/">
+    <link rel="canonical" href="https://cloud.fskelly.com/post/2021/azure-ghost-cms-and-cdn/">
 
     
-    <link rel="alternate" type="application/rss+xml" href="https://cloud.fskelly.com/tags/nsg/index.xml" title="Fletcher's Cloud Journey" />
     
     
     
@@ -63,8 +62,10 @@
                 crossorigin="anonymous"></script>
     
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="nsg"/>
-<meta name="twitter:description" content="Just a simple cloud tinkerer"/>
+<meta name="twitter:title" content="Azure Ghost Cms and Cdn"/>
+<meta name="twitter:description" content="I moved my blog onto HUGO. Not everyone would want to do this necessarily, there is a bit of a learning curve, part of the reason I DID IT :). However there are other platforms you can use and still add more functionality if you want.
+You can use Ghost and add an Azure CDN. This is what this blog post will cover.
+There are some very clever people out there that have made this very easy for you."/>
 
 </head>
 <body><div class="sidebar animated fadeInDown ">
@@ -149,22 +150,99 @@
 
     <div class="autopagerize_page_element">
         <div class="content">
-    <div class="archive  animated fadeInDown ">
-        <ul class="list-with-title">
-            
-                <div class="listing-title">2019</div>
+    <div class="post  animated fadeInDown ">
+        <div class="post-content">
+            <div class="post-title">
+                <h3>Azure Ghost Cms and Cdn</h3>
                 
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="https://cloud.fskelly.com/post/2019/network-security-group-change-alerting/" title="Network Security Group Change Alerting">Network Security Group Change Alerting</a>
-                                <div class="post-time"><span class="date">Feb 20</span></div>
-                            </div>
-                        </div>
-                    </ul>
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date">Mon, Jan 11, 2021</span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time">3-minute read</span>
+                    </div>
                 
-            
-        </ul>
+            </div>
+
+            <p>I moved my blog onto HUGO. Not everyone would want to do this necessarily, there is a bit of a learning curve, part of the reason <strong>I DID IT</strong> :). However there are other platforms you can use and still add more functionality if you want.</p>
+<p>You can use <a href="https://ghost.org/">Ghost</a> and add an <a href="https://docs.microsoft.com/en-us/azure/cdn/cdn-overview">Azure CDN</a>. This is what this blog post will cover.</p>
+<p>There are some very clever people out there that have made this very easy for you. From my research you have 2 main options.</p>
+<ol>
+<li>A &ldquo;simple Web App&rdquo;</li>
+<li>More complex deployment with Containers and a CDN - now this sounds interesting.</li>
+</ol>
+<p>For this post I naturally focused on <strong>option 2</strong> :). A <strong>BIG</strong> shoutout goes to <a href="https://andrewmatveychuk.com/about/">Andrew Matveychuk</a>. I am all about <strong><strong>&ldquo;Standing on the shoulders of giants</strong>&quot;</strong>. I used his <a href="https://github.com/andrewmatveychuk/azure.ghost-web-app-for-containers">repo</a> and then forked it into mine. He has a nice <a href="https://andrewmatveychuk.com/a-one-click-ghost-deployment-on-azure-web-app-for-containers/">blogpost</a> on his journey. I simply unpacked this a little further and went into some more details and highlight some of the potential gotchas and setting up things in more detail with specific focus on the <a href="https://portal.azure.com">Azure Portal</a>.</p>
+<h3 id="deployment">Deployment</h3>
+<p>The deployment is nice and easy thanks to a one-click deploy - thanks again <a href="https://andrewmatveychuk.com/about/">Andrew Matveychuk</a>.</p>
+<p><img src="https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/deploymentsample.png?raw=true" alt="Deployment Start"></p>
+<p><img src="https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/deploymentSequence.png?raw=true" alt="Deployment In Progress"></p>
+<p><img src="https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/deplolymentComplete.png?raw=true" alt="Deployment Complete"></p>
+<p>It <strong>&ldquo;deploys&rdquo;</strong> pretty quickly but, of course, this is just the start of the work.</p>
+<h3 id="during-deployment">During deployment</h3>
+<p>During the deployment of the application you will see the Web App change.</p>
+<p><img src="https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/initialWebApp.png?raw=true" alt="Initial Web App"></p>
+<p>Almost
+<img src="https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/ghostBeingConfigured.png?raw=true" alt="New App being deployed"></p>
+<p>Success!!!<br>
+You will see something <strong>SIMILAR</strong> to this.
+<img src="https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/ghostConfigured.png?raw=true" alt="New App deployed"></p>
+<h3 id="gotcha-with-container-deployment">Gotcha with Container Deployment</h3>
+<p>The solution takes a while to deploy - this seems to be due to some changes made recently by Docker. Do <strong>NOT</strong> be hasty like I was, this can cause issues and create the need for a re-deploy. Instead lets use the logs to see what is going on :)<br>
+Now let&rsquo;s find the log I was talking about.
+<img src="https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/containerLogs.png?raw=true" alt="Docker Logs">
+We are waiting for <strong>this</strong> entry
+<img src="https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/magicMoment-PATIENCE.png?raw=true" alt="Magic Moment"></p>
+<p>So, now to add move value, we can add an <a href="https://docs.microsoft.com/en-us/azure/cdn/cdn-overview">Azure CDN</a> (in this case, this has already been done) and look at configuring your own custom name for this.</p>
+<p><strong>A content delivery network (CDN) is a distributed network of servers that can efficiently deliver web content to users. CDNs' store cached content on edge servers in point-of-presence (POP) locations that are close to end users, to minimize latency.</strong></p>
+<p>So we can add a custom domain to a CDN to make this more pretty and give your site a more more friendly name - you can move away from the <a href="https://xyz.azurewebsites.net">https://xyz.azurewebsites.net</a>, I definitely think a custom domain is far cleaner and &ldquo;more professional&rdquo;. So let&rsquo;s dive in and get this done. :)</p>
+<p>So, there a few steps to get this done. This is well documented <a href="https://docs.microsoft.com/en-us/azure/cdn/cdn-map-content-to-custom-domain?tabs=azure-dns">here</a>, however I will provide more context and give some sample screenshots.</p>
+<p>We have some DNS Settings to configure as per the above article. Below, I have added some sample for the <a href="https://demoghost.fskelly.com/">CDN demo</a> I configure for this blog.</p>
+<ol>
+<li>Create the required verification entries in your DNS Zone. I use <a href="https://www.cloudns.net/">ClouDNS</a> but the process is the same, just how you create the required entries will vary with each provider.
+<img src="https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/cdnVerification.png?raw=true" alt="Required Verification Entries">
+This process should not take too long, but now we want a <strong>certificate</strong> and the joys of TLS</li>
+<li>Start the verification process <img src="https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/cdnCert1.png?raw=true" alt="Start of Process"></li>
+<li>Domain Verification <img src="https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/cdnCert2.png?raw=true" alt="Domain Validation"></li>
+<li>Create a certificate <img src="https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/cdnCert3.png?raw=true" alt="certificate provisioning"></li>
+<li>And completed <img src="https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/cdnCert4.png?raw=true" alt="process complete"></li>
+</ol>
+<p>Now here is the <a href="https://demoghost.fskelly.com">end result</a> - note the HTTPS 👍 <img src="https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/cdnDemoPost.png?raw=true" alt="site with HTTPS Cert"></p>
+</div>
+        <div class="post-footer">
+            <div class="info">
+                
+                <span class="separator"><a class="tag" href="/tags/azure/">azure</a><a class="tag" href="/tags/cdn/">cdn</a><a class="tag" href="/tags/blog/">blog</a><a class="tag" href="/tags/hugo/">hugo</a></span>
+
+            </div>
+        </div>
+
+        
+            <div id="fb_comments_container">
+                    <h2>comments</h2>
+                    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "fletchercloudblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                </div>
+        
     </div>
+
 
         </div>
     </div>

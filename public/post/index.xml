@@ -6,10 +6,17 @@
     <description>Recent content in Posts on Fletcher&#39;s Cloud Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Jan 2021 15:57:04 +0200</lastBuildDate>
-    
-	<atom:link href="https://cloud.fskelly.com/post/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Mon, 11 Jan 2021 07:00:18 +0200</lastBuildDate><atom:link href="https://cloud.fskelly.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure Ghost Cms and Cdn</title>
+      <link>https://cloud.fskelly.com/post/2021/azure-ghost-cms-and-cdn/</link>
+      <pubDate>Mon, 11 Jan 2021 07:00:18 +0200</pubDate>
+      
+      <guid>https://cloud.fskelly.com/post/2021/azure-ghost-cms-and-cdn/</guid>
+      <description>I moved my blog onto HUGO. Not everyone would want to do this necessarily, there is a bit of a learning curve, part of the reason I DID IT :). However there are other platforms you can use and still add more functionality if you want.
+You can use Ghost and add an Azure CDN. This is what this blog post will cover.
+There are some very clever people out there that have made this very easy for you.</description>
+    </item>
     
     <item>
       <title>My New Blog Home with Azure Static Web App</title>
@@ -36,7 +43,7 @@ A few key decisions  Must be version controlled - good practice and forces me to
       <pubDate>Tue, 09 Jul 2019 16:46:43 +0200</pubDate>
       
       <guid>https://cloud.fskelly.com/post/2019/csa-tools-of-the-trade/</guid>
-      <description>So a question I often get asked is &amp;ldquo;what tools or products do you use?&amp;quot;. So I decided to do a post around the tools and technologies that I personally use on a daily basis. So to start this is what people see on my screen on a daily basis.
+      <description>So a question I often get asked is &amp;ldquo;what tools or products do you use?&amp;rdquo;. So I decided to do a post around the tools and technologies that I personally use on a daily basis. So to start this is what people see on my screen on a daily basis.
 This is my most common tool, Visual Studio Code, the version shown above is actually the Insiders Build. The primary reason for this tool is that is a &amp;ldquo;container&amp;rdquo; for other tools and functionality.</description>
     </item>
     

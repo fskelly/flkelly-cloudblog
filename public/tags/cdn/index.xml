@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cdn on Fletcher&#39;s Cloud Journey</title>
+    <link>https://cloud.fskelly.com/tags/cdn/</link>
+    <description>Recent content in cdn on Fletcher&#39;s Cloud Journey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 11 Jan 2021 07:00:18 +0200</lastBuildDate><atom:link href="https://cloud.fskelly.com/tags/cdn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure Ghost Cms and Cdn</title>
+      <link>https://cloud.fskelly.com/post/2021/azure-ghost-cms-and-cdn/</link>
+      <pubDate>Mon, 11 Jan 2021 07:00:18 +0200</pubDate>
+      
+      <guid>https://cloud.fskelly.com/post/2021/azure-ghost-cms-and-cdn/</guid>
+      <description>I moved my blog onto HUGO. Not everyone would want to do this necessarily, there is a bit of a learning curve, part of the reason I DID IT :). However there are other platforms you can use and still add more functionality if you want.
+You can use Ghost and add an Azure CDN. This is what this blog post will cover.
+There are some very clever people out there that have made this very easy for you.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,11 +6,7 @@
     <description>Recent content in static web on Fletcher&#39;s Cloud Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Jan 2021 15:57:04 +0200</lastBuildDate>
-    
-	<atom:link href="https://cloud.fskelly.com/tags/static-web/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 05 Jan 2021 15:57:04 +0200</lastBuildDate><atom:link href="https://cloud.fskelly.com/tags/static-web/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My New Blog Home with Azure Static Web App</title>
       <link>https://cloud.fskelly.com/post/2021/my-new-blog-home/</link>
