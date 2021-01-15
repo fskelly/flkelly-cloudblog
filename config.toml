@@ -15,7 +15,7 @@ pygmentsCodefencesGuessSyntax = true
 title = "I'm Fletcher Kelly"
 author = "Fletcher Kelly"
 #copyright = "2020-2021"
-description = "Just a simple cloud tinkerer"
+description = "Just a simple cloud tinkerer's ideas and findings based on his experience as a CSA and an FTA Engineer. More on 'About Me' Page"
 profilePicture = "images/profilePic1.jpg"
 keywords = ""
 favicon = "favicons/"
@@ -65,7 +65,7 @@ url = "mailto:fletcher_kelly@outlook.com"
   url = "/post/"
 
   [[menu.main]]
-  name = "About"
+  name = "About Me"
   weight = 300
   identifier = "about"
   url = "/about/"
