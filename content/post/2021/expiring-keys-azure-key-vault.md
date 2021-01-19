@@ -2,7 +2,7 @@
 title: "Expiring Keys and Secrets within Azure Key Vault"
 date: 2021-01-18T07:06:03+02:00
 author: "Fletcher Kelly"
-draft: true
+draft: false
 ---
 
 I was working with a customer the other day and a fairly simple ask came up, I however could not find an immediate answer within the portal.  
