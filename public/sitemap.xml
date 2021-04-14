@@ -3,6 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://cloud.fskelly.com/post/2021/azure-rest-api-postman-basics/</loc>
+    <lastmod>2021-04-14T09:02:18+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cloud.fskelly.com/</loc>
+    <lastmod>2021-04-14T09:02:18+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cloud.fskelly.com/post/</loc>
+    <lastmod>2021-04-14T09:02:18+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cloud.fskelly.com/post/2021/security-basics-importance-of-a-locked-machine/</loc>
+    <lastmod>2021-03-02T08:46:10+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cloud.fskelly.com/post/2021/lz-review-workbook/</loc>
+    <lastmod>2021-01-27T09:17:06+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cloud.fskelly.com/post/2021/expiring-keys-azure-key-vault/</loc>
+    <lastmod>2021-01-18T07:06:03+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cloud.fskelly.com/tags/azure/</loc>
     <lastmod>2021-01-11T07:00:18+02:00</lastmod>
   </url>
@@ -23,17 +53,7 @@
   </url>
   
   <url>
-    <loc>https://cloud.fskelly.com/</loc>
-    <lastmod>2021-01-11T07:00:18+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://cloud.fskelly.com/tags/hugo/</loc>
-    <lastmod>2021-01-11T07:00:18+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cloud.fskelly.com/post/</loc>
     <lastmod>2021-01-11T07:00:18+02:00</lastmod>
   </url>
   

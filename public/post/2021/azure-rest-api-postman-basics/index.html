@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme=""><head>
-    <title> Fletcher Kelly | azure </title>
+    <title> Fletcher Kelly | Azure Rest Api Postman Basics </title>
 
     
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.79.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -29,10 +29,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://cloud.fskelly.com/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://cloud.fskelly.com/favicons/favicon-16x16.png">
 
-    <link rel="canonical" href="https://cloud.fskelly.com/tags/azure/">
+    <link rel="canonical" href="https://cloud.fskelly.com/post/2021/azure-rest-api-postman-basics/">
 
     
-    <link rel="alternate" type="application/rss+xml" href="https://cloud.fskelly.com/tags/azure/index.xml" title="Fletcher's Cloud Journey" />
     
     
     
@@ -59,8 +58,8 @@
                 crossorigin="anonymous"></script>
     
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="azure"/>
-<meta name="twitter:description" content="Just a simple cloud tinkerer&#39;s ideas and findings based on his experience as a CSA and an FTA Engineer. More on &#39;About Me&#39; Page"/>
+<meta name="twitter:title" content="Azure Rest Api Postman Basics"/>
+<meta name="twitter:description" content="Absolute basics with Azure and PostMan Getting started Many of the articles I have found online with regards to the Azure REST API assume a fair level of familiarity with Azure which can be a good and bad thing. You see the Azure Portal makes interacting with the Azure REST API very easy as a lot of the &ldquo;prerequisite&rdquo; work is done in the portal as part of the process. For this blog post we will work on something quite basic, &ldquo;Create a Virtual Machine&rdquo;."/>
 
 </head>
 <body><div class="sidebar animated fadeInDown ">
@@ -145,30 +144,84 @@
 
     <div class="autopagerize_page_element">
         <div class="content">
-    <div class="archive  animated fadeInDown ">
-        <ul class="list-with-title">
-            
-                <div class="listing-title">2021</div>
+    <div class="post  animated fadeInDown ">
+        <div class="post-content">
+            <div class="post-title">
+                <h3>Azure Rest Api Postman Basics</h3>
                 
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="https://cloud.fskelly.com/post/2021/azure-ghost-cms-and-cdn/" title="Azure Ghost Cms and Cdn">Azure Ghost Cms and Cdn</a>
-                                <div class="post-time"><span class="date">Jan 11</span></div>
-                            </div>
-                        </div>
-                    </ul>
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date">Wed, Apr 14, 2021</span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time">2-minute read</span>
+                    </div>
                 
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="https://cloud.fskelly.com/post/2021/my-new-blog-home/" title="My New Blog Home with Azure Static Web App">My New Blog Home with Azure Static Web App</a>
-                                <div class="post-time"><span class="date">Jan 5</span></div>
-                            </div>
-                        </div>
-                    </ul>
+            </div>
+
+            <h1 id="absolute-basics-with-azure-and-postmanwwwpostmancom">Absolute basics with Azure and <a href="www.postman.com">PostMan</a></h1>
+<h2 id="getting-started">Getting started</h2>
+<p>Many of the articles I have found online with regards to the <a href="https://docs.microsoft.com/en-us/rest/api/azure/">Azure REST API</a> assume a fair level of familiarity with <a href="https://azure.microsoft.com/en-us/">Azure</a> which can be a good and bad thing. You see the <a href="https://portal.azure.com">Azure Portal</a> makes interacting with the Azure REST API very easy as a lot of the &ldquo;prerequisite&rdquo; work is done in the portal as part of the process. For this blog post we will work on something quite basic, &ldquo;<a href="https://portal.azure.com/#create/Microsoft.VirtualMachine">Create a Virtual Machine</a>&rdquo;.</p>
+<p><a href="https://twitter.com/jongallant">Jon Gallant</a> has some great content around this and I did use some content from <a href="https://blog.jongallant.com/2021/02/azure-rest-apis-postman-2021/">here</a>, thank you <a href="https://twitter.com/jongallant">Jon Gallant</a>.</p>
+<p>Within the Azure Portal this is very easy and only requires a few clicks, however under the hood, in order for the Azure REST API to work, there is a lot more going on. Lets dive in :)</p>
+<h3 id="api-order">API Order</h3>
+<ol>
+<li>Have a <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal">Resource Group</a> available or create one.</li>
+<li>Have a <a href="https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview">Virtual Network (VNET)</a> available or create one.</li>
+<li>Create a <a href="https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface">Virtual Network Interface Card (NIC)</a> or create one.</li>
+<li>Create a <a href="https://azure.microsoft.com/en-us/services/virtual-machines/">Virtual Machine</a>.</li>
+</ol>
+<p>There is a lot of association and the like that goes on in the background.</p>
+<ol>
+<li>Resource Group created.</li>
+<li>NIC associated to VNET.</li>
+<li>NIC associated to VM.</li>
+<li>VM created in Resource Group.</li>
+</ol>
+<h3 id="using-the-api">Using the API</h3>
+<p>So, what I have done, is simply create a collection within <a href="www.postman.com">Postman</a> that uses both collection variables and &ldquo;Pre-request&rdquo; scripts to make this collection &ldquo;portable&rdquo;.</p>
+<h3 id="postman-collection">Postman Collection</h3>
+<p>I use a set of collection variables to help with the initial API Call.
+<img src="https://github.com/fskelly/flkelly-cloudblog/blob/63833ed0ffe8296fb18d9797663c0cb4a2c305f1/static/images/blogImages/2021/restapipostmanpost/postmanApiCollection.png?raw=true" alt="Postman Api Collection">
+With each of the call you will the variables enclosed with &ldquo;<strong>{}</strong>&rdquo; and path variables prefixed with &ldquo;<strong>:</strong>&rdquo;
+<img src="https://github.com/fskelly/flkelly-cloudblog/blob/63833ed0ffe8296fb18d9797663c0cb4a2c305f1/static/images/blogImages/2021/restapipostmanpost/postmanVariables.png?raw=true" alt="Postman with Variables">
+With most of the Postman queries, the &ldquo;<strong>Pre-request Script</strong>&rdquo; is also used, this is used to set &ldquo;extra&rdquo; pieces of information, for example, specifying a location for the Resource Group.
+<img src="https://github.com/fskelly/flkelly-cloudblog/blob/63833ed0ffe8296fb18d9797663c0cb4a2c305f1/static/images/blogImages/2021/restapipostmanpost/postmanApiPreRequestScript.png?raw=true" alt="Postman with pre-request script"></p>
+<p>So, go forth and play. My Postman Collection can be found <a href="https://github.com/fskelly/flkelly-cloudblog/blob/main/blogFiles/azureApiPostman/Azure%20REST%20-%20repo%20ready.postman_collection.json">here</a></p>
+</div>
+        <div class="post-footer">
+            <div class="info">
                 
-            
-        </ul>
+                
+            </div>
+        </div>
+
+        
+            <div id="fb_comments_container">
+                    <h2>comments</h2>
+                    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "fletchercloudblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                </div>
+        
     </div>
+
 
         </div>
     </div>
