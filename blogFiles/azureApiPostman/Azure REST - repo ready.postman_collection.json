@@ -1,0 +1,396 @@
+{
+	"info": {
+		"_postman_id": "0bfe54b6-e2e5-46a5-8e90-db5840f7ae80",
+		"name": "Azure REST - repo ready",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateVMSteps",
+			"item": [
+				{
+					"name": "01 - Create RG",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"var rgLocation='westus'; \r",
+									"\r",
+									"pm.environment.set(\"rgLocation\", rgLocation);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"location\": \"{{rgLocation}}\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://management.azure.com/subscriptions/{{subscriptionId}}/resourcegroups/:resourceGroupName?api-version=2020-09-01",
+							"protocol": "https",
+							"host": [
+								"management",
+								"azure",
+								"com"
+							],
+							"path": [
+								"subscriptions",
+								"{{subscriptionId}}",
+								"resourcegroups",
+								":resourceGroupName"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "2020-09-01"
+								}
+							],
+							"variable": [
+								{
+									"key": "resourceGroupName",
+									"value": "fktest-api-westus"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02 - Create VNET",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"var subnetName=\"fktest-api-westus-snet1\";\r",
+									"var vnetLocation='westus'; \r",
+									"\r",
+									"pm.environment.set(\"subnetName\", subnetName);\r",
+									"pm.environment.set(\"vnetLocation\", vnetLocation);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"properties\": {\r\n    \"addressSpace\": {\r\n      \"addressPrefixes\": [\r\n        \"10.0.0.0/16\"\r\n      ]\r\n    },\r\n    \"subnets\": [\r\n      {\r\n        \"name\": \"{{subnetName}}\",\r\n        \"properties\": {\r\n          \"addressPrefix\": \"10.0.0.0/24\"\r\n        }\r\n      }\r\n    ]\r\n  },\r\n  \"location\": \"{{vnetLocation}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://management.azure.com/subscriptions/{{subscriptionId}}/resourceGroups/:resourceGroupName/providers/Microsoft.Network/virtualNetworks/:virtualNetworkName?api-version=2020-07-01",
+							"protocol": "https",
+							"host": [
+								"management",
+								"azure",
+								"com"
+							],
+							"path": [
+								"subscriptions",
+								"{{subscriptionId}}",
+								"resourceGroups",
+								":resourceGroupName",
+								"providers",
+								"Microsoft.Network",
+								"virtualNetworks",
+								":virtualNetworkName"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "2020-07-01"
+								}
+							],
+							"variable": [
+								{
+									"key": "resourceGroupName",
+									"value": "fktest-api-westus"
+								},
+								{
+									"key": "virtualNetworkName",
+									"value": "fktest-api-westus-vnet1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "03 - Create NIC",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"var subnetName=\"fktest-api-westus-snet1\";\r",
+									"var rgLocation='westus'; \r",
+									"var vnetName=\"fktest-api-westus-vnet1\";\r",
+									"var ipConfigName=\"ipconfig1\";\r",
+									"var vnetRGName=\"fktest-api-westus\";\r",
+									"\r",
+									"pm.environment.set(\"subnetName\", subnetName);\r",
+									"pm.environment.set(\"rgLocation\", rgLocation);\r",
+									"pm.environment.set(\"vnetName\", vnetName);\r",
+									"pm.environment.set(\"ipConfigName\", ipConfigName);\r",
+									"pm.environment.set(\"vnetRGName\", vnetRGName);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"properties\": {\r\n    \"enableAcceleratedNetworking\": false,\r\n    \"ipConfigurations\": [\r\n      {\r\n        \"name\": \"{{ipConfigName}}\",\r\n        \"properties\": {\r\n          \"subnet\": {\r\n            \"id\": \"/subscriptions/{{subscriptionId}}/resourceGroups/{{vnetRGName}}/providers/Microsoft.Network/virtualNetworks/{{vnetName}}/subnets/{{subnetName}}\"\r\n          }\r\n        }\r\n      }\r\n    ]\r\n  },\r\n  \"location\": \"{{rgLocation}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://management.azure.com/subscriptions/{{subscriptionId}}/resourceGroups/:resourceGroupName/providers/Microsoft.Network/networkInterfaces/:networkInterfaceName?api-version=2020-07-01",
+							"protocol": "https",
+							"host": [
+								"management",
+								"azure",
+								"com"
+							],
+							"path": [
+								"subscriptions",
+								"{{subscriptionId}}",
+								"resourceGroups",
+								":resourceGroupName",
+								"providers",
+								"Microsoft.Network",
+								"networkInterfaces",
+								":networkInterfaceName"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "2020-07-01"
+								}
+							],
+							"variable": [
+								{
+									"key": "resourceGroupName",
+									"value": "fktest-api-westus"
+								},
+								{
+									"key": "networkInterfaceName",
+									"value": "fktest-api-westus-nic1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "04 - Create VM",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"var subnetName=\"fktest-api-westus-snet1\";\r",
+									"var rgLocation='westus'; \r",
+									"var vnetName=\"fktest-api-westus-vnet1\";\r",
+									"var ipConfigName=\"ipconfig1\";\r",
+									"var vnetRGName=\"fktest-api-westus\";\r",
+									"var vmSize=\"Standard_D1_v2\";\r",
+									"var vmSku=\"2016-Datacenter\";\r",
+									"var vmPublisher=\"MicrosoftWindowsServer\";\r",
+									"var vmVersion=\"latest\";\r",
+									"var vmOffer=\"WindowsServer\";\r",
+									"var storageAccountType=\"Standard_LRS\";\r",
+									"var vmAdminUsername=\"azureAdmin\";\r",
+									"var vmAdminPassword=\"4545JK#gfz8ghg\";\r",
+									"var nicName=\"fktest-api-westus-nic1\";\r",
+									"var computerName=\"fktest-vm1\";\r",
+									"var osdiskName=\"{{computerName}}\"+\"-osdisk\";\r",
+									"\r",
+									"pm.environment.set(\"subnetName\", subnetName);\r",
+									"pm.environment.set(\"rgLocation\", rgLocation);\r",
+									"pm.environment.set(\"vnetName\", vnetName);\r",
+									"pm.environment.set(\"ipConfigName\", ipConfigName);\r",
+									"pm.environment.set(\"vnetRGName\", vnetRGName);\r",
+									"pm.environment.set(\"vmSize\", vmSize);\r",
+									"pm.environment.set(\"vmSku\", vmSku);\r",
+									"pm.environment.set(\"vmPublisher\", vmPublisher);\r",
+									"pm.environment.set(\"vmVersion\", vmVersion);\r",
+									"pm.environment.set(\"vmOffer\", vmOffer);\r",
+									"pm.environment.set(\"storageAccountType\", storageAccountType);\r",
+									"pm.environment.set(\"vmAdminUsername\", vmAdminUsername);\r",
+									"pm.environment.set(\"vmAdminPassword\", vmAdminPassword);\r",
+									"pm.environment.set(\"nicName\", nicName);\r",
+									"pm.environment.set(\"computerName\", computerName);\r",
+									"pm.environment.set(\"osdiskName\", osdiskName);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"location\": \"{{rgLocation}}\",\r\n  \"properties\": {\r\n    \"hardwareProfile\": {\r\n      \"vmSize\": \"{{vmSize}}\"\r\n    },\r\n    \"storageProfile\": {\r\n      \"imageReference\": {\r\n        \"sku\": \"{{vmSku}}\",\r\n        \"publisher\": \"{{vmPublisher}}\",\r\n        \"version\": \"{{vmVersion}}\",\r\n        \"offer\": \"{{vmOffer}}\"\r\n      },\r\n      \"osDisk\": {\r\n        \"caching\": \"ReadWrite\",\r\n        \"managedDisk\": {\r\n          \"storageAccountType\": \"{{storageAccountType}}\"\r\n        },\r\n        \"name\": \"{{osdiskName}}\",\r\n        \"createOption\": \"FromImage\"\r\n      }\r\n    },\r\n    \"osProfile\": {\r\n      \"adminUsername\": \"{{vmAdminUsername}}\",\r\n      \"computerName\": \"{{computerName}}\",\r\n      \"adminPassword\": \"{{vmAdminPassword}}\"\r\n    },\r\n    \"networkProfile\": {\r\n      \"networkInterfaces\": [\r\n        {\r\n          \"id\": \"/subscriptions/{{subscriptionId}}/resourceGroups/{{vnetRGName}}/providers/Microsoft.Network/networkInterfaces/{{nicName}}\",\r\n          \"properties\": {\r\n            \"primary\": true\r\n          }\r\n        }\r\n      ]\r\n    }\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://management.azure.com/subscriptions/{{subscriptionId}}/resourceGroups/:resourceGroupName/providers/Microsoft.Compute/virtualMachines/:vmName?api-version=2020-12-01",
+							"protocol": "https",
+							"host": [
+								"management",
+								"azure",
+								"com"
+							],
+							"path": [
+								"subscriptions",
+								"{{subscriptionId}}",
+								"resourceGroups",
+								":resourceGroupName",
+								"providers",
+								"Microsoft.Compute",
+								"virtualMachines",
+								":vmName"
+							],
+							"query": [
+								{
+									"key": "api-version",
+									"value": "2020-12-01"
+								}
+							],
+							"variable": [
+								{
+									"key": "resourceGroupName",
+									"value": "fktest-api-westus"
+								},
+								{
+									"key": "vmName",
+									"value": "fktest-api-westus-vm1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{bearerToken}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"if (!pm.collectionVariables.get(\"bearerToken\") || Date.now() > new Date(pm.collectionVariables.get(\"bearerTokenExpiresOn\") * 1000)) {",
+					"    pm.sendRequest({",
+					"        url: 'https://login.microsoftonline.com/' + pm.collectionVariables.get(\"tenantId\") + '/oauth2/token',",
+					"        method: 'POST',",
+					"        header: 'Content-Type: application/x-www-form-urlencoded',",
+					"        body: {",
+					"            mode: 'urlencoded',",
+					"            urlencoded: [",
+					"                { key: \"grant_type\", value: \"client_credentials\", disabled: false },",
+					"                { key: \"client_id\", value: pm.collectionVariables.get(\"clientId\"), disabled: false },",
+					"                { key: \"client_secret\", value: pm.collectionVariables.get(\"clientSecret\"), disabled: false },",
+					"                { key: \"resource\", value: pm.collectionVariables.get(\"resource\") || \"https://management.azure.com/\", disabled: false }",
+					"            ]",
+					"        }",
+					"    }, function (err, res) {",
+					"        if (err) {",
+					"            console.log(err);",
+					"        } else {",
+					"            let resJson = res.json();",
+					"            pm.collectionVariables.set(\"bearerTokenExpiresOn\", resJson.expires_on);",
+					"            pm.collectionVariables.set(\"bearerToken\", resJson.access_token);",
+					"        }",
+					"    });",
+					"}"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "459ffbbb-a27a-4270-bfbc-2623b25e4182",
+			"key": "clientId",
+			"value": ""
+		},
+		{
+			"id": "764ec357-d625-4a84-b2c4-8ce0ec61ff4f",
+			"key": "clientSecret",
+			"value": ""
+		},
+		{
+			"id": "5d2dd746-2551-4ed8-97c7-a55aa55229b7",
+			"key": "tenantId",
+			"value": ""
+		},
+		{
+			"id": "2de776e4-8334-4be8-9bed-cb00ed89d668",
+			"key": "subscriptionId",
+			"value": ""
+		},
+		{
+			"id": "4d9b6100-76f0-4cf6-a5d9-6de5035a0f4c",
+			"key": "resource",
+			"value": ""
+		},
+		{
+			"id": "6919fb8e-44ae-4047-9578-566dbd94b7ad",
+			"key": "bearerToken",
+			"value": ""
+		},
+		{
+			"id": "e7f44b5d-44d7-4aac-8dd6-a3a0f234ec8c",
+			"key": "bearerTokenExpiresOn",
+			"value": ""
+		}
+	]
+}
