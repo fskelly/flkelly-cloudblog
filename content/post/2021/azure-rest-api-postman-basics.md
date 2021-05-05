@@ -2,8 +2,8 @@
 title: "Azure Rest Api Postman Basics"
 date: 2021-04-14T09:02:18+02:00
 Description: ""
-Tags: []
-Categories: []
+Tags: ["azure", "api", "postman"]
+Categories: ["Azure", "API"]
 DisableComments: false
 ---
 # Absolute basics with Azure and [PostMan](www.postman.com)
