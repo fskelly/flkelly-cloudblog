@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>quick post on Fletcher&#39;s Cloud Journey</title>
+    <link>https://cloud.fskelly.com/tags/quick-post/</link>
+    <description>Recent content in quick post on Fletcher&#39;s Cloud Journey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Jul 2021 05:40:16 +0200</lastBuildDate><atom:link href="https://cloud.fskelly.com/tags/quick-post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bicep Troubleshooting</title>
+      <link>https://cloud.fskelly.com/post/2021/bicep-troubleshooting/</link>
+      <pubDate>Fri, 02 Jul 2021 05:40:16 +0200</pubDate>
+      
+      <guid>https://cloud.fskelly.com/post/2021/bicep-troubleshooting/</guid>
+      <description>Some basic &amp;ldquo;troubleshooting&amp;rdquo; with Azure Bicep So, let me start with this. The team and the community behind Azure Bicep are amazing. There are some great examples here. I often use these as a base and the rip apart or add to meet my needs, you do NOT need to start from ground zero. :smile:
+When you are deploying bicep templates you command will look something like this.
+$bicepFile = &amp;#34;.</description>
+    </item>
+    
+    <item>
+      <title>Cli List Locations and Peers</title>
+      <link>https://cloud.fskelly.com/post/2021/cli-list-locations-and-peers/</link>
+      <pubDate>Wed, 05 May 2021 07:03:02 +0200</pubDate>
+      
+      <guid>https://cloud.fskelly.com/post/2021/cli-list-locations-and-peers/</guid>
+      <description>How to use the Azure CLI to list Azure Locations and their peers So this will be a &amp;ldquo;quick post&amp;rdquo; that shows some great functionality within the Azure CLI with az account list-locations. With this command you can expect some output like below, you actually get a lot of content back.
+{ &amp;#34;displayName&amp;#34;: &amp;#34;Brazil Southeast&amp;#34;, &amp;#34;id&amp;#34;: &amp;#34;/subscriptions/949ef534-07f5-4138-8b79-aae16a71310c/locations/brazilsoutheast&amp;#34;, &amp;#34;metadata&amp;#34;: { &amp;#34;geographyGroup&amp;#34;: &amp;#34;South America&amp;#34;, &amp;#34;latitude&amp;#34;: &amp;#34;-22.90278&amp;#34;, &amp;#34;longitude&amp;#34;: &amp;#34;-43.2075&amp;#34;, &amp;#34;pairedRegion&amp;#34;: [ { &amp;#34;id&amp;#34;: &amp;#34;/subscriptions/949ef534-07f5-4138-8b79-aae16a71310c/locations/brazilsouth&amp;#34;, &amp;#34;name&amp;#34;: &amp;#34;brazilsouth&amp;#34;, &amp;#34;subscriptionId&amp;#34;: null } ], &amp;#34;physicalLocation&amp;#34;: &amp;#34;Rio&amp;#34;, &amp;#34;regionCategory&amp;#34;: &amp;#34;Other&amp;#34;, &amp;#34;regionType&amp;#34;: &amp;#34;Physical&amp;#34; }, &amp;#34;name&amp;#34;: &amp;#34;brazilsoutheast&amp;#34;, &amp;#34;regionalDisplayName&amp;#34;: &amp;#34;(South America) Brazil Southeast&amp;#34;, &amp;#34;subscriptionId&amp;#34;: null } If you look at some of the examples, you will also see some &amp;ldquo;logical&amp;rdquo; locations, example below, there is a way of adding a query to remove these to display only &amp;ldquo;physical&amp;rdquo; locations.</description>
+    </item>
+    
+  </channel>
+</rss>

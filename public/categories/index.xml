@@ -5,6 +5,43 @@
     <link>https://cloud.fskelly.com/categories/</link>
     <description>Recent content in Categories on Fletcher&#39;s Cloud Journey</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://cloud.fskelly.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Jul 2021 05:40:16 +0200</lastBuildDate><atom:link href="https://cloud.fskelly.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure</title>
+      <link>https://cloud.fskelly.com/categories/azure/</link>
+      <pubDate>Fri, 02 Jul 2021 05:40:16 +0200</pubDate>
+      
+      <guid>https://cloud.fskelly.com/categories/azure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IaC</title>
+      <link>https://cloud.fskelly.com/categories/iac/</link>
+      <pubDate>Fri, 02 Jul 2021 05:40:16 +0200</pubDate>
+      
+      <guid>https://cloud.fskelly.com/categories/iac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>command line</title>
+      <link>https://cloud.fskelly.com/categories/command-line/</link>
+      <pubDate>Wed, 05 May 2021 07:03:02 +0200</pubDate>
+      
+      <guid>https://cloud.fskelly.com/categories/command-line/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>API</title>
+      <link>https://cloud.fskelly.com/categories/api/</link>
+      <pubDate>Wed, 14 Apr 2021 09:02:18 +0200</pubDate>
+      
+      <guid>https://cloud.fskelly.com/categories/api/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
