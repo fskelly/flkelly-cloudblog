@@ -6,7 +6,18 @@
     <description>Recent content in Posts on Fletcher&#39;s Cloud Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Jul 2021 05:40:16 +0200</lastBuildDate><atom:link href="https://cloud.fskelly.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Aug 2021 05:58:18 +0200</lastBuildDate><atom:link href="https://cloud.fskelly.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure Resource Group ESLZ queries</title>
+      <link>https://cloud.fskelly.com/post/2021/arg-mg-query-quick-post/</link>
+      <pubDate>Wed, 25 Aug 2021 05:58:18 +0200</pubDate>
+      
+      <guid>https://cloud.fskelly.com/post/2021/arg-mg-query-quick-post/</guid>
+      <description>Azure Resource Graph Examples THis is just a quick post. I am slowly working on building a collection of Resource Grpah Queries - they can be found here and will grow over time. It just takes some time to build these.
+They will be broken down into a folder structure based upon the Critical Design Areas of Enterprise Scale Landing Zone
+Hope this helps and keep an eye out for more.</description>
+    </item>
+    
     <item>
       <title>Bicep Troubleshooting</title>
       <link>https://cloud.fskelly.com/post/2021/bicep-troubleshooting/</link>

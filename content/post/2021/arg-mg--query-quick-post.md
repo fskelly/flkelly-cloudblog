@@ -1,7 +1,7 @@
 ---
 title: "Azure Resource Group ESLZ queries"
 date: 2021-08-25T05:58:18+02:00
-draft: true
+draft: false
 Tags: ["azure","resource graph","blog","quick post"]
 ---
 
