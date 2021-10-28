@@ -127,7 +127,7 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_LIVELY_FIELD_0F34D4403 }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: 'upload'
-          app_location: 'website'
+          app_location: '/'
 #          api_location: "api" # Api source code path - optional
 #          output_location: "public" # Built app content directory - optional
           skip_app_build: true
