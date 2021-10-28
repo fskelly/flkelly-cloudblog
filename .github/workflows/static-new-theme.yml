@@ -1,0 +1,16 @@
+name: Hugo deploy
+on:
+  push:
+    branches: [new-theme]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: jakejarvis/hugo-build-action@v0.69.2
+      - uses: tibor19/static-website-deploy@v1
+        with:
+          enabled-static-website: 'true'
+          folder: 'public'
+          connection-string: ${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}
