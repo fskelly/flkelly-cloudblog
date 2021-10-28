@@ -35,10 +35,11 @@ jobs:
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: "public"
+          publish_dir: ./public
           
-    close_pull_request_job:
+  close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
+    runs-on: ubuntu-20.04
     name: Close Pull Request Job
     steps:
       - name: Close Pull Request
