@@ -6,13 +6,22 @@
     <description>Recent content in Categories on Fletcher&#39;s Cloud Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Jul 2021 05:40:16 +0200</lastBuildDate><atom:link href="https://cloud.fskelly.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Aug 2021 05:58:18 +0200</lastBuildDate><atom:link href="https://cloud.fskelly.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Azure</title>
       <link>https://cloud.fskelly.com/categories/azure/</link>
-      <pubDate>Fri, 02 Jul 2021 05:40:16 +0200</pubDate>
+      <pubDate>Wed, 25 Aug 2021 05:58:18 +0200</pubDate>
       
       <guid>https://cloud.fskelly.com/categories/azure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Resource Graph</title>
+      <link>https://cloud.fskelly.com/categories/resource-graph/</link>
+      <pubDate>Wed, 25 Aug 2021 05:58:18 +0200</pubDate>
+      
+      <guid>https://cloud.fskelly.com/categories/resource-graph/</guid>
       <description></description>
     </item>
     

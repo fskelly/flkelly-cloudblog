@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on Fletcher&#39;s Cloud Journey</title>
+    <link>https://cloud.fskelly.com/page/</link>
+    <description>Recent content in Pages on Fletcher&#39;s Cloud Journey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cloud.fskelly.com/page/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://cloud.fskelly.com/about/</link>
+      <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloud.fskelly.com/about/</guid>
+      <description>Who Am I? I am a Microsoft Employee, working within Azure Engineering as a FastTrack For Azure (FTA) Engineer, focusing primarily on Infra and working with customers across the globe with their respective journeys to the cloud. I was previously a Cloud Solutions Architect (CSA) for Microsoft as well. I was in the Microsoft Partner space for many years before that.
+What is FastTrack For Azure? FastTrack for Azure is a technical enablement program for organizations with cloud projects that enables the rapid, effective design, and deployment of Azure solutions in the cloud.</description>
+    </item>
+    
+    <item>
+      <title>Archives</title>
+      <link>https://cloud.fskelly.com/archives/</link>
+      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloud.fskelly.com/archives/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Search</title>
+      <link>https://cloud.fskelly.com/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloud.fskelly.com/search/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

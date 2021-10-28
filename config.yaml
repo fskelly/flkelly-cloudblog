@@ -5,7 +5,10 @@ paginate: 5
 title: Fletcher's Cloud Journey
 
 # Change it to your Disqus shortname before using
-disqusShortname: hugo-theme-stack
+disqusShortname: fletchercloudblog
+
+enableEmoji: true
+
 
 # GA Tracking ID
 googleAnalytics:

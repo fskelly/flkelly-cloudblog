@@ -4,8 +4,10 @@ date: 2021-07-02T05:40:16+02:00
 Description: "A quick post to help with a common 'error' I run into now and then."
 Tags: ["quick post", "bicep"]
 Categories: ["Azure", "IaC"]
+# image: bicep.png
 DisableComments: false
 ---
+
 # Some basic "troubleshooting" with [Azure Bicep](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview)
 
 So, let me start with this. The team and the community behind Azure Bicep are amazing. There are some great examples [here](https://github.com/Azure/bicep). I often use these as a base and the rip apart or add to meet my needs, you do **NOT** need to start from ground zero. :smile:  

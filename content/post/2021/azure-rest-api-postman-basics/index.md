@@ -1,11 +1,20 @@
----
-title: "Azure Rest Api Postman Basics"
-date: 2021-04-14T09:02:18+02:00
-Description: ""
-Tags: ["azure", "api", "postman"]
-Categories: ["Azure", "API"]
-DisableComments: false
----
++++
+author = "Fletcher Kelly"
+title = "Azure Rest Api Postman Basics"
+date = "2021-04-14T09:02:18+02:00"
+Tags = [
+    "azure", 
+    "api", 
+    "postman"
+    ]
+Categories = [
+    "Azure", 
+    "API"
+    ]
+Description = "Using Postman with the Azure REST API"
+DisableComments = false
++++
+
 # Absolute basics with Azure and [PostMan](www.postman.com)
 
 ## Getting started
@@ -14,7 +23,7 @@ Many of the articles I have found online with regards to the [Azure REST API](ht
 
 [Jon Gallant](https://twitter.com/jongallant) has some great content around this and I did use some content from [here](https://blog.jongallant.com/2021/02/azure-rest-apis-postman-2021/), thank you [Jon Gallant](https://twitter.com/jongallant).  
 
-Within the Azure Portal this is very easy and only requires a few clicks, however under the hood, in order for the Azure REST API to work, there is a lot more going on. Lets dive in :)
+Within the Azure Portal this is very easy and only requires a few clicks, however under the hood, in order for the Azure REST API to work, there is a lot more going on. Lets dive in :smile:
 
 ### API Order
 
