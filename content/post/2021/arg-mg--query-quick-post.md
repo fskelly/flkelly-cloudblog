@@ -2,9 +2,9 @@
 title: "Azure Resource Group Enterprise Scale Landing Zone queries"
 date: 2021-08-25T05:58:18+02:00
 draft: false
-Description: "Some starter Azure Resource Graph queries."
+Description: Starter Azure Resource Graph Queries for Enterprise Scale
 Tags: ["azure","resource graph","blog","quick post"]
-Categories: ["Azure", "Resource Graph"]
+Categories: ["Azure", "ARG", "Azure Resource Graph"]
 ---
 
 # Azure Resource Graph Examples
