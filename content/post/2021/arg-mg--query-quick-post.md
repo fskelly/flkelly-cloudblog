@@ -15,6 +15,8 @@ They will be broken down into a folder structure based upon the [Critical Design
 
 ![folderStructure](https://github.com/fskelly/flkelly-cloudblog/blob/main/public/images/blogImages/2021/azureresourcegraph/folderStructure.png?raw=true)
 
+## Examples
+
 Hope this helps and keep an eye out for more.
 
 Follow me for more 

@@ -9,12 +9,13 @@
     <lastBuildDate>Tue, 09 Jul 2019 16:46:43 +0200</lastBuildDate><atom:link href="https://cloud.fskelly.com/tags/cloud-tools/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Csa Tools of the Trade</title>
-      <link>https://cloud.fskelly.com/post/2019/csa-tools-of-the-trade/</link>
+      <link>https://cloud.fskelly.com/p/csa-tools-of-the-trade/</link>
       <pubDate>Tue, 09 Jul 2019 16:46:43 +0200</pubDate>
       
-      <guid>https://cloud.fskelly.com/post/2019/csa-tools-of-the-trade/</guid>
+      <guid>https://cloud.fskelly.com/p/csa-tools-of-the-trade/</guid>
       <description>So a question I often get asked is &amp;ldquo;what tools or products do you use?&amp;rdquo;. So I decided to do a post around the tools and technologies that I personally use on a daily basis. So to start this is what people see on my screen on a daily basis.
-This is my most common tool, Visual Studio Code, the version shown above is actually the Insiders Build. The primary reason for this tool is that is a &amp;ldquo;container&amp;rdquo; for other tools and functionality.</description>
+VSCode
+This is my most common tool, Visual Studio Code, the version shown above is actually the Insiders Build.</description>
     </item>
     
   </channel>

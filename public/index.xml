@@ -1,123 +1,643 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Fletcher&#39;s Cloud Journey</title>
-    <link>https://cloud.fskelly.com/</link>
-    <description>Recent content on Fletcher&#39;s Cloud Journey</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 25 Aug 2021 05:58:18 +0200</lastBuildDate><atom:link href="https://cloud.fskelly.com/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Azure Resource Group ESLZ queries</title>
-      <link>https://cloud.fskelly.com/post/2021/arg-mg-query-quick-post/</link>
-      <pubDate>Wed, 25 Aug 2021 05:58:18 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2021/arg-mg-query-quick-post/</guid>
-      <description>Azure Resource Graph Examples THis is just a quick post. I am slowly working on building a collection of Resource Grpah Queries - they can be found here and will grow over time. It just takes some time to build these.
-They will be broken down into a folder structure based upon the Critical Design Areas of Enterprise Scale Landing Zone
-Hope this helps and keep an eye out for more.</description>
-    </item>
-    
-    <item>
-      <title>Bicep Troubleshooting</title>
-      <link>https://cloud.fskelly.com/post/2021/bicep-troubleshooting/</link>
-      <pubDate>Fri, 02 Jul 2021 05:40:16 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2021/bicep-troubleshooting/</guid>
-      <description>Some basic &amp;ldquo;troubleshooting&amp;rdquo; with Azure Bicep So, let me start with this. The team and the community behind Azure Bicep are amazing. There are some great examples here. I often use these as a base and the rip apart or add to meet my needs, you do NOT need to start from ground zero. :smile:
-When you are deploying bicep templates you command will look something like this.
-$bicepFile = &amp;#34;.</description>
-    </item>
-    
-    <item>
-      <title>Cli List Locations and Peers</title>
-      <link>https://cloud.fskelly.com/post/2021/cli-list-locations-and-peers/</link>
-      <pubDate>Wed, 05 May 2021 07:03:02 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2021/cli-list-locations-and-peers/</guid>
-      <description>How to use the Azure CLI to list Azure Locations and their peers So this will be a &amp;ldquo;quick post&amp;rdquo; that shows some great functionality within the Azure CLI with az account list-locations. With this command you can expect some output like below, you actually get a lot of content back.
-{ &amp;#34;displayName&amp;#34;: &amp;#34;Brazil Southeast&amp;#34;, &amp;#34;id&amp;#34;: &amp;#34;/subscriptions/949ef534-07f5-4138-8b79-aae16a71310c/locations/brazilsoutheast&amp;#34;, &amp;#34;metadata&amp;#34;: { &amp;#34;geographyGroup&amp;#34;: &amp;#34;South America&amp;#34;, &amp;#34;latitude&amp;#34;: &amp;#34;-22.90278&amp;#34;, &amp;#34;longitude&amp;#34;: &amp;#34;-43.2075&amp;#34;, &amp;#34;pairedRegion&amp;#34;: [ { &amp;#34;id&amp;#34;: &amp;#34;/subscriptions/949ef534-07f5-4138-8b79-aae16a71310c/locations/brazilsouth&amp;#34;, &amp;#34;name&amp;#34;: &amp;#34;brazilsouth&amp;#34;, &amp;#34;subscriptionId&amp;#34;: null } ], &amp;#34;physicalLocation&amp;#34;: &amp;#34;Rio&amp;#34;, &amp;#34;regionCategory&amp;#34;: &amp;#34;Other&amp;#34;, &amp;#34;regionType&amp;#34;: &amp;#34;Physical&amp;#34; }, &amp;#34;name&amp;#34;: &amp;#34;brazilsoutheast&amp;#34;, &amp;#34;regionalDisplayName&amp;#34;: &amp;#34;(South America) Brazil Southeast&amp;#34;, &amp;#34;subscriptionId&amp;#34;: null } If you look at some of the examples, you will also see some &amp;ldquo;logical&amp;rdquo; locations, example below, there is a way of adding a query to remove these to display only &amp;ldquo;physical&amp;rdquo; locations.</description>
-    </item>
-    
-    <item>
-      <title>Azure Rest Api Postman Basics</title>
-      <link>https://cloud.fskelly.com/post/2021/azure-rest-api-postman-basics/</link>
-      <pubDate>Wed, 14 Apr 2021 09:02:18 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2021/azure-rest-api-postman-basics/</guid>
-      <description>Absolute basics with Azure and PostMan Getting started Many of the articles I have found online with regards to the Azure REST API assume a fair level of familiarity with Azure which can be a good and bad thing. You see the Azure Portal makes interacting with the Azure REST API very easy as a lot of the &amp;ldquo;prerequisite&amp;rdquo; work is done in the portal as part of the process. For this blog post we will work on something quite basic, &amp;ldquo;Create a Virtual Machine&amp;rdquo;.</description>
-    </item>
-    
-    <item>
-      <title>Expiring Keys and Secrets within Azure Key Vault</title>
-      <link>https://cloud.fskelly.com/post/2021/expiring-keys-azure-key-vault/</link>
-      <pubDate>Mon, 18 Jan 2021 07:06:03 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2021/expiring-keys-azure-key-vault/</guid>
-      <description>I was working with a customer the other day and a fairly simple ask came up, I however could not find an immediate answer within the portal.
-How do I check for expiring keys within the Azure KeyVault?
-Now being a PowerShell person, I never gave this much thought as for most tasks or actions I perform on the Azure Platform is done through PowerShell, AP, or CLI. So easy enough, however, not everyone knows how to do this in PowerShell.</description>
-    </item>
-    
-    <item>
-      <title>Azure Ghost Cms and Cdn</title>
-      <link>https://cloud.fskelly.com/post/2021/azure-ghost-cms-and-cdn/</link>
-      <pubDate>Mon, 11 Jan 2021 07:00:18 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2021/azure-ghost-cms-and-cdn/</guid>
-      <description>I moved my blog onto HUGO. Not everyone would want to do this necessarily, there is a bit of a learning curve, part of the reason I DID IT :). However there are other platforms you can use and still add more functionality if you want.
-You can use Ghost and add an Azure CDN. This is what this blog post will cover.
-There are some very clever people out there that have made this very easy for you.</description>
-    </item>
-    
-    <item>
-      <title>My New Blog Home with Azure Static Web App</title>
-      <link>https://cloud.fskelly.com/post/2021/my-new-blog-home/</link>
-      <pubDate>Tue, 05 Jan 2021 15:57:04 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2021/my-new-blog-home/</guid>
-      <description>So, I have spent the last few days / weeks deciding the best way to host a blog. Now I have a decidedly &amp;ldquo;split personality&amp;rdquo;. By this I mean I like to segregate my work and personal hobbies. This can be quite beneficial as this allows me to test a few things.
-A few key decisions  Must be version controlled - good practice and forces me to get more familiar with git.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://cloud.fskelly.com/about/</link>
-      <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://cloud.fskelly.com/about/</guid>
-      <description>Who Am I? I am a Microsoft Employee, working within Azure Engineering as a FastTrack For Azure (FTA) Engineer, focusing primarily on Infra and working with customers across the globe with their respective journeys to the cloud. I was previously a Cloud Solutions Architect (CSA) for Microsoft as well. I was in the Microsoft Partner space for many years before that.
-What is FastTrack For Azure? FastTrack for Azure is a technical enablement program for organizations with cloud projects that enables the rapid, effective design, and deployment of Azure solutions in the cloud.</description>
-    </item>
-    
-    <item>
-      <title>Importance of Networking Azure</title>
-      <link>https://cloud.fskelly.com/post/2019/importance-of-networking-azure/</link>
-      <pubDate>Wed, 07 Aug 2019 16:33:36 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2019/importance-of-networking-azure/</guid>
-      <description>As a start to this blog post, I think it is important to understand how I see my role as a CSA (Cloud Solution Architect) with my customer. I am primarily a trusted advisor and my customers respect what I have to say, I question and challenge my customers in a constructive way to approach the challenge or problem statement in a different way. I have an amazing role of using Azure as my LEGO playpen and then building a custom solution (LEGO model) to help my customers.</description>
-    </item>
-    
-    <item>
-      <title>Csa Tools of the Trade</title>
-      <link>https://cloud.fskelly.com/post/2019/csa-tools-of-the-trade/</link>
-      <pubDate>Tue, 09 Jul 2019 16:46:43 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2019/csa-tools-of-the-trade/</guid>
-      <description>So a question I often get asked is &amp;ldquo;what tools or products do you use?&amp;rdquo;. So I decided to do a post around the tools and technologies that I personally use on a daily basis. So to start this is what people see on my screen on a daily basis.
-This is my most common tool, Visual Studio Code, the version shown above is actually the Insiders Build. The primary reason for this tool is that is a &amp;ldquo;container&amp;rdquo; for other tools and functionality.</description>
-    </item>
-    
-    <item>
-      <title>Network Security Group Change Alerting</title>
-      <link>https://cloud.fskelly.com/post/2019/network-security-group-change-alerting/</link>
-      <pubDate>Wed, 20 Feb 2019 08:21:49 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2019/network-security-group-change-alerting/</guid>
-      <description>So, I was with a customer and they are asking for a fairly standard alert.
-&amp;ldquo;Please alert me when an NSG is added or modified&amp;rdquo;. Seems simply enough, however this is not as simply as you think. So I used my favourite search and found the following, “How to receive an email on Azure Network Security Group Rule changes“, this is great content and after testing, it works exactly as expected.</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>Fletcher&#39;s Cloud Journey</title>
+        <link>https://cloud.fskelly.com/</link>
+        <description>Recent content on Fletcher&#39;s Cloud Journey</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Wed, 25 Aug 2021 05:58:18 +0200</lastBuildDate><atom:link href="https://cloud.fskelly.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Azure Resource Group Enterprise Scale Landing Zone queries</title>
+        <link>https://cloud.fskelly.com/p/azure-resource-group-enterprise-scale-landing-zone-queries/</link>
+        <pubDate>Wed, 25 Aug 2021 05:58:18 +0200</pubDate>
+        
+        <guid>https://cloud.fskelly.com/p/azure-resource-group-enterprise-scale-landing-zone-queries/</guid>
+        <description>&lt;h1 id=&#34;azure-resource-graph-examples&#34;&gt;Azure Resource Graph Examples&lt;/h1&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;This is just a quick post. I am slowly working on building a collection of Resource Graph Queries - they can be found &lt;a class=&#34;link&#34; href=&#34;https://github.com/fskelly/azure-resource-graph/tree/main/enterpriseScale&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;here&lt;/a&gt; and will grow over time. It just takes some time to build these.&lt;/p&gt;
+&lt;p&gt;They will be broken down into a folder structure based upon the &lt;a class=&#34;link&#34; href=&#34;https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/enterprise-scale/design-guidelines&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Critical Design Areas of Enterprise Scale Landing Zone&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/public/images/blogImages/2021/azureresourcegraph/folderStructure.png?raw=true&#34; &gt;
+		&lt;img src=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/public/images/blogImages/2021/azureresourcegraph/folderStructure.png?raw=true&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;folderStructure&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;folderStructure&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;Hope this helps and keep an eye out for more.&lt;/p&gt;
+&lt;p&gt;Follow me for more.&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://twitter.com/fskelly&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Twitter&lt;/a&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://www.linkedin.com/in/fletcherkelly/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;LinkedIn&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Bicep Troubleshooting</title>
+        <link>https://cloud.fskelly.com/p/bicep-troubleshooting/</link>
+        <pubDate>Fri, 02 Jul 2021 05:40:16 +0200</pubDate>
+        
+        <guid>https://cloud.fskelly.com/p/bicep-troubleshooting/</guid>
+        <description>&lt;h1 id=&#34;some-basic-troubleshooting-with-azure-bicephttpsdocsmicrosoftcomen-usazureazure-resource-managerbicepoverview&#34;&gt;Some basic &amp;ldquo;troubleshooting&amp;rdquo; with &lt;a class=&#34;link&#34; href=&#34;https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Azure Bicep&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;So, let me start with this. The team and the community behind Azure Bicep are amazing. There are some great examples &lt;a class=&#34;link&#34; href=&#34;https://github.com/Azure/bicep&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;here&lt;/a&gt;. I often use these as a base and the rip apart or add to meet my needs, you do &lt;strong&gt;NOT&lt;/strong&gt; need to start from ground zero. 😄&lt;/p&gt;
+&lt;p&gt;When you are deploying bicep templates you command will look something like this.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$bicepFile&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;.\main.bicep&amp;#34;&lt;/span&gt;
+&lt;span class=&#34;nb&#34;&gt;New-AzResourceGroupDeployment&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-ResourceGroupName&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;resourceGroupName&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-TemplateFile&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;bicepFilePath&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-name&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;deploymentname&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I love to use repeatable code, so mine has more variables and would look like this.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;c&#34;&gt;## Place Resource Group Name here&lt;/span&gt;
+&lt;span class=&#34;nv&#34;&gt;$rgName&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;testingRG&amp;#34;&lt;/span&gt;
+&lt;span class=&#34;c&#34;&gt;## add tags if you want to add metadata&lt;/span&gt;
+&lt;span class=&#34;nv&#34;&gt;$tags&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;@{&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;deploymentMethod&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;bicep&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Can Be Deleted&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;yes&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;span class=&#34;c&#34;&gt;## location to be deployed into&lt;/span&gt;
+&lt;span class=&#34;nv&#34;&gt;$rgLocation&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;westeurope&amp;#34;&lt;/span&gt;
+
+&lt;span class=&#34;c&#34;&gt;#use this command when you need to create a new resource group for your deployment&lt;/span&gt;
+&lt;span class=&#34;nv&#34;&gt;$rg&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;New-AzResourceGroup&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Name&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$rgName&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Location&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$rgLocation&lt;/span&gt; 
+&lt;span class=&#34;nb&#34;&gt;New-AzTag&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-ResourceId&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$rg&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ResourceId&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Tag&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$tags&lt;/span&gt;
+
+&lt;span class=&#34;c&#34;&gt;## bicep Deployment&lt;/span&gt;
+&lt;span class=&#34;c&#34;&gt;## Bicep File name&lt;/span&gt;
+&lt;span class=&#34;nv&#34;&gt;$bicepFile&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;.\main.bicep&amp;#34;&lt;/span&gt;
+&lt;span class=&#34;nv&#34;&gt;$deploymentName&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$bicepFile&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;).&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Substring&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;-&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;+(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;get-date&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Format&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;ddMMyyyy-hhmmss&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;-deployment&amp;#34;&lt;/span&gt;
+&lt;span class=&#34;nb&#34;&gt;New-AzResourceGroupDeployment&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-ResourceGroupName&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$rgName&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-TemplateFile&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$bicepFile&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-name&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$deploymentName&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;When trying to deploy you might get an error like this.
+&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/biceptroubleshooting/bicepError.png?raw=true&#34; &gt;
+		&lt;img src=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/biceptroubleshooting/bicepError.png?raw=true&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;deployment errors&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;deployment errors&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;And that is very cryptic and &lt;strong&gt;NOT&lt;/strong&gt; easy to understand. The easiest fix here is to go back to basics. 😄&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;n&#34;&gt;az&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;bicep&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;build&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-file&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;.\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;bicep&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This will then throw the actual bicep error, and then you can fix your file and deploy again.&lt;/p&gt;
+&lt;p&gt;Hope this helps you.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Cli List Locations and Peers</title>
+        <link>https://cloud.fskelly.com/p/cli-list-locations-and-peers/</link>
+        <pubDate>Wed, 05 May 2021 07:03:02 +0200</pubDate>
+        
+        <guid>https://cloud.fskelly.com/p/cli-list-locations-and-peers/</guid>
+        <description>&lt;h1 id=&#34;how-to-use-the-azure-cli-to-list-azure-locations-and-their-peers&#34;&gt;How to use the Azure CLI to list Azure Locations and their peers&lt;/h1&gt;
+&lt;p&gt;So this will be a &amp;ldquo;quick post&amp;rdquo; that shows some great functionality within the &lt;a class=&#34;link&#34; href=&#34;https://docs.microsoft.com/en-us/cli/azure/install-azure-cli&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Azure CLI&lt;/a&gt; with &lt;code&gt;az account list-locations&lt;/code&gt;. With this command you can expect some output like below, you actually get a lot of content back.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
+    &lt;span class=&#34;s2&#34;&gt;&amp;#34;displayName&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;Brazil Southeast&amp;#34;&lt;/span&gt;,
+    &lt;span class=&#34;s2&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;/subscriptions/949ef534-07f5-4138-8b79-aae16a71310c/locations/brazilsoutheast&amp;#34;&lt;/span&gt;,
+    &lt;span class=&#34;s2&#34;&gt;&amp;#34;metadata&amp;#34;&lt;/span&gt;: &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
+      &lt;span class=&#34;s2&#34;&gt;&amp;#34;geographyGroup&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;South America&amp;#34;&lt;/span&gt;,
+      &lt;span class=&#34;s2&#34;&gt;&amp;#34;latitude&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;-22.90278&amp;#34;&lt;/span&gt;,
+      &lt;span class=&#34;s2&#34;&gt;&amp;#34;longitude&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;-43.2075&amp;#34;&lt;/span&gt;,
+      &lt;span class=&#34;s2&#34;&gt;&amp;#34;pairedRegion&amp;#34;&lt;/span&gt;: &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;
+        &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
+          &lt;span class=&#34;s2&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;/subscriptions/949ef534-07f5-4138-8b79-aae16a71310c/locations/brazilsouth&amp;#34;&lt;/span&gt;,
+          &lt;span class=&#34;s2&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;brazilsouth&amp;#34;&lt;/span&gt;,
+          &lt;span class=&#34;s2&#34;&gt;&amp;#34;subscriptionId&amp;#34;&lt;/span&gt;: null
+        &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
+      &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;,
+      &lt;span class=&#34;s2&#34;&gt;&amp;#34;physicalLocation&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;Rio&amp;#34;&lt;/span&gt;,
+      &lt;span class=&#34;s2&#34;&gt;&amp;#34;regionCategory&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;Other&amp;#34;&lt;/span&gt;,
+      &lt;span class=&#34;s2&#34;&gt;&amp;#34;regionType&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;Physical&amp;#34;&lt;/span&gt;
+    &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;,
+    &lt;span class=&#34;s2&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;brazilsoutheast&amp;#34;&lt;/span&gt;,
+    &lt;span class=&#34;s2&#34;&gt;&amp;#34;regionalDisplayName&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;(South America) Brazil Southeast&amp;#34;&lt;/span&gt;,
+    &lt;span class=&#34;s2&#34;&gt;&amp;#34;subscriptionId&amp;#34;&lt;/span&gt;: null
+&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you look at some of the examples, you will also see some &lt;em&gt;&amp;ldquo;logical&amp;rdquo;&lt;/em&gt; locations, example below, there is a way of adding a query to remove these to display only &lt;strong&gt;&amp;ldquo;physical&amp;rdquo;&lt;/strong&gt; locations.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
+  &lt;span class=&#34;s2&#34;&gt;&amp;#34;displayName&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;United States&amp;#34;&lt;/span&gt;,
+  &lt;span class=&#34;s2&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;/subscriptions/949ef534-07f5-4138-8b79-aae16a71310c/cations/unitedstates&amp;#34;&lt;/span&gt;,
+  &lt;span class=&#34;s2&#34;&gt;&amp;#34;metadata&amp;#34;&lt;/span&gt;: &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
+    &lt;span class=&#34;s2&#34;&gt;&amp;#34;geographyGroup&amp;#34;&lt;/span&gt;: null,
+    &lt;span class=&#34;s2&#34;&gt;&amp;#34;latitude&amp;#34;&lt;/span&gt;: null,
+    &lt;span class=&#34;s2&#34;&gt;&amp;#34;longitude&amp;#34;&lt;/span&gt;: null,
+    &lt;span class=&#34;s2&#34;&gt;&amp;#34;pairedRegion&amp;#34;&lt;/span&gt;: null,
+    &lt;span class=&#34;s2&#34;&gt;&amp;#34;physicalLocation&amp;#34;&lt;/span&gt;: null,
+    &lt;span class=&#34;s2&#34;&gt;&amp;#34;regionCategory&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;Other&amp;#34;&lt;/span&gt;,
+    &lt;span class=&#34;s2&#34;&gt;&amp;#34;regionType&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;Logical&amp;#34;&lt;/span&gt;
+  &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;,
+  &lt;span class=&#34;s2&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;unitedstates&amp;#34;&lt;/span&gt;,
+  &lt;span class=&#34;s2&#34;&gt;&amp;#34;regionalDisplayName&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;United States&amp;#34;&lt;/span&gt;,
+  &lt;span class=&#34;s2&#34;&gt;&amp;#34;subscriptionId&amp;#34;&lt;/span&gt;: null
+&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I use a simple query to remove all locations without latitide and in my case simply return the &lt;strong&gt;Region Name&lt;/strong&gt; 😄&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;az account list-locations --query &lt;span class=&#34;s2&#34;&gt;&amp;#34;[?not_null(metadata.latitude)] .{RegionName:name}&amp;#34;&lt;/span&gt; --output json
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
+  &lt;span class=&#34;s2&#34;&gt;&amp;#34;RegionName&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;brazilsoutheast&amp;#34;&lt;/span&gt;
+&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;So, now to get the paired region, again if we look at the JSON output, there is ALWAYS only 1 result within the array for Paired Region; as per this only 1 paired region 😄. We will use this to our advantage&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;az account list-locations --query &lt;span class=&#34;s2&#34;&gt;&amp;#34;[?not_null(metadata.latitude)] .{RegionName:name, PairedRegion:metadata.pairedRegion[0].name}&amp;#34;&lt;/span&gt; --output json
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
+  &lt;span class=&#34;s2&#34;&gt;&amp;#34;PairedRegion&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;brazilsouth&amp;#34;&lt;/span&gt;,
+  &lt;span class=&#34;s2&#34;&gt;&amp;#34;RegionName&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;brazilsoutheast&amp;#34;&lt;/span&gt;
+&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>Azure Rest Api Postman Basics</title>
+        <link>https://cloud.fskelly.com/p/azure-rest-api-postman-basics/</link>
+        <pubDate>Wed, 14 Apr 2021 09:02:18 +0200</pubDate>
+        
+        <guid>https://cloud.fskelly.com/p/azure-rest-api-postman-basics/</guid>
+        <description>&lt;h1 id=&#34;absolute-basics-with-azure-and-postmanwwwpostmancom&#34;&gt;Absolute basics with Azure and &lt;a class=&#34;link&#34; href=&#34;www.postman.com&#34; &gt;PostMan&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;getting-started&#34;&gt;Getting started&lt;/h2&gt;
+&lt;p&gt;Many of the articles I have found online with regards to the &lt;a class=&#34;link&#34; href=&#34;https://docs.microsoft.com/en-us/rest/api/azure/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Azure REST API&lt;/a&gt; assume a fair level of familiarity with &lt;a class=&#34;link&#34; href=&#34;https://azure.microsoft.com/en-us/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Azure&lt;/a&gt; which can be a good and bad thing. You see the &lt;a class=&#34;link&#34; href=&#34;https://portal.azure.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Azure Portal&lt;/a&gt; makes interacting with the Azure REST API very easy as a lot of the &amp;ldquo;prerequisite&amp;rdquo; work is done in the portal as part of the process. For this blog post we will work on something quite basic, &amp;ldquo;&lt;a class=&#34;link&#34; href=&#34;https://portal.azure.com/#create/Microsoft.VirtualMachine&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Create a Virtual Machine&lt;/a&gt;&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://twitter.com/jongallant&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Jon Gallant&lt;/a&gt; has some great content around this and I did use some content from &lt;a class=&#34;link&#34; href=&#34;https://blog.jongallant.com/2021/02/azure-rest-apis-postman-2021/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;here&lt;/a&gt;, thank you &lt;a class=&#34;link&#34; href=&#34;https://twitter.com/jongallant&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Jon Gallant&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Within the Azure Portal this is very easy and only requires a few clicks, however under the hood, in order for the Azure REST API to work, there is a lot more going on. Lets dive in 😄&lt;/p&gt;
+&lt;h3 id=&#34;api-order&#34;&gt;API Order&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Have a &lt;a class=&#34;link&#34; href=&#34;https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Resource Group&lt;/a&gt; available or create one.&lt;/li&gt;
+&lt;li&gt;Have a &lt;a class=&#34;link&#34; href=&#34;https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Virtual Network (VNET)&lt;/a&gt; available or create one.&lt;/li&gt;
+&lt;li&gt;Create a &lt;a class=&#34;link&#34; href=&#34;https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Virtual Network Interface Card (NIC)&lt;/a&gt; or create one.&lt;/li&gt;
+&lt;li&gt;Create a &lt;a class=&#34;link&#34; href=&#34;https://azure.microsoft.com/en-us/services/virtual-machines/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Virtual Machine&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;There is a lot of association and the like that goes on in the background.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Resource Group created.&lt;/li&gt;
+&lt;li&gt;NIC associated to VNET.&lt;/li&gt;
+&lt;li&gt;NIC associated to VM.&lt;/li&gt;
+&lt;li&gt;VM created in Resource Group.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;using-the-api&#34;&gt;Using the API&lt;/h3&gt;
+&lt;p&gt;So, what I have done, is simply create a collection within &lt;a class=&#34;link&#34; href=&#34;www.postman.com&#34; &gt;Postman&lt;/a&gt; that uses both collection variables and &amp;ldquo;Pre-request&amp;rdquo; scripts to make this collection &amp;ldquo;portable&amp;rdquo;.&lt;/p&gt;
+&lt;h3 id=&#34;postman-collection&#34;&gt;Postman Collection&lt;/h3&gt;
+&lt;p&gt;I use a set of collection variables to help with the initial API Call.
+&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/63833ed0ffe8296fb18d9797663c0cb4a2c305f1/static/images/blogImages/2021/restapipostmanpost/postmanApiCollection.png?raw=true&#34; &gt;
+		&lt;img src=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/63833ed0ffe8296fb18d9797663c0cb4a2c305f1/static/images/blogImages/2021/restapipostmanpost/postmanApiCollection.png?raw=true&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;Postman Api Collection&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Postman Api Collection&lt;/figcaption&gt;
+	
+&lt;/figure&gt;
+With each of the call you will the variables enclosed with &amp;ldquo;&lt;strong&gt;{}&lt;/strong&gt;&amp;rdquo; and path variables prefixed with &amp;ldquo;&lt;strong&gt;:&lt;/strong&gt;&amp;rdquo;
+&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/63833ed0ffe8296fb18d9797663c0cb4a2c305f1/static/images/blogImages/2021/restapipostmanpost/postmanVariables.png?raw=true&#34; &gt;
+		&lt;img src=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/63833ed0ffe8296fb18d9797663c0cb4a2c305f1/static/images/blogImages/2021/restapipostmanpost/postmanVariables.png?raw=true&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;Postman with Variables&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Postman with Variables&lt;/figcaption&gt;
+	
+&lt;/figure&gt;
+With most of the Postman queries, the &amp;ldquo;&lt;strong&gt;Pre-request Script&lt;/strong&gt;&amp;rdquo; is also used, this is used to set &amp;ldquo;extra&amp;rdquo; pieces of information, for example, specifying a location for the Resource Group.
+&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/63833ed0ffe8296fb18d9797663c0cb4a2c305f1/static/images/blogImages/2021/restapipostmanpost/postmanApiPreRequestScript.png?raw=true&#34; &gt;
+		&lt;img src=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/63833ed0ffe8296fb18d9797663c0cb4a2c305f1/static/images/blogImages/2021/restapipostmanpost/postmanApiPreRequestScript.png?raw=true&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;Postman with pre-request script&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Postman with pre-request script&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;So, go forth and play. My Postman Collection can be found &lt;a class=&#34;link&#34; href=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/blogFiles/azureApiPostman/Azure%20REST%20-%20repo%20ready.postman_collection.json&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Expiring Keys and Secrets within Azure Key Vault</title>
+        <link>https://cloud.fskelly.com/p/expiring-keys-and-secrets-within-azure-key-vault/</link>
+        <pubDate>Mon, 18 Jan 2021 07:06:03 +0200</pubDate>
+        
+        <guid>https://cloud.fskelly.com/p/expiring-keys-and-secrets-within-azure-key-vault/</guid>
+        <description>&lt;p&gt;I was working with a customer the other day and a fairly simple ask came up, I however could not find an immediate answer within the portal.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How do I check for expiring keys within the Azure KeyVault?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Now being a PowerShell person, I never gave this much thought as for most tasks or actions I perform on the Azure Platform is done through PowerShell, AP, or CLI. So easy enough, however, not everyone knows how to do this in PowerShell. So, I created a simple script.&lt;/p&gt;
+&lt;p&gt;My requirements&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;You can specify the days to check as your expiry window.&lt;/li&gt;
+&lt;li&gt;You can also check for non-expiring keys.&lt;/li&gt;
+&lt;li&gt;Can be run within the &lt;a class=&#34;link&#34; href=&#34;https://shell.azure.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Cloud Shell&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For me, it is equally important to check for expiring keys, for key rotation there is a &lt;a class=&#34;link&#34; href=&#34;https://docs.microsoft.com/en-us/azure/key-vault/secrets/tutorial-rotation-dual&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;process&lt;/a&gt; to do this. Just as important, if not &lt;strong&gt;&lt;strong&gt;MORE IMPORTANT&lt;/strong&gt;&lt;/strong&gt; is non-expiring keys (think &amp;ldquo;password never expires on a Domain Admin account&amp;rdquo;).&lt;/p&gt;
+&lt;p&gt;I was simply after a quick and easy click and run script. THe script is hosted on my &lt;a class=&#34;link&#34; href=&#34;https://github.com/fskelly/flkelly-AzureCode-powershell&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;repo&lt;/a&gt; and the specific script can be found &lt;a class=&#34;link&#34; href=&#34;https://github.com/fskelly/flkelly-AzureCode-powershell/blob/main/keyVault/az/az_checkForExpiringAndNonExpiringSecrets.ps1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$vaultName&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;span class=&#34;nv&#34;&gt;$kvRG&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;span class=&#34;nv&#34;&gt;$kv&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Get-AzKeyVault&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-ResourceGroupName&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$kvRG&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-VaultName&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$vaultName&lt;/span&gt;
+&lt;span class=&#34;nv&#34;&gt;$secrets&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Get-AzKeyVaultSecret&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-VaultName&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$kv&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;VaultName&lt;/span&gt;
+
+&lt;span class=&#34;nv&#34;&gt;$nonExpiringSecrets&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$secrets&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Where-Object&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$_&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Expires&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-eq&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$null&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;span class=&#34;nv&#34;&gt;$expiringSecrets&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$secrets&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Where-Object&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$_&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Expires&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-ne&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$null&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+
+&lt;span class=&#34;nv&#34;&gt;$daysToCheck&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;90&lt;/span&gt;
+&lt;span class=&#34;nv&#34;&gt;$expireDate&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;Get-Date&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;).&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;AddDays&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$daysToCheck&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+
+&lt;span class=&#34;k&#34;&gt;foreach&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$expiringSecret&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$expiringSecrets&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$expiringSecret&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Expires&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-lt&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$expireDate&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+        &lt;span class=&#34;nb&#34;&gt;Write-Host&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$expiringSecret&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;).&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;is in the expiry window of $daysToCheck days&amp;#34;&lt;/span&gt;
+    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;span class=&#34;k&#34;&gt;foreach&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$nonExpiringSecret&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$nonExpiringSecrets&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+    &lt;span class=&#34;nb&#34;&gt;Write-host&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$nonExpiringSecret&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;).&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34; is set to NEVER expire&amp;#34;&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;As you can see simply replace the variables that you need to, namely &lt;em&gt;&lt;code&gt;$vaultName&lt;/code&gt;&lt;/em&gt; (&lt;strong&gt;name of the Azure Keyvault&lt;/strong&gt;) and &lt;em&gt;&lt;code&gt;$kvRG&lt;/code&gt;&lt;/em&gt; (&lt;strong&gt;name of the Resource Group housing the Azure Keyvault&lt;/strong&gt;)&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Azure Ghost Cms and Cdn</title>
+        <link>https://cloud.fskelly.com/p/azure-ghost-cms-and-cdn/</link>
+        <pubDate>Mon, 11 Jan 2021 07:00:18 +0200</pubDate>
+        
+        <guid>https://cloud.fskelly.com/p/azure-ghost-cms-and-cdn/</guid>
+        <description>&lt;p&gt;I moved my blog onto HUGO. Not everyone would want to do this necessarily, there is a bit of a learning curve, part of the reason &lt;strong&gt;I DID IT&lt;/strong&gt; :). However there are other platforms you can use and still add more functionality if you want.&lt;/p&gt;
+&lt;p&gt;You can use &lt;a class=&#34;link&#34; href=&#34;https://ghost.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Ghost&lt;/a&gt; and add an &lt;a class=&#34;link&#34; href=&#34;https://docs.microsoft.com/en-us/azure/cdn/cdn-overview&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Azure CDN&lt;/a&gt;. This is what this blog post will cover.&lt;/p&gt;
+&lt;p&gt;There are some very clever people out there that have made this very easy for you. From my research you have 2 main options.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;A &amp;ldquo;simple Web App&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;More complex deployment with Containers and a CDN - now this sounds interesting.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For this post I naturally focused on &lt;strong&gt;option 2&lt;/strong&gt; :). A &lt;strong&gt;BIG&lt;/strong&gt; shoutout goes to &lt;a class=&#34;link&#34; href=&#34;https://andrewmatveychuk.com/about/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Andrew Matveychuk&lt;/a&gt;. I am all about &lt;strong&gt;&lt;strong&gt;&amp;ldquo;Standing on the shoulders of giants&lt;/strong&gt;&amp;quot;&lt;/strong&gt;. I used his &lt;a class=&#34;link&#34; href=&#34;https://github.com/andrewmatveychuk/azure.ghost-web-app-for-containers&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;repo&lt;/a&gt; and then forked it into mine. He has a nice &lt;a class=&#34;link&#34; href=&#34;https://andrewmatveychuk.com/a-one-click-ghost-deployment-on-azure-web-app-for-containers/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;blogpost&lt;/a&gt; on his journey. I simply unpacked this a little further and went into some more details and highlight some of the potential gotchas and setting up things in more detail with specific focus on the &lt;a class=&#34;link&#34; href=&#34;https://portal.azure.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Azure Portal&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;deployment&#34;&gt;Deployment&lt;/h3&gt;
+&lt;p&gt;The deployment is nice and easy thanks to a one-click deploy - thanks again &lt;a class=&#34;link&#34; href=&#34;https://andrewmatveychuk.com/about/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Andrew Matveychuk&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/deploymentsample.png?raw=true&#34; &gt;
+		&lt;img src=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/deploymentsample.png?raw=true&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;Deployment Start&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Deployment Start&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/deploymentSequence.png?raw=true&#34; &gt;
+		&lt;img src=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/deploymentSequence.png?raw=true&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;Deployment In Progress&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Deployment In Progress&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/deplolymentComplete.png?raw=true&#34; &gt;
+		&lt;img src=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/deplolymentComplete.png?raw=true&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;Deployment Complete&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Deployment Complete&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;It &lt;strong&gt;&amp;ldquo;deploys&amp;rdquo;&lt;/strong&gt; pretty quickly but, of course, this is just the start of the work.&lt;/p&gt;
+&lt;h3 id=&#34;during-deployment&#34;&gt;During deployment&lt;/h3&gt;
+&lt;p&gt;During the deployment of the application you will see the Web App change.&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/initialWebApp.png?raw=true&#34; &gt;
+		&lt;img src=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/initialWebApp.png?raw=true&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;Initial Web App&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Initial Web App&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;Almost
+&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/ghostBeingConfigured.png?raw=true&#34; &gt;
+		&lt;img src=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/ghostBeingConfigured.png?raw=true&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;New App being deployed&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;New App being deployed&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;Success!!!&lt;br&gt;
+You will see something &lt;strong&gt;SIMILAR&lt;/strong&gt; to this.
+&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/ghostConfigured.png?raw=true&#34; &gt;
+		&lt;img src=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/ghostConfigured.png?raw=true&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;New App deployed&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;New App deployed&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&#34;gotcha-with-container-deployment&#34;&gt;Gotcha with Container Deployment&lt;/h3&gt;
+&lt;p&gt;The solution takes a while to deploy - this seems to be due to some changes made recently by Docker. Do &lt;strong&gt;NOT&lt;/strong&gt; be hasty like I was, this can cause issues and create the need for a re-deploy. Instead lets use the logs to see what is going on :)&lt;br&gt;
+Now let&amp;rsquo;s find the log I was talking about.
+&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/containerLogs.png?raw=true&#34; &gt;
+		&lt;img src=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/containerLogs.png?raw=true&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;Docker Logs&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Docker Logs&lt;/figcaption&gt;
+	
+&lt;/figure&gt;
+We are waiting for &lt;strong&gt;this&lt;/strong&gt; entry
+&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/magicMoment-PATIENCE.png?raw=true&#34; &gt;
+		&lt;img src=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/magicMoment-PATIENCE.png?raw=true&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;Magic Moment&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Magic Moment&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;So, now to add move value, we can add an &lt;a class=&#34;link&#34; href=&#34;https://docs.microsoft.com/en-us/azure/cdn/cdn-overview&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Azure CDN&lt;/a&gt; (in this case, this has already been done) and look at configuring your own custom name for this.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A content delivery network (CDN) is a distributed network of servers that can efficiently deliver web content to users. CDNs&#39; store cached content on edge servers in point-of-presence (POP) locations that are close to end users, to minimize latency.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;So we can add a custom domain to a CDN to make this more pretty and give your site a more more friendly name - you can move away from the &lt;a class=&#34;link&#34; href=&#34;https://xyz.azurewebsites.net&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://xyz.azurewebsites.net&lt;/a&gt;, I definitely think a custom domain is far cleaner and &amp;ldquo;more professional&amp;rdquo;. So let&amp;rsquo;s dive in and get this done. :)&lt;/p&gt;
+&lt;p&gt;So, there a few steps to get this done. This is well documented &lt;a class=&#34;link&#34; href=&#34;https://docs.microsoft.com/en-us/azure/cdn/cdn-map-content-to-custom-domain?tabs=azure-dns&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;here&lt;/a&gt;, however I will provide more context and give some sample screenshots.&lt;/p&gt;
+&lt;p&gt;We have some DNS Settings to configure as per the above article. Below, I have added some sample for the &lt;a class=&#34;link&#34; href=&#34;https://demoghost.fskelly.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;CDN demo&lt;/a&gt; I configure for this blog.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create the required verification entries in your DNS Zone. I use &lt;a class=&#34;link&#34; href=&#34;https://www.cloudns.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ClouDNS&lt;/a&gt; but the process is the same, just how you create the required entries will vary with each provider.
+&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/cdnVerification.png?raw=true&#34; &gt;
+		&lt;img src=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/cdnVerification.png?raw=true&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;Required Verification Entries&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Required Verification Entries&lt;/figcaption&gt;
+	
+&lt;/figure&gt;
+This process should not take too long, but now we want a &lt;strong&gt;certificate&lt;/strong&gt; and the joys of TLS&lt;/li&gt;
+&lt;li&gt;Start the verification process &lt;figure 
+	&gt;
+	&lt;a href=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/cdnCert1.png?raw=true&#34; &gt;
+		&lt;img src=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/cdnCert1.png?raw=true&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;Start of Process&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Start of Process&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;Domain Verification &lt;figure 
+	&gt;
+	&lt;a href=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/cdnCert2.png?raw=true&#34; &gt;
+		&lt;img src=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/cdnCert2.png?raw=true&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;Domain Validation&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Domain Validation&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;Create a certificate &lt;figure 
+	&gt;
+	&lt;a href=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/cdnCert3.png?raw=true&#34; &gt;
+		&lt;img src=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/cdnCert3.png?raw=true&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;certificate provisioning&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;certificate provisioning&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;And completed &lt;figure 
+	&gt;
+	&lt;a href=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/cdnCert4.png?raw=true&#34; &gt;
+		&lt;img src=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/cdnCert4.png?raw=true&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;process complete&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;process complete&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now here is the &lt;a class=&#34;link&#34; href=&#34;https://demoghost.fskelly.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;end result&lt;/a&gt; - note the HTTPS 👍 &lt;figure 
+	&gt;
+	&lt;a href=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/cdnDemoPost.png?raw=true&#34; &gt;
+		&lt;img src=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/ghostblogpost/cdnDemoPost.png?raw=true&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;site with HTTPS Cert&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;site with HTTPS Cert&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>My New Blog Home with Azure Static Web App</title>
+        <link>https://cloud.fskelly.com/p/my-new-blog-home-with-azure-static-web-app/</link>
+        <pubDate>Tue, 05 Jan 2021 15:57:04 +0200</pubDate>
+        
+        <guid>https://cloud.fskelly.com/p/my-new-blog-home-with-azure-static-web-app/</guid>
+        <description>&lt;p&gt;So, I have spent the last few days / weeks deciding the best way to host a blog. Now I have a decidedly &amp;ldquo;split personality&amp;rdquo;. By this I mean I like to segregate my work and personal hobbies. This can be quite beneficial as this allows me to test a few things.&lt;/p&gt;
+&lt;h3 id=&#34;a-few-key-decisions&#34;&gt;A few key decisions&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Must be version controlled - good practice and forces me to get more familiar with &lt;a class=&#34;link&#34; href=&#34;https://git-scm.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;git&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Must be reliable and redundant, or at least enough to re-deploy if needed - see point 1 :) .&lt;/li&gt;
+&lt;li&gt;Must be as cheap as possible to run and be fairly quick.&lt;/li&gt;
+&lt;li&gt;Must be a learning experience.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Points &lt;strong&gt;1&lt;/strong&gt; and &lt;strong&gt;2&lt;/strong&gt; makes &lt;a class=&#34;link&#34; href=&#34;https://git-scm.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;git&lt;/a&gt; a natural choice. Point &lt;strong&gt;3&lt;/strong&gt; makes &lt;a class=&#34;link&#34; href=&#34;https://azure.microsoft.com/en-us/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Azure&lt;/a&gt; or &lt;a class=&#34;link&#34; href=&#34;https://pages.github.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GitHub Pages&lt;/a&gt; a natural choice. For point &lt;strong&gt;4&lt;/strong&gt;, With this being my &lt;em&gt;&amp;ldquo;work persona&amp;rdquo;&lt;/em&gt; I chose Azure Static Web App. I have used GitHub Pages for my &lt;em&gt;&amp;ldquo;personal persona&amp;rdquo;&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;So now with the basics out of the way,  I needed to chose a static content generator. Based on discussions with a few people and again wanting to learn something, &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/getting-started/installing/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;hugo&lt;/a&gt; was chosen and then there is a great guide &lt;a class=&#34;link&#34; href=&#34;https://docs.microsoft.com/en-us/azure/static-web-apps/publish-hugo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;here&lt;/a&gt; as a starting point.&lt;/p&gt;
+&lt;p&gt;The blog you are reading now is hosted with the above criteria and of course a custom domain name.&lt;/p&gt;
+&lt;p&gt;More to come soon.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Importance of Networking Azure</title>
+        <link>https://cloud.fskelly.com/p/importance-of-networking-azure/</link>
+        <pubDate>Wed, 07 Aug 2019 16:33:36 +0200</pubDate>
+        
+        <guid>https://cloud.fskelly.com/p/importance-of-networking-azure/</guid>
+        <description>&lt;p&gt;As a start to this blog post, I think it is important to understand how I see my role as a CSA (Cloud Solution Architect) with my customer. I am primarily a trusted advisor and my customers respect what I have to say, I question and challenge my customers in a constructive way to approach the challenge or problem statement in a different way. I have an amazing role of using Azure as my LEGO playpen and then building a custom solution (LEGO model) to help my customers.&lt;/p&gt;
+&lt;p&gt;So, of late I have been having a lot of networking discussions with my customers. Now these discussions have been ranging from a new customer to a very advanced customer that has been using Azure for quite some time. These have also ranged from new connection options to extend their on-premises connectivity into Azure, which we call &amp;ldquo;Hybrid Connectivity&amp;rdquo;, as well as networking considerations once in the cloud with Azure Native connectivity such AKS (Azure Kubernetes Service) and ACI (Azure Container Instances) to simply name the current most top of mind topics.&lt;/p&gt;
+&lt;p&gt;So, having these discussions is not an uncommon practice and these are the types of discussions that should be happening, there is nothing wrong with this. All that is happening more and more often is that these discussions are happening in isolation as opposed to the customer working on having a holistic approach to this discussion and working on a full cloud networking solution.&lt;/p&gt;
+&lt;p&gt;You cannot necessarily think of networking in silos anymore. Yes, networking can be silo&amp;rsquo;ed and many people do this. However with the &amp;ldquo;new world&amp;rdquo; of cloud and the networking associated to this concept, networking is now a critical point on your cloud journey. There are multiple options available here as a start. THe main role of a Cloud SOlutions Architect or more importantly a trusted advisor, is to understand the requirements of your customer and work with the required teams, usually networking, InfoSec, business owner and Application owner to determine the correct networking option for the cusotmer. This would be a mix of solutions and architectures.&lt;/p&gt;
+&lt;p&gt;This is a great start to understanding which technologies can or could be used to serve a particular need and then this can be built up to a solution that is extendable and usable by your customer.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Csa Tools of the Trade</title>
+        <link>https://cloud.fskelly.com/p/csa-tools-of-the-trade/</link>
+        <pubDate>Tue, 09 Jul 2019 16:46:43 +0200</pubDate>
+        
+        <guid>https://cloud.fskelly.com/p/csa-tools-of-the-trade/</guid>
+        <description>&lt;p&gt;So a question I often get asked is &amp;ldquo;what tools or products do you use?&amp;rdquo;. So I decided to do a post around the tools and technologies that I personally use on a daily basis. So to start this is what people see on my screen on a daily basis.&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://github.com/fskelly/fletchercloud/blob/master/static/images/blogImages/vscodeScreenShot.png?raw=true&#34; &gt;
+		&lt;img src=&#34;https://github.com/fskelly/fletchercloud/blob/master/static/images/blogImages/vscodeScreenShot.png?raw=true&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;VSCode&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;VSCode&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;This is my most common tool, Visual Studio Code, the version shown above is actually the Insiders Build. The primary reason for this tool is that is a &amp;ldquo;container&amp;rdquo; for other tools and functionality. The extra functionality is enabled with extensions, my most used extensions are as follows:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Docker, love my containers.&lt;/li&gt;
+&lt;li&gt;GitLens, used for my source control, all my code is located here for my Azure related code&lt;/li&gt;
+&lt;li&gt;Azure Account (VSCode Extension) , this allows me to run the Azure Cloud Shell from within VSCode, this includes both &lt;strong&gt;PowerShell&lt;/strong&gt; and &lt;strong&gt;BASH&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Kubernetes, can&amp;rsquo;t really have Docker without this nowadays :)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now, aside from Visual Studio Code, I also use the following:&lt;br&gt;
+&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://github.com/fskelly/fletchercloud/blob/master/static/images/blogImages/terminalScreenShot.png?raw=true&#34; &gt;
+		&lt;img src=&#34;https://github.com/fskelly/fletchercloud/blob/master/static/images/blogImages/terminalScreenShot.png?raw=true&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;WSL&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;WSL&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Windows Terminal (Preview), I use this extensively for testing of code and running Docker&lt;/li&gt;
+&lt;li&gt;WSL2 (Windows Subsystem for Linux 2), I am running the Preview version of this as it is not yet GA, but so far so good.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I use many other applications, however this is my collection of &amp;ldquo;go-to&amp;rdquo; tools. This should be in your &amp;ldquo;cloud arsenal&amp;rdquo;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Network Security Group Change Alerting</title>
+        <link>https://cloud.fskelly.com/p/network-security-group-change-alerting/</link>
+        <pubDate>Wed, 20 Feb 2019 08:21:49 +0200</pubDate>
+        
+        <guid>https://cloud.fskelly.com/p/network-security-group-change-alerting/</guid>
+        <description>&lt;p&gt;So, I was with a customer and they are asking for a fairly standard alert.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;ldquo;Please alert me when an NSG is added or modified&amp;rdquo;&lt;/strong&gt;. Seems simply enough, however this is not as simply as you think. So I used my favourite search and found the following, “How to receive an email on Azure Network Security Group Rule changes“, this is great content and after testing, it works exactly as expected. I just found one little concern with this approach; this is simply finding the required ID for the action group. I have now investigated and found some code to make this a little easier.&lt;/p&gt;
+&lt;p&gt;AZ CLI&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;az monitor action-group list
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;PowerShell&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Get-AzActionGroup&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Hope this helps people in the field to find the Resource Group ID more easily.&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

@@ -8,31 +8,32 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 25 Aug 2021 05:58:18 +0200</lastBuildDate><atom:link href="https://cloud.fskelly.com/tags/azure/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Azure Resource Group ESLZ queries</title>
-      <link>https://cloud.fskelly.com/post/2021/arg-mg-query-quick-post/</link>
+      <title>Azure Resource Group Enterprise Scale Landing Zone queries</title>
+      <link>https://cloud.fskelly.com/p/azure-resource-group-enterprise-scale-landing-zone-queries/</link>
       <pubDate>Wed, 25 Aug 2021 05:58:18 +0200</pubDate>
       
-      <guid>https://cloud.fskelly.com/post/2021/arg-mg-query-quick-post/</guid>
-      <description>Azure Resource Graph Examples THis is just a quick post. I am slowly working on building a collection of Resource Grpah Queries - they can be found here and will grow over time. It just takes some time to build these.
+      <guid>https://cloud.fskelly.com/p/azure-resource-group-enterprise-scale-landing-zone-queries/</guid>
+      <description>Azure Resource Graph Examples This is just a quick post. I am slowly working on building a collection of Resource Graph Queries - they can be found here and will grow over time. It just takes some time to build these.
 They will be broken down into a folder structure based upon the Critical Design Areas of Enterprise Scale Landing Zone
+folderStructure
 Hope this helps and keep an eye out for more.</description>
     </item>
     
     <item>
       <title>Azure Rest Api Postman Basics</title>
-      <link>https://cloud.fskelly.com/post/2021/azure-rest-api-postman-basics/</link>
+      <link>https://cloud.fskelly.com/p/azure-rest-api-postman-basics/</link>
       <pubDate>Wed, 14 Apr 2021 09:02:18 +0200</pubDate>
       
-      <guid>https://cloud.fskelly.com/post/2021/azure-rest-api-postman-basics/</guid>
+      <guid>https://cloud.fskelly.com/p/azure-rest-api-postman-basics/</guid>
       <description>Absolute basics with Azure and PostMan Getting started Many of the articles I have found online with regards to the Azure REST API assume a fair level of familiarity with Azure which can be a good and bad thing. You see the Azure Portal makes interacting with the Azure REST API very easy as a lot of the &amp;ldquo;prerequisite&amp;rdquo; work is done in the portal as part of the process. For this blog post we will work on something quite basic, &amp;ldquo;Create a Virtual Machine&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>Azure Ghost Cms and Cdn</title>
-      <link>https://cloud.fskelly.com/post/2021/azure-ghost-cms-and-cdn/</link>
+      <link>https://cloud.fskelly.com/p/azure-ghost-cms-and-cdn/</link>
       <pubDate>Mon, 11 Jan 2021 07:00:18 +0200</pubDate>
       
-      <guid>https://cloud.fskelly.com/post/2021/azure-ghost-cms-and-cdn/</guid>
+      <guid>https://cloud.fskelly.com/p/azure-ghost-cms-and-cdn/</guid>
       <description>I moved my blog onto HUGO. Not everyone would want to do this necessarily, there is a bit of a learning curve, part of the reason I DID IT :). However there are other platforms you can use and still add more functionality if you want.
 You can use Ghost and add an Azure CDN. This is what this blog post will cover.
 There are some very clever people out there that have made this very easy for you.</description>
@@ -40,10 +41,10 @@ There are some very clever people out there that have made this very easy for yo
     
     <item>
       <title>My New Blog Home with Azure Static Web App</title>
-      <link>https://cloud.fskelly.com/post/2021/my-new-blog-home/</link>
+      <link>https://cloud.fskelly.com/p/my-new-blog-home-with-azure-static-web-app/</link>
       <pubDate>Tue, 05 Jan 2021 15:57:04 +0200</pubDate>
       
-      <guid>https://cloud.fskelly.com/post/2021/my-new-blog-home/</guid>
+      <guid>https://cloud.fskelly.com/p/my-new-blog-home-with-azure-static-web-app/</guid>
       <description>So, I have spent the last few days / weeks deciding the best way to host a blog. Now I have a decidedly &amp;ldquo;split personality&amp;rdquo;. By this I mean I like to segregate my work and personal hobbies. This can be quite beneficial as this allows me to test a few things.
 A few key decisions  Must be version controlled - good practice and forces me to get more familiar with git.</description>
     </item>
