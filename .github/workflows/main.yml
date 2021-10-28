@@ -9,7 +9,7 @@ name: HUGO - Azure Static Web Apps CI/CD - extend
 on:
   push:
     branches:
-      - main
+      - new-theme
     paths-ignore:
       - 'podcast_audio/**'
   pull_request:
