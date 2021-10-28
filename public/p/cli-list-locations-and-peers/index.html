@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Using the Azure CLI to get Azure Locations and peers'><title>Cli List Locations and Peers</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='How to use the Azure CLI to list Azure Locations and their peers So this will be a &amp;ldquo;quick post&amp;rdquo; that shows some great functionality within the Azure CLI with az account list-locations. With this command you can expect some output like below, you actually get a lot of content back.
+{ &amp;#34;displayName&amp;#34;: &amp;#34;Brazil Southeast&amp;#34;, &amp;#34;id&amp;#34;: &amp;#34;/subscriptions/949ef534-07f5-4138-8b79-aae16a71310c/locations/brazilsoutheast&amp;#34;, &amp;#34;metadata&amp;#34;: { &amp;#34;geographyGroup&amp;#34;: &amp;#34;South America&amp;#34;, &amp;#34;latitude&amp;#34;: &amp;#34;-22.90278&amp;#34;, &amp;#34;longitude&amp;#34;: &amp;#34;-43.2075&amp;#34;, &amp;#34;pairedRegion&amp;#34;: [ { &amp;#34;id&amp;#34;: &amp;#34;/subscriptions/949ef534-07f5-4138-8b79-aae16a71310c/locations/brazilsouth&amp;#34;, &amp;#34;name&amp;#34;: &amp;#34;brazilsouth&amp;#34;, &amp;#34;subscriptionId&amp;#34;: null } ], &amp;#34;physicalLocation&amp;#34;: &amp;#34;Rio&amp;#34;, &amp;#34;regionCategory&amp;#34;: &amp;#34;Other&amp;#34;, &amp;#34;regionType&amp;#34;: &amp;#34;Physical&amp;#34; }, &amp;#34;name&amp;#34;: &amp;#34;brazilsoutheast&amp;#34;, &amp;#34;regionalDisplayName&amp;#34;: &amp;#34;(South America) Brazil Southeast&amp;#34;, &amp;#34;subscriptionId&amp;#34;: null } If you look at some of the examples, you will also see some &amp;ldquo;logical&amp;rdquo; locations, example below, there is a way of adding a query to remove these to display only &amp;ldquo;physical&amp;rdquo; locations.'><title>Cli List Locations and Peers</title>
 
 <link rel='canonical' href='https://cloud.fskelly.com/p/cli-list-locations-and-peers/'>
 
 <link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Cli List Locations and Peers'>
-<meta property='og:description' content='Using the Azure CLI to get Azure Locations and peers'>
+<meta property='og:description' content='How to use the Azure CLI to list Azure Locations and their peers So this will be a &amp;ldquo;quick post&amp;rdquo; that shows some great functionality within the Azure CLI with az account list-locations. With this command you can expect some output like below, you actually get a lot of content back.
+{ &amp;#34;displayName&amp;#34;: &amp;#34;Brazil Southeast&amp;#34;, &amp;#34;id&amp;#34;: &amp;#34;/subscriptions/949ef534-07f5-4138-8b79-aae16a71310c/locations/brazilsoutheast&amp;#34;, &amp;#34;metadata&amp;#34;: { &amp;#34;geographyGroup&amp;#34;: &amp;#34;South America&amp;#34;, &amp;#34;latitude&amp;#34;: &amp;#34;-22.90278&amp;#34;, &amp;#34;longitude&amp;#34;: &amp;#34;-43.2075&amp;#34;, &amp;#34;pairedRegion&amp;#34;: [ { &amp;#34;id&amp;#34;: &amp;#34;/subscriptions/949ef534-07f5-4138-8b79-aae16a71310c/locations/brazilsouth&amp;#34;, &amp;#34;name&amp;#34;: &amp;#34;brazilsouth&amp;#34;, &amp;#34;subscriptionId&amp;#34;: null } ], &amp;#34;physicalLocation&amp;#34;: &amp;#34;Rio&amp;#34;, &amp;#34;regionCategory&amp;#34;: &amp;#34;Other&amp;#34;, &amp;#34;regionType&amp;#34;: &amp;#34;Physical&amp;#34; }, &amp;#34;name&amp;#34;: &amp;#34;brazilsoutheast&amp;#34;, &amp;#34;regionalDisplayName&amp;#34;: &amp;#34;(South America) Brazil Southeast&amp;#34;, &amp;#34;subscriptionId&amp;#34;: null } If you look at some of the examples, you will also see some &amp;ldquo;logical&amp;rdquo; locations, example below, there is a way of adding a query to remove these to display only &amp;ldquo;physical&amp;rdquo; locations.'>
 <meta property='og:url' content='https://cloud.fskelly.com/p/cli-list-locations-and-peers/'>
 <meta property='og:site_name' content='Fletcher&#39;s Cloud Journey'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='quick post' /><meta property='article:tag' content='az cli' /><meta property='article:published_time' content='2021-05-05T07:03:02&#43;02:00'/><meta property='article:modified_time' content='2021-05-05T07:03:02&#43;02:00'/>
 <meta name="twitter:title" content="Cli List Locations and Peers">
-<meta name="twitter:description" content="Using the Azure CLI to get Azure Locations and peers">
+<meta name="twitter:description" content="How to use the Azure CLI to list Azure Locations and their peers So this will be a &amp;ldquo;quick post&amp;rdquo; that shows some great functionality within the Azure CLI with az account list-locations. With this command you can expect some output like below, you actually get a lot of content back.
+{ &amp;#34;displayName&amp;#34;: &amp;#34;Brazil Southeast&amp;#34;, &amp;#34;id&amp;#34;: &amp;#34;/subscriptions/949ef534-07f5-4138-8b79-aae16a71310c/locations/brazilsoutheast&amp;#34;, &amp;#34;metadata&amp;#34;: { &amp;#34;geographyGroup&amp;#34;: &amp;#34;South America&amp;#34;, &amp;#34;latitude&amp;#34;: &amp;#34;-22.90278&amp;#34;, &amp;#34;longitude&amp;#34;: &amp;#34;-43.2075&amp;#34;, &amp;#34;pairedRegion&amp;#34;: [ { &amp;#34;id&amp;#34;: &amp;#34;/subscriptions/949ef534-07f5-4138-8b79-aae16a71310c/locations/brazilsouth&amp;#34;, &amp;#34;name&amp;#34;: &amp;#34;brazilsouth&amp;#34;, &amp;#34;subscriptionId&amp;#34;: null } ], &amp;#34;physicalLocation&amp;#34;: &amp;#34;Rio&amp;#34;, &amp;#34;regionCategory&amp;#34;: &amp;#34;Other&amp;#34;, &amp;#34;regionType&amp;#34;: &amp;#34;Physical&amp;#34; }, &amp;#34;name&amp;#34;: &amp;#34;brazilsoutheast&amp;#34;, &amp;#34;regionalDisplayName&amp;#34;: &amp;#34;(South America) Brazil Southeast&amp;#34;, &amp;#34;subscriptionId&amp;#34;: null } If you look at some of the examples, you will also see some &amp;ldquo;logical&amp;rdquo; locations, example below, there is a way of adding a query to remove these to display only &amp;ldquo;physical&amp;rdquo; locations.">
     </head>
     <body class="
     article-page 
@@ -441,6 +444,10 @@
                 Azure
             </a>
         
+            <a href="/categories/az-cli/" >
+                AZ CLI
+            </a>
+        
     </header>
     
 
@@ -448,10 +455,6 @@
         <a href="/p/cli-list-locations-and-peers/">Cli List Locations and Peers</a>
     </h2>
 
-    
-    <h3 class="article-subtitle">
-        Using the Azure CLI to get Azure Locations and peers
-    </h3>
     
 
     
