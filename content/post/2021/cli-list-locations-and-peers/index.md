@@ -3,11 +3,10 @@ title: "Cli List Locations and Peers"
 date: 2021-05-05T07:03:02+02:00
 Description: ""
 Tags: ["quick post", "az cli"]
-Categories: ["command line", "Azure"]
-Description: "Using the Azure CLI to get Azure Locations and peers"
+Categories: ["command line", "Azure", "AZ CLI"]
 DisableComments: false
 ---
-# How to use the Azure CLI to list Azure Locations and their peers  
+# How to use the Azure CLI to list Azure Locations and their peers
 
 So this will be a "quick post" that shows some great functionality within the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) with ```az account list-locations```. With this command you can expect some output like below, you actually get a lot of content back.
 
