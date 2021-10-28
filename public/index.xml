@@ -13,8 +13,12 @@
         
         <guid>https://cloud.fskelly.com/p/azure-resource-group-enterprise-scale-landing-zone-queries/</guid>
         <description>&lt;h1 id=&#34;azure-resource-graph-examples&#34;&gt;Azure Resource Graph Examples&lt;/h1&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
+&lt;!-- ![Azure Resource Graph](resourcegraph-scaled.png) --&gt;
+&lt;!-- &lt;figure&gt;&lt;img src=&#34;resourcegraph-scaled.png&#34;/&gt;&lt;figcaption&gt;
+            &lt;h4&gt;Azure Resource Graph&lt;/h4&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+ --&gt;
 &lt;p&gt;This is just a quick post. I am slowly working on building a collection of Resource Graph Queries - they can be found &lt;a class=&#34;link&#34; href=&#34;https://github.com/fskelly/azure-resource-graph/tree/main/enterpriseScale&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;here&lt;/a&gt; and will grow over time. It just takes some time to build these.&lt;/p&gt;
 &lt;p&gt;They will be broken down into a folder structure based upon the &lt;a class=&#34;link&#34; href=&#34;https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/enterprise-scale/design-guidelines&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
