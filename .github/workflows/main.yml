@@ -1,4 +1,4 @@
-name: Azure Static Web Apps CI/CD
+name: HUGO - Azure Static Web Apps CI/CD - extend
 
 # This GitHub Action workflow triggers in two scenarios - 
 # 1. When a push is made to the master branch
