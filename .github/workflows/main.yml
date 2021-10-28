@@ -87,8 +87,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:            
     - uses: actions/checkout@v2
-    - name: 'Install Node Dependencies'
-      run: npm ci    
+      with:
+        submodules: true  # Fetch Hugo themes (true OR recursive)
+        fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
     - name: 'Setup Hugo on Runner'
       uses: peaceiris/actions-hugo@v2
       with:
@@ -102,8 +103,8 @@ jobs:
 #        files: '["config.yaml"]'
 #      env:
 #        hostname: 'https://www.cloudwithchris.com'
-#    - name: 'Build and Minify Hugo Contents'
-#      run: hugo --minify    
+    - name: 'Build and Minify Hugo Contents'
+      run: hugo --minify    
 #    - name: 'Upload Generated Static Content as Website Artifact'
 #      uses: actions/upload-artifact@v1
 #      with:
