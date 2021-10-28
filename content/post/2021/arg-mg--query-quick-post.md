@@ -1,8 +1,10 @@
 ---
-title: "Azure Resource Group ESLZ queries"
+title: "Azure Resource Group Enterprise Scale Landing Zone queries"
 date: 2021-08-25T05:58:18+02:00
 draft: false
+Description: "Some starter Azure Resource Graph queries."
 Tags: ["azure","resource graph","blog","quick post"]
+Categories: ["Azure", "Resource Graph"]
 ---
 
 # Azure Resource Graph Examples
