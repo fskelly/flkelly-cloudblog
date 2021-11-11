@@ -8,4 +8,4 @@ My build command
 ```bash
 C:\ProgramData\chocolatey\lib\hugo-extended\tools\hugo.exe
 ```
-[![blog](https://img.shields.io/website-up-down-green-red/https/cloud.fskelly.com.svg)]
+![blog](https://img.shields.io/website-up-down-green-red/https/cloud.fskelly.com.svg)
