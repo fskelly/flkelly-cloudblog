@@ -6,13 +6,26 @@
     <description>Recent content in Networking on Fletcher&#39;s Cloud Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Aug 2019 16:33:36 +0200</lastBuildDate><atom:link href="https://cloud.fskelly.com/tags/networking/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Mar 2022 16:06:00 +0000</lastBuildDate><atom:link href="https://cloud.fskelly.com/tags/networking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I want to use Azure VMware Solution, what should I know about networking?</title>
+      <link>https://cloud.fskelly.com/post/2022/new-to-avs-nomon-networking-1/</link>
+      <pubDate>Wed, 09 Mar 2022 16:06:00 +0000</pubDate>
+      
+      <guid>https://cloud.fskelly.com/post/2022/new-to-avs-nomon-networking-1/</guid>
+      <description>What else do I need to know when using Azure VMware Solution (AVS)?
+Networking Edition
+I have been working with many customers over the last little while that are looking at Azure VMware Solution (AVS).
+Often the idea and use case for the customer is correct. There are a few great reasons to use AVS. If you fit within the use cases, you are in for a real treat.
+Deciding whether or not you are a fit is part of the equation, there is more to this scenario.</description>
+    </item>
+    
     <item>
       <title>Importance of Networking Azure</title>
-      <link>https://cloud.fskelly.com/p/importance-of-networking-azure/</link>
+      <link>https://cloud.fskelly.com/post/2019/importance-of-networking-azure/</link>
       <pubDate>Wed, 07 Aug 2019 16:33:36 +0200</pubDate>
       
-      <guid>https://cloud.fskelly.com/p/importance-of-networking-azure/</guid>
+      <guid>https://cloud.fskelly.com/post/2019/importance-of-networking-azure/</guid>
       <description>As a start to this blog post, I think it is important to understand how I see my role as a CSA (Cloud Solution Architect) with my customer. I am primarily a trusted advisor and my customers respect what I have to say, I question and challenge my customers in a constructive way to approach the challenge or problem statement in a different way. I have an amazing role of using Azure as my LEGO playpen and then building a custom solution (LEGO model) to help my customers.</description>
     </item>
     

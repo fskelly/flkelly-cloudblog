@@ -6,16 +6,27 @@
     <description>Recent content in resource graph on Fletcher&#39;s Cloud Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Aug 2021 05:58:18 +0200</lastBuildDate><atom:link href="https://cloud.fskelly.com/tags/resource-graph/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Dec 2021 08:00:00 +0000</lastBuildDate><atom:link href="https://cloud.fskelly.com/tags/resource-graph/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure Resource Graph - More queries for Networking and Management Groups</title>
+      <link>https://cloud.fskelly.com/post/2021/2021-arg-networking-mgmt-more/</link>
+      <pubDate>Thu, 09 Dec 2021 08:00:00 +0000</pubDate>
+      
+      <guid>https://cloud.fskelly.com/post/2021/2021-arg-networking-mgmt-more/</guid>
+      <description>Just some more queries I have developed.
+Networking Don&amp;rsquo;t create unnecessarily large virtual networks (for example, /16) to ensure that IP address space isn&amp;rsquo;t wasted.
+resources | where type == &amp;#34;microsoft.network/virtualnetworks&amp;#34; | extend addressSpace = todynamic(properties.addressSpace) | extend addressPrefix = todynamic(properties.addressSpace.addressPrefixes) | mvexpand addressSpace | mvexpand addressPrefix | extend addressMask = split(addressPrefix,&amp;#39;/&amp;#39;)[1] | where addressMask &amp;lt;= 16 Smallest recommended size for a GatewaySubnet is /27
+When you are planning your gateway subnet size, refer to the documentation for the configuration that you are planning to create.</description>
+    </item>
+    
     <item>
       <title>Azure Resource Group Enterprise Scale Landing Zone queries</title>
-      <link>https://cloud.fskelly.com/p/azure-resource-group-enterprise-scale-landing-zone-queries/</link>
+      <link>https://cloud.fskelly.com/post/2021/arg-mg-query-quick-post/</link>
       <pubDate>Wed, 25 Aug 2021 05:58:18 +0200</pubDate>
       
-      <guid>https://cloud.fskelly.com/p/azure-resource-group-enterprise-scale-landing-zone-queries/</guid>
+      <guid>https://cloud.fskelly.com/post/2021/arg-mg-query-quick-post/</guid>
       <description>Azure Resource Graph Examples This is just a quick post. I am slowly working on building a collection of Resource Graph Queries - they can be found here and will grow over time. It just takes some time to build these.
 They will be broken down into a folder structure based upon the Critical Design Areas of Enterprise Scale Landing Zone
-folderStructure
 Hope this helps and keep an eye out for more.</description>
     </item>
     

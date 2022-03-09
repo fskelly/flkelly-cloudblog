@@ -3,8 +3,8 @@
     <title> Fletcher Kelly | Azure Rest Api Postman Basics </title>
 
     
-    <meta charset="utf-8"><meta name="generator" content="Hugo 0.88.1" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-    <meta name="description" content="Just a simple cloud tinkerer&#39;s ideas and findings based on his experience as a CSA and an FTA Engineer. More on &#39;About Me&#39; Page">
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.92.1" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="Just a simple cloud tinkerer">
     
     <link rel="stylesheet"
           href="https://cloud.fskelly.com/css/style.min.cf1a79e57110a79f2495dd1b2ddd6917f99cd654f5a180c165921094a29f6b6a.css"
@@ -59,7 +59,7 @@
     
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Azure Rest Api Postman Basics"/>
-<meta name="twitter:description" content="Absolute basics with Azure and PostMan Getting started Many of the articles I have found online with regards to the Azure REST API assume a fair level of familiarity with Azure which can be a good and bad thing. You see the Azure Portal makes interacting with the Azure REST API very easy as a lot of the &ldquo;prerequisite&rdquo; work is done in the portal as part of the process. For this blog post we will work on something quite basic, &ldquo;Create a Virtual Machine&rdquo;."/>
+<meta name="twitter:description" content="Using Postman with the Azure REST API"/>
 
 </head>
 <body><div class="sidebar animated fadeInDown ">
@@ -68,7 +68,7 @@
             <img src="https://cloud.fskelly.com/images/profilePic1.jpg" alt="profile picture">
             <h3 title=""><a href="/">I&#39;m Fletcher Kelly</a></h3>
             <div class="description">
-                <p>Just a simple cloud tinkerer&#39;s ideas and findings based on his experience as a CSA and an FTA Engineer. More on &#39;About Me&#39; Page</p>
+                <p>Just a simple cloud tinkerer</p>
             </div>
         </div>
     </div>
@@ -94,7 +94,7 @@
         
     </ul>
     <div class="footer">
-        <div class="by_farbox">&copy; Fletcher Kelly  2021 </div>
+        <div class="by_farbox">&copy; Fletcher Kelly  2022 </div>
     </div>
 </div>
 <div class="main">
@@ -106,6 +106,24 @@
     </a>
     <ul class="nav" id="navMenu">
         
+        
+            
+            <li><a 
+                   href="/page/about/"
+                        
+                   title="About">About</a></li>
+        
+            
+            <li><a 
+                   href="/page/archives/"
+                        
+                   title="Archives">Archives</a></li>
+        
+            
+            <li><a 
+                   href="/page/search/"
+                        
+                   title="Search">Search</a></li>
         
             
             <li><a 
@@ -123,7 +141,7 @@
             <li><a 
                    href="/about/"
                         
-                   title="">About Me</a></li>
+                   title="">About</a></li>
         
             
             <li><a 
@@ -162,7 +180,7 @@
 <h2 id="getting-started">Getting started</h2>
 <p>Many of the articles I have found online with regards to the <a href="https://docs.microsoft.com/en-us/rest/api/azure/">Azure REST API</a> assume a fair level of familiarity with <a href="https://azure.microsoft.com/en-us/">Azure</a> which can be a good and bad thing. You see the <a href="https://portal.azure.com">Azure Portal</a> makes interacting with the Azure REST API very easy as a lot of the &ldquo;prerequisite&rdquo; work is done in the portal as part of the process. For this blog post we will work on something quite basic, &ldquo;<a href="https://portal.azure.com/#create/Microsoft.VirtualMachine">Create a Virtual Machine</a>&rdquo;.</p>
 <p><a href="https://twitter.com/jongallant">Jon Gallant</a> has some great content around this and I did use some content from <a href="https://blog.jongallant.com/2021/02/azure-rest-apis-postman-2021/">here</a>, thank you <a href="https://twitter.com/jongallant">Jon Gallant</a>.</p>
-<p>Within the Azure Portal this is very easy and only requires a few clicks, however under the hood, in order for the Azure REST API to work, there is a lot more going on. Lets dive in :)</p>
+<p>Within the Azure Portal this is very easy and only requires a few clicks, however under the hood, in order for the Azure REST API to work, there is a lot more going on. Lets dive in :smile:</p>
 <h3 id="api-order">API Order</h3>
 <ol>
 <li>Have a <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal">Resource Group</a> available or create one.</li>

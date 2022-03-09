@@ -6,11 +6,29 @@
     <description>Recent content in Tags on Fletcher&#39;s Cloud Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Aug 2021 05:58:18 +0200</lastBuildDate><atom:link href="https://cloud.fskelly.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Mar 2022 16:06:00 +0000</lastBuildDate><atom:link href="https://cloud.fskelly.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AVS</title>
+      <link>https://cloud.fskelly.com/tags/avs/</link>
+      <pubDate>Wed, 09 Mar 2022 16:06:00 +0000</pubDate>
+      
+      <guid>https://cloud.fskelly.com/tags/avs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Networking</title>
+      <link>https://cloud.fskelly.com/tags/networking/</link>
+      <pubDate>Wed, 09 Mar 2022 16:06:00 +0000</pubDate>
+      
+      <guid>https://cloud.fskelly.com/tags/networking/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>azure</title>
       <link>https://cloud.fskelly.com/tags/azure/</link>
-      <pubDate>Wed, 25 Aug 2021 05:58:18 +0200</pubDate>
+      <pubDate>Thu, 09 Dec 2021 08:00:00 +0000</pubDate>
       
       <guid>https://cloud.fskelly.com/tags/azure/</guid>
       <description></description>
@@ -19,9 +37,27 @@
     <item>
       <title>blog</title>
       <link>https://cloud.fskelly.com/tags/blog/</link>
-      <pubDate>Wed, 25 Aug 2021 05:58:18 +0200</pubDate>
+      <pubDate>Thu, 09 Dec 2021 08:00:00 +0000</pubDate>
       
       <guid>https://cloud.fskelly.com/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ESLZ</title>
+      <link>https://cloud.fskelly.com/tags/eslz/</link>
+      <pubDate>Thu, 09 Dec 2021 08:00:00 +0000</pubDate>
+      
+      <guid>https://cloud.fskelly.com/tags/eslz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>resource graph</title>
+      <link>https://cloud.fskelly.com/tags/resource-graph/</link>
+      <pubDate>Thu, 09 Dec 2021 08:00:00 +0000</pubDate>
+      
+      <guid>https://cloud.fskelly.com/tags/resource-graph/</guid>
       <description></description>
     </item>
     
@@ -31,15 +67,6 @@
       <pubDate>Wed, 25 Aug 2021 05:58:18 +0200</pubDate>
       
       <guid>https://cloud.fskelly.com/tags/quick-post/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>resource graph</title>
-      <link>https://cloud.fskelly.com/tags/resource-graph/</link>
-      <pubDate>Wed, 25 Aug 2021 05:58:18 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/resource-graph/</guid>
       <description></description>
     </item>
     
@@ -121,15 +148,6 @@
       <pubDate>Wed, 07 Aug 2019 16:33:36 +0200</pubDate>
       
       <guid>https://cloud.fskelly.com/tags/csa/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Networking</title>
-      <link>https://cloud.fskelly.com/tags/networking/</link>
-      <pubDate>Wed, 07 Aug 2019 16:33:36 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/networking/</guid>
       <description></description>
     </item>
     

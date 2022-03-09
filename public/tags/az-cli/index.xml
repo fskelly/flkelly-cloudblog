@@ -9,10 +9,10 @@
     <lastBuildDate>Wed, 05 May 2021 07:03:02 +0200</lastBuildDate><atom:link href="https://cloud.fskelly.com/tags/az-cli/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cli List Locations and Peers</title>
-      <link>https://cloud.fskelly.com/p/cli-list-locations-and-peers/</link>
+      <link>https://cloud.fskelly.com/post/2021/cli-list-locations-and-peers/</link>
       <pubDate>Wed, 05 May 2021 07:03:02 +0200</pubDate>
       
-      <guid>https://cloud.fskelly.com/p/cli-list-locations-and-peers/</guid>
+      <guid>https://cloud.fskelly.com/post/2021/cli-list-locations-and-peers/</guid>
       <description>How to use the Azure CLI to list Azure Locations and their peers So this will be a &amp;ldquo;quick post&amp;rdquo; that shows some great functionality within the Azure CLI with az account list-locations. With this command you can expect some output like below, you actually get a lot of content back.
 { &amp;#34;displayName&amp;#34;: &amp;#34;Brazil Southeast&amp;#34;, &amp;#34;id&amp;#34;: &amp;#34;/subscriptions/949ef534-07f5-4138-8b79-aae16a71310c/locations/brazilsoutheast&amp;#34;, &amp;#34;metadata&amp;#34;: { &amp;#34;geographyGroup&amp;#34;: &amp;#34;South America&amp;#34;, &amp;#34;latitude&amp;#34;: &amp;#34;-22.90278&amp;#34;, &amp;#34;longitude&amp;#34;: &amp;#34;-43.2075&amp;#34;, &amp;#34;pairedRegion&amp;#34;: [ { &amp;#34;id&amp;#34;: &amp;#34;/subscriptions/949ef534-07f5-4138-8b79-aae16a71310c/locations/brazilsouth&amp;#34;, &amp;#34;name&amp;#34;: &amp;#34;brazilsouth&amp;#34;, &amp;#34;subscriptionId&amp;#34;: null } ], &amp;#34;physicalLocation&amp;#34;: &amp;#34;Rio&amp;#34;, &amp;#34;regionCategory&amp;#34;: &amp;#34;Other&amp;#34;, &amp;#34;regionType&amp;#34;: &amp;#34;Physical&amp;#34; }, &amp;#34;name&amp;#34;: &amp;#34;brazilsoutheast&amp;#34;, &amp;#34;regionalDisplayName&amp;#34;: &amp;#34;(South America) Brazil Southeast&amp;#34;, &amp;#34;subscriptionId&amp;#34;: null } If you look at some of the examples, you will also see some &amp;ldquo;logical&amp;rdquo; locations, example below, there is a way of adding a query to remove these to display only &amp;ldquo;physical&amp;rdquo; locations.</description>
     </item>

@@ -9,11 +9,11 @@
     <lastBuildDate>Fri, 02 Jul 2021 05:40:16 +0200</lastBuildDate><atom:link href="https://cloud.fskelly.com/categories/iac/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bicep Troubleshooting</title>
-      <link>https://cloud.fskelly.com/p/bicep-troubleshooting/</link>
+      <link>https://cloud.fskelly.com/post/2021/bicep-troubleshooting/</link>
       <pubDate>Fri, 02 Jul 2021 05:40:16 +0200</pubDate>
       
-      <guid>https://cloud.fskelly.com/p/bicep-troubleshooting/</guid>
-      <description>Some basic &amp;ldquo;troubleshooting&amp;rdquo; with Azure Bicep So, let me start with this. The team and the community behind Azure Bicep are amazing. There are some great examples here. I often use these as a base and the rip apart or add to meet my needs, you do NOT need to start from ground zero. 😄
+      <guid>https://cloud.fskelly.com/post/2021/bicep-troubleshooting/</guid>
+      <description>Some basic &amp;ldquo;troubleshooting&amp;rdquo; with Azure Bicep So, let me start with this. The team and the community behind Azure Bicep are amazing. There are some great examples here. I often use these as a base and the rip apart or add to meet my needs, you do NOT need to start from ground zero. :smile:
 When you are deploying bicep templates you command will look something like this.
 $bicepFile = &amp;#34;.</description>
     </item>
