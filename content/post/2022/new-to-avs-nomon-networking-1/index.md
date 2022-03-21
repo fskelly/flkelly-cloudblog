@@ -10,7 +10,10 @@ Categories: [
     Azure VMware Solution
 ]
 DisableComments: false
+Author: "Fletcher Kelly"
 ---
+
+Author: [Fletcher Kelly](http://localhost:1313/page/fletcherkelly/)  
 
 **What else do I need to know when using Azure VMware Solution (AVS)?**
 

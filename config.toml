@@ -55,23 +55,24 @@ url = "mailto:fletcher_kelly@outlook.com"
   [[menu.main]]
   name = "Home"
   identifier = "home"
-  weight = 100
+  weight = -100
   url = "/"
 
   [[menu.main]]
   name = "Posts"
-  weight = 200
+  weight = -90
   identifier = "posts"
   url = "/post/"
 
-  [[menu.main]]
-  name = "About"
-  weight = 300
-  identifier = "about"
-  url = "/about/"
+#  [[menu.main]]
+#  name = "About"
+#  weight = 600
+#  identifier = "about"
+#  url = "/about/"
 
   [[menu.main]]
   name = "Tags"
   weight = 500
   identifier = "tag"
   url = "/tags/"
+
