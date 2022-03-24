@@ -11,9 +11,8 @@ Categories: [
 DisableComments: false
 ---
 
-**Guest Post**   
+**Guest Post**
 Author: [Robin Heringa](http://localhost:1313/page/robinheringa/)  
-
 
 **What else do I need to know when using Azure VMware Solution (AVS)?**
 

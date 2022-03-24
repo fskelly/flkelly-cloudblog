@@ -13,19 +13,10 @@ menu:
             icon: user
 ---
 
-## Who Am I? Robin
+## Robin Heringa
 
-I am a Microsoft Employee, working within Azure Engineering as a FastTrack For Azure (FTA) Engineer, focusing primarily on Infra and working with customers across the globe with their respective journeys to the cloud. I was previously a Cloud Solutions Architect (CSA) for Microsoft as well. I was in the Microsoft Partner space for many years before that.
+![Robin Heringa](/images/robinHeringa.png)
 
-## What is FastTrack For Azure?
+Robin Heringa is an engineer in the FastTrack for Azure team at Microsoft working directly with customers on Azure Infrastructure projects. Robin is passionate about all Azure infrastructure technologies with a focus on Azure Management & Security and Azure VMware Solution.
 
-FastTrack for Azure is a technical enablement program for organizations with cloud projects that enables the rapid, effective design, and deployment of Azure solutions in the cloud. It includes tailored guidance from Azure engineers that leverages proven practices and architectural guides.
-
-[More information about FTA](https://www.microsoft.com/azure/partners/fasttrack-for-azure)
-
-### My Blog
-
-This is just my personal blog of Azure Code and Azure Experiences. I use mainly [PowerShell](https://docs.microsoft.com/en-us/powershell/azure/overview?view=azps-1.4.0). I have other repos focused on other scripting languages like
-[az cli](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest), [Terrafrom](https://www.terraform.io) and [REST API](https://docs.microsoft.com/en-us/rest/api/azure/) calls. I am constatly testing, changing or adding contnet, I try to get the code/samples as accurate as possible. </br>
-
-**All round geek; Azure Cloud Advocate; PowerShell Geek; Bash Junkee; FastTrack for Azure; Microsoft South Africa Employee; Tinkerer - arduino, ESP, VSCode, RPI automatetheworld**
+Robin has been with Microsoft for almost 15 years and working on IT Data Center & Cloud projects for 24 years.

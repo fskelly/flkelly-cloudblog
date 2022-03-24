@@ -12,11 +12,13 @@ pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
 
 [params]
-title = "I'm Fletcher Kelly"
+#title = "I'm Fletcher Kelly"
+title = "Fletcher's Cloud Journey"
 author = "Fletcher Kelly"
 #copyright = "2020-2021"
 description = "Just a simple cloud tinkerer"
-profilePicture = "images/profilePic1.jpg"
+# profilePicture = "images/profilePic1.jpg"
+profilePicture = "images/cloud-gd3eff23c2_640.jpg"
 keywords = ""
 favicon = "favicons/"
 # example ["css/custom.css"]

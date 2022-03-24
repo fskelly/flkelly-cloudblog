@@ -6,18 +6,30 @@
     <description>Recent content in Posts on Fletcher&#39;s Cloud Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 09 Mar 2022 16:06:00 +0000</lastBuildDate><atom:link href="https://cloud.fskelly.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Mar 2022 16:06:00 +0000</lastBuildDate><atom:link href="https://cloud.fskelly.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure VMware Solution: To &#39;Internet Enabled&#39; or not?</title>
+      <link>https://cloud.fskelly.com/post/2022/avs-to-internet-able-or-not/</link>
+      <pubDate>Thu, 17 Mar 2022 16:06:00 +0000</pubDate>
+      
+      <guid>https://cloud.fskelly.com/post/2022/avs-to-internet-able-or-not/</guid>
+      <description>Guest Post Author: Robin Heringa
+What else do I need to know when using Azure VMware Solution (AVS)?
+As you all (probably) know by now Azure VMware Solution is a managed service offered by Microsoft providing a managed VMware vSphere environment to customers. With this offering customers no longer need to worry about hardware maintenance, hardware refresh and software maintenance for the core VMware components (ESXi, vCenter and NSX-T).
+By default, after initial deployment of Azure VMware Solution, virtual machines do not have the ability to egress to the Internet.</description>
+    </item>
+    
     <item>
       <title>I want to use Azure VMware Solution, what should I know about networking?</title>
       <link>https://cloud.fskelly.com/post/2022/new-to-avs-nomon-networking-1/</link>
       <pubDate>Wed, 09 Mar 2022 16:06:00 +0000</pubDate>
       
       <guid>https://cloud.fskelly.com/post/2022/new-to-avs-nomon-networking-1/</guid>
-      <description>What else do I need to know when using Azure VMware Solution (AVS)?
+      <description>Author: Fletcher Kelly
+What else do I need to know when using Azure VMware Solution (AVS)?
 Networking Edition
 I have been working with many customers over the last little while that are looking at Azure VMware Solution (AVS).
-Often the idea and use case for the customer is correct. There are a few great reasons to use AVS. If you fit within the use cases, you are in for a real treat.
-Deciding whether or not you are a fit is part of the equation, there is more to this scenario.</description>
+Often the idea and use case for the customer is correct. There are a few great reasons to use AVS. If you fit within the use cases, you are in for a real treat.</description>
     </item>
     
     <item>
