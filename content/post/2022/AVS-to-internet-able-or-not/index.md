@@ -12,7 +12,7 @@ DisableComments: false
 ---
 
 **Guest Post**
-Author: [Robin Heringa](http://localhost:1313/page/robinheringa/)  
+Author: [Robin Heringa](/page/robinheringa/)  
 
 **What else do I need to know when using Azure VMware Solution (AVS)?**
 
