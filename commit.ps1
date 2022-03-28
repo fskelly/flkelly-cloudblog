@@ -5,8 +5,6 @@ remove-item -Path .\public\ -Recurse
 
 write-output "creating public content with HUGO"
 
-## TODO need to be more precise about hugo version
-
 Hugo 
 
 write-output "checking for public folder"
