@@ -14,7 +14,10 @@ draft: true
 
 ## How do I connect my on-premises environment to AVS in a quick and simple way?
 
-There are a few patterns available for connecting [Azure VMware Solution][Azure VMware Solution] to your on-premises network. There is specific guidance for PRODUCTION deployments here [here](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/eslz-network-topology-connectivity). The option we are talking about here is for a different use case. A POC type environment or smaller environments for testing with a plan to grow after the fact.  
+There are a few patterns available for connecting [Azure VMware Solution][Azure VMware Solution] to your on-premises network. There is specific guidance for PRODUCTION deployments here [here](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/eslz-network-topology-connectivity). The option we are talking about here is for a different use case.
+
+**Specific use case:** A _**PoC (Proof of Concept)**_ type environment or smaller environments for testing with a plan to grow after the fact.  
+
 Azure Virtual WAN is one of the easy ways to get this accomplished. Below, we are going to work through an example.
 
 ## What are we going to deploy?
@@ -39,7 +42,7 @@ param deployS2SConnection bool = true
 param deployExRConnection bool = true
 ```
 
-Bicep code can be found [here](https://github.com/fskelly/flkelly-AzureCode-bicep/tree/main/examples/virtualWan/AVS/module-example).
+💪 Bicep code can be found [here](https://github.com/fskelly/flkelly-AzureCode-bicep/tree/main/examples/virtualWan/AVS/module-example).
 
 What to expect when deploying?
 
