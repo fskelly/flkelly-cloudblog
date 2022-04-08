@@ -12,21 +12,23 @@ DisableComments: false
 draft: true
 ---
 
-**These files are NOT production ready, they used to explain concepts and better prepare you for production.**
-
-Azure Virtual WAN is one of the easy ways to get this accomplished. Below, we are going to work through an example.
-
 ## How do I connect my on-premises environment to AVS in a quick and simple way?
+
+There are a few patterns available for connecting [Azure VMware Solution][Azure VMware Solution] to your on-premises network. There is specific guidance for PRODUCTION deployments here [here](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/eslz-network-topology-connectivity). The option we are talking about here is for a different use case. A POC type environment or smaller environments for testing with a plan to grow after the fact.  
+Azure Virtual WAN is one of the easy ways to get this accomplished. Below, we are going to work through an example.
 
 ## What are we going to deploy?
 
+{{< figure src="/images/blogImages/2022/vwan-avs-poc/topology.jpg" alt="deployed vwan topology" height="300" width="900" >}}
+
 We are going to use [Azure Virtual WAN][Azure Virtual WAN] to allow for a connection from on-premises to [Azure VMware Solution][Azure VMware Solution].
 
-I use this [link](https://mecdata.it/en/2020/06/configure-a-point-to-site-vpn-connection-via-openvpn/) as a base for building the certificates (self-signed) for the Point-To-Site connections, if you choose to deploy this. I have this as modular as possible with [booleans](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-functions-logical#bool) in [Bicep](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview?tabs=bicep) to make this is as customizable as possible for you.
+I have this as modular as possible with [booleans](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-functions-logical#bool) in [Bicep](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview?tabs=bicep) to make this is as customizable as possible for you.
 
 > **A VPN Gateway will be deployed.**
 
 ```bicep
+@description('Specifies whether or not to deploy the site to site connection.')
 param deployS2SConnection bool = true
 ```
 
@@ -37,7 +39,7 @@ param deployS2SConnection bool = true
 param deployExRConnection bool = true
 ```
 
-GitHub code can be found [here](https://github.com/fskelly/flkelly-AzureCode-bicep/tree/main/examples/virtualWan/AVS/module-example) - will work to keep this updated.
+Bicep code can be found [here](https://github.com/fskelly/flkelly-AzureCode-bicep/tree/main/examples/virtualWan/AVS/module-example).
 
 What to expect when deploying?
 
@@ -53,6 +55,11 @@ This deployment is based upon this [Configure a site-to-site VPN in vWAN for Azu
 {{< figure src="/images/blogImages/2022/vwan-avs-poc/topology.jpg" alt="deployed vwan topology" height="300" width="900" >}}
 
 This solution then allow you connect your on-premises environment to connect to [Azure VMware Solution][Azure VMware Solution]. This is probably one of the easiest ways to connect to [Azure VMware Solution][Azure VMware Solution]
+
+[Azure Virtual WAN][Azure Virtual WAN] can be further extended to ALSO include Point-to-Site connections - [This](https://mecdata.it/en/2020/06/configure-a-point-to-site-vpn-connection-via-openvpn/) is a good starting point for building the certificates (self-signed) for the Point-To-Site connections, if you choose to deploy this.
+
+***DISCLAIMER:***
+**These files are NOT production ready, they used to explain concepts and better prepare you for production.**
 
 [Azure VMware Solution]: https://docs.microsoft.com/en-us/azure/azure-vmware/introduction
 [Azure Virtual WAN]: https://docs.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about
