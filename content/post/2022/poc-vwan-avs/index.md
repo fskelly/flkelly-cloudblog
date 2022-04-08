@@ -9,7 +9,7 @@ Categories: [
     Azure VMware Solution
 ]
 DisableComments: false
-draft: true
+draft: false
 ---
 
 ## How do I connect my on-premises environment to AVS in a quick and simple way?
