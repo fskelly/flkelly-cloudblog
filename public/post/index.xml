@@ -46,10 +46,10 @@ When you are planning your gateway subnet size, refer to the documentation for t
     
     <item>
       <title>Azure Resource Group Enterprise Scale Landing Zone queries</title>
-      <link>https://cloud.fskelly.com/post/2021/arg-mg-query-quick-post/</link>
+      <link>https://cloud.fskelly.com/post/2021/arg-mg--query-quick-post/</link>
       <pubDate>Wed, 25 Aug 2021 05:58:18 +0200</pubDate>
       
-      <guid>https://cloud.fskelly.com/post/2021/arg-mg-query-quick-post/</guid>
+      <guid>https://cloud.fskelly.com/post/2021/arg-mg--query-quick-post/</guid>
       <description>Azure Resource Graph Examples This is just a quick post. I am slowly working on building a collection of Resource Graph Queries - they can be found here and will grow over time. It just takes some time to build these.
 They will be broken down into a folder structure based upon the Critical Design Areas of Enterprise Scale Landing Zone
 Hope this helps and keep an eye out for more.</description>
