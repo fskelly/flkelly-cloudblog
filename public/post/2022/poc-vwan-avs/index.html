@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" data-theme=""><head>
+    <title> Fletcher Kelly | Using Azure Virtual WAN to connect to Azure VMware Solution </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.96.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="Just a simple cloud tinkerer">
+    
+    <link rel="stylesheet"
+          href="https://cloud.fskelly.com/css/style.min.cf1a79e57110a79f2495dd1b2ddd6917f99cd654f5a180c165921094a29f6b6a.css"
+          integrity="sha256-zxp55XEQp58kld0bLd1pF/mc1lT1oYDBZZIQlKKfa2o="
+          crossorigin="anonymous"
+          type="text/css">
+    
+    <link rel="stylesheet"
+        href="https://cloud.fskelly.com/css/markupHighlight.min.8735c129318a1c824d066fc2cd1e3911054460819c296ac99007aeb5044b6605.css"
+        integrity="sha256-hzXBKTGKHIJNBm/CzR45EQVEYIGcKWrJkAeutQRLZgU="
+        crossorigin="anonymous"
+        type="text/css">
+    
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+
+    
+    <link rel="shortcut icon" href="https://cloud.fskelly.com/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cloud.fskelly.com/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cloud.fskelly.com/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cloud.fskelly.com/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="https://cloud.fskelly.com/post/2022/poc-vwan-avs/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="https://cloud.fskelly.com/js/anatole-header.min.df804b63b5bd8474ea0756ea874bc8f1e92552708cc6ea43aa0d76981dc419f9.js"
+            integrity="sha256-34BLY7W9hHTqB1bqh0vI8eklUnCMxupDqg12mB3EGfk="
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        var sdkInstance="appInsightsSDK";window[sdkInstance]="appInsights";var aiName=window[sdkInstance],aisdk=window[aiName]||function(e){function n(e){t[e]=function(){var n=arguments;t.queue.push(function(){t[e].apply(t,n)})}}var t={config:e};t.initialize=!0;var i=document,a=window;setTimeout(function(){var n=i.createElement("script");n.src=e.url||"https://az416426.vo.msecnd.net/scripts/b/ai.2.min.js",i.getElementsByTagName("script")[0].parentNode.appendChild(n)});try{t.cookie=i.cookie}catch(e){}t.queue=[],t.version=2;for(var r=["Event","PageView","Exception","Trace","DependencyData","Metric","PageViewPerformance"];r.length;)n("track"+r.pop());n("startTrackPage"),n("stopTrackPage");var s="Track"+r[0];if(n("start"+s),n("stop"+s),n("setAuthenticatedUserContext"),n("clearAuthenticatedUserContext"),n("flush"),!(!0===e.disableExceptionTracking||e.extensionConfig&&e.extensionConfig.ApplicationInsightsAnalytics&&!0===e.extensionConfig.ApplicationInsightsAnalytics.disableExceptionTracking)){n("_"+(r="onerror"));var o=a[r];a[r]=function(e,n,i,a,s){var c=o&&o(e,n,i,a,s);return!0!==c&&t["_"+r]({message:e,url:n,lineNumber:i,columnNumber:a,error:s}),c},e.autoExceptionInstrumented=!0}return t}(
+        {
+            instrumentationKey:"86b46f86-3e13-4c32-95bc-3122160559a7"
+        }
+        );window[aiName]=aisdk,aisdk.queue&&0===aisdk.queue.length&&aisdk.trackPageView({});
+    </script>
+
+
+    
+        
+        
+        <script type="text/javascript"
+                src="https://cloud.fskelly.com/js/anatole-theme-switcher.min.a24f17867918b60673a30992fad4d21ce963db1e0e71fe747e15de138f5cac11.js"
+                integrity="sha256-ok8XhnkYtgZzowmS&#43;tTSHOlj2x4Ocf50fhXeE49crBE="
+                crossorigin="anonymous"></script>
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Using Azure Virtual WAN to connect to Azure VMware Solution"/>
+<meta name="twitter:description" content="How do I connect my on-premises environment to AVS in a quick and simple way? There are a few patterns available for connecting Azure VMware Solution to your on-premises network. There is specific guidance for PRODUCTION deployments here here. The option we are talking about here is for a different use case.
+Specific use case: A PoC (Proof of Concept) type environment or smaller environments for testing with a plan to grow after the fact."/>
+
+</head>
+<body><div class="sidebar animated fadeInDown ">
+    <div class="logo-title">
+        <div class="title">
+            <img src="https://cloud.fskelly.com/images/cloud-gd3eff23c2_640.jpg" alt="profile picture">
+            <h3 title=""><a href="/">Fletcher&#39;s Cloud Journey</a></h3>
+            <div class="description">
+                <p>Just a simple cloud tinkerer</p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://www.linkedin.com/in/fletcherkelly/" rel="me" aria-label="Linkedin">
+                    <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://github.com/fskelly/" rel="me" aria-label="GitHub">
+                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="mailto:fletcher_kelly@outlook.com" rel="me" aria-label="e-mail">
+                    <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; Fletcher Kelly  2022 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top  animated fadeInDown ">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+            
+            <li><a 
+                   href="/"
+                        
+                   title="">Home</a></li>
+        
+            
+            <li><a 
+                   href="/post/"
+                        
+                   title="">Posts</a></li>
+        
+            
+            <li><a 
+                   href="/page/archives/"
+                        
+                   title="Archives">Archives</a></li>
+        
+            
+            <li><a 
+                   href="/page/search/"
+                        
+                   title="Search">Search</a></li>
+        
+            
+            <li><a 
+                   href="/page/about/"
+                        
+                   title="About Blog">About Blog</a></li>
+        
+            
+            <li><a 
+                   href="/page/fletcherkelly/"
+                        
+                   title="About Fletcher Kelly">About Fletcher Kelly</a></li>
+        
+            
+            <li><a 
+                   href="/page/robinheringa/"
+                        
+                   title="About Robin Heringa">About Robin Heringa</a></li>
+        
+            
+            <li><a 
+                   href="/tags/"
+                        
+                   title="">Tags</a></li>
+        
+        
+        
+            <li class="theme-switch-item">
+                <a class="theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post  animated fadeInDown ">
+        <div class="post-content">
+            <div class="post-title">
+                <h3>Using Azure Virtual WAN to connect to Azure VMware Solution</h3>
+                
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date">Mon, Mar 28, 2022</span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time">2-minute read</span>
+                    </div>
+                
+            </div>
+
+            <h2 id="how-do-i-connect-my-on-premises-environment-to-avs-in-a-quick-and-simple-way">How do I connect my on-premises environment to AVS in a quick and simple way?</h2>
+<p>There are a few patterns available for connecting <a href="https://docs.microsoft.com/en-us/azure/azure-vmware/introduction">Azure VMware Solution</a> to your on-premises network. There is specific guidance for PRODUCTION deployments here <a href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/eslz-network-topology-connectivity">here</a>. The option we are talking about here is for a different use case.</p>
+<p><strong>Specific use case:</strong> A <em><strong>PoC (Proof of Concept)</strong></em> type environment or smaller environments for testing with a plan to grow after the fact.</p>
+<p>Azure Virtual WAN is one of the easy ways to get this accomplished. Below, we are going to work through an example.</p>
+<h2 id="what-are-we-going-to-deploy">What are we going to deploy?</h2>
+<figure><img src="/images/blogImages/2022/vwan-avs-poc/topology.jpg"
+         alt="deployed vwan topology" width="900" height="300"/>
+</figure>
+
+<p>We are going to use <a href="https://docs.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about">Azure Virtual WAN</a> to allow for a connection from on-premises to <a href="https://docs.microsoft.com/en-us/azure/azure-vmware/introduction">Azure VMware Solution</a>.</p>
+<p>I have this as modular as possible with <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/bicep-functions-logical#bool">booleans</a> in <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview?tabs=bicep">Bicep</a> to make this is as customizable as possible for you.</p>
+<blockquote>
+<p><strong>A VPN Gateway will be deployed.</strong></p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bicep" data-lang="bicep"><span class="line"><span class="cl"><span class="p">@</span><span class="nd">description</span><span class="p">(</span><span class="s">&#39;Specifies whether or not to deploy the site to site connection.&#39;</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">param</span><span class="w"> </span>deployS2SConnection<span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="p">=</span><span class="w"> </span>true<span class="w">
+</span></span></span></code></pre></div><blockquote>
+<p><strong>An ExpressRoute Gateway will be deployed.</strong></p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bicep" data-lang="bicep"><span class="line"><span class="cl"><span class="p">@</span><span class="nd">description</span><span class="p">(</span><span class="s">&#39;Specifies whether or not to deploy ExR connection.&#39;</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">param</span><span class="w"> </span>deployExRConnection<span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="p">=</span><span class="w"> </span>true<span class="w">
+</span></span></span></code></pre></div><p>💪 Bicep code can be found <a href="https://github.com/fskelly/flkelly-AzureCode-bicep/tree/main/examples/virtualWan/AVS/module-example">here</a>.</p>
+<p>What to expect when deploying?</p>
+<ol>
+<li>You will get an ExpressRoute gateway. I set this as a &ldquo;true&rdquo; boolean value to cater for this.</li>
+<li>The deployment will happen over 2 resource groups - if deploying the &ldquo;vnetconnection&rdquo; option.  <figure><img src="/images/blogImages/2022/vwan-avs-poc/2resourcegoups.jpg"
+         alt="deployment screenshot showing the 2 deployed resource groups"/>
+</figure>
+</li>
+<li>It will look like nothing is happening in the Virtual WAN resource group. Show hidden items here.  <figure><img src="/images/blogImages/2022/vwan-avs-poc/showHiddenTypes.jpg"
+         alt="deployment screenshot showing hidden items checked"/>
+</figure>
+</li>
+<li>The deployment, if choosing anything Gateway related (VPN Gateway or ExpressRoute gateway) will take some time - up to 35 minutes.  <figure><img src="/images/blogImages/2022/vwan-avs-poc/vHubDeploy.jpg"
+         alt="deployment screenshot showing times"/>
+</figure>
+</li>
+<li>The deployment will deploy a VPN Gateway (on-premises to Azure)</li>
+<li>The deployment will deploy a ExR Gateway (Azure to AVS)</li>
+</ol>
+<p>This deployment is based upon this <a href="https://docs.microsoft.com/en-us/azure/azure-vmware/configure-site-to-site-vpn-gateway">Configure a site-to-site VPN in vWAN for Azure VMware Solution</a>. Whilst I like this article, it is not 100% complete. For the <a href="https://docs.microsoft.com/en-us/azure/azure-vmware/introduction">Azure VMware Solution</a> (AVS) to work fully, an <a href="https://docs.microsoft.com/en-us/azure/virtual-wan/virtual-wan-expressroute-portal">ExpressRoute Gateway for Azure Virtual WAN</a> is needed. I prefer an IaC approach as the <a href="https://portal.azure.com">Azure Portal</a> UI can change and I like repeatable processes.</p>
+<figure><img src="/images/blogImages/2022/vwan-avs-poc/topology.jpg"
+         alt="deployed vwan topology" width="900" height="300"/>
+</figure>
+
+<p>This solution then allow you connect your on-premises environment to connect to <a href="https://docs.microsoft.com/en-us/azure/azure-vmware/introduction">Azure VMware Solution</a>. This is probably one of the easiest ways to connect to <a href="https://docs.microsoft.com/en-us/azure/azure-vmware/introduction">Azure VMware Solution</a></p>
+<p><a href="https://docs.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about">Azure Virtual WAN</a> can be further extended to ALSO include Point-to-Site connections - <a href="https://mecdata.it/en/2020/06/configure-a-point-to-site-vpn-connection-via-openvpn/">This</a> is a good starting point for building the certificates (self-signed) for the Point-To-Site connections, if you choose to deploy this.</p>
+<p><em><strong>DISCLAIMER:</strong></em>
+<strong>These files are NOT production ready, they used to explain concepts and better prepare you for production.</strong></p>
+</div>
+        <div class="post-footer">
+            <div class="info">
+                <span class="separator"><a class="category" href="/categories/azure-vmware-solution/">Azure VMware Solution</a></span>
+
+                <span class="separator"><a class="tag" href="/tags/avs/">AVS</a><a class="tag" href="/tags/networking/">Networking</a></span>
+
+            </div>
+        </div>
+
+        
+            <div id="fb_comments_container">
+                    <h2>comments</h2>
+                    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "fletchercloudblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                </div>
+        
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="https://cloud.fskelly.com/js/jquery.min.6fd215a380477adef701dd0410f3f16b9608e71d499a68f55ff78aeef44f3a6d.js"
+        integrity="sha256-b9IVo4BHet73Ad0EEPPxa5YI5x1Jmmj1X/eK7vRPOm0="
+        crossorigin="anonymous"></script>
+
+
+
+
+<script type="text/javascript"
+        src="https://cloud.fskelly.com/js/bundle.min.7b241b6ae14f204462d432ed287d4a53041eb8506f85464fbbf9fcbf83289e15.js"
+        integrity="sha256-eyQbauFPIERi1DLtKH1KUwQeuFBvhUZPu/n8v4MonhU="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript"
+        src="https://cloud.fskelly.com/js/medium-zoom.min.404e25d56ecefa87be4f21be4a6883aa550b493b32677d13d7f47762dc3537cf.js"
+        integrity="sha256-QE4l1W7O&#43;oe&#43;TyG&#43;SmiDqlULSTsyZ30T1/R3Ytw1N88="
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

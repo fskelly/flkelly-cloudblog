@@ -6,7 +6,17 @@
     <description>Recent content on Fletcher&#39;s Cloud Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Mar 2022 16:06:00 +0000</lastBuildDate><atom:link href="https://cloud.fskelly.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Mar 2022 07:27:16 +0100</lastBuildDate><atom:link href="https://cloud.fskelly.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using Azure Virtual WAN to connect to Azure VMware Solution</title>
+      <link>https://cloud.fskelly.com/post/2022/poc-vwan-avs/</link>
+      <pubDate>Mon, 28 Mar 2022 07:27:16 +0100</pubDate>
+      
+      <guid>https://cloud.fskelly.com/post/2022/poc-vwan-avs/</guid>
+      <description>How do I connect my on-premises environment to AVS in a quick and simple way? There are a few patterns available for connecting Azure VMware Solution to your on-premises network. There is specific guidance for PRODUCTION deployments here here. The option we are talking about here is for a different use case.
+Specific use case: A PoC (Proof of Concept) type environment or smaller environments for testing with a plan to grow after the fact.</description>
+    </item>
+    
     <item>
       <title>Azure VMware Solution: To &#39;Internet Enabled&#39; or not?</title>
       <link>https://cloud.fskelly.com/post/2022/avs-to-internet-able-or-not/</link>
@@ -46,10 +56,10 @@ When you are planning your gateway subnet size, refer to the documentation for t
     
     <item>
       <title>Azure Resource Group Enterprise Scale Landing Zone queries</title>
-      <link>https://cloud.fskelly.com/post/2021/arg-mg-query-quick-post/</link>
+      <link>https://cloud.fskelly.com/post/2021/arg-mg--query-quick-post/</link>
       <pubDate>Wed, 25 Aug 2021 05:58:18 +0200</pubDate>
       
-      <guid>https://cloud.fskelly.com/post/2021/arg-mg-query-quick-post/</guid>
+      <guid>https://cloud.fskelly.com/post/2021/arg-mg--query-quick-post/</guid>
       <description>Azure Resource Graph Examples This is just a quick post. I am slowly working on building a collection of Resource Graph Queries - they can be found here and will grow over time. It just takes some time to build these.
 They will be broken down into a folder structure based upon the Critical Design Areas of Enterprise Scale Landing Zone
 Hope this helps and keep an eye out for more.</description>
