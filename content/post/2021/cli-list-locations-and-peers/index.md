@@ -3,8 +3,9 @@ title: "Cli List Locations and Peers"
 date: 2021-05-05T07:03:02+02:00
 Description: ""
 Tags: ["quick post", "az cli"]
-Categories: ["command line", "Azure", "AZ CLI"]
+Categories: ["command line", "Azure"]
 DisableComments: false
+author: "Fletcher Kelly"
 ---
 # How to use the Azure CLI to list Azure Locations and their peers
 
