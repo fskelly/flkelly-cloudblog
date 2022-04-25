@@ -13,7 +13,7 @@ menu:
             icon: user
 ---
 
-{{< figure src="/images/robinHeringa.png" alt="Ronin Heringa" height="300" width="300" >}}
+{{< figure src="/images/robinHeringa.png" alt="Ronin Heringa" height="200" width="200" >}}
 
 
 <!-- image: "images/author/robin-heringa.jpg" -->
