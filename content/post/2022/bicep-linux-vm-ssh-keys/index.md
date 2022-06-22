@@ -5,7 +5,7 @@ Description: ""
 Tags: [Powershell, SSH, Bicep]
 Categories: [IaC]
 DisableComments: false
-draft: true    
+draft: false    
 ---
 
 I this post, I use bicep files for the deployment of Linux VMs AND I add some magic with PowerSehll to allow for the creation or using of existing SSH keys with these VMs.

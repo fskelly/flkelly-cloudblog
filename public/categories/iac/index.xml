@@ -6,7 +6,17 @@
     <description>Recent content in IaC on Fletcher&#39;s Cloud Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Jul 2021 05:40:16 +0200</lastBuildDate><atom:link href="https://cloud.fskelly.com/categories/iac/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Jun 2022 08:54:21 +0100</lastBuildDate><atom:link href="https://cloud.fskelly.com/categories/iac/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bicep Linux Vm Ssh Keys</title>
+      <link>https://cloud.fskelly.com/post/2022/bicep-linux-vm-ssh-keys/</link>
+      <pubDate>Mon, 20 Jun 2022 08:54:21 +0100</pubDate>
+      
+      <guid>https://cloud.fskelly.com/post/2022/bicep-linux-vm-ssh-keys/</guid>
+      <description>I this post, I use bicep files for the deployment of Linux VMs AND I add some magic with PowerSehll to allow for the creation or using of existing SSH keys with these VMs.
+I am a HUGE fan of SSH keys with Linux VMs for obvious reasons. I could just not find a script or scenario that covered this topic in a way that I actually like. I like to show more details and explain.</description>
+    </item>
+    
     <item>
       <title>Bicep Troubleshooting</title>
       <link>https://cloud.fskelly.com/post/2021/bicep-troubleshooting/</link>

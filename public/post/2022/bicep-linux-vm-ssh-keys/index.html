@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" data-theme=""><head>
+    <title> Fletcher Kelly | Bicep Linux Vm Ssh Keys </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.96.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="Just a simple cloud tinkerer">
+    
+    <link rel="stylesheet"
+          href="https://cloud.fskelly.com/css/style.min.cf1a79e57110a79f2495dd1b2ddd6917f99cd654f5a180c165921094a29f6b6a.css"
+          integrity="sha256-zxp55XEQp58kld0bLd1pF/mc1lT1oYDBZZIQlKKfa2o="
+          crossorigin="anonymous"
+          type="text/css">
+    
+    <link rel="stylesheet"
+        href="https://cloud.fskelly.com/css/markupHighlight.min.8735c129318a1c824d066fc2cd1e3911054460819c296ac99007aeb5044b6605.css"
+        integrity="sha256-hzXBKTGKHIJNBm/CzR45EQVEYIGcKWrJkAeutQRLZgU="
+        crossorigin="anonymous"
+        type="text/css">
+    
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+
+    
+    <link rel="shortcut icon" href="https://cloud.fskelly.com/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cloud.fskelly.com/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cloud.fskelly.com/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cloud.fskelly.com/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="https://cloud.fskelly.com/post/2022/bicep-linux-vm-ssh-keys/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="https://cloud.fskelly.com/js/anatole-header.min.df804b63b5bd8474ea0756ea874bc8f1e92552708cc6ea43aa0d76981dc419f9.js"
+            integrity="sha256-34BLY7W9hHTqB1bqh0vI8eklUnCMxupDqg12mB3EGfk="
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        var sdkInstance="appInsightsSDK";window[sdkInstance]="appInsights";var aiName=window[sdkInstance],aisdk=window[aiName]||function(e){function n(e){t[e]=function(){var n=arguments;t.queue.push(function(){t[e].apply(t,n)})}}var t={config:e};t.initialize=!0;var i=document,a=window;setTimeout(function(){var n=i.createElement("script");n.src=e.url||"https://az416426.vo.msecnd.net/scripts/b/ai.2.min.js",i.getElementsByTagName("script")[0].parentNode.appendChild(n)});try{t.cookie=i.cookie}catch(e){}t.queue=[],t.version=2;for(var r=["Event","PageView","Exception","Trace","DependencyData","Metric","PageViewPerformance"];r.length;)n("track"+r.pop());n("startTrackPage"),n("stopTrackPage");var s="Track"+r[0];if(n("start"+s),n("stop"+s),n("setAuthenticatedUserContext"),n("clearAuthenticatedUserContext"),n("flush"),!(!0===e.disableExceptionTracking||e.extensionConfig&&e.extensionConfig.ApplicationInsightsAnalytics&&!0===e.extensionConfig.ApplicationInsightsAnalytics.disableExceptionTracking)){n("_"+(r="onerror"));var o=a[r];a[r]=function(e,n,i,a,s){var c=o&&o(e,n,i,a,s);return!0!==c&&t["_"+r]({message:e,url:n,lineNumber:i,columnNumber:a,error:s}),c},e.autoExceptionInstrumented=!0}return t}(
+        {
+            instrumentationKey:"86b46f86-3e13-4c32-95bc-3122160559a7"
+        }
+        );window[aiName]=aisdk,aisdk.queue&&0===aisdk.queue.length&&aisdk.trackPageView({});
+    </script>
+
+
+    
+        
+        
+        <script type="text/javascript"
+                src="https://cloud.fskelly.com/js/anatole-theme-switcher.min.a24f17867918b60673a30992fad4d21ce963db1e0e71fe747e15de138f5cac11.js"
+                integrity="sha256-ok8XhnkYtgZzowmS&#43;tTSHOlj2x4Ocf50fhXeE49crBE="
+                crossorigin="anonymous"></script>
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Bicep Linux Vm Ssh Keys"/>
+<meta name="twitter:description" content="I this post, I use bicep files for the deployment of Linux VMs AND I add some magic with PowerSehll to allow for the creation or using of existing SSH keys with these VMs.
+I am a HUGE fan of SSH keys with Linux VMs for obvious reasons. I could just not find a script or scenario that covered this topic in a way that I actually like. I like to show more details and explain."/>
+
+</head>
+<body><div class="sidebar animated fadeInDown ">
+    <div class="logo-title">
+        <div class="title">
+            <img src="https://cloud.fskelly.com/images/cloud-gd3eff23c2_640.jpg" alt="profile picture">
+            <h3 title=""><a href="/">Fletcher&#39;s Cloud Journey</a></h3>
+            <div class="description">
+                <p>Just a simple cloud tinkerer</p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://www.linkedin.com/in/fletcherkelly/" rel="me" aria-label="Linkedin">
+                    <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://github.com/fskelly/" rel="me" aria-label="GitHub">
+                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="mailto:fletcher_kelly@outlook.com" rel="me" aria-label="e-mail">
+                    <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; Fletcher Kelly  2022 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top  animated fadeInDown ">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+            
+            <li><a 
+                   href="/"
+                        
+                   title="">Home</a></li>
+        
+            
+            <li><a 
+                   href="/post/"
+                        
+                   title="">Posts</a></li>
+        
+            
+            <li><a 
+                   href="/page/archives/"
+                        
+                   title="Archives">Archives</a></li>
+        
+            
+            <li><a 
+                   href="/page/search/"
+                        
+                   title="Search">Search</a></li>
+        
+            
+            <li><a 
+                   href="/page/about/"
+                        
+                   title="About Blog">About Blog</a></li>
+        
+            
+            <li><a 
+                   href="/page/fletcherkelly/"
+                        
+                   title="About Fletcher Kelly">About Fletcher Kelly</a></li>
+        
+            
+            <li><a 
+                   href="/page/robinheringa/"
+                        
+                   title="About Robin Heringa">About Robin Heringa</a></li>
+        
+            
+            <li><a 
+                   href="/tags/"
+                        
+                   title="">Tags</a></li>
+        
+        
+        
+            <li class="theme-switch-item">
+                <a class="theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post  animated fadeInDown ">
+        <div class="post-content">
+            <div class="post-title">
+                <h3>Bicep Linux Vm Ssh Keys</h3>
+                
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date">Mon, Jun 20, 2022</span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time">2-minute read</span>
+                    </div>
+                
+            </div>
+
+            <p>I this post, I use bicep files for the deployment of Linux VMs AND I add some magic with PowerSehll to allow for the creation or using of existing SSH keys with these VMs.</p>
+<p>I am a HUGE fan of SSH keys with Linux VMs for obvious reasons. I could just not find a script or scenario that covered this topic in a way that I actually like. I like to show more details and explain.</p>
+<p>In this scenario, we use PowerSHell to create the SSH keys and then use the value to the SSH key to deploy the Linux VM or use an existing SSH key adn then use that kay as part of the deployment. All automated, you just need to update some variables and let the script run. Who does not love automated examples ? :smile:</p>
+<p>SSH Keys give us a secure and reliable way to connect to Linux VMs without the use of usernames and passwords. Naturally the keys would need to be protected. Maybe in another post I will create a keyVault to show this process.</p>
+<p>Note: Please use 1A OR 1B
+A. Create new keys
+b. Use existing Keys</p>
+<h2 id="1a-create-the-ssh-keys-if-using-the-option-to-create-keys-filehttpsgithubcomfskellyflkelly-azurecode-bicepblobmainexamplesvmlinuxvmdeploywithnewkeyps1">1A. Create the SSH Keys (if using the option to create keys) <a href="https://github.com/fskelly/flkelly-AzureCode-bicep/blob/main/examples/vm/linuxVM/deployWithNewKey.ps1">file</a></h2>
+<p>Please remember to update the variables as needed.<br>
+Variables to update</p>
+<ol>
+<li>$vmName</li>
+<li><strong>If</strong> you want to change the path of the created keys - $keyLocation</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="c">## Pre-req</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">## Create required ssh-keys</span>
+</span></span><span class="line"><span class="cl"><span class="c">## Requires ssh-keygen to be installed</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">$vmName</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$keyLocation</span>  <span class="p">=</span> <span class="nv">$env:USERPROFILE</span> <span class="p">+</span> <span class="s2">&#34;\.ssh\&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$privateKeyName</span> <span class="p">=</span> <span class="nv">$vmName</span> <span class="p">+</span> <span class="s2">&#34;-key&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$publicKeyName</span> <span class="p">=</span> <span class="nv">$vmName</span> <span class="p">+</span> <span class="s2">&#34;-key.pub&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$privateKeyPath</span> <span class="p">=</span> <span class="nv">$keyLocation</span> <span class="p">+</span> <span class="nv">$privateKeyName</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$publicKeyPath</span>  <span class="p">=</span> <span class="nv">$keyLocation</span> <span class="p">+</span> <span class="nv">$publicKeyName</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">ssh-keygen</span> <span class="n">-m</span> <span class="n">PEM</span> <span class="n">-t</span> <span class="n">rsa</span> <span class="n">-b</span> <span class="n">2048</span> <span class="n">-C</span> <span class="nv">$vmName</span> <span class="o">-f</span> <span class="nv">$privateKeyPath</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">##Deploy</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$sshKey</span> <span class="p">=</span> <span class="nb">Get-Content</span> <span class="nv">$publicKeyPath</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$secureSSHKey</span> <span class="p">=</span> <span class="nb">ConvertTo-SecureString</span> <span class="nv">$sshKey</span> <span class="n">-AsPlainText</span> <span class="n">-Force</span>
+</span></span></code></pre></div><h2 id="1b-us-existing-ssh-keys-if-using-the-option-to-create-keys-filehttpsgithubcomfskellyflkelly-azurecode-bicepblobmainexamplesvmlinuxvmdeploywithexistingkeyps1">1B. Us existing SSH Keys (if using the option to create keys) <a href="https://github.com/fskelly/flkelly-AzureCode-bicep/blob/main/examples/vm/linuxVM/deployWithExistingKey.ps1">file</a></h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="c">## Get key data</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$publicKeyPath</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$sshKey</span> <span class="p">=</span> <span class="nb">Get-Content</span> <span class="nv">$publicKeyPath</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$secureSSHKey</span> <span class="p">=</span> <span class="nb">ConvertTo-SecureString</span> <span class="nv">$sshKey</span> <span class="n">-AsPlainText</span> <span class="n">-Force</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">$privateKeyPath</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+</span></span></code></pre></div><h2 id="2-deploy-the-bicep-template-filehttpsgithubcomfskellyflkelly-azurecode-bicepblobmainexamplesvmlinuxvmmainbicep">2. Deploy the Bicep Template <a href="https://github.com/fskelly/flkelly-AzureCode-bicep/blob/main/examples/vm/linuxVM/main.bicep">file</a></h2>
+<p>Please remember to update the variables as needed.<br>
+Variables to update</p>
+<ol>
+<li>$resourceGroupName</li>
+<li>$resourceGroupLocation</li>
+<li>$userName</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="c">## Deploy to Azure</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$resourceGroupName</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$resourceGroupLocation</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$userName</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">New-AzResourceGroup</span> <span class="n">-Name</span> <span class="nv">$resourceGroupName</span> <span class="n">-Location</span> <span class="nv">$resourceGroupLocation</span>
+</span></span><span class="line"><span class="cl"><span class="nb">New-AzResourceGroupDeployment</span> <span class="n">-ResourceGroupName</span> <span class="nv">$resourceGroupName</span> <span class="n">-TemplateFile</span> <span class="p">./</span><span class="n">main</span><span class="p">.</span><span class="n">bicep</span> <span class="n">-adminUsername</span> <span class="nv">$userName</span> <span class="n">-adminPasswordOrKey</span> <span class="nv">$secureSSHKey</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">$hostName</span> <span class="p">=</span> <span class="p">(</span><span class="nb">Get-AzResourceGroupDeployment</span> <span class="n">-ResourceGroupName</span> <span class="nv">$resourceGroupName</span><span class="p">).</span><span class="n">outputs</span><span class="p">.</span><span class="n">hostname</span><span class="p">.</span><span class="n">value</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">## Adding slight delay</span>
+</span></span><span class="line"><span class="cl"><span class="nb">Start-Sleep</span> <span class="n">5</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">## Connect to the vm</span>
+</span></span><span class="line"><span class="cl"><span class="n">ssh</span> <span class="n">-i</span> <span class="nv">$privateKeyPath</span> <span class="nv">$userName</span><span class="p">@</span><span class="nv">$hostName</span>
+</span></span></code></pre></div><p>Now you can automatically connect to your newly deployed VM with an SSH Key. How great is that?</p>
+</div>
+        <div class="post-footer">
+            <div class="info">
+                <span class="separator"><a class="category" href="/categories/iac/">IaC</a></span>
+
+                <span class="separator"><a class="tag" href="/tags/powershell/">Powershell</a><a class="tag" href="/tags/ssh/">SSH</a><a class="tag" href="/tags/bicep/">Bicep</a></span>
+
+            </div>
+        </div>
+
+        
+            <div id="fb_comments_container">
+                    <h2>comments</h2>
+                    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "fletchercloudblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                </div>
+        
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="https://cloud.fskelly.com/js/jquery.min.6fd215a380477adef701dd0410f3f16b9608e71d499a68f55ff78aeef44f3a6d.js"
+        integrity="sha256-b9IVo4BHet73Ad0EEPPxa5YI5x1Jmmj1X/eK7vRPOm0="
+        crossorigin="anonymous"></script>
+
+
+
+
+<script type="text/javascript"
+        src="https://cloud.fskelly.com/js/bundle.min.7b241b6ae14f204462d432ed287d4a53041eb8506f85464fbbf9fcbf83289e15.js"
+        integrity="sha256-eyQbauFPIERi1DLtKH1KUwQeuFBvhUZPu/n8v4MonhU="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript"
+        src="https://cloud.fskelly.com/js/medium-zoom.min.404e25d56ecefa87be4f21be4a6883aa550b493b32677d13d7f47762dc3537cf.js"
+        integrity="sha256-QE4l1W7O&#43;oe&#43;TyG&#43;SmiDqlULSTsyZ30T1/R3Ytw1N88="
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
