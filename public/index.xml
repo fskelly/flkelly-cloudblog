@@ -6,7 +6,17 @@
     <description>Recent content on Fletcher&#39;s Cloud Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Mar 2022 07:27:16 +0100</lastBuildDate><atom:link href="https://cloud.fskelly.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Apr 2022 14:27:03 +0100</lastBuildDate><atom:link href="https://cloud.fskelly.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using Openssh and creating SSH Keys with Powershell</title>
+      <link>https://cloud.fskelly.com/post/2022/openssh-powershell/</link>
+      <pubDate>Mon, 25 Apr 2022 14:27:03 +0100</pubDate>
+      
+      <guid>https://cloud.fskelly.com/post/2022/openssh-powershell/</guid>
+      <description>In this post I show you my process for creating SSH Keys for Linux Machines.
+I use a fair amount of Linux in my work career (creating VMs and the like within Azure). Linux VMs are great for testing with, they use SSH and are configured and ready for testing VERY quickly in Azure. I also use a fair amount of Linux in personal life, with Home assistant and Plex.</description>
+    </item>
+    
     <item>
       <title>Using Azure Virtual WAN to connect to Azure VMware Solution</title>
       <link>https://cloud.fskelly.com/post/2022/poc-vwan-avs/</link>
@@ -162,8 +172,7 @@ What is FastTrack For Azure? FastTrack for Azure is a technical enablement progr
       <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://cloud.fskelly.com/page/robinheringa/</guid>
-      <description>Robin Heringa Robin Heringa is an engineer in the FastTrack for Azure team at Microsoft working directly with customers on Azure Infrastructure projects. Robin is passionate about all Azure infrastructure technologies with a focus on Azure Management &amp;amp; Security and Azure VMware Solution.
-Robin has been with Microsoft for almost 15 years and working on IT Data Center &amp;amp; Cloud projects for 24 years.</description>
+      <description>Robin Heringa is an engineer in the FastTrack for Azure team at Microsoft working directly with customers on Azure Infrastructure projects. Robin is passionate about all Azure infrastructure technologies with a focus on Azure Management &amp;amp; Security and Azure VMware Solution. Robin has been with Microsoft for almost 15 years and working on IT Data Center &amp;amp; Cloud projects for 24 years.</description>
     </item>
     
     <item>

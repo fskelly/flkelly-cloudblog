@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SSH on Fletcher&#39;s Cloud Journey</title>
+    <link>https://cloud.fskelly.com/tags/ssh/</link>
+    <description>Recent content in SSH on Fletcher&#39;s Cloud Journey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 Apr 2022 14:27:03 +0100</lastBuildDate><atom:link href="https://cloud.fskelly.com/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using Openssh and creating SSH Keys with Powershell</title>
+      <link>https://cloud.fskelly.com/post/2022/openssh-powershell/</link>
+      <pubDate>Mon, 25 Apr 2022 14:27:03 +0100</pubDate>
+      
+      <guid>https://cloud.fskelly.com/post/2022/openssh-powershell/</guid>
+      <description>In this post I show you my process for creating SSH Keys for Linux Machines.
+I use a fair amount of Linux in my work career (creating VMs and the like within Azure). Linux VMs are great for testing with, they use SSH and are configured and ready for testing VERY quickly in Azure. I also use a fair amount of Linux in personal life, with Home assistant and Plex.</description>
+    </item>
+    
+  </channel>
+</rss>
