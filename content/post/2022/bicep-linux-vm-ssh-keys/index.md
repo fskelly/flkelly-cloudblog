@@ -16,9 +16,9 @@ In this scenario, we use PowerSHell to create the SSH keys and then use the valu
 
 SSH Keys give us a secure and reliable way to connect to Linux VMs without the use of usernames and passwords. Naturally the keys would need to be protected. Maybe in another post I will create a keyVault to show this process.
 
-Note: Please use 1A OR 1B
-A. Create new keys
-b. Use existing Keys
+Note: Please use 1A OR 1B  
+A. Create new keys  
+b. Use existing Keys  
 
 ## 1A. Create the SSH Keys (if using the option to create keys) [file](https://github.com/fskelly/flkelly-AzureCode-bicep/blob/main/examples/vm/linuxVM/deployWithNewKey.ps1)
 
