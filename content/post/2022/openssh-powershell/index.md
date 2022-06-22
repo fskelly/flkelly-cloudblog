@@ -2,8 +2,8 @@
 title: "Using Openssh and creating SSH Keys with Powershell"
 date: 2022-04-25T14:27:03+01:00
 Description: ""
-Tags: []
-Categories: []
+Tags: [Powershell, SSH]
+Categories: [Scripting]
 DisableComments: false
 ---
 
