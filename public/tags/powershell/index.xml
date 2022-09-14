@@ -6,7 +6,18 @@
     <description>Recent content in Powershell on Fletcher&#39;s Cloud Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Jun 2022 08:54:21 +0100</lastBuildDate><atom:link href="https://cloud.fskelly.com/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 14 Sep 2022 11:14:30 +0100</lastBuildDate><atom:link href="https://cloud.fskelly.com/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Check Powershell Console Type</title>
+      <link>https://cloud.fskelly.com/post/2022/check-powershell-type/</link>
+      <pubDate>Wed, 14 Sep 2022 11:14:30 +0100</pubDate>
+      
+      <guid>https://cloud.fskelly.com/post/2022/check-powershell-type/</guid>
+      <description>I have been working with some Microsoft Hybrid technologies. My specific example here is around Azure Arc-enabled VMware vSphere aspects. When running the scripts provided here there is a key aspect.
+Do NOT run this in the PowerShell ISE.
+Even with this strong recommendation, it is often accidentally used as it is really easy to perform this action with a right click option and this got me to thinking about how can I check this via code?</description>
+    </item>
+    
     <item>
       <title>Using SSH Keys with Bicep based Linux VM templates</title>
       <link>https://cloud.fskelly.com/post/2022/bicep-linux-vm-ssh-keys/</link>

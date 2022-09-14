@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme=""><head>
-    <title> Fletcher Kelly | Using Openssh and creating SSH Keys with Powershell </title>
+    <title> Fletcher Kelly | Check Powershell Console Type </title>
 
     
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.102.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -29,7 +29,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://cloud.fskelly.com/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://cloud.fskelly.com/favicons/favicon-16x16.png">
 
-    <link rel="canonical" href="https://cloud.fskelly.com/post/2022/openssh-powershell/">
+    <link rel="canonical" href="https://cloud.fskelly.com/post/2022/check-powershell-type/">
 
     
     
@@ -58,9 +58,10 @@
                 crossorigin="anonymous"></script>
     
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Using Openssh and creating SSH Keys with Powershell"/>
-<meta name="twitter:description" content="In this post I show you my process for creating SSH Keys for Linux Machines.
-I use a fair amount of Linux in my work career (creating VMs and the like within Azure). Linux VMs are great for testing with, they use SSH and are configured and ready for testing VERY quickly in Azure. I also use a fair amount of Linux in personal life, with Home assistant and Plex."/>
+<meta name="twitter:title" content="Check Powershell Console Type"/>
+<meta name="twitter:description" content="I have been working with some Microsoft Hybrid technologies. My specific example here is around Azure Arc-enabled VMware vSphere aspects. When running the scripts provided here there is a key aspect.
+Do NOT run this in the PowerShell ISE.
+Even with this strong recommendation, it is often accidentally used as it is really easy to perform this action with a right click option and this got me to thinking about how can I check this via code?"/>
 
 </head>
 <body><div class="sidebar animated fadeInDown ">
@@ -172,59 +173,43 @@ I use a fair amount of Linux in my work career (creating VMs and the like within
     <div class="post  animated fadeInDown ">
         <div class="post-content">
             <div class="post-title">
-                <h3>Using Openssh and creating SSH Keys with Powershell</h3>
+                <h3>Check Powershell Console Type</h3>
                 
                     <div class="info">
                         <em class="fas fa-calendar-day"></em>
-                        <span class="date">Mon, Apr 25, 2022</span>
+                        <span class="date">Wed, Sep 14, 2022</span>
                         <em class="fas fa-stopwatch"></em>
-                        <span class="reading-time">2-minute read</span>
+                        <span class="reading-time">One-minute read</span>
                     </div>
                 
             </div>
 
-            <p>In this post I show you my process for creating SSH Keys for Linux Machines.</p>
-<p>I use a fair amount of Linux in my work career (creating VMs and the like within Azure). Linux VMs are great for testing with, they use SSH and are configured and ready for testing VERY quickly in Azure. I also use a fair amount of Linux in personal life, with <a href="https://home-assisant.io">Home assistant</a> and <a href="https://plex.tv">Plex</a>.</p>
-<p>I know many people use username and password with Linux environments and there is nothing wrong with this, I simply think that keys are better :smile: . I believe this for a few reasons.</p>
-<ol>
-<li>Allows for better control over access to a machine - no key, no access.</li>
-<li>Allows for a better logon experience, seems more &ldquo;seamless&rdquo;</li>
-<li>Key information can be stored in a secure location for repeated use
-<ol>
-<li>For personal use, I store the key information in <a href="https://1password.com/">1Password</a></li>
-<li>For work use, I store the key information in Azure Kayvault</li>
-</ol>
-</li>
-<li>Can be easily scripted to create new keys as needed</li>
-</ol>
-<p>With the last point, I am a big <a href="https://docs.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.2">PowerShell</a> user and I have created a simple script that work in <a href="https://docs.microsoft.com/en-us/powershell/scripting/windows-powershell/install/installing-windows-powershell?view=powershell-7.2">PowerShell</a> and <a href="https://github.com/powershell/powershell">PowerShell Core</a>.</p>
-<p>You will need openssh for this to work. The command below will help with this 👍.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">choco</span> <span class="n">install</span> <span class="n">openssh</span>
-</span></span></code></pre></div><p>Now for the PowerShell code, update the variables as needed. This creates the keys for us.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="nv">$username</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$keyLocation</span> <span class="p">=</span> <span class="s1">&#39;&#39;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$keyName</span> <span class="p">=</span> <span class="nv">$username</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$keyPath</span> <span class="p">=</span> <span class="nv">$keyLocation</span> <span class="p">+</span> <span class="nv">$keyName</span>
-</span></span><span class="line"><span class="cl"><span class="nb">ssh-keygen</span> <span class="n">-m</span> <span class="n">PEM</span> <span class="n">-t</span> <span class="n">rsa</span> <span class="n">-b</span> <span class="n">4096</span> <span class="o">-f</span> <span class="nv">$keyPath</span> <span class="n">-C</span> <span class="nv">$username</span>
-</span></span></code></pre></div><p>Now to get the content of the public key, for use with Azure VMs or any type of IaC, I use <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview?tabs=bicep">Bicep</a></p>
-<p>You can read the content out to something simple like NotePad (Honestly a tool I use <strong>DAILY</strong>).</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="nv">$pubKeyPath</span> <span class="p">=</span> <span class="nv">$keyPath</span> <span class="p">+</span> <span class="s1">&#39;.pub&#39;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$pubKey</span> <span class="p">=</span> <span class="nb">get-content</span> <span class="n">-Path</span> <span class="nv">$pubKeyPath</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$pubKey</span>
-</span></span></code></pre></div><p>Example output from $pubkey below, this is what you need to copy and paste within the Azure Portal when creating a Linux VM.</p>
-<figure><img src="/images/blogImages/2022/openssh-powershell/ssh-key-example.jpg"
-         alt="ssh-key-example"/>
-</figure>
-
-<p>If you want to use this key with an existing, you can. :smile: . We can perform a task similar to ssh-copy-id. Update the <em><strong>$destinationIp</strong></em> as needed.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="nv">$destinationIp</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="nb">type </span><span class="nv">$pubKeyPath</span> <span class="p">|</span> <span class="n">ssh</span> <span class="nv">$username</span><span class="p">@</span><span class="nv">$destinationIp</span> <span class="s2">&#34;cat &gt;&gt; .ssh/authorized_keys&#34;</span>
-</span></span></code></pre></div></div>
+            <p>I have been working with some Microsoft Hybrid technologies. My specific example here is around <a href="https://docs.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/overview">Azure Arc-enabled VMware vSphere</a> aspects. When running the scripts provided here there is a key aspect.</p>
+<p><strong>Do NOT run this in the PowerShell ISE.</strong></p>
+<p>Even with this strong recommendation, it is often accidentally used as it is really easy to perform this action with a right click option and this got me to thinking about how can I check this via code?</p>
+<p>So I did some thinking and found a way to check which console type you are running. Below is sample code but will exit the script if the Console Type is ISE.</p>
+<h2 id="how-do-we-check-this-and-prevent-this">How do we check this and prevent this?</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="nv">$consoleType</span> <span class="p">=</span> <span class="nb">get-host</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nv">$consoleType</span><span class="p">.</span><span class="n">Name</span> <span class="o">-match</span> <span class="s1">&#39;ise&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$message</span> <span class="p">=</span> <span class="s2">&#34;You should NOT use the ISE window, please reload in PowerShell window&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">Write-Output</span> <span class="nv">$message</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$message</span> <span class="p">=</span> <span class="s2">&#34;This process will terminate shortly&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">Write-Output</span> <span class="nv">$message</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">Start-Sleep</span> <span class="n">-Seconds</span> <span class="n">10</span>
+</span></span><span class="line"><span class="cl">    <span class="k">break</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$message</span> <span class="p">=</span> <span class="s2">&#34;good to go&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">Write-Output</span> <span class="nv">$message</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Very simple fix but can save hours of troubleshooting.</p>
+<p>You may even notice the change to <strong>write-output</strong> from <strong>write-host</strong> as part of <a href="https://devblogs.microsoft.com/powershell/using-psscriptanalyzer-to-check-powershell-version-compatibility/">Cross platform support</a></p>
+</div>
         <div class="post-footer">
             <div class="info">
-                <span class="separator"><a class="category" href="/categories/scripting/">Scripting</a></span>
+                <span class="separator"><a class="category" href="/categories/azure-hybrid/">Azure Hybrid</a></span>
 
-                <span class="separator"><a class="tag" href="/tags/powershell/">Powershell</a><a class="tag" href="/tags/ssh/">SSH</a></span>
+                <span class="separator"><a class="tag" href="/tags/powershell/">PowerShell</a><a class="tag" href="/tags/hybrid/">Hybrid</a></span>
 
             </div>
         </div>

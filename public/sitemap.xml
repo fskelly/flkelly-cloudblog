@@ -2,28 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://cloud.fskelly.com/tags/bicep/</loc>
-    <lastmod>2022-06-20T08:54:21+01:00</lastmod>
+    <loc>https://cloud.fskelly.com/categories/azure-hybrid/</loc>
+    <lastmod>2022-09-14T11:14:30+01:00</lastmod>
   </url><url>
     <loc>https://cloud.fskelly.com/categories/</loc>
-    <lastmod>2022-06-20T08:54:21+01:00</lastmod>
+    <lastmod>2022-09-14T11:14:30+01:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/post/2022/check-powershell-type/</loc>
+    <lastmod>2022-09-14T11:14:30+01:00</lastmod>
   </url><url>
     <loc>https://cloud.fskelly.com/</loc>
+    <lastmod>2022-09-14T11:14:30+01:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/tags/hybrid/</loc>
+    <lastmod>2022-09-14T11:14:30+01:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/post/</loc>
+    <lastmod>2022-09-14T11:14:30+01:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/tags/powershell/</loc>
+    <lastmod>2022-09-14T11:14:30+01:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/tags/</loc>
+    <lastmod>2022-09-14T11:14:30+01:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/tags/bicep/</loc>
     <lastmod>2022-06-20T08:54:21+01:00</lastmod>
   </url><url>
     <loc>https://cloud.fskelly.com/categories/iac/</loc>
     <lastmod>2022-06-20T08:54:21+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/post/</loc>
-    <lastmod>2022-06-20T08:54:21+01:00</lastmod>
-  </url><url>
-    <loc>https://cloud.fskelly.com/tags/powershell/</loc>
-    <lastmod>2022-06-20T08:54:21+01:00</lastmod>
-  </url><url>
     <loc>https://cloud.fskelly.com/tags/ssh/</loc>
-    <lastmod>2022-06-20T08:54:21+01:00</lastmod>
-  </url><url>
-    <loc>https://cloud.fskelly.com/tags/</loc>
     <lastmod>2022-06-20T08:54:21+01:00</lastmod>
   </url><url>
     <loc>https://cloud.fskelly.com/post/2022/bicep-linux-vm-ssh-keys/</loc>
@@ -53,10 +62,10 @@
     <loc>https://cloud.fskelly.com/post/2022/new-to-avs-nomon-networking-1/</loc>
     <lastmod>2022-03-09T16:06:00+00:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/categories/azure/</loc>
+    <loc>https://cloud.fskelly.com/tags/azure/</loc>
     <lastmod>2021-12-09T08:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/azure/</loc>
+    <loc>https://cloud.fskelly.com/categories/azure/</loc>
     <lastmod>2021-12-09T08:00:00+00:00</lastmod>
   </url><url>
     <loc>https://cloud.fskelly.com/post/2021/2021-arg-networking-mgmt-more/</loc>
@@ -74,10 +83,10 @@
     <loc>https://cloud.fskelly.com/categories/networking/</loc>
     <lastmod>2021-12-09T08:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/categories/resource-graph/</loc>
+    <loc>https://cloud.fskelly.com/tags/resource-graph/</loc>
     <lastmod>2021-12-09T08:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/resource-graph/</loc>
+    <loc>https://cloud.fskelly.com/categories/resource-graph/</loc>
     <lastmod>2021-12-09T08:00:00+00:00</lastmod>
   </url><url>
     <loc>https://cloud.fskelly.com/post/2021/arg-mg--query-quick-post/</loc>
@@ -98,10 +107,10 @@
     <loc>https://cloud.fskelly.com/categories/command-line/</loc>
     <lastmod>2021-05-05T07:03:02+02:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/categories/api/</loc>
+    <loc>https://cloud.fskelly.com/tags/api/</loc>
     <lastmod>2021-04-14T09:02:18+02:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/api/</loc>
+    <loc>https://cloud.fskelly.com/categories/api/</loc>
     <lastmod>2021-04-14T09:02:18+02:00</lastmod>
   </url><url>
     <loc>https://cloud.fskelly.com/post/2021/azure-rest-api-postman-basics/</loc>
