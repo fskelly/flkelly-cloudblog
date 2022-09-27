@@ -33,3 +33,5 @@ hugo new post/{{year}}/{{postTitle}}.md
 ![blog](https://img.shields.io/website-up-down-green-red/https/cloud.fskelly.com.svg)  
 ![Publish Blog](https://github.com/fskelly/flkelly-cloudblog/actions/workflows/azure-static-web-apps-lively-field-0f34d4403.yml/badge.svg)  
 ![Website maintained](https://img.shields.io/maintenance/yes/2022?style=plastic)
+
+[![Azure Static Web Apps CI/CD](https://github.com/fskelly/flkelly-cloudblog/actions/workflows/azure-static-web-apps-lively-field-0f34d4403.yml/badge.svg)](https://github.com/fskelly/flkelly-cloudblog/actions/workflows/azure-static-web-apps-lively-field-0f34d4403.yml)
