@@ -6,7 +6,17 @@
     <description>Recent content on Fletcher&#39;s Cloud Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Sep 2022 11:14:30 +0100</lastBuildDate><atom:link href="https://cloud.fskelly.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Sep 2022 08:03:53 +0100</lastBuildDate><atom:link href="https://cloud.fskelly.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using Arc to SSH into Linux and Windows</title>
+      <link>https://cloud.fskelly.com/post/2022/arc-ssh-windows-linux/</link>
+      <pubDate>Tue, 27 Sep 2022 08:03:53 +0100</pubDate>
+      
+      <guid>https://cloud.fskelly.com/post/2022/arc-ssh-windows-linux/</guid>
+      <description>What are we doing? We are going to use Azure Arc to SSH into a Linux (ubuntu 20.04) and a Windows Server (Server 2019) machine and run commands.
+Constraints / limitations Use only Azure ARC. Use only public endpoints (I have not yet tested this with Private Endpoints) and my VPN is not currently connected to Azure. Considerations As of the time of this blog post (27-Sep-2022), the Azure Arc SSH functionality is in preview.</description>
+    </item>
+    
     <item>
       <title>Check Powershell Console Type</title>
       <link>https://cloud.fskelly.com/post/2022/check-powershell-type/</link>

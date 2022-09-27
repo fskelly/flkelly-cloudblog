@@ -6,7 +6,16 @@
     <description>Recent content in Tags on Fletcher&#39;s Cloud Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Sep 2022 11:14:30 +0100</lastBuildDate><atom:link href="https://cloud.fskelly.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Sep 2022 08:03:53 +0100</lastBuildDate><atom:link href="https://cloud.fskelly.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure Arc</title>
+      <link>https://cloud.fskelly.com/tags/azure-arc/</link>
+      <pubDate>Tue, 27 Sep 2022 08:03:53 +0100</pubDate>
+      
+      <guid>https://cloud.fskelly.com/tags/azure-arc/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Hybrid</title>
       <link>https://cloud.fskelly.com/tags/hybrid/</link>

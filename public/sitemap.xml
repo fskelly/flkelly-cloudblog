@@ -2,28 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://cloud.fskelly.com/categories/azure-hybrid/</loc>
-    <lastmod>2022-09-14T11:14:30+01:00</lastmod>
+    <loc>https://cloud.fskelly.com/categories/azure/</loc>
+    <lastmod>2022-09-27T08:03:53+01:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/tags/azure-arc/</loc>
+    <lastmod>2022-09-27T08:03:53+01:00</lastmod>
   </url><url>
     <loc>https://cloud.fskelly.com/categories/</loc>
+    <lastmod>2022-09-27T08:03:53+01:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/</loc>
+    <lastmod>2022-09-27T08:03:53+01:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/categories/hybrid/</loc>
+    <lastmod>2022-09-27T08:03:53+01:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/post/</loc>
+    <lastmod>2022-09-27T08:03:53+01:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/tags/</loc>
+    <lastmod>2022-09-27T08:03:53+01:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/post/2022/arc-ssh-windows-linux/</loc>
+    <lastmod>2022-09-27T08:03:53+01:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/categories/azure-hybrid/</loc>
     <lastmod>2022-09-14T11:14:30+01:00</lastmod>
   </url><url>
     <loc>https://cloud.fskelly.com/post/2022/check-powershell-type/</loc>
     <lastmod>2022-09-14T11:14:30+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/</loc>
-    <lastmod>2022-09-14T11:14:30+01:00</lastmod>
-  </url><url>
     <loc>https://cloud.fskelly.com/tags/hybrid/</loc>
     <lastmod>2022-09-14T11:14:30+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/post/</loc>
-    <lastmod>2022-09-14T11:14:30+01:00</lastmod>
-  </url><url>
     <loc>https://cloud.fskelly.com/tags/powershell/</loc>
-    <lastmod>2022-09-14T11:14:30+01:00</lastmod>
-  </url><url>
-    <loc>https://cloud.fskelly.com/tags/</loc>
     <lastmod>2022-09-14T11:14:30+01:00</lastmod>
   </url><url>
     <loc>https://cloud.fskelly.com/tags/bicep/</loc>
@@ -63,9 +75,6 @@
     <lastmod>2022-03-09T16:06:00+00:00</lastmod>
   </url><url>
     <loc>https://cloud.fskelly.com/tags/azure/</loc>
-    <lastmod>2021-12-09T08:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://cloud.fskelly.com/categories/azure/</loc>
     <lastmod>2021-12-09T08:00:00+00:00</lastmod>
   </url><url>
     <loc>https://cloud.fskelly.com/post/2021/2021-arg-networking-mgmt-more/</loc>
