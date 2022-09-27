@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme=""><head>
-    <title> Fletcher Kelly | Categories </title>
+    <title> Fletcher Kelly | Using Arc to SSH into Linux and Windows </title>
 
     
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.102.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -29,10 +29,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://cloud.fskelly.com/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://cloud.fskelly.com/favicons/favicon-16x16.png">
 
-    <link rel="canonical" href="https://cloud.fskelly.com/categories/">
+    <link rel="canonical" href="https://cloud.fskelly.com/post/2022/arc-ssh-windows-linux/">
 
     
-    <link rel="alternate" type="application/rss+xml" href="https://cloud.fskelly.com/categories/index.xml" title="Fletcher's Cloud Journey" />
     
     
     
@@ -59,8 +58,8 @@
                 crossorigin="anonymous"></script>
     
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Categories"/>
-<meta name="twitter:description" content="Just a simple cloud tinkerer"/>
+<meta name="twitter:title" content="Using Arc to SSH into Linux and Windows"/>
+<meta name="twitter:description" content="Using Arc to SSH into Linux and Windows"/>
 
 </head>
 <body><div class="sidebar animated fadeInDown ">
@@ -169,105 +168,121 @@
 
     <div class="autopagerize_page_element">
         <div class="content">
-    <div class="archive  animated fadeInDown ">
-        <ul class="list-with-title">
-            
-                <div class="listing-title">2022</div>
+    <div class="post  animated fadeInDown ">
+        <div class="post-content">
+            <div class="post-title">
+                <h3>Using Arc to SSH into Linux and Windows</h3>
                 
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="https://cloud.fskelly.com/categories/hybrid/" title="Hybrid">Hybrid</a>
-                                <div class="post-time"><span class="date">Sep 27</span></div>
-                            </div>
-                        </div>
-                    </ul>
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date">Tue, Sep 27, 2022</span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time">2-minute read</span>
+                    </div>
                 
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="https://cloud.fskelly.com/categories/azure/" title="Azure">Azure</a>
-                                <div class="post-time"><span class="date">Sep 27</span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="https://cloud.fskelly.com/categories/azure-hybrid/" title="Azure Hybrid">Azure Hybrid</a>
-                                <div class="post-time"><span class="date">Sep 14</span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="https://cloud.fskelly.com/categories/iac/" title="IaC">IaC</a>
-                                <div class="post-time"><span class="date">Jun 20</span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="https://cloud.fskelly.com/categories/scripting/" title="Scripting">Scripting</a>
-                                <div class="post-time"><span class="date">Apr 25</span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="https://cloud.fskelly.com/categories/azure-vmware-solution/" title="Azure VMware Solution">Azure VMware Solution</a>
-                                <div class="post-time"><span class="date">Mar 28</span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-            
-                <div class="listing-title">2021</div>
-                
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="https://cloud.fskelly.com/categories/resource-graph/" title="Resource Graph">Resource Graph</a>
-                                <div class="post-time"><span class="date">Dec 9</span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="https://cloud.fskelly.com/categories/networking/" title="Networking">Networking</a>
-                                <div class="post-time"><span class="date">Dec 9</span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="https://cloud.fskelly.com/categories/management-group/" title="Management Group">Management Group</a>
-                                <div class="post-time"><span class="date">Dec 9</span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="https://cloud.fskelly.com/categories/command-line/" title="command line">command line</a>
-                                <div class="post-time"><span class="date">May 5</span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="https://cloud.fskelly.com/categories/api/" title="API">API</a>
-                                <div class="post-time"><span class="date">Apr 14</span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-            
-        </ul>
+            </div>
+
+            <h2 id="what-are-we-doing">What are we doing?</h2>
+<p>We are going to use Azure Arc to SSH into a Linux (ubuntu 20.04) and a Windows Server (Server 2019) machine and run commands.</p>
+<h2 id="constraints--limitations">Constraints / limitations</h2>
+<ol>
+<li>Use only Azure ARC.</li>
+<li>Use only public endpoints (I have not yet tested this with Private Endpoints) and my VPN is not currently connected to Azure.</li>
+</ol>
+<h2 id="considerations">Considerations</h2>
+<p>As of the time of this blog post (27-Sep-2022), the <a href="https://learn.microsoft.com/en-us/azure/azure-arc/servers/ssh-arc-overview">Azure Arc SSH</a> functionality is in preview.</p>
+<h2 id="lets-build-this">Lets build this</h2>
+<p>So, we are going to use SSH to connect to both Linux and Windows. Yes, you can connect to Windows via SSH and yes it works, we will get this working in this post.</p>
+<h3 id="steps">Steps</h3>
+<ol>
+<li>Install Azure Arc Agent on VMs</li>
+<li>Ensure that it is connected to Azure Correctly</li>
+<li>Configurations changes for SSH to work</li>
+<li>Connect via SSH</li>
+</ol>
+<p>I am going to assume that steps 1 and 2 are completed already, if not. See <a href="https://learn.microsoft.com/en-us/azure/azure-arc/servers/deployment-options">here</a>. The focus on this post is to connect to your environment using the <a href="https://learn.microsoft.com/en-us/azure/azure-arc/servers/ssh-arc-overview">azcmagent</a> and then connecting to the virtual machine via the portal.</p>
+<h3 id="linux-vm">Linux VM</h3>
+<figure><img src="/images/blogImages/2022/arc-ssh-windows-linux/connect-button-portal-linux-vm.png"
+         alt="Connect via portal to linux Azure Arc machine" width="900" height="300"/>
+</figure>
+
+<p>You will see that this is a linux vm and SSH working here is no surprise. For this post, I am using password authentication type. <strong>This is not ideal for production</strong>.
+<figure><img src="/images/blogImages/2022/arc-ssh-windows-linux/connect-button-portal-linux-vm-connectoptions.png"
+         alt="Connect via portal to linux Azure Arc machine options" width="900" height="300"/>
+</figure>
+
+Now you can click, &ldquo;Connect in browser&rdquo;. This will launch an <a href="https://learn.microsoft.com/en-us/azure/cloud-shell/overview">Azure Cloud Shell</a>
+<figure><img src="/images/blogImages/2022/arc-ssh-windows-linux/connect-button-portal-linux-vm-connect-in-browser.png"
+         alt="Connect via portal to linux Azure Arc machine button - connect in browser" width="900" height="300"/>
+</figure>
+</p>
+<h2 id="gotcha">GOTCHA</h2>
+<p>You may hit your first error here.
+<figure><img src="/images/blogImages/2022/arc-ssh-windows-linux/connect-button-portal-linux-vm-error-1.png"
+         alt="Connect via portal to linux Azure Arc machine button - connection error"/>
+</figure>
+</p>
+<p>The error may seem a little strange, it seems it is using port 66535 to dp a port lookup - like a proxy lookup - see <a href="https://serverfault.com/questions/915724/connection-closed-by-unknown-port-65535-when-ssh-using-ad-creds-on-rhel-machine">here</a> as an example of this. It is still wanting to connect to port 22, the normal ssh port. <em>So how do we fix this?</em></p>
+<p>Configuring the <strong>Az</strong>ure <strong>c</strong>onnected <strong>ma</strong>chine <strong>agent</strong> is documented <a href="https://learn.microsoft.com/en-us/azure/azure-arc/servers/ssh-arc-overview">here</a> and the command we need is this.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">azcmagent config <span class="nb">set</span> incomingconnections.ports <span class="m">22</span>
+</span></span></code></pre></div><p>Run this command on your linux machine (sudo will be needed)
+<figure><img src="/images/blogImages/2022/arc-ssh-windows-linux/connect-button-portal-linux-vm-fix1.png"
+         alt="Update port number from azcmagent"/>
+</figure>
+
+and then we can connect<br>
+<figure><img src="/images/blogImages/2022/arc-ssh-windows-linux/connect-button-portal-linux-vm-connect-1.png"
+         alt="Connect via portal to linux Azure Arc machine is successful"/>
+</figure>
+</p>
+<h3 id="windows-vm">Windows VM</h3>
+<figure><img src="/images/blogImages/2022/arc-ssh-windows-linux/connect-button-portal-windows-vm.png"
+         alt="Connect via portal to Windows Azure Arc machine" width="900" height="300"/>
+</figure>
+
+<p>The steps for connection from the portal and the required <strong>Az</strong>ure <strong>c</strong>onnected <strong>ma</strong>chine <strong>agent</strong> commands are the same. However we do need to get SSH working on the Windows Server, this is actually quite easy and simply needs some copy and paste, see <a href="https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=powershell">here</a>. Once you have done that, your connection will work.</p>
+<figure><img src="/images/blogImages/2022/arc-ssh-windows-linux/connect-button-portal-windows-vm-connect-1.png"
+         alt="Connect via portal to Windows Azure Arc machine is successful"/>
+</figure>
+
+<p>So there you have it, an SSH connection from the Azure portal to a Windows AND Linux Arc-enabled machine.</p>
+</div>
+        <div class="post-footer">
+            <div class="info">
+                <span class="separator"><a class="category" href="/categories/hybrid/">Hybrid</a><a class="category" href="/categories/azure/">Azure</a></span>
+
+                <span class="separator"><a class="tag" href="/tags/azure-arc/">Azure Arc</a></span>
+
+            </div>
+        </div>
+
+        
+            <div id="fb_comments_container">
+                    <h2>comments</h2>
+                    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "fletchercloudblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                </div>
+        
     </div>
+
 
         </div>
     </div>
