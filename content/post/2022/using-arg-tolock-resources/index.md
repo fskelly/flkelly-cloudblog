@@ -2,8 +2,8 @@
 title: "Using Azure Resource Graph and Tags to lock items in Azure"
 date: 2022-10-03T13:59:06+01:00
 Description: ""
-Tags: []
-Categories: []
+Tags: [PowerShell, Azure Resource Graph]
+Categories: [Azure, Azure Resource Graph]
 DisableComments: false
 ---
 
@@ -146,3 +146,5 @@ foreach ($queryItem in $queryItems)
 Results can be seen below. Our Locks are now in place. Since my account is an **owner**, I can delete the lock(s), *non-owner(s)* would **NOT** be able to delete locks.  
 
 {{< figure src="/images/blogImages/2022/using-arg-tolock-resources/resulting-locks.jpg" alt="resulting locks in azure" >}}
+
+This code and concept can be easily updated or modified to meet different your specific requirements.

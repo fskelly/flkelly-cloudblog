@@ -3,7 +3,7 @@ title: "Using SSH Keys with Bicep based Linux VM templates"
 date: 2022-06-20T08:54:21+01:00
 Description: ""
 Tags: [Powershell, SSH, Bicep]
-Categories: [IaC]
+Categories: [IaC, Azure]
 DisableComments: false
 draft: false    
 ---
