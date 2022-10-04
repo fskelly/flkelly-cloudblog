@@ -12,7 +12,7 @@ I this post, I use bicep files for the deployment of Linux VMs AND I add some ma
 
 I am a HUGE fan of SSH keys with Linux VMs for obvious reasons. I could just not find a script or scenario that covered this topic in a way that I actually like. I like to show more details and explain.
 
-In this scenario, we use PowerSHell to create the SSH keys and then use the value to the SSH key to deploy the Linux VM or use an existing SSH key adn then use that kay as part of the deployment. All automated, you just need to update some variables and let the script run. Who does not love automated examples ? :smile:
+In this scenario, we use PowerShell to create the SSH keys and then use the value to the SSH key to deploy the Linux VM or use an existing SSH key adn then use that kay as part of the deployment. All automated, you just need to update some variables and let the script run. Who does not love automated examples ? :smile:
 
 SSH Keys give us a secure and reliable way to connect to Linux VMs without the use of usernames and passwords. Naturally the keys would need to be protected. Maybe in another post I will create a keyVault to show this process.
 
