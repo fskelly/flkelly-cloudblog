@@ -3,24 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://cloud.fskelly.com/categories/azure/</loc>
-    <lastmod>2022-09-27T08:03:53+01:00</lastmod>
+    <lastmod>2022-10-03T13:59:06+01:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/tags/azure-resource-graph/</loc>
+    <lastmod>2022-10-03T13:59:06+01:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/categories/azure-resource-graph/</loc>
+    <lastmod>2022-10-03T13:59:06+01:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/categories/</loc>
+    <lastmod>2022-10-03T13:59:06+01:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/</loc>
+    <lastmod>2022-10-03T13:59:06+01:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/post/</loc>
+    <lastmod>2022-10-03T13:59:06+01:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/tags/powershell/</loc>
+    <lastmod>2022-10-03T13:59:06+01:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/tags/</loc>
+    <lastmod>2022-10-03T13:59:06+01:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/post/2022/using-arg-tolock-resources/</loc>
+    <lastmod>2022-10-03T13:59:06+01:00</lastmod>
   </url><url>
     <loc>https://cloud.fskelly.com/tags/azure-arc/</loc>
     <lastmod>2022-09-27T08:03:53+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/categories/</loc>
-    <lastmod>2022-09-27T08:03:53+01:00</lastmod>
-  </url><url>
-    <loc>https://cloud.fskelly.com/</loc>
-    <lastmod>2022-09-27T08:03:53+01:00</lastmod>
-  </url><url>
     <loc>https://cloud.fskelly.com/categories/hybrid/</loc>
-    <lastmod>2022-09-27T08:03:53+01:00</lastmod>
-  </url><url>
-    <loc>https://cloud.fskelly.com/post/</loc>
-    <lastmod>2022-09-27T08:03:53+01:00</lastmod>
-  </url><url>
-    <loc>https://cloud.fskelly.com/tags/</loc>
     <lastmod>2022-09-27T08:03:53+01:00</lastmod>
   </url><url>
     <loc>https://cloud.fskelly.com/post/2022/arc-ssh-windows-linux/</loc>
@@ -33,9 +45,6 @@
     <lastmod>2022-09-14T11:14:30+01:00</lastmod>
   </url><url>
     <loc>https://cloud.fskelly.com/tags/hybrid/</loc>
-    <lastmod>2022-09-14T11:14:30+01:00</lastmod>
-  </url><url>
-    <loc>https://cloud.fskelly.com/tags/powershell/</loc>
     <lastmod>2022-09-14T11:14:30+01:00</lastmod>
   </url><url>
     <loc>https://cloud.fskelly.com/tags/bicep/</loc>

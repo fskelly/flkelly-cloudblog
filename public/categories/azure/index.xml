@@ -6,7 +6,17 @@
     <description>Recent content in Azure on Fletcher&#39;s Cloud Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 27 Sep 2022 08:03:53 +0100</lastBuildDate><atom:link href="https://cloud.fskelly.com/categories/azure/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Oct 2022 13:59:06 +0100</lastBuildDate><atom:link href="https://cloud.fskelly.com/categories/azure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using Azure Resource Graph and Tags to lock items in Azure</title>
+      <link>https://cloud.fskelly.com/post/2022/using-arg-tolock-resources/</link>
+      <pubDate>Mon, 03 Oct 2022 13:59:06 +0100</pubDate>
+      
+      <guid>https://cloud.fskelly.com/post/2022/using-arg-tolock-resources/</guid>
+      <description>What are we doing? We are going to use Azure Resource Graph to find items with a specific tag, in this case {&amp;ldquo;toBeLocked&amp;rdquo;=&amp;ldquo;Yes&amp;rdquo;} and then place a resource lcok on them.
+Constraints / limitations Use Azure Resource Graph to perform the search. Very fast and gives you a new way to interface with Azure Resources. As part of this post, I am giving samples below to create items, you could use these for testing.</description>
+    </item>
+    
     <item>
       <title>Using Arc to SSH into Linux and Windows</title>
       <link>https://cloud.fskelly.com/post/2022/arc-ssh-windows-linux/</link>
@@ -15,6 +25,16 @@
       <guid>https://cloud.fskelly.com/post/2022/arc-ssh-windows-linux/</guid>
       <description>What are we doing? We are going to use Azure Arc to SSH into a Linux (ubuntu 20.04) and a Windows Server (Server 2019) machine and run commands.
 Constraints / limitations Use only Azure ARC. Use only public endpoints (I have not yet tested this with Private Endpoints) and my VPN is not currently connected to Azure. Considerations As of the time of this blog post (27-Sep-2022), the Azure Arc SSH functionality is in preview.</description>
+    </item>
+    
+    <item>
+      <title>Using SSH Keys with Bicep based Linux VM templates</title>
+      <link>https://cloud.fskelly.com/post/2022/bicep-linux-vm-ssh-keys/</link>
+      <pubDate>Mon, 20 Jun 2022 08:54:21 +0100</pubDate>
+      
+      <guid>https://cloud.fskelly.com/post/2022/bicep-linux-vm-ssh-keys/</guid>
+      <description>I this post, I use bicep files for the deployment of Linux VMs AND I add some magic with PowerSehll to allow for the creation or using of existing SSH keys with these VMs.
+I am a HUGE fan of SSH keys with Linux VMs for obvious reasons. I could just not find a script or scenario that covered this topic in a way that I actually like. I like to show more details and explain.</description>
     </item>
     
     <item>
