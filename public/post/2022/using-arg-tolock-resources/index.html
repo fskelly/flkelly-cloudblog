@@ -59,7 +59,7 @@
     
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Azure Resource Graph and Tags to lock items in Azure"/>
-<meta name="twitter:description" content="What are we doing? We are going to use Azure Resource Graph to find items with a specific tag, in this case {&ldquo;toBeLocked&rdquo;=&ldquo;Yes&rdquo;} and then place a resource lcok on them.
+<meta name="twitter:description" content="What are we doing? We are going to use Azure Resource Graph to find items with a specific tag, in this case {&ldquo;toBeLocked&rdquo;=&ldquo;Yes&rdquo;} and then place a resource lock on them.
 Constraints / limitations Use Azure Resource Graph to perform the search. Very fast and gives you a new way to interface with Azure Resources. As part of this post, I am giving samples below to create items, you could use these for testing."/>
 
 </head>
@@ -184,11 +184,11 @@ Constraints / limitations Use Azure Resource Graph to perform the search. Very f
             </div>
 
             <h2 id="what-are-we-doing">What are we doing?</h2>
-<p>We are going to use Azure Resource Graph to find items with a specific tag, in this case <em>{&ldquo;toBeLocked&rdquo;=&ldquo;Yes&rdquo;}</em> and then place a resource lcok on them.</p>
+<p>We are going to use Azure Resource Graph to find items with a specific tag, in this case <em>{&ldquo;toBeLocked&rdquo;=&ldquo;Yes&rdquo;}</em> and then place a resource lock on them.</p>
 <h2 id="constraints--limitations">Constraints / limitations</h2>
 <ol>
 <li>Use Azure Resource Graph to perform the search. Very fast and gives you a new way to interface with Azure Resources.</li>
-<li>As part of this post, I am giving samples below to create items, you could use these for testing. Please test and make sure with production enviroments.</li>
+<li>As part of this post, I am giving samples below to create items, you could use these for testing. Please test and make sure with production environment.</li>
 <li>You are using an account that can create locks and potentially remove if needed during the testing.</li>
 </ol>
 <h2 id="lets-build-this">Lets build this</h2>
