@@ -9,12 +9,12 @@ DisableComments: false
 
 ## What are we doing?
 
-We are going to use Azure Resource Graph to find items with a specific tag, in this case *{"toBeLocked"="Yes"}* and then place a resource lcok on them.
+We are going to use Azure Resource Graph to find items with a specific tag, in this case *{"toBeLocked"="Yes"}* and then place a resource lock on them.
 
 ## Constraints / limitations
 
 1. Use Azure Resource Graph to perform the search. Very fast and gives you a new way to interface with Azure Resources.
-1. As part of this post, I am giving samples below to create items, you could use these for testing. Please test and make sure with production enviroments.
+1. As part of this post, I am giving samples below to create items, you could use these for testing. Please test and make sure with production environment.
 1. You are using an account that can create locks and potentially remove if needed during the testing.
 
 ## Lets build this
