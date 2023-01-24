@@ -5,6 +5,7 @@ Description: ""
 Tags: []
 Categories: []
 DisableComments: false
+draft: true
 ---
 
 In this post, we are going to be configuring LDAPS (LDAP Over SSL) for Azure Vmware Solution (AVS).
@@ -183,12 +184,12 @@ SASToken created: https://avsgwcsa14a2c2da.blob.core.windows.net/ldaps-blog-post
 
 ## Execute the AVS Run Command  
 
-These steps, for now, are run manually from the [Azure Portal](https://portal.azure.com). This will be found "Azure VMware Service" and under Operations, **Run command**. Then select **"New-LDAPSIdentitySource"**
+These steps, for now, are run manually from the [Azure Portal](https://portal.azure.com). This will be found "Azure VMware Solution" and under Operations, **Run command**. Then select **"New-LDAPSIdentitySource"**
 
 {{< figure src="/images/blogImages/2023/avs-ldaps-configure/snippet7.jpg" alt="code-snippet-7" >}}  
 
 Populate the information as needed.  
-**Note: the SSLCertificateSasUrl is a single consisting of the SASTokens separated with a “,”. For example, https://avsgwcsa14a2c2da.blob.core.windows.net/ldaps-blog-post/avs-gwc-dc001.cer?sv=2021-10-04&st=2023-01-12T13%3A46%3A45Z&se=2023-01-13T13%3A46%3A45Z&sr=b&sp=rwd&[Removed], https://avsgwcsa14a2c2da.blob.core.windows.net/ldaps-blog-post/avs-gwc-dc002.cer?sv=2021-10-04&st=2023-01-12T13%3A46%3A45Z&se=2023-01-13T13%3A46%3A45Z&sr=b&sp=rwd&[Removed] and pasted as a single long string.**
+**Note: the SSLCertificateSasUrl is a single string consisting of the SASTokens separated with a “,”. For example, https://avsgwcsa14a2c2da.blob.core.windows.net/ldaps-blog-post/avs-gwc-dc001.cer?sv=2021-10-04&st=2023-01-12T13%3A46%3A45Z&se=2023-01-13T13%3A46%3A45Z&sr=b&sp=rwd&[Removed], https://avsgwcsa14a2c2da.blob.core.windows.net/ldaps-blog-post/avs-gwc-dc002.cer?sv=2021-10-04&st=2023-01-12T13%3A46%3A45Z&se=2023-01-13T13%3A46%3A45Z&sr=b&sp=rwd&[Removed] and pasted as a single long string.**
 The other values would need to be updated as per your environment.  
 **Note: With the BaseDNGroups and BaseDNUsers, watch the values used as these should be under the same tree, in this example, “OU=Corp,DC=avsemea,DC=com”**
 
