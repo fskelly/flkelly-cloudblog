@@ -59,6 +59,32 @@ As a next step the certificates used by the domain controllers for LDAPS service
 
 With the following commands we will connect to the required domain controllers. In our scenario, these are **avs-gwc-dc001.avsemea.com** and **avs-gwc-dc002.avsemea.com** and we then use OpenSSL to extract the required certificates. You will need to specify the path of your openssl.exe, currently tested version is 3.0 and was installed with [Chocolatey](https://community.chocolatey.org/packages/openssl). Our install path is **C:\Program Files\OpenSSL-Win64\bin\openssl.exe**. You will need to update the export path to suit your needs, we chose to use **c:\certTemp**
 
+**Notes**  
+***$openSSLFilePath*** may need to be changed, was installed using [chocolatey](https://community.chocolatey.org/packages/openssl) in our example.  
+***$remoteComputers*** would need to be changed to suit your environment.  
+***$exportFolder*** can be changed to something more suitable for your environment.
+
+```powershell
+## Get certs
+$openSSLFilePath = "C:\Program Files\OpenSSL-Win64\bin\openssl.exe"
+$remoteComputers = "avs-gwc-dc001.avsemea.com","avs-gwc-dc002.avsemea.com"
+$port = "636"
+$exportFolder = "c:\temp\"
+
+foreach ($computer in $remoteComputers)
+{
+    $output =  echo "1" | & $openSSLFilePath "s_client" "-connect" "$computer`:$port" "-showcerts" | out-string
+    $Matches = $null
+    $cn = $output -match "0 s\:CN = (?<cn>.*?)\r\n"
+    $cn = $Matches.cn
+    $Matches = $null
+    $certs = select-string -inputobject $output -pattern "(?s)(?<cert>-----BEGIN CERTIFICATE-----.*?-----END CERTIFICATE-----)" -allmatches
+    $cert = $certs.matches[0]
+    $exportPath = $exportFolder+($computer.split(".")[0])+".cer"
+    $cert.Value | Out-File $exportPath -Encoding ascii
+}
+```
+
 {{< figure src="/images/blogImages/2023/avs-ldaps-configure-part3/5-powershell-cert-extract.jpg" alt="PowerShell-using-openssl-to-extract-certs" >}}
 
 ## Validate domain controller certificate requirements
@@ -124,6 +150,45 @@ After a few minutes the creation of the storage account should be completed:
 
 With these commands, we will check for the Azure Module, install them if missing and then continue the script. We will create the required storage account, or use an existing storage account. The **$storageAccountName**  and **$resourceGroupLocation** variables can be updated or replaced as needed to meet your needs. These scripts are designed to be run in sections one after each other to ensure the variable names are correctly referenced.
 
+**Notes**  
+***$resourceGroupLocation*** will need to be updated to your desired location.  
+***$storageRgName*** will need to be updated.  
+***$storageAccountName*** will need to be updated.  
+
+```powershell
+## Do you have the Azure MOdule installed?
+if (Get-Module -ListAvaialble -name Az.Storage)
+{ write-output "Module exists" }        
+{
+    write-output "Module does not exist"
+    write-output "installing Module"
+    Install-Module -name Az.Storage -Scope CurrentUser -Force -AllowClobber
+}
+
+## create storage account
+
+$resourceGroupLocation = "germanywestcentral"
+$storageRgName = "avs-$resourceGroupLocation-operational_rg"
+## Storage account variables
+$guid = New-Guid
+$storageAccountName = "avsgwcsa"
+$storageAccountNameSuffix = $guid.ToString().Split("-")[0]
+$storageAccountName = (($storageAccountName.replace("-",""))+$storageAccountNameSuffix )
+## Define tags to be used if needed
+## tags can be modified to suit your needs, another example below.
+#$tags = @{"Environment"="Development";"Owner"="FTA";"CostCenter"="123456"}
+$tags = @{"deploymentMethod"="PowerShell"; "Technology"="AVS"}
+## create storage account
+$saCheck = Get-AzStorageAccount -ResourceGroupName $storageRgName -Name $storageAccountName -ErrorAction SilentlyContinue
+if ($null -eq $saCheck)
+{
+    New-AzStorageAccount -ResourceGroupName $storageRgName -Name $storageAccountName -Location $resourceGroupLocation -SkuName Standard_LRS -Kind StorageV2 -EnableHttpsTrafficOnly $true -Tags $tags
+    Write-Output "Storage account created: $storageAccountName"
+} else {
+    write-output "Storage Account already exists"
+}
+```
+
 {{< figure src="/images/blogImages/2023/avs-ldaps-configure-part3/12-automated-create-storage-account.jpg" alt="scripted-creation-of-storage-account" >}}  
 
 ## Create Storage Blob container
@@ -153,6 +218,22 @@ The new container should now be created and displayed in the "Containers" view f
 ### Automated deployment
 
 With these commands, we will create the container to upload the earlier exported certificates to, this will be important for the creation of the SAS Tokens for the AVS LDAPS Run Command.
+
+**Notes**  
+***$containerName*** will need to be updated
+
+```powershell
+## create container
+$containerName = "ldaps"
+$containerCheck = Get-AzStorageContainer -name $containerName -Context (Get-AzStorageAccount -ResourceGroupName $storageRgName -Name $storageAccountName).Context -ErrorAction SilentlyContinue
+if ($null -eq $containerCheck)
+{
+    New-AzStorageContainer -name $containerName -Context (Get-AzStorageAccount -ResourceGroupName $storageRgName -Name $storageAccountName).Context
+    Write-Output "Storage container created: $containerName"
+} else {
+    write-output "Container already exists"
+}
+```
 
 {{< figure src="/images/blogImages/2023/avs-ldaps-configure-part3/15-automated-create-storage-container.jpg" alt="create-storage-container" >}}  
 
@@ -197,6 +278,18 @@ The certificates will now be uploaded into the blob container. The process is co
 
 With these commands, we will upload the actual certificates into the previously created container. In this example we are using "**ldaps-blog-post**"
 
+```powershell
+## upload certs to container
+$certs = Get-ChildItem -Path $exportFolder -Filter *.cer
+$storageContext = (Get-AzStorageAccount -Name $storageAccountName -ResourceGroupName $storageRgName).Context
+foreach ($item in $certs)
+{
+    $localFilePath = $item.FullName
+    $azureFileName = $localFilePath.Split('\')[$localFilePath.Split('\').count-1]
+    Get-AzStorageAccount -Name $storageAccountName -ResourceGroupName $storageRgName | Get-AzStorageContainer -Name $containerName | Set-AzStorageBlobContent -File $localFilePath -Blob $azureFileName
+}
+```
+
 {{< figure src="/images/blogImages/2023/avs-ldaps-configure-part3/21-automated-upload-certs-1.jpg" alt="scripted-cert-upload-1" >}} 
 
 {{< figure src="/images/blogImages/2023/avs-ldaps-configure-part3/22-automated-upload-certs-2.jpg" alt="scripted-cert-upload-2" >}} 
@@ -211,7 +304,7 @@ One section describes how the required procedure is performed manually through t
 The manual deployment continues within the same blade in the Azure Portal where the previous step left off.
 For each of the uploaded certificates, generate a "**SAS token**":
 
-{{< figure src="/images/blogImages/2023/avs-ldaps-configure-part3/23-manual-generate-sas-1.jpg" alt="sas-process-1" >}} 
+{{< figure src="/images/blogImages/2023/avs-ldaps-configure-part3/23-manual-generate-sas-1.jpg" alt="sas-process-1" height="300" >}} 
 
 For each certificate separately:
 
@@ -221,19 +314,36 @@ For each certificate separately:
 
 In the following screen:
 
-{{< figure src="/images/blogImages/2023/avs-ldaps-configure-part3/24-manual-generate-sas-2.jpg" alt="sas-process-2" >}} 
+{{< figure src="/images/blogImages/2023/avs-ldaps-configure-part3/24-manual-generate-sas-2.jpg" alt="sas-process-2" height="300">}} 
 
 1. Make sure to select a proper validity period for the SAS token. By default the SAS token will be valid for 8 hours which should be sufficient when performing the configuration in a continuous effort;
 1. Click "Generate SAS token and URL".
 After clicking "Generate SAS token and URL" an additional section will be displayed at the bottom of the screen:
 
-{{< figure src="/images/blogImages/2023/avs-ldaps-configure-part3/25-manual-generate-sas-complete.jpg" alt="sas-process-complete" >}} 
+{{< figure src="/images/blogImages/2023/avs-ldaps-configure-part3/25-manual-generate-sas-complete.jpg" alt="sas-process-complete" height="300" >}} 
 
 Be sure to copy the "Blob SAS URL" generated for each separate certificate into a text-file temporarily as they will need to be concatenated into a single string **separated by a comma** for use during the execution of the run-command as explained in step "Execute Run-Command".
 
 ### Automated deployment
 
 With these commands, we will generate the SAS Token needed for the next steps, please note down **BOTH** tokens. In this script, the tokens are valid for **24 hours** and can be modified to suit your needs.
+
+**Notes**  
+***$containerName*** will need to be updated
+
+```powershell
+## create SAS token
+$containerName = "ldaps-blog-post"
+$blobs = Get-AzStorageBlob -Container $containerName -Context $storageContext | Where-Object {$_.name -match ".cer"}
+foreach ($blob in $blobs)
+{
+    $StartTime = Get-Date
+    $EndTime = $startTime.AddHours(24.0)
+    $sasToken = New-AzStorageBlobSASToken -Container $containerName -Blob $blob.name -Permission rwd -StartTime $StartTime -ExpiryTime $EndTime -Context $storageContext -FullUri
+    #$sasToken
+    write-host "SASToken created: $sasToken"
+}
+```
 
 {{< figure src="/images/blogImages/2023/avs-ldaps-configure-part3/26-automated-sas-token-creation.jpg" alt="scripted=sas-token-creation" >}} 
 
