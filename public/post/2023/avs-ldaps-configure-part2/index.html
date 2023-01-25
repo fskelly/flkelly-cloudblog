@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" data-theme=""><head>
+    <title> Fletcher Kelly | Azure VMware Solution: A comprehensive guide to LDAPS identity integration - Part 2 </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.102.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="Just a simple cloud tinkerer">
+    
+    <link rel="stylesheet"
+          href="https://cloud.fskelly.com/css/style.min.cf1a79e57110a79f2495dd1b2ddd6917f99cd654f5a180c165921094a29f6b6a.css"
+          integrity="sha256-zxp55XEQp58kld0bLd1pF/mc1lT1oYDBZZIQlKKfa2o="
+          crossorigin="anonymous"
+          type="text/css">
+    
+    <link rel="stylesheet"
+        href="https://cloud.fskelly.com/css/markupHighlight.min.8735c129318a1c824d066fc2cd1e3911054460819c296ac99007aeb5044b6605.css"
+        integrity="sha256-hzXBKTGKHIJNBm/CzR45EQVEYIGcKWrJkAeutQRLZgU="
+        crossorigin="anonymous"
+        type="text/css">
+    
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+
+    
+    <link rel="shortcut icon" href="https://cloud.fskelly.com/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cloud.fskelly.com/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cloud.fskelly.com/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cloud.fskelly.com/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="https://cloud.fskelly.com/post/2023/avs-ldaps-configure-part2/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="https://cloud.fskelly.com/js/anatole-header.min.df804b63b5bd8474ea0756ea874bc8f1e92552708cc6ea43aa0d76981dc419f9.js"
+            integrity="sha256-34BLY7W9hHTqB1bqh0vI8eklUnCMxupDqg12mB3EGfk="
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        var sdkInstance="appInsightsSDK";window[sdkInstance]="appInsights";var aiName=window[sdkInstance],aisdk=window[aiName]||function(e){function n(e){t[e]=function(){var n=arguments;t.queue.push(function(){t[e].apply(t,n)})}}var t={config:e};t.initialize=!0;var i=document,a=window;setTimeout(function(){var n=i.createElement("script");n.src=e.url||"https://az416426.vo.msecnd.net/scripts/b/ai.2.min.js",i.getElementsByTagName("script")[0].parentNode.appendChild(n)});try{t.cookie=i.cookie}catch(e){}t.queue=[],t.version=2;for(var r=["Event","PageView","Exception","Trace","DependencyData","Metric","PageViewPerformance"];r.length;)n("track"+r.pop());n("startTrackPage"),n("stopTrackPage");var s="Track"+r[0];if(n("start"+s),n("stop"+s),n("setAuthenticatedUserContext"),n("clearAuthenticatedUserContext"),n("flush"),!(!0===e.disableExceptionTracking||e.extensionConfig&&e.extensionConfig.ApplicationInsightsAnalytics&&!0===e.extensionConfig.ApplicationInsightsAnalytics.disableExceptionTracking)){n("_"+(r="onerror"));var o=a[r];a[r]=function(e,n,i,a,s){var c=o&&o(e,n,i,a,s);return!0!==c&&t["_"+r]({message:e,url:n,lineNumber:i,columnNumber:a,error:s}),c},e.autoExceptionInstrumented=!0}return t}(
+        {
+            instrumentationKey:"86b46f86-3e13-4c32-95bc-3122160559a7"
+        }
+        );window[aiName]=aisdk,aisdk.queue&&0===aisdk.queue.length&&aisdk.trackPageView({});
+    </script>
+
+
+    
+        
+        
+        <script type="text/javascript"
+                src="https://cloud.fskelly.com/js/anatole-theme-switcher.min.3829579c725749492568b0e6fa9da3012a7fc37fd291b4fd79e33c1df5d8a34a.js"
+                integrity="sha256-OClXnHJXSUklaLDm&#43;p2jASp/w3/SkbT9eeM8HfXYo0o="
+                crossorigin="anonymous"></script>
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Azure VMware Solution: A comprehensive guide to LDAPS identity integration - Part 2"/>
+<meta name="twitter:description" content="Implementing LDAPS identity integration with Azure VMware Solution series - 2 of 4 This is the second part of the blog series on how to implement LDAPS identity integration with Azure VMware Solution. Other parts of this series can be found here:
+LDAPS integration - part 1 of 4 LDAPS integration - part 3 of 4 LDAPS integration - part 4 of 4 Configure DNS forwarding prerequisite Before we can configure integration with an external identity store (e."/>
+
+</head>
+<body><div class="sidebar animated fadeInDown ">
+    <div class="logo-title">
+        <div class="title">
+            <img src="https://cloud.fskelly.com/images/cloud-gd3eff23c2_640.jpg" alt="profile picture">
+            <h3 title=""><a href="/">Fletcher&#39;s Cloud Journey</a></h3>
+            <div class="description">
+                <p>Just a simple cloud tinkerer</p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://www.linkedin.com/in/fletcherkelly/" rel="me" aria-label="Linkedin">
+                    <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://github.com/fskelly/" rel="me" aria-label="GitHub">
+                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="mailto:fletcher_kelly@outlook.com" rel="me" aria-label="e-mail">
+                    <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; Fletcher Kelly  2023 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top  animated fadeInDown ">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+            
+            <li><a 
+                   href="/"
+                        
+                   title="">Home</a></li>
+        
+            
+            <li><a 
+                   href="/post/"
+                        
+                   title="">Posts</a></li>
+        
+            
+            <li><a 
+                   href="/page/archives/"
+                        
+                   title="Archives">Archives</a></li>
+        
+            
+            <li><a 
+                   href="/page/search/"
+                        
+                   title="Search">Search</a></li>
+        
+            
+            <li><a 
+                   href="/page/about/"
+                        
+                   title="About Blog">About Blog</a></li>
+        
+            
+            <li><a 
+                   href="/page/fletcherkelly/"
+                        
+                   title="About Fletcher Kelly">About Fletcher Kelly</a></li>
+        
+            
+            <li><a 
+                   href="/page/robinheringa/"
+                        
+                   title="About Robin Heringa">About Robin Heringa</a></li>
+        
+            
+            <li><a 
+                   href="/tags/"
+                        
+                   title="">Tags</a></li>
+        
+        
+        
+            <li class="theme-switch-item">
+                <a class="theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post  animated fadeInDown ">
+        <div class="post-content">
+            <div class="post-title">
+                <h3>Azure VMware Solution: A comprehensive guide to LDAPS identity integration - Part 2</h3>
+                
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date">Wed, Jan 25, 2023</span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time">4-minute read</span>
+                    </div>
+                
+            </div>
+
+            <h1 id="implementing-ldaps-identity-integration-with-azure-vmware-solution-series---2-of-4">Implementing LDAPS identity integration with Azure VMware Solution series - 2 of 4</h1>
+<p>This is the second part of the blog series on how to implement LDAPS identity integration with Azure VMware Solution. Other parts of this series can be found here:</p>
+<ol>
+<li><a href="../avs-ldaps-configure-part1/">LDAPS integration - part 1 of 4</a></li>
+<li><a href="../avs-ldaps-configure-part3/">LDAPS integration - part 3 of 4</a></li>
+<li><a href="../avs-ldaps-configure-part4/">LDAPS integration - part 4 of 4</a></li>
+</ol>
+<h2 id="configure-dns-forwarding-prerequisite">Configure DNS forwarding prerequisite</h2>
+<p>Before we can configure integration with an external identity store (e.g. Active Directory Domain Services) we need to make sure that the AVS platform components have the ability to resolve customer DNS zones hosting the LDAPS domain records. This configuration must be made through the Azure Portal blades for Azure VMware Solution.</p>
+<h2 id="open-the-azure-vmware-solution-dns-configuration-pane">Open the Azure VMware Solution DNS configuration pane</h2>
+<p>The first step in configuring DNS name resolution from the Azure VMware Solution networks (management and workload segments) is to add a DNS zone for Azure VMware.
+Login to the Azure Portal and select the Azure Active Directory tenant and Azure subscription where you have deployed your Azure VMware Solution Private Cloud.</p>
+<figure><img src="/images/blogImages/2023/avs-ldaps-configure-part2/open-DNS-configuration-pane.jpg"
+         alt="Open DNS Configuration"/>
+</figure>
+
+<p>As depicted in the image above:</p>
+<ol>
+<li>Click on &ldquo;Azure VMware Solution&rdquo; in the main navigation pane;</li>
+<li>Click the Azure VMware Solution Private Cloud you want to configure. In our scenario walk-through we select <strong>avs-fta-gwc</strong> as per the description of our lab environment used;</li>
+<li>In the navigation pane that now opened, scroll down to the section &ldquo;Workload networking&rdquo; and select &ldquo;DNS&rdquo;.
+The Azure Portal blade for configuring the Azure VMware Solution DNS configuration will now open.</li>
+</ol>
+<h2 id="configure-the-required-dns-zones-details">Configure the required DNS zones details</h2>
+<p>The Azure VMware Solution DNS configuration pane opens the section where &ldquo;conditional DNS forwarder&rdquo; zones are configured.</p>
+<figure><img src="/images/blogImages/2023/avs-ldaps-configure-part2/configure-the-required-DNS-zones-details-1.jpg"
+         alt="Advanced DNS Configuration"/>
+</figure>
+
+<p>As shown in the image above:</p>
+<ol>
+<li>Click &ldquo;+ Add&rdquo; in the top navigation structure. A new configuration panel will appear on the right side of your browser window;</li>
+<li>Under (DNS zone) Type, select the &ldquo;FQDN zone&rdquo; option;</li>
+<li>Under DNS zone name, enter a descriptive name used within NSX-T to identify the DNS zone. We recommend to use the DNS FQDN of the zone used by your LDAP/S identity infrastructure. In our scenario the DNS zone name we use is <strong>avsemea.com</strong>;</li>
+<li>Under Domain, enter the DNS zone FQDN we will be forwarding traffic for. In our scenario we use <strong>avsemea.com</strong> here as well;</li>
+<li>Under DNS server IP, enter the IP addresses of your DNS servers. It is recommended to use DNS servers that are situated inside of Azure. In our scenario we will use the IP addresses of our two avsemea.com domain controllers: <strong>172.16.11.4</strong> and <strong>172.16.11.5</strong>;</li>
+<li>Click the &ldquo;OK&rdquo; button to create the required DNS FQDN zone in NSX-T.</li>
+</ol>
+<p>After a few minutes, the DNS FQDN zone, <strong>avsemea.com</strong>, will be listed in the DNS blade for your Azure VMware Solution Private Cloud as shown below:</p>
+<figure><img src="/images/blogImages/2023/avs-ldaps-configure-part2/configure-the-required-DNS-zones-details-2.jpg"
+         alt="Advanced DNS Configuration 2"/>
+</figure>
+
+<h2 id="attach-the-dns-zone-configuration-to-the-nsx-t-dns-forwarder-service">Attach the DNS zone configuration to the NSX-T DNS forwarder service</h2>
+<p>Now that we created the DNS conditional forwarder zone we need to attach this zone to the NSX-T DNS service running in Azure VMware Solution to enable NSX-T to actually use the DNS conditional forwarder zone for use.</p>
+<figure><img src="/images/blogImages/2023/avs-ldaps-configure-part2/Attach-the-DNS-zone-configuration-to-the-NSX-T-DNS-forwarder-service-1.jpg"
+         alt="DNS and NSX-T Forwarder"/>
+</figure>
+
+<p>In the Azure VMware Solution DNS blade:</p>
+<ol>
+<li>Click &ldquo;DNS service&rdquo; at the top of the blade;</li>
+<li>Click &ldquo;Edit&rdquo; to enable configuration changes to the NSX-T DNS service;</li>
+<li>In the &ldquo;Edit DNS service&rdquo; screen, open the &ldquo;FQDN zones&rdquo; drop down and select the FQDN zone you want to attach to the service. In our scenario we select the <strong>avsemea.com</strong> zone;</li>
+<li>Click &ldquo;OK&rdquo; to save the configuration change.</li>
+</ol>
+<p>When the change to the NSX-T DNS service is effectuated the <strong>avsemea.com</strong> DNS zone will now be listed in the DNS service configuration:</p>
+<figure><img src="/images/blogImages/2023/avs-ldaps-configure-part2/configure-the-required-DNS-zones-details-2.jpg"
+         alt="Advanced DNS Configuration 2"/>
+</figure>
+
+<p>After this step the configuration of the Azure VMware Solution DNS service is complete.
+The next article in this series will describe the detailed steps in configuring LDAPS integration through the Azure portal or automation where possible.</p>
+<p><a href="../avs-ldaps-configure-part2/snippets.ps1">snippets.ps1 file (all code commands)</a><br>
+<a href="../avs-ldaps-configure-part1/">&lt; Previous</a> <a href="../avs-ldaps-configure-part3/">Next&gt;</a></p>
+</div>
+        <div class="post-footer">
+            <div class="info">
+                <span class="separator"><a class="category" href="/categories/azure-vmware-solution/">Azure VMware Solution</a></span>
+
+                <span class="separator"><a class="tag" href="/tags/avs/">AVS</a><a class="tag" href="/tags/identity/">Identity</a><a class="tag" href="/tags/ldaps/">LDAPS</a></span>
+
+            </div>
+        </div>
+
+        
+            <div id="fb_comments_container">
+                    <h2>comments</h2>
+                    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "fletchercloudblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                </div>
+        
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="https://cloud.fskelly.com/js/jquery.min.dc9557ffff8d4167d0bd0986e7801e57433dd3d61afa8c249589c1d0eb4be182.js"
+        integrity="sha256-3JVX//&#43;NQWfQvQmG54AeV0M909Ya&#43;owklYnB0OtL4YI="
+        crossorigin="anonymous"></script>
+
+
+
+
+<script type="text/javascript"
+        src="https://cloud.fskelly.com/js/bundle.min.551d602d34abc028bd83aee2559cc42480309c71830c7fab71f7d70b5c5dda3b.js"
+        integrity="sha256-VR1gLTSrwCi9g67iVZzEJIAwnHGDDH&#43;rcffXC1xd2js="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript"
+        src="https://cloud.fskelly.com/js/medium-zoom.min.e1c6918cbaa90022a5612f0bd71c7bf3be6d036614c5729cebfe14f7b91fa4bc.js"
+        integrity="sha256-4caRjLqpACKlYS8L1xx7875tA2YUxXKc6/4U97kfpLw="
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

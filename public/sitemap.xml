@@ -2,6 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://cloud.fskelly.com/tags/avs/</loc>
+    <lastmod>2023-01-25T08:45:43+00:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/categories/azure-vmware-solution/</loc>
+    <lastmod>2023-01-25T08:45:43+00:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/post/2023/avs-ldaps-configure-part1/</loc>
+    <lastmod>2023-01-25T08:45:43+00:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/post/2023/avs-ldaps-configure-part2/</loc>
+    <lastmod>2023-01-25T08:45:43+00:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/post/2023/avs-ldaps-configure-part3/</loc>
+    <lastmod>2023-01-25T08:45:43+00:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/post/2023/avs-ldaps-configure-part4/</loc>
+    <lastmod>2023-01-25T08:45:43+00:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/categories/</loc>
+    <lastmod>2023-01-25T08:45:43+00:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/</loc>
+    <lastmod>2023-01-25T08:45:43+00:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/tags/identity/</loc>
+    <lastmod>2023-01-25T08:45:43+00:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/tags/ldaps/</loc>
+    <lastmod>2023-01-25T08:45:43+00:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/post/</loc>
+    <lastmod>2023-01-25T08:45:43+00:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/tags/</loc>
+    <lastmod>2023-01-25T08:45:43+00:00</lastmod>
+  </url><url>
     <loc>https://cloud.fskelly.com/categories/azure/</loc>
     <lastmod>2022-10-03T13:59:06+01:00</lastmod>
   </url><url>
@@ -11,19 +47,7 @@
     <loc>https://cloud.fskelly.com/categories/azure-resource-graph/</loc>
     <lastmod>2022-10-03T13:59:06+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/categories/</loc>
-    <lastmod>2022-10-03T13:59:06+01:00</lastmod>
-  </url><url>
-    <loc>https://cloud.fskelly.com/</loc>
-    <lastmod>2022-10-03T13:59:06+01:00</lastmod>
-  </url><url>
-    <loc>https://cloud.fskelly.com/post/</loc>
-    <lastmod>2022-10-03T13:59:06+01:00</lastmod>
-  </url><url>
     <loc>https://cloud.fskelly.com/tags/powershell/</loc>
-    <lastmod>2022-10-03T13:59:06+01:00</lastmod>
-  </url><url>
-    <loc>https://cloud.fskelly.com/tags/</loc>
     <lastmod>2022-10-03T13:59:06+01:00</lastmod>
   </url><url>
     <loc>https://cloud.fskelly.com/post/2022/using-arg-tolock-resources/</loc>
@@ -64,12 +88,6 @@
   </url><url>
     <loc>https://cloud.fskelly.com/post/2022/openssh-powershell/</loc>
     <lastmod>2022-04-25T14:27:03+01:00</lastmod>
-  </url><url>
-    <loc>https://cloud.fskelly.com/tags/avs/</loc>
-    <lastmod>2022-03-28T07:27:16+01:00</lastmod>
-  </url><url>
-    <loc>https://cloud.fskelly.com/categories/azure-vmware-solution/</loc>
-    <lastmod>2022-03-28T07:27:16+01:00</lastmod>
   </url><url>
     <loc>https://cloud.fskelly.com/tags/networking/</loc>
     <lastmod>2022-03-28T07:27:16+01:00</lastmod>

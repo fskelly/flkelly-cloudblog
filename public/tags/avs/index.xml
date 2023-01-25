@@ -6,7 +6,47 @@
     <description>Recent content in AVS on Fletcher&#39;s Cloud Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Mar 2022 07:27:16 +0100</lastBuildDate><atom:link href="https://cloud.fskelly.com/tags/avs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Jan 2023 08:45:43 +0000</lastBuildDate><atom:link href="https://cloud.fskelly.com/tags/avs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure VMware Solution: A comprehensive guide to LDAPS identity integration - Part 1</title>
+      <link>https://cloud.fskelly.com/post/2023/avs-ldaps-configure-part1/</link>
+      <pubDate>Wed, 25 Jan 2023 08:45:43 +0000</pubDate>
+      
+      <guid>https://cloud.fskelly.com/post/2023/avs-ldaps-configure-part1/</guid>
+      <description>Implementing LDAPS identity integration with Azure VMware Solution series - 1 of 4 This is the first part of the blog series on how to implement LDAPS identity integration with Azure VMware Solution. Other parts of this series can be found here:
+LDAPS integration - part 2 of 4 LDAPS integration - part 3 of 4 LDAPS integration - part 4 of 4 Azure VMware Solution (AVS) offers a fully managed software defined data center based on VMware vSphere technologies in the shape of an Azure PaaS service.</description>
+    </item>
+    
+    <item>
+      <title>Azure VMware Solution: A comprehensive guide to LDAPS identity integration - Part 2</title>
+      <link>https://cloud.fskelly.com/post/2023/avs-ldaps-configure-part2/</link>
+      <pubDate>Wed, 25 Jan 2023 08:45:43 +0000</pubDate>
+      
+      <guid>https://cloud.fskelly.com/post/2023/avs-ldaps-configure-part2/</guid>
+      <description>Implementing LDAPS identity integration with Azure VMware Solution series - 2 of 4 This is the second part of the blog series on how to implement LDAPS identity integration with Azure VMware Solution. Other parts of this series can be found here:
+LDAPS integration - part 1 of 4 LDAPS integration - part 3 of 4 LDAPS integration - part 4 of 4 Configure DNS forwarding prerequisite Before we can configure integration with an external identity store (e.</description>
+    </item>
+    
+    <item>
+      <title>Azure VMware Solution: A comprehensive guide to LDAPS identity integration - Part 3</title>
+      <link>https://cloud.fskelly.com/post/2023/avs-ldaps-configure-part3/</link>
+      <pubDate>Wed, 25 Jan 2023 08:45:43 +0000</pubDate>
+      
+      <guid>https://cloud.fskelly.com/post/2023/avs-ldaps-configure-part3/</guid>
+      <description>Implementing LDAPS identity integration with Azure VMware Solution series - 3 of 4 This is the third part of the blog series on how to implement LDAPS identity integration with Azure VMware Solution. Other parts of this series can be found here:
+LDAPS integration - part 1 of 4 LDAPS integration - part 2 of 4 LDAPS integration - part 4 of 4 Implement LDAPS integration The following sections will guide you through the required process step-by-step</description>
+    </item>
+    
+    <item>
+      <title>Azure VMware Solution: A comprehensive guide to LDAPS identity integration - Part 4</title>
+      <link>https://cloud.fskelly.com/post/2023/avs-ldaps-configure-part4/</link>
+      <pubDate>Wed, 25 Jan 2023 08:45:43 +0000</pubDate>
+      
+      <guid>https://cloud.fskelly.com/post/2023/avs-ldaps-configure-part4/</guid>
+      <description>Implementing LDAPS identity integration with Azure VMware Solution series - 4 of 4 This is the fourth and final part of the blog series on how to implement LDAPS identity integration with Azure VMware Solution. Other parts of this series can be found here:
+LDAPS integration - part 1 of 4 LDAPS integration - part 2 of 4 LDAPS integration - part 3 of 4 These steps, for now, are run manually from the Azure Portal.</description>
+    </item>
+    
     <item>
       <title>Using Azure Virtual WAN to connect to Azure VMware Solution</title>
       <link>https://cloud.fskelly.com/post/2022/poc-vwan-avs/</link>

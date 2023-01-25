@@ -180,6 +180,106 @@
 
         <div class="post  animated fadeInDown ">
             <div class="post-title">
+                <h3><a href="/post/2022/avs-to-internet-able-or-not/">Azure VMware Solution: To &#39;Internet Enabled&#39; or not?</a>
+                </h3>
+            </div>
+            <div class="post-content">
+                <div class="p_part"><p>Guest Post Author: Robin Heringa
+What else do I need to know when using Azure VMware Solution (AVS)?
+As you all (probably) know by now Azure VMware Solution is a managed service offered by Microsoft providing a managed VMware vSphere environment to customers. With this offering customers no longer need to worry about hardware maintenance, hardware refresh and software maintenance for the core VMware components (ESXi, vCenter and NSX-T).
+By default, after initial deployment of Azure VMware Solution, virtual machines do not have the ability to egress to the Internet.</p></div>
+            </div>
+            <div class="post-footer">
+                <div class="meta">
+                    <div class="info"><em class="fas fa-calendar-day"></em><span
+                                class="date">Thu, Mar 17, 2022</span>
+                        <a class="tag"
+                                   href="/tags/avs/">AVS</a><a class="tag"
+                                   href="/tags/networking/">Networking</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+        <div class="post  animated fadeInDown ">
+            <div class="post-title">
+                <h3><a href="/post/2022/new-to-avs-nomon-networking-1/">I want to use Azure VMware Solution, what should I know about networking?</a>
+                </h3>
+            </div>
+            <div class="post-content">
+                <div class="p_part"><p>Author: Fletcher Kelly
+What else do I need to know when using Azure VMware Solution (AVS)?
+Networking Edition
+I have been working with many customers over the last little while that are looking at Azure VMware Solution (AVS).
+Often the idea and use case for the customer is correct. There are a few great reasons to use AVS. If you fit within the use cases, you are in for a real treat.</p></div>
+            </div>
+            <div class="post-footer">
+                <div class="meta">
+                    <div class="info"><em class="fas fa-calendar-day"></em><span
+                                class="date">Wed, Mar 9, 2022</span>
+                        <a class="tag"
+                                   href="/tags/avs/">AVS</a><a class="tag"
+                                   href="/tags/networking/">Networking</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+        <div class="post  animated fadeInDown ">
+            <div class="post-title">
+                <h3><a href="/post/2021/2021-arg-networking-mgmt-more/">Azure Resource Graph - More queries for Networking and Management Groups</a>
+                </h3>
+            </div>
+            <div class="post-content">
+                <div class="p_part"><p>Just some more queries I have developed.
+Networking Don&rsquo;t create unnecessarily large virtual networks (for example, /16) to ensure that IP address space isn&rsquo;t wasted.
+resources | where type == &#34;microsoft.network/virtualnetworks&#34; | extend addressSpace = todynamic(properties.addressSpace) | extend addressPrefix = todynamic(properties.addressSpace.addressPrefixes) | mvexpand addressSpace | mvexpand addressPrefix | extend addressMask = split(addressPrefix,&#39;/&#39;)[1] | where addressMask &lt;= 16 Smallest recommended size for a GatewaySubnet is /27
+When you are planning your gateway subnet size, refer to the documentation for the configuration that you are planning to create.</p></div>
+            </div>
+            <div class="post-footer">
+                <div class="meta">
+                    <div class="info"><em class="fas fa-calendar-day"></em><span
+                                class="date">Thu, Dec 9, 2021</span>
+                        <a class="tag"
+                                   href="/tags/azure/">azure</a><a class="tag"
+                                   href="/tags/resource-graph/">resource graph</a><a class="tag"
+                                   href="/tags/blog/">blog</a><a class="tag"
+                                   href="/tags/eslz/">ESLZ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+        <div class="post  animated fadeInDown ">
+            <div class="post-title">
+                <h3><a href="/post/2021/arg-mg--query-quick-post/">Azure Resource Group Enterprise Scale Landing Zone queries</a>
+                </h3>
+            </div>
+            <div class="post-content">
+                <div class="p_part"><p>Azure Resource Graph Examples This is just a quick post. I am slowly working on building a collection of Resource Graph Queries - they can be found here and will grow over time. It just takes some time to build these.
+They will be broken down into a folder structure based upon the Critical Design Areas of Enterprise Scale Landing Zone
+Hope this helps and keep an eye out for more.</p></div>
+            </div>
+            <div class="post-footer">
+                <div class="meta">
+                    <div class="info"><em class="fas fa-calendar-day"></em><span
+                                class="date">Wed, Aug 25, 2021</span>
+                        <a class="tag"
+                                   href="/tags/azure/">azure</a><a class="tag"
+                                   href="/tags/resource-graph/">resource graph</a><a class="tag"
+                                   href="/tags/blog/">blog</a><a class="tag"
+                                   href="/tags/quick-post/">quick post</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+        <div class="post  animated fadeInDown ">
+            <div class="post-title">
                 <h3><a href="/post/2021/bicep-troubleshooting/">Bicep Troubleshooting</a>
                 </h3>
             </div>
@@ -312,72 +412,6 @@ A few key decisions Must be version controlled - good practice and forces me to 
             </div>
         </div>
     
-
-        <div class="post  animated fadeInDown ">
-            <div class="post-title">
-                <h3><a href="/post/2019/importance-of-networking-azure/">Importance of Networking Azure</a>
-                </h3>
-            </div>
-            <div class="post-content">
-                <div class="p_part"><p>As a start to this blog post, I think it is important to understand how I see my role as a CSA (Cloud Solution Architect) with my customer. I am primarily a trusted advisor and my customers respect what I have to say, I question and challenge my customers in a constructive way to approach the challenge or problem statement in a different way. I have an amazing role of using Azure as my LEGO playpen and then building a custom solution (LEGO model) to help my customers.</p></div>
-            </div>
-            <div class="post-footer">
-                <div class="meta">
-                    <div class="info"><em class="fas fa-calendar-day"></em><span
-                                class="date">Wed, Aug 7, 2019</span>
-                        <a class="tag"
-                                   href="/tags/csa/">CSA</a><a class="tag"
-                                   href="/tags/architecture/">Architecture</a><a class="tag"
-                                   href="/tags/networking/">Networking</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-
-        <div class="post  animated fadeInDown ">
-            <div class="post-title">
-                <h3><a href="/post/2019/csa-tools-of-the-trade/">Csa Tools of the Trade</a>
-                </h3>
-            </div>
-            <div class="post-content">
-                <div class="p_part"><p>So a question I often get asked is &ldquo;what tools or products do you use?&rdquo;. So I decided to do a post around the tools and technologies that I personally use on a daily basis. So to start this is what people see on my screen on a daily basis.
-This is my most common tool, Visual Studio Code, the version shown above is actually the Insiders Build. The primary reason for this tool is that is a &ldquo;container&rdquo; for other tools and functionality.</p></div>
-            </div>
-            <div class="post-footer">
-                <div class="meta">
-                    <div class="info"><em class="fas fa-calendar-day"></em><span
-                                class="date">Tue, Jul 9, 2019</span>
-                        <a class="tag"
-                                   href="/tags/csa/">CSA</a><a class="tag"
-                                   href="/tags/cloud-tools/">cloud tools</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-
-        <div class="post  animated fadeInDown ">
-            <div class="post-title">
-                <h3><a href="/post/2019/network-security-group-change-alerting/">Network Security Group Change Alerting</a>
-                </h3>
-            </div>
-            <div class="post-content">
-                <div class="p_part"><p>So, I was with a customer and they are asking for a fairly standard alert.
-&ldquo;Please alert me when an NSG is added or modified&rdquo;. Seems simply enough, however this is not as simply as you think. So I used my favourite search and found the following, “How to receive an email on Azure Network Security Group Rule changes“, this is great content and after testing, it works exactly as expected.</p></div>
-            </div>
-            <div class="post-footer">
-                <div class="meta">
-                    <div class="info"><em class="fas fa-calendar-day"></em><span
-                                class="date">Wed, Feb 20, 2019</span>
-                        <a class="tag"
-                                   href="/tags/nsg/">nsg</a><a class="tag"
-                                   href="/tags/azure-monitor/">azure monitor</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
     <div class="pagination">
         
     <ul class="pagination pagination-default">
@@ -393,11 +427,14 @@ This is my most common tool, Visual Studio Code, the version shown above is actu
       <li class="page-item active">
         <a aria-current="page" aria-label="Page 2" class="page-link" role="button">2</a>
       </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Next" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;</span></a>
+      <li class="page-item">
+        <a href="/page/3/" aria-label="Page 3" class="page-link" role="button">3</a>
       </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Last" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      <li class="page-item">
+        <a href="/page/3/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/page/3/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
       </li>
     </ul>
     </div>
