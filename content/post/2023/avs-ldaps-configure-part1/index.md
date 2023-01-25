@@ -18,7 +18,7 @@ This is the first part of the blog series on how to implement LDAPS identity int
 
 1. [LDAPS integration - part 2 of 4](../avs-ldaps-configure-part2/)
 2. [LDAPS integration - part 3 of 4](../avs-ldaps-configure-part3/)
-3. [LDAPS integration - part 3 of 4](../avs-ldaps-configure-part4/)
+3. [LDAPS integration - part 4 of 4](../avs-ldaps-configure-part4/)
 
 Azure VMware Solution (AVS) offers a fully managed software defined data center based on VMware vSphere technologies in the shape of an Azure PaaS service. The PaaS nature of Azure VMware Solution results in a service that is functionally equivalent to your well-known on-premises VMware deployment you may have been using for years with some specific “restrictions” as Microsoft provides a service level agreement and therefor Microsoft is responsible for ensuring a robust and resilient platform in deployment and operation.  Azure VMware Solution is functionally equivalent to on-premises VMware but due to the PaaS nature of the service there are significant technical differences to properly consider.
 

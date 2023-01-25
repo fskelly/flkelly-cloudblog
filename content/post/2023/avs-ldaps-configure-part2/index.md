@@ -18,7 +18,7 @@ This is the second part of the blog series on how to implement LDAPS identity in
 
 1. [LDAPS integration - part 1 of 4](../avs-ldaps-configure-part1/)
 1. [LDAPS integration - part 3 of 4](../avs-ldaps-configure-part3/)
-1. [LDAPS integration - part 3 of 4](../avs-ldaps-configure-part4/)
+1. [LDAPS integration - part 4 of 4](../avs-ldaps-configure-part4/)
 
 ## Configure DNS forwarding prerequisite ##
 
