@@ -45,7 +45,7 @@ The other values would need to be updated as per your environment.
 
 With the BaseDNGroups and BaseDNUsers, watch the values used as these should be under the same tree. In this example, **"OU=Corp,DC=avsemea,DC=com"**
 
-{{< figure src="/images/blogImages/2023/avs-ldaps-configure-part4/2-run-command-populated.jpg" alt="run-command-pane" height="300" >}}
+{{< figure src="/images/blogImages/2023/avs-ldaps-configure-part4/2-run-command-populated.jpg" alt="run-command-pane" height="500" >}}
 
 {{< figure src="/images/blogImages/2023/avs-ldaps-configure-part4/3-run-command-run.jpg" alt="run-command-execute" height="300" >}}
 
