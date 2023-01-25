@@ -9,7 +9,7 @@ Tags:
 Categories: 
     - Azure VMware Solution
 DisableComments: false
-draft: true
+draft: false
 ---
 
 # Implementing LDAPS identity integration with Azure VMware Solution series - 2 of 4 #
