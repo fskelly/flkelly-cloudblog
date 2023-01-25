@@ -77,4 +77,5 @@ When the change to the NSX-T DNS service is effectuated the **avsemea.com** DNS 
 After this step the configuration of the Azure VMware Solution DNS service is complete.
 The next article in this series will describe the detailed steps in configuring LDAPS integration through the Azure portal or automation where possible.
 
+[snippets.ps1 file (all code commands)](../avs-ldaps-configure-part2/snippets.ps1)  
 [< Previous](../avs-ldaps-configure-part1/) [Next>](../avs-ldaps-configure-part3/)

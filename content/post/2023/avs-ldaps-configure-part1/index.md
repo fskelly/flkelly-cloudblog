@@ -60,4 +60,5 @@ A graphical representation of our lab environment is shown below:
 
 While guiding you through the process of gathering all required details and artifacts and using them to complete the LDAPS integration for AVS, we assume that you have all resources mentioned in the table required resources available and that sufficient access permissions are in place.
 
+[snippets.ps1 file (all code commands)](../avs-ldaps-configure-part1/snippets.ps1)  
 [Next>](../avs-ldaps-configure-part2/)
