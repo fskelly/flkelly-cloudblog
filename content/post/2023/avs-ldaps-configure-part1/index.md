@@ -34,25 +34,26 @@ To integrate your Azure VMware Solution SDDC, we will use a Run-Command: New-LDA
 To allow us to create this article using “understandable” values for the prerequisites and the parameters required to successfully implement the LDAPS identity integration, we have created a lab environment which is shown in the picture below. Using this picture as a reference we hope to make it easier for anyone to implement LDAPS integration by simply replacing the prerequisite values and parameters (displayed in bold through-out this document) with the values applicable to your environment by simply comparing with our lab and easily translating this to what is applicable for your deployment.
 
 Our lab consists of:
-| Required resources: ||
-| ----------- | ----------- |
-| One Azure VMware Solution Private Cloud called **avs-fta-gwc** |
-| One Active Directory forest and domain called **avsemea.com** |
-| Two Active Directory domain controllers called **avs-gwc-dc001** and **avs-gwc-dc002** |
-| One Active Directory hosted enterprise root certificate authority called **avsemea-avs-gwc-rootca** |
-| One Azure Virtual WAN called **avs-germanywestcentral-vwan1** |
-| One jumpbox virtual machine used for management activities called **avs-gwc-jumpbox** |
-| One Azure Virtual Network called **avs-gwc-172_16_11_0-24** |
-| This vnet holds three separate subnets called **SN-172_16_11_0-26-ADDS**, **AzureBastionSubnet** and **SN-172_16_11_128-26** |
+
+| Required resources:          | |
+| ----------- | :----------- |
+| One Azure VMware Solution Private Cloud called | **avs-fta-gwc** |
+| One Active Directory forest and domain called | **avsemea.com** | 
+| Two Active Directory domain controllers called | **avs-gwc-dc001** and **avs-gwc-dc002** |
+| One Active Directory hosted enterprise root certificate authority called | **avsemea-avs-gwc-rootca** |
+| One Azure Virtual WAN called |**avs-germanywestcentral-vwan1** |
+| One jumpbox virtual machine used for management activities called |**avs-gwc-jumpbox** |
+| One Azure Virtual Network called |**avs-gwc-172_16_11_0-24** |
+| This vnet holds three separate subnets called | **SN-172_16_11_0-26-ADDS**, **AzureBastionSubnet** and **SN-172_16_11_128-26** |
 
 All virtual machines used in the lab are joined to the above mentioned avsemea.com domain
 Our lab environment also holds some additional resources that are not required for the LDAPS integration but they will be used when creating additional articles on different Azure VMware related topics just like this one.
 
 | Optional resources for future use: ||
-| ----------- | ----------- |
-| Two NSX-T segments inside our AVS SDDC called **NSX-SN-192-168-200-0-24** and **NSX-SN-192-168-201-0-24** |
-| One virtual machine for forwarding additional metrics from our AVS SDDC to the Azure Metrics infrastructure called **avs-gwc-metrics001** |
-| One Azure NetAppFiles account that will be used as extensible storage for our AVS SDDC in a later article called **avs-gwc-anfaccount001** |
+| ----------- | :----------- |
+| Two NSX-T segments inside our AVS SDDC called | **NSX-SN-192-168-200-0-24** and **NSX-SN-192-168-201-0-24** |
+| One virtual machine for forwarding additional metrics from our AVS SDDC to the Azure Metrics infrastructure called |**avs-gwc-metrics001** |
+| One Azure NetAppFiles account that will be used as extensible storage for our AVS SDDC in a later article called | **avs-gwc-anfaccount001** |
 
 A graphical representation of our lab environment is shown below:
 
