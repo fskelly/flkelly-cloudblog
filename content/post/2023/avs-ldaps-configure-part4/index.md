@@ -12,6 +12,8 @@ DisableComments: false
 draft: false
 ---
 
+Author(s): [Robin Heringa](/page/robinheringa/) and [Fletcher Kelly](/page/fletcherkelly/) 
+
 # Implementing LDAPS identity integration with Azure VMware Solution series - 4 of 4 #
 
 This is the fourth and final part of the blog series on how to implement LDAPS identity integration with Azure VMware Solution. Other parts of this series can be found here: 
