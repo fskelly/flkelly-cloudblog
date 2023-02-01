@@ -351,5 +351,5 @@ foreach ($blob in $blobs)
 
 {{< figure src="/images/blogImages/2023/avs-ldaps-configure-part3/26-automated-sas-token-creation.jpg" alt="scripted=sas-token-creation" >}} 
 
-[snippets.ps1 file (all code commands)](../avs-ldaps-configure-part3/snippets.ps1)  
+[snippets.ps1 file (all code commands)](https://github.com/fskelly/flkelly-cloudblog/blob/main/content/post/2023/avs-ldaps-configure-part1/snippets.ps1)  
 [< Previous](../avs-ldaps-configure-part2/) [Next>](../avs-ldaps-configure-part4/)

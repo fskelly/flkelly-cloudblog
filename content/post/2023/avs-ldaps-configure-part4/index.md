@@ -91,5 +91,5 @@ Navigate to the URL with your browser of choice and use your Directory Services 
 
 Logon to Azure VMware Solution based components is now possible and should be now be working as expected.
 
-[snippets.ps1 file (all code commands)](../avs-ldaps-configure-part4/snippets.ps1)  
+[snippets.ps1 file (all code commands)](https://github.com/fskelly/flkelly-cloudblog/blob/main/content/post/2023/avs-ldaps-configure-part1/snippets.ps1)  
 [< Previous](../avs-ldaps-configure-part3/) 
