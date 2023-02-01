@@ -150,6 +150,8 @@ After a few minutes the creation of the storage account should be completed:
 
 {{< figure src="/images/blogImages/2023/avs-ldaps-configure-part3/11-manual-storage-account-review-2.jpg" alt="create-storage-account-from-portal-storage-account-review-complete" >}}  
 
+### Automated deployment
+
 With these commands, we will check for the Azure Module, install them if missing and then continue the script. We will create the required storage account, or use an existing storage account. The **$storageAccountName**  and **$resourceGroupLocation** variables can be updated or replaced as needed to meet your needs. These scripts are designed to be run in sections one after each other to ensure the variable names are correctly referenced.
 
 **Notes**  
@@ -158,7 +160,7 @@ With these commands, we will check for the Azure Module, install them if missing
 ***$storageAccountName*** will need to be updated.  
 
 ```powershell
-## Do you have the Azure MOdule installed?
+## Do you have the Azure Module installed?
 if (Get-Module -ListAvaialble -name Az.Storage)
 { write-output "Module exists" }        
 {

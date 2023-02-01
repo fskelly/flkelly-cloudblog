@@ -59,7 +59,8 @@
     
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Azure VMware Solution: A comprehensive guide to LDAPS identity integration - Part 3"/>
-<meta name="twitter:description" content="Implementing LDAPS identity integration with Azure VMware Solution series - 3 of 4 This is the third part of the blog series on how to implement LDAPS identity integration with Azure VMware Solution. Other parts of this series can be found here:
+<meta name="twitter:description" content="Author(s): Robin Heringa and Fletcher Kelly
+Implementing LDAPS identity integration with Azure VMware Solution series - 3 of 4 This is the third part of the blog series on how to implement LDAPS identity integration with Azure VMware Solution. Other parts of this series can be found here:
 LDAPS integration - part 1 of 4 LDAPS integration - part 2 of 4 LDAPS integration - part 4 of 4 Implement LDAPS integration The following sections will guide you through the required process step-by-step"/>
 
 </head>
@@ -183,7 +184,8 @@ LDAPS integration - part 1 of 4 LDAPS integration - part 2 of 4 LDAPS integratio
                 
             </div>
 
-            <h1 id="implementing-ldaps-identity-integration-with-azure-vmware-solution-series---3-of-4">Implementing LDAPS identity integration with Azure VMware Solution series - 3 of 4</h1>
+            <p>Author(s): <a href="/page/robinheringa/">Robin Heringa</a> and <a href="/page/fletcherkelly/">Fletcher Kelly</a></p>
+<h1 id="implementing-ldaps-identity-integration-with-azure-vmware-solution-series---3-of-4">Implementing LDAPS identity integration with Azure VMware Solution series - 3 of 4</h1>
 <p>This is the third part of the blog series on how to implement LDAPS identity integration with Azure VMware Solution. Other parts of this series can be found here:</p>
 <ol>
 <li><a href="../avs-ldaps-configure-part1/">LDAPS integration - part 1 of 4</a></li>
@@ -322,12 +324,13 @@ After a few minutes the creation of the storage account should be completed:</li
          alt="create-storage-account-from-portal-storage-account-review-complete"/>
 </figure>
 
+<h3 id="automated-deployment">Automated deployment</h3>
 <p>With these commands, we will check for the Azure Module, install them if missing and then continue the script. We will create the required storage account, or use an existing storage account. The <strong>$storageAccountName</strong>  and <strong>$resourceGroupLocation</strong> variables can be updated or replaced as needed to meet your needs. These scripts are designed to be run in sections one after each other to ensure the variable names are correctly referenced.</p>
 <p><strong>Notes</strong><br>
 <em><strong>$resourceGroupLocation</strong></em> will need to be updated to your desired location.<br>
 <em><strong>$storageRgName</strong></em> will need to be updated.<br>
 <em><strong>$storageAccountName</strong></em> will need to be updated.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="c">## Do you have the Azure MOdule installed?</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="c">## Do you have the Azure Module installed?</span>
 </span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nb">Get-Module</span> <span class="n">-ListAvaialble</span> <span class="n">-name</span> <span class="n">Az</span><span class="p">.</span><span class="n">Storage</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span> <span class="nb">write-output</span> <span class="s2">&#34;Module exists&#34;</span> <span class="p">}</span>        
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
@@ -387,7 +390,7 @@ The following content is divided into two sub-sections. One section will describ
 <li>Click &ldquo;Create&rdquo;
 The new container should now be created and displayed in the &ldquo;Containers&rdquo; view for the storage account:</li>
 </ol>
-<h3 id="automated-deployment">Automated deployment</h3>
+<h3 id="automated-deployment-1">Automated deployment</h3>
 <p>With these commands, we will create the container to upload the earlier exported certificates to, this will be important for the creation of the SAS Tokens for the AVS LDAPS Run Command.</p>
 <p><strong>Notes</strong><br>
 <em><strong>$containerName</strong></em> will need to be updated</p>
@@ -447,7 +450,7 @@ The following content is also divided into two sub-sections. One section will de
          alt="upload-certs-complete" height="300"/>
 </figure>
 
-<h3 id="automated-deployment-1">Automated deployment</h3>
+<h3 id="automated-deployment-2">Automated deployment</h3>
 <p>With these commands, we will upload the actual certificates into the previously created container. In this example we are using &ldquo;<strong>ldaps-blog-post</strong>&rdquo;</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="c">## upload certs to container</span>
 </span></span><span class="line"><span class="cl"><span class="nv">$certs</span> <span class="p">=</span> <span class="nb">Get-ChildItem</span> <span class="n">-Path</span> <span class="nv">$exportFolder</span> <span class="n">-Filter</span> <span class="p">*.</span><span class="n">cer</span>
@@ -497,7 +500,7 @@ After clicking &ldquo;Generate SAS token and URL&rdquo; an additional section wi
 </figure>
 
 <p>Be sure to copy the &ldquo;Blob SAS URL&rdquo; generated for each separate certificate into a text-file temporarily as they will need to be concatenated into a single string <strong>separated by a comma</strong> for use during the execution of the run-command as explained in step &ldquo;Execute Run-Command&rdquo;.</p>
-<h3 id="automated-deployment-2">Automated deployment</h3>
+<h3 id="automated-deployment-3">Automated deployment</h3>
 <p>With these commands, we will generate the SAS Token needed for the next steps, please note down <strong>BOTH</strong> tokens. In this script, the tokens are valid for <strong>24 hours</strong> and can be modified to suit your needs.</p>
 <p><strong>Notes</strong><br>
 <em><strong>$containerName</strong></em> will need to be updated</p>
