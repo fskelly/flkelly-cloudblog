@@ -29,7 +29,7 @@ Azure VMware Solution (AVS) offers a fully managed software defined data center 
 As a consumer of Azure VMware Solution, you are granted limited administrative privileges that are aligned with the PaaS nature of the service. You are granted access to the CloudAdmin role which holds a subset of the full administrator role. As it is at times needed to allow for “privilege escalation”, Microsoft has enabled you to do so using a feature in the Azure AVS portal blades called “Run-Commands”. Run-Commands allow you to perform a selected number of high privileged actions without requiring the need to submit a service request through Azure Support from the Azure Portal. More details on Run-Commands can be found on Microsoft Learn [here](https://learn.microsoft.com/en-us/azure/azure-vmware/concepts-run-command).
 
 
-To integrate your Azure VMware Solution SDDC, we will use a Run-Command: New-LDAPSIdentitySource.
+To integrate your Azure VMware Solution SDDC with a directory services provider, in our case Active Directory, we will use a Run-Command: New-LDAPSIdentitySource.
 
 ## Our Azure VMware Solution lab environment ##
 

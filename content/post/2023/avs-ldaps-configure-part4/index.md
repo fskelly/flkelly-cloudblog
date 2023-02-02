@@ -43,7 +43,7 @@ https://avsgwcsa14a2c2da.blob.core.windows.net/ldaps-blog-post/avs-gwc-dc001.cer
 {{< highlight shell >}}
 https://avsgwcsa14a2c2da.blob.core.windows.net/ldaps-blog-post/avs-gwc-dc001.cer?sv=2021-10-04&st=2023-01-12T13%3A46%3A45Z&se=2023-01-13T13%3A46%3A45Z&sr=b&sp=rwd&[Removed],https://avsgwcsa14a2c2da.blob.core.windows.net/ldaps-blog-post/avs-gwc-dc002.cer?sv=2021-10-04&st=2023-01-12T13%3A46%3A45Z&se=2023-01-13T13%3A46%3A45Z&sr=b&sp=rwd&[Removed]{{< /highlight >}}
 
-The other values would need to be updated as per your environment.
+The other values would need to be updated as per your environment. The BaseDNGroups and BaseDNUsers are the **D**istinguished **N**ames  for the groups and users. These can be found using the ADSIedit tool and navigating to the required groups within Active Directory and noting down these values. More information can be here about [Distinguished Names](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ldap/distinguished-names)
 
 With the BaseDNGroups and BaseDNUsers, watch the values used as these should be under the same tree. In this example, **"OU=Corp,DC=avsemea,DC=com"**
 
