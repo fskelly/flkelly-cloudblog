@@ -98,14 +98,14 @@ The next step is to ensure that the certificate extraction was performed success
 As displayed in the image above:
 
 1. Open Windows Explorer (or use the one opened in the previous step if not closed already 😊) and browse to the location where the certificates were extracted to. In our scenario the folder is c:\certTemp;
-1. Open the certificates by right-clicking and selecting "Open"
+2. Open the certificates by right-clicking and selecting "Open"
 
 For each of the certificates:  
 
-1. Select the "General" tab at the top;  
-1. Verify that "Proves your identity to a remote computer" is available as an intended purpose;
-1. Verify that domain controller fully qualified domain name FQDN) is present in the "Issued to" field. In our scenario: **avs-gwc-dc001.avsemea.com** and **avs-gwc-dc002.avsemea.com**.
-1. Verify that the certificate is still valid by checking the "Valid from" field.
+3. Select the "General" tab at the top;  
+4. Verify that "Proves your identity to a remote computer" is available as an intended purpose;
+5. Verify that domain controller fully qualified domain name FQDN) is present in the "Issued to" field. In our scenario: **avs-gwc-dc001.avsemea.com** and **avs-gwc-dc002.avsemea.com**.
+6. Verify that the certificate is still valid by checking the "Valid from" field.
 
 {{< figure src="/images/blogImages/2023/avs-ldaps-configure-part3/7-certificate-certification-path.jpg" alt="Certification-path-of-the-certificate" >}}
 
