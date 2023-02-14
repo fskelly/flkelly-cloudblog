@@ -161,13 +161,14 @@ With these commands, we will check for the Azure Module, install them if missing
 
 ```powershell
 ## Do you have the Azure Module installed?
-if (Get-Module -ListAvaialble -name Az.Storage)
-{ write-output "Module exists" }        
-{
+if (Get-Module -ListAvailable -Name Az.Storage)
+    { write-output "Module exists" }        
+else 
+    {
     write-output "Module does not exist"
     write-output "installing Module"
     Install-Module -name Az.Storage -Scope CurrentUser -Force -AllowClobber
-}
+    }
 
 ## create storage account
 
@@ -228,7 +229,7 @@ With these commands, we will create the container to upload the earlier exported
 
 ```powershell
 ## create container
-$containerName = "ldaps"
+$containerName = "ldaps-blog-post"
 $containerCheck = Get-AzStorageContainer -name $containerName -Context (Get-AzStorageAccount -ResourceGroupName $storageRgName -Name $storageAccountName).Context -ErrorAction SilentlyContinue
 if ($null -eq $containerCheck)
 {
