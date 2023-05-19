@@ -3,7 +3,7 @@
     <title> Fletcher Kelly | Expiring Keys and Secrets within Azure Key Vault </title>
 
     
-    <meta charset="utf-8"><meta name="generator" content="Hugo 0.102.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.111.3"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <meta name="description" content="Just a simple cloud tinkerer">
     
     <link rel="stylesheet"
@@ -196,24 +196,24 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="nv">$vaultName</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="nv">$kvRG</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="nv">$kv</span> <span class="p">=</span> <span class="nb">Get-AzKeyVault</span> <span class="n">-ResourceGroupName</span> <span class="nv">$kvRG</span> <span class="n">-VaultName</span> <span class="nv">$vaultName</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$secrets</span> <span class="p">=</span> <span class="nb">Get-AzKeyVaultSecret</span> <span class="n">-VaultName</span> <span class="nv">$kv</span><span class="p">.</span><span class="n">VaultName</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$secrets</span> <span class="p">=</span> <span class="nb">Get-AzKeyVaultSecret</span> <span class="n">-VaultName</span> <span class="nv">$kv</span><span class="p">.</span><span class="py">VaultName</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">$nonExpiringSecrets</span> <span class="p">=</span> <span class="nv">$secrets</span> <span class="p">|</span> <span class="nb">Where-Object</span> <span class="p">{</span><span class="nv">$_</span><span class="p">.</span><span class="n">Expires</span> <span class="o">-eq</span> <span class="nv">$null</span><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$expiringSecrets</span> <span class="p">=</span> <span class="nv">$secrets</span> <span class="p">|</span> <span class="nb">Where-Object</span> <span class="p">{</span><span class="nv">$_</span><span class="p">.</span><span class="n">Expires</span> <span class="o">-ne</span> <span class="nv">$null</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$nonExpiringSecrets</span> <span class="p">=</span> <span class="nv">$secrets</span> <span class="p">|</span> <span class="nb">Where-Object</span> <span class="p">{</span><span class="nv">$_</span><span class="p">.</span><span class="py">Expires</span> <span class="o">-eq</span> <span class="vm">$null</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$expiringSecrets</span> <span class="p">=</span> <span class="nv">$secrets</span> <span class="p">|</span> <span class="nb">Where-Object</span> <span class="p">{</span><span class="nv">$_</span><span class="p">.</span><span class="py">Expires</span> <span class="o">-ne</span> <span class="vm">$null</span><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">$daysToCheck</span> <span class="p">=</span> <span class="n">90</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$expireDate</span> <span class="p">=</span> <span class="p">(</span><span class="nb">Get-Date</span><span class="p">).</span><span class="n">AddDays</span><span class="p">(</span><span class="nv">$daysToCheck</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$daysToCheck</span> <span class="p">=</span> <span class="mf">90</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$expireDate</span> <span class="p">=</span> <span class="p">(</span><span class="nb">Get-Date</span><span class="p">).</span><span class="py">AddDays</span><span class="p">(</span><span class="nv">$daysToCheck</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">foreach</span> <span class="p">(</span><span class="nv">$expiringSecret</span> <span class="k">in</span> <span class="nv">$expiringSecrets</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nv">$expiringSecret</span><span class="p">.</span><span class="n">Expires</span> <span class="o">-lt</span> <span class="nv">$expireDate</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nv">$expiringSecret</span><span class="p">.</span><span class="py">Expires</span> <span class="o">-lt</span> <span class="nv">$expireDate</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="nb">Write-Host</span> <span class="p">(</span><span class="nv">$expiringSecret</span><span class="p">).</span><span class="n">name</span> <span class="s2">&#34;is in the expiry window of $daysToCheck days&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">Write-Host</span> <span class="p">(</span><span class="nv">$expiringSecret</span><span class="p">).</span><span class="py">name</span> <span class="s2">&#34;is in the expiry window of </span><span class="nv">$daysToCheck</span><span class="s2"> days&#34;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="k">foreach</span> <span class="p">(</span><span class="nv">$nonExpiringSecret</span> <span class="k">in</span> <span class="nv">$nonExpiringSecrets</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">Write-host</span> <span class="p">(</span><span class="nv">$nonExpiringSecret</span><span class="p">).</span><span class="n">name</span> <span class="s2">&#34; is set to NEVER expire&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">Write-host</span> <span class="p">(</span><span class="nv">$nonExpiringSecret</span><span class="p">).</span><span class="py">name</span> <span class="s2">&#34; is set to NEVER expire&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><p>As you can see simply replace the variables that you need to, namely <em><code>$vaultName</code></em> (<strong>name of the Azure Keyvault</strong>) and <em><code>$kvRG</code></em> (<strong>name of the Resource Group housing the Azure Keyvault</strong>)</p>
 </div>

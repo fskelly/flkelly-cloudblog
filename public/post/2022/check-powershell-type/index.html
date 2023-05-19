@@ -3,7 +3,7 @@
     <title> Fletcher Kelly | Check Powershell Console Type </title>
 
     
-    <meta charset="utf-8"><meta name="generator" content="Hugo 0.102.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.111.3"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <meta name="description" content="Just a simple cloud tinkerer">
     
     <link rel="stylesheet"
@@ -190,13 +190,13 @@ Even with this strong recommendation, it is often accidentally used as it is rea
 <p>So I did some thinking and found a way to check which console type you are running. Below is sample code but will exit the script if the Console Type is ISE.</p>
 <h2 id="how-do-we-check-this-and-prevent-this">How do we check this and prevent this?</h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="nv">$consoleType</span> <span class="p">=</span> <span class="nb">get-host</span>
-</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nv">$consoleType</span><span class="p">.</span><span class="n">Name</span> <span class="o">-match</span> <span class="s1">&#39;ise&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nv">$consoleType</span><span class="p">.</span><span class="py">Name</span> <span class="o">-match</span> <span class="s1">&#39;ise&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nv">$message</span> <span class="p">=</span> <span class="s2">&#34;You should NOT use the ISE window, please reload in PowerShell window&#34;</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">Write-Output</span> <span class="nv">$message</span>
 </span></span><span class="line"><span class="cl">    <span class="nv">$message</span> <span class="p">=</span> <span class="s2">&#34;This process will terminate shortly&#34;</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">Write-Output</span> <span class="nv">$message</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">Start-Sleep</span> <span class="n">-Seconds</span> <span class="n">10</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">Start-Sleep</span> <span class="n">-Seconds</span> <span class="mf">10</span>
 </span></span><span class="line"><span class="cl">    <span class="k">break</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nv">$message</span> <span class="p">=</span> <span class="s2">&#34;good to go&#34;</span>

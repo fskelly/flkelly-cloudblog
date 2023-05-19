@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Fletcher&#39;s Cloud Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Jan 2023 08:45:43 +0000</lastBuildDate><atom:link href="https://cloud.fskelly.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 19 May 2023 09:39:57 +0100</lastBuildDate><atom:link href="https://cloud.fskelly.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New LDAPS run-command for Azure VMware Solution</title>
+      <link>https://cloud.fskelly.com/post/2023/avs-new-ldaps-run-command/</link>
+      <pubDate>Fri, 19 May 2023 09:39:57 +0100</pubDate>
+      
+      <guid>https://cloud.fskelly.com/post/2023/avs-new-ldaps-run-command/</guid>
+      <description>What are we doing? Showing a newer version of the New-LdapsIDentitySource Run-Command within Azure VMware Solution
+Lets build this If you have been following along and you have used our previous article(s) - AZURE VMWARE SOLUTION: A COMPREHENSIVE GUIDE TO LDAPS IDENTITY INTEGRATION - PART 1 - you would have realized that this quite a process. We took our many customers feedback to our Product Group (PG) within Microsoft and we have worked with them, to create a new version of the &amp;ldquo;Run-Command&amp;rdquo; and this has been released publicly.</description>
+    </item>
+    
     <item>
       <title>Azure VMware Solution: A comprehensive guide to LDAPS identity integration - Part 1</title>
       <link>https://cloud.fskelly.com/post/2023/avs-ldaps-configure-part1/</link>

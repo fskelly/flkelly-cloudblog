@@ -3,7 +3,7 @@
     <title> Fletcher Kelly | Bicep Troubleshooting </title>
 
     
-    <meta charset="utf-8"><meta name="generator" content="Hugo 0.102.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.111.3"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <meta name="description" content="Just a simple cloud tinkerer">
     
     <link rel="stylesheet"
@@ -191,23 +191,23 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="c">## Place Resource Group Name here</span>
 </span></span><span class="line"><span class="cl"><span class="nv">$rgName</span> <span class="p">=</span> <span class="s2">&#34;testingRG&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="c">## add tags if you want to add metadata</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$tags</span> <span class="p">=</span> <span class="p">@{</span><span class="s2">&#34;deploymentMethod&#34;</span><span class="p">=</span><span class="s2">&#34;bicep&#34;</span><span class="p">;</span> <span class="s2">&#34;Can Be Deleted&#34;</span><span class="p">=</span><span class="s2">&#34;yes&#34;</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$tags</span> <span class="p">=</span> <span class="vm">@</span><span class="p">{</span><span class="s2">&#34;deploymentMethod&#34;</span><span class="p">=</span><span class="s2">&#34;bicep&#34;</span><span class="p">;</span> <span class="s2">&#34;Can Be Deleted&#34;</span><span class="p">=</span><span class="s2">&#34;yes&#34;</span><span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="c">## location to be deployed into</span>
 </span></span><span class="line"><span class="cl"><span class="nv">$rgLocation</span> <span class="p">=</span> <span class="s2">&#34;westeurope&#34;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c">#use this command when you need to create a new resource group for your deployment</span>
 </span></span><span class="line"><span class="cl"><span class="nv">$rg</span> <span class="p">=</span> <span class="nb">New-AzResourceGroup</span> <span class="n">-Name</span> <span class="nv">$rgName</span> <span class="n">-Location</span> <span class="nv">$rgLocation</span> 
-</span></span><span class="line"><span class="cl"><span class="nb">New-AzTag</span> <span class="n">-ResourceId</span> <span class="nv">$rg</span><span class="p">.</span><span class="n">ResourceId</span> <span class="n">-Tag</span> <span class="nv">$tags</span>
+</span></span><span class="line"><span class="cl"><span class="nb">New-AzTag</span> <span class="n">-ResourceId</span> <span class="nv">$rg</span><span class="p">.</span><span class="py">ResourceId</span> <span class="n">-Tag</span> <span class="nv">$tags</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c">## bicep Deployment</span>
 </span></span><span class="line"><span class="cl"><span class="c">## Bicep File name</span>
 </span></span><span class="line"><span class="cl"><span class="nv">$bicepFile</span> <span class="p">=</span> <span class="s2">&#34;.\main.bicep&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$deploymentName</span> <span class="p">=</span> <span class="p">(</span><span class="nv">$bicepFile</span><span class="p">).</span><span class="n">Substring</span><span class="p">(</span><span class="n">2</span><span class="p">)</span> <span class="p">+</span> <span class="s2">&#34;-&#34;</span> <span class="p">+(</span><span class="nb">get-date</span> <span class="n">-Format</span> <span class="nb">ddMMyyyy-hhmmss</span><span class="p">)</span> <span class="p">+</span> <span class="s2">&#34;-deployment&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$deploymentName</span> <span class="p">=</span> <span class="p">(</span><span class="nv">$bicepFile</span><span class="p">).</span><span class="py">Substring</span><span class="p">(</span><span class="mf">2</span><span class="p">)</span> <span class="p">+</span> <span class="s2">&#34;-&#34;</span> <span class="p">+(</span><span class="nb">get-date</span> <span class="n">-Format</span> <span class="nb">ddMMyyyy-hhmmss</span><span class="p">)</span> <span class="p">+</span> <span class="s2">&#34;-deployment&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="nb">New-AzResourceGroupDeployment</span> <span class="n">-ResourceGroupName</span> <span class="nv">$rgName</span> <span class="n">-TemplateFile</span> <span class="nv">$bicepFile</span> <span class="n">-name</span> <span class="nv">$deploymentName</span>
 </span></span></code></pre></div><p>When trying to deploy you might get an error like this.
 <img src="https://github.com/fskelly/flkelly-cloudblog/blob/main/static/images/blogImages/2021/biceptroubleshooting/bicepError.png?raw=true" alt="deployment errors"></p>
 <p>And that is very cryptic and <strong>NOT</strong> easy to understand. The easiest fix here is to go back to basics. :smile:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">az</span> <span class="n">bicep</span> <span class="n">build</span> <span class="p">-</span><span class="o">-file</span> <span class="p">.\</span><span class="n">main</span><span class="p">.</span><span class="n">bicep</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">az</span> <span class="n">bicep</span> <span class="n">build</span> <span class="p">-</span><span class="o">-file</span> <span class="p">.\</span><span class="n">main</span><span class="p">.</span><span class="py">bicep</span>
 </span></span></code></pre></div><p>This will then throw the actual bicep error, and then you can fix your file and deploy again.</p>
 <p>Hope this helps you.</p>
 </div>

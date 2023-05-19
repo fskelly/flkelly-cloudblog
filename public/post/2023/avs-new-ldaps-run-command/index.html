@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme=""><head>
-    <title> Fletcher Kelly | Pages </title>
+    <title> Fletcher Kelly | New LDAPS run-command for Azure VMware Solution </title>
 
     
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.111.3"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -29,10 +29,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://cloud.fskelly.com/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://cloud.fskelly.com/favicons/favicon-16x16.png">
 
-    <link rel="canonical" href="https://cloud.fskelly.com/page/">
+    <link rel="canonical" href="https://cloud.fskelly.com/post/2023/avs-new-ldaps-run-command/">
 
     
-    <link rel="alternate" type="application/rss+xml" href="https://cloud.fskelly.com/page/index.xml" title="Fletcher's Cloud Journey" />
     
     
     
@@ -59,8 +58,9 @@
                 crossorigin="anonymous"></script>
     
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Pages"/>
-<meta name="twitter:description" content="Just a simple cloud tinkerer"/>
+<meta name="twitter:title" content="New LDAPS run-command for Azure VMware Solution"/>
+<meta name="twitter:description" content="What are we doing? Showing a newer version of the New-LdapsIDentitySource Run-Command within Azure VMware Solution
+Lets build this If you have been following along and you have used our previous article(s) - AZURE VMWARE SOLUTION: A COMPREHENSIVE GUIDE TO LDAPS IDENTITY INTEGRATION - PART 1 - you would have realized that this quite a process. We took our many customers feedback to our Product Group (PG) within Microsoft and we have worked with them, to create a new version of the &ldquo;Run-Command&rdquo; and this has been released publicly."/>
 
 </head>
 <body><div class="sidebar animated fadeInDown ">
@@ -169,60 +169,72 @@
 
     <div class="autopagerize_page_element">
         <div class="content">
-    <div class="archive  animated fadeInDown ">
-        <ul class="list-with-title">
-            
-                <div class="listing-title">2021</div>
+    <div class="post  animated fadeInDown ">
+        <div class="post-content">
+            <div class="post-title">
+                <h3>New LDAPS run-command for Azure VMware Solution</h3>
                 
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="https://cloud.fskelly.com/page/robinheringa/" title="About Robin Heringa">About Robin Heringa</a>
-                                <div class="post-time"><span class="date">Jan 5</span></div>
-                            </div>
-                        </div>
-                    </ul>
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date">Fri, May 19, 2023</span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time">One-minute read</span>
+                    </div>
                 
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="https://cloud.fskelly.com/page/fletcherkelly/" title="About Fletcher Kelly">About Fletcher Kelly</a>
-                                <div class="post-time"><span class="date">Jan 5</span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="https://cloud.fskelly.com/page/about/" title="About Blog">About Blog</a>
-                                <div class="post-time"><span class="date">Jan 5</span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-            
-                <div class="listing-title">2019</div>
-                
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="https://cloud.fskelly.com/page/archives/" title="Archives">Archives</a>
-                                <div class="post-time"><span class="date">May 28</span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-            
-                <div class="listing-title">0001</div>
-                
-                    <ul class="listing">
-                        <div class="listing-item">
-                            <div class="listing-post"><a href="https://cloud.fskelly.com/page/search/" title="Search">Search</a>
-                                <div class="post-time"><span class="date">Jan 1</span></div>
-                            </div>
-                        </div>
-                    </ul>
-                
-            
-        </ul>
+            </div>
+
+            <h2 id="what-are-we-doing">What are we doing?</h2>
+<p>Showing a newer version of the New-LdapsIDentitySource Run-Command within Azure VMware Solution</p>
+<h2 id="lets-build-this">Lets build this</h2>
+<p>If you have been following along and you have used our previous article(s) - <a href="https://cloud.fskelly.com/post/2023/avs-ldaps-configure-part1/">AZURE VMWARE SOLUTION: A COMPREHENSIVE GUIDE TO LDAPS IDENTITY INTEGRATION - PART 1</a> - you would have realized that this quite a process. We took our many customers feedback to our Product Group (PG) within <a href="https://www.microsoft.com">Microsoft</a> and we have worked with them, to create a new version of the &ldquo;Run-Command&rdquo; and this has been released publicly.</p>
+<p>You are looking for the &ldquo;5.3.54&rdquo; version of the run commands and &ldquo;New-LDAPSIdentitySource&rdquo;</p>
+<figure><img src="/images/blogImages/2023/avs-ldaps-new-run-command/new-avs-run-command-version.png"
+         alt="new version of the tools"/>
+</figure>
+
+<p>You will notice that the &ldquo;SSLCertificateSasUrl&rdquo; field is now <strong>OPTIONAL</strong>. The &ldquo;i&rdquo; information bubble will now explain how it works. Basically the service now looks for the Domain Controllers based upon the information you provide and now connects and attempts to download the certificates automatically. Provided you have the pre-requisites in place, Like a Certificate Authority (CA), this works really well and speeds up the process tremendously and removes lot of complexity like dealing with Stroage Accounts, uploading the certificates and creating the required SAS Tokens.</p>
+<figure><img src="/images/blogImages/2023/avs-ldaps-new-run-command/new-avs-run-command-new-1.png"
+         alt="information block explaining the new process"/>
+</figure>
+
+<p>A very welcome change.</p>
+</div>
+        <div class="post-footer">
+            <div class="info">
+                <span class="separator"><a class="category" href="/categories/azure-vmware-solution/">Azure VMware Solution</a></span>
+
+                <span class="separator"><a class="tag" href="/tags/avs/">AVS</a><a class="tag" href="/tags/identity/">Identity</a><a class="tag" href="/tags/ldaps/">LDAPS</a></span>
+
+            </div>
+        </div>
+
+        
+            <div id="fb_comments_container">
+                    <h2>comments</h2>
+                    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "fletchercloudblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                </div>
+        
     </div>
+
 
         </div>
     </div>

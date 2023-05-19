@@ -3,7 +3,7 @@
     <title> Fletcher Kelly | Using SSH Keys with Bicep based Linux VM templates </title>
 
     
-    <meta charset="utf-8"><meta name="generator" content="Hugo 0.102.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.111.3"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <meta name="description" content="Just a simple cloud tinkerer">
     
     <link rel="stylesheet"
@@ -209,7 +209,7 @@ Variables to update</p>
 </span></span><span class="line"><span class="cl"><span class="nv">$privateKeyPath</span> <span class="p">=</span> <span class="nv">$keyLocation</span> <span class="p">+</span> <span class="nv">$privateKeyName</span>
 </span></span><span class="line"><span class="cl"><span class="nv">$publicKeyPath</span>  <span class="p">=</span> <span class="nv">$keyLocation</span> <span class="p">+</span> <span class="nv">$publicKeyName</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nb">ssh-keygen</span> <span class="n">-m</span> <span class="n">PEM</span> <span class="n">-t</span> <span class="n">rsa</span> <span class="n">-b</span> <span class="n">2048</span> <span class="n">-C</span> <span class="nv">$vmName</span> <span class="o">-f</span> <span class="nv">$privateKeyPath</span>
+</span></span><span class="line"><span class="cl"><span class="nb">ssh-keygen</span> <span class="n">-m</span> <span class="n">PEM</span> <span class="n">-t</span> <span class="n">rsa</span> <span class="n">-b</span> <span class="mf">2048</span> <span class="n">-C</span> <span class="nv">$vmName</span> <span class="o">-f</span> <span class="nv">$privateKeyPath</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c">##Deploy</span>
 </span></span><span class="line"><span class="cl"><span class="nv">$sshKey</span> <span class="p">=</span> <span class="nb">Get-Content</span> <span class="nv">$publicKeyPath</span>
@@ -234,12 +234,12 @@ Variables to update</p>
 </span></span><span class="line"><span class="cl"><span class="nv">$resourceGroupLocation</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="nv">$userName</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="nb">New-AzResourceGroup</span> <span class="n">-Name</span> <span class="nv">$resourceGroupName</span> <span class="n">-Location</span> <span class="nv">$resourceGroupLocation</span>
-</span></span><span class="line"><span class="cl"><span class="nb">New-AzResourceGroupDeployment</span> <span class="n">-ResourceGroupName</span> <span class="nv">$resourceGroupName</span> <span class="n">-TemplateFile</span> <span class="p">./</span><span class="n">main</span><span class="p">.</span><span class="n">bicep</span> <span class="n">-adminUsername</span> <span class="nv">$userName</span> <span class="n">-adminPasswordOrKey</span> <span class="nv">$secureSSHKey</span>
+</span></span><span class="line"><span class="cl"><span class="nb">New-AzResourceGroupDeployment</span> <span class="n">-ResourceGroupName</span> <span class="nv">$resourceGroupName</span> <span class="n">-TemplateFile</span> <span class="p">./</span><span class="n">main</span><span class="p">.</span><span class="py">bicep</span> <span class="n">-adminUsername</span> <span class="nv">$userName</span> <span class="n">-adminPasswordOrKey</span> <span class="nv">$secureSSHKey</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nv">$hostName</span> <span class="p">=</span> <span class="p">(</span><span class="nb">Get-AzResourceGroupDeployment</span> <span class="n">-ResourceGroupName</span> <span class="nv">$resourceGroupName</span><span class="p">).</span><span class="n">outputs</span><span class="p">.</span><span class="n">hostname</span><span class="p">.</span><span class="n">value</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$hostName</span> <span class="p">=</span> <span class="p">(</span><span class="nb">Get-AzResourceGroupDeployment</span> <span class="n">-ResourceGroupName</span> <span class="nv">$resourceGroupName</span><span class="p">).</span><span class="py">outputs</span><span class="p">.</span><span class="py">hostname</span><span class="p">.</span><span class="py">value</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c">## Adding slight delay</span>
-</span></span><span class="line"><span class="cl"><span class="nb">Start-Sleep</span> <span class="n">5</span>
+</span></span><span class="line"><span class="cl"><span class="nb">Start-Sleep</span> <span class="mf">5</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c">## Connect to the vm</span>
 </span></span><span class="line"><span class="cl"><span class="n">ssh</span> <span class="n">-i</span> <span class="nv">$privateKeyPath</span> <span class="nv">$userName</span><span class="p">@</span><span class="nv">$hostName</span>
