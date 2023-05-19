@@ -14,7 +14,7 @@ draft: false
 
 ## What are we doing?
 
-Showing a newer version of the New-LdapsIDentitySource Run-Command within Azure VMware Solution
+Showing a newer version of the New-LDAPSIDentitySource Run-Command within Azure VMware Solution
 
 ## Lets build this
 
