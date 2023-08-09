@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" data-theme=""><head>
+    <title> Fletcher Kelly | Can I run this cheaper? Use case for the Azure Cost Management API </title>
+
+    
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.114.1"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="Just a simple cloud tinkerer">
+    
+    <link rel="stylesheet"
+          href="https://cloud.fskelly.com/css/style.min.cf1a79e57110a79f2495dd1b2ddd6917f99cd654f5a180c165921094a29f6b6a.css"
+          integrity="sha256-zxp55XEQp58kld0bLd1pF/mc1lT1oYDBZZIQlKKfa2o="
+          crossorigin="anonymous"
+          type="text/css">
+    
+    <link rel="stylesheet"
+        href="https://cloud.fskelly.com/css/markupHighlight.min.8735c129318a1c824d066fc2cd1e3911054460819c296ac99007aeb5044b6605.css"
+        integrity="sha256-hzXBKTGKHIJNBm/CzR45EQVEYIGcKWrJkAeutQRLZgU="
+        crossorigin="anonymous"
+        type="text/css">
+    
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+
+    
+    <link rel="shortcut icon" href="https://cloud.fskelly.com/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cloud.fskelly.com/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cloud.fskelly.com/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cloud.fskelly.com/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="https://cloud.fskelly.com/post/2023/azure-cost-management-playing-with-api-in-powershell/">
+
+    
+    
+    
+    
+    <script type="text/javascript"
+            src="https://cloud.fskelly.com/js/anatole-header.min.df804b63b5bd8474ea0756ea874bc8f1e92552708cc6ea43aa0d76981dc419f9.js"
+            integrity="sha256-34BLY7W9hHTqB1bqh0vI8eklUnCMxupDqg12mB3EGfk="
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        var sdkInstance="appInsightsSDK";window[sdkInstance]="appInsights";var aiName=window[sdkInstance],aisdk=window[aiName]||function(e){function n(e){t[e]=function(){var n=arguments;t.queue.push(function(){t[e].apply(t,n)})}}var t={config:e};t.initialize=!0;var i=document,a=window;setTimeout(function(){var n=i.createElement("script");n.src=e.url||"https://az416426.vo.msecnd.net/scripts/b/ai.2.min.js",i.getElementsByTagName("script")[0].parentNode.appendChild(n)});try{t.cookie=i.cookie}catch(e){}t.queue=[],t.version=2;for(var r=["Event","PageView","Exception","Trace","DependencyData","Metric","PageViewPerformance"];r.length;)n("track"+r.pop());n("startTrackPage"),n("stopTrackPage");var s="Track"+r[0];if(n("start"+s),n("stop"+s),n("setAuthenticatedUserContext"),n("clearAuthenticatedUserContext"),n("flush"),!(!0===e.disableExceptionTracking||e.extensionConfig&&e.extensionConfig.ApplicationInsightsAnalytics&&!0===e.extensionConfig.ApplicationInsightsAnalytics.disableExceptionTracking)){n("_"+(r="onerror"));var o=a[r];a[r]=function(e,n,i,a,s){var c=o&&o(e,n,i,a,s);return!0!==c&&t["_"+r]({message:e,url:n,lineNumber:i,columnNumber:a,error:s}),c},e.autoExceptionInstrumented=!0}return t}(
+        {
+            instrumentationKey:"86b46f86-3e13-4c32-95bc-3122160559a7"
+        }
+        );window[aiName]=aisdk,aisdk.queue&&0===aisdk.queue.length&&aisdk.trackPageView({});
+    </script>
+
+
+    
+        
+        
+        <script type="text/javascript"
+                src="https://cloud.fskelly.com/js/anatole-theme-switcher.min.3829579c725749492568b0e6fa9da3012a7fc37fd291b4fd79e33c1df5d8a34a.js"
+                integrity="sha256-OClXnHJXSUklaLDm&#43;p2jASp/w3/SkbT9eeM8HfXYo0o="
+                crossorigin="anonymous"></script>
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Can I run this cheaper? Use case for the Azure Cost Management API"/>
+<meta name="twitter:description" content="What are we doing? I was given inspiration by a colleague, Ben Hummerstone who used a Azure Python Function, whilst super cool and interesting, I am a PowerShell advocate through and through. So I used PowerShell and wrote a script to show some of the use cases. This is just the tip of the iceberg and the script has been built to show some of the options available.
+Constraints / limitations The primary focus of this script is IaaS."/>
+
+</head>
+<body><div class="sidebar animated fadeInDown ">
+    <div class="logo-title">
+        <div class="title">
+            <img src="https://cloud.fskelly.com/images/cloud-gd3eff23c2_640.jpg" alt="profile picture">
+            <h3 title=""><a href="/">Fletcher&#39;s Cloud Journey</a></h3>
+            <div class="description">
+                <p>Just a simple cloud tinkerer</p>
+            </div>
+        </div>
+    </div>
+    <ul class="social-links">
+        
+            <li>
+                <a href="https://www.linkedin.com/in/fletcherkelly/" rel="me" aria-label="Linkedin">
+                    <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://github.com/fskelly/" rel="me" aria-label="GitHub">
+                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            <li>
+                <a href="mailto:fletcher_kelly@outlook.com" rel="me" aria-label="e-mail">
+                    <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; Fletcher Kelly  2023 </div>
+    </div>
+</div>
+<div class="main">
+    <div class="page-top  animated fadeInDown ">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+    </a>
+    <ul class="nav" id="navMenu">
+        
+        
+            
+            <li><a 
+                   href="/"
+                        
+                   title="">Home</a></li>
+        
+            
+            <li><a 
+                   href="/post/"
+                        
+                   title="">Posts</a></li>
+        
+            
+            <li><a 
+                   href="/page/archives/"
+                        
+                   title="Archives">Archives</a></li>
+        
+            
+            <li><a 
+                   href="/page/search/"
+                        
+                   title="Search">Search</a></li>
+        
+            
+            <li><a 
+                   href="/page/about/"
+                        
+                   title="About Blog">About Blog</a></li>
+        
+            
+            <li><a 
+                   href="/page/fletcherkelly/"
+                        
+                   title="About Fletcher Kelly">About Fletcher Kelly</a></li>
+        
+            
+            <li><a 
+                   href="/page/robinheringa/"
+                        
+                   title="About Robin Heringa">About Robin Heringa</a></li>
+        
+            
+            <li><a 
+                   href="/tags/"
+                        
+                   title="">Tags</a></li>
+        
+        
+        
+            <li class="theme-switch-item">
+                <a class="theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+    <div class="post  animated fadeInDown ">
+        <div class="post-content">
+            <div class="post-title">
+                <h3>Can I run this cheaper? Use case for the Azure Cost Management API</h3>
+                
+                    <div class="info">
+                        <em class="fas fa-calendar-day"></em>
+                        <span class="date">Thu, Aug 3, 2023</span>
+                        <em class="fas fa-stopwatch"></em>
+                        <span class="reading-time">6-minute read</span>
+                    </div>
+                
+            </div>
+
+            <h2 id="what-are-we-doing">What are we doing?</h2>
+<p>I was given inspiration by a colleague, <a href="https://www.linkedin.com/in/bhummerstone/">Ben Hummerstone</a> who used a <a href="https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-python?tabs=asgi%2Capplication-level&amp;pivots=python-mode-configuration">Azure Python Function</a>, whilst super cool and interesting, I am a PowerShell advocate through and through. So I used PowerShell and wrote a script to show some of the use cases. This is just the tip of the iceberg and the script has been built to show some of the options available.</p>
+<h2 id="constraints--limitations">Constraints / limitations</h2>
+<ol>
+<li>The primary focus of this script is IaaS.</li>
+<li>Could be better implemented as a function. If there is enough of an ask, I might build this into a function.</li>
+<li>Built for my sample use cases.</li>
+<li>This is a quick and dirty implementation.</li>
+<li>This is <strong>NOT PRODUCTION</strong> ready yet.</li>
+</ol>
+<h2 id="lets-build-this">Lets build this</h2>
+<h3 id="steps">Steps</h3>
+<p>You will need the following</p>
+<ol>
+<li>PowerShell</li>
+<li>An understanding of the Cost API (Insert link here)</li>
+<li>Willingness to learn and experiment</li>
+<li>Postman or the Postman VS Code extension is great for testing, however a normal browser will also return the required details.</li>
+</ol>
+<p>In essence, there are snippets of code built into one bigger script.</p>
+<ol>
+<li>Login and list all subscriptions you have access to then pick one to get the vms against.</li>
+<li>Check for vms with the same in different resource groups.</li>
+<li>We perform an overall call for data.</li>
+<li>Check for pagination - as the results are returned 100 rows at a time.</li>
+<li>We filter the data - we remove Spot and Low Priority Items.</li>
+<li>We find cheaper options with the above filter applied.</li>
+<li>We can check against specific regions, again with the filter from step2 applied. Was interesting to get the formatting correct here. :)</li>
+</ol>
+<p>I will do my best to explain the script, I have also added comments. Please use this as a base and modify as needed. This scripts only <strong>GETS</strong> information, there are <strong>NO WRITES/SETS</strong> in this script. This is by design, please add this functionality yourself.</p>
+<p>The snippet below, is designed to allow you to log into Azure (Azure Commercial by default) and then list all the subscriptions you have access to and present a list and then connect to the selected subscription.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="kd">function</span><span class="w"> </span><span class="nb">Select-SubscriptionsAndConnectTo</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">Login-AzAccount</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$subscriptions</span> <span class="p">=</span> <span class="nb">Get-AzSubscription</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">Name</span><span class="p">,</span><span class="n">SubscriptionId</span> <span class="p">|</span> <span class="nb">Sort-Object</span> <span class="n">Name</span> 
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="no">int</span><span class="p">]</span><span class="nv">$subscriptionCount</span> <span class="p">=</span> <span class="nv">$subscriptions</span><span class="p">.</span><span class="py">count</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">Write-output</span> <span class="s2">&#34;Found&#34;</span> <span class="nv">$subscriptionCount</span> <span class="s2">&#34;Subscriptions&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$i</span> <span class="p">=</span> <span class="mf">0</span>
+</span></span><span class="line"><span class="cl">    <span class="k">foreach</span> <span class="p">(</span><span class="nv">$subscription</span> <span class="k">in</span> <span class="nv">$subscriptions</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$subValue</span> <span class="p">=</span> <span class="nv">$i</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$subText</span> <span class="p">=</span> <span class="p">[</span><span class="no">string</span><span class="p">]</span><span class="nv">$subValue</span> <span class="p">+</span> <span class="s2">&#34; : &#34;</span> <span class="p">+</span> <span class="nv">$subscription</span><span class="p">.</span><span class="py">Name</span> <span class="p">+</span> <span class="s2">&#34; ( &#34;</span> <span class="p">+</span> <span class="nv">$subscription</span><span class="p">.</span><span class="py">SubscriptionId</span> <span class="p">+</span> <span class="s2">&#34; ) &#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">Write-output</span> <span class="nv">$subText</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$i</span><span class="p">++</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Do</span> 
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="p">[</span><span class="no">int</span><span class="p">]</span><span class="nv">$subscriptionChoice</span> <span class="p">=</span> <span class="nb">read-host</span> <span class="n">-prompt</span> <span class="s2">&#34;Select number &amp; press enter&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> 
+</span></span><span class="line"><span class="cl">    <span class="k">until</span> <span class="p">(</span><span class="nv">$subscriptionChoice</span> <span class="o">-le</span> <span class="nv">$subscriptionCount</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nv">$selectedSub</span> <span class="p">=</span> <span class="s2">&#34;You selected &#34;</span> <span class="p">+</span> <span class="nv">$subscriptions</span><span class="p">[</span><span class="nv">$subscriptionChoice</span><span class="p">].</span><span class="py">Name</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">Write-output</span> <span class="nv">$selectedSub</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">Set-AzContext</span> <span class="n">-SubscriptionId</span> <span class="nv">$subscriptions</span><span class="p">[</span><span class="nv">$subscriptionChoice</span><span class="p">].</span><span class="py">SubscriptionId</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">Select-SubscriptionsAndConnectTo</span>
+</span></span></code></pre></div><p>Get VMs and check if the same VM name is used in multiple resource groups.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="c">## getting all vms in a subscription</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$vms</span> <span class="p">=</span> <span class="nb">Get-AzVM</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$vms</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">Name</span><span class="p">,</span><span class="n">ResourceGroupName</span><span class="p">,</span><span class="n">Location</span><span class="p">,</span><span class="vm">@</span><span class="p">{</span><span class="n">l</span><span class="p">=</span><span class="s1">&#39;VMSize&#39;</span><span class="p">;</span><span class="n">e</span><span class="p">={</span><span class="nv">$_</span><span class="p">.</span><span class="py">HardwareProfile</span><span class="p">.</span><span class="n">VmSize</span><span class="p">}}|</span> <span class="nb">Sort-Object</span> <span class="n">Name</span> <span class="p">|</span> <span class="nb">Format-Table</span> <span class="n">-AutoSize</span>
+</span></span><span class="line"><span class="cl"><span class="c">## reading in virtual machines</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$selectedVmName</span> <span class="p">=</span> <span class="nb">read-host</span> <span class="s2">&#34;Which VM would you like to check for better pricing?&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$selectedRGName</span> <span class="p">=</span> <span class="nv">$vms</span> <span class="p">|</span> <span class="nb">Where-Object</span> <span class="p">{</span> <span class="nv">$_</span><span class="p">.</span><span class="py">Name</span> <span class="o">-eq</span> <span class="nv">$selectedVmName</span> <span class="p">}</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">ResourceGroupName</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">## checking for duplicate names in multiple resource groups</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nv">$selectedRGName</span><span class="p">.</span><span class="py">count</span> <span class="o">-gt</span> <span class="mf">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$rgCount</span> <span class="p">=</span> <span class="nv">$selectedRGName</span><span class="p">.</span><span class="py">count</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">Write-Output</span> <span class="s2">&#34;Found multiple VMs with the same name in different resource groups&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$rgNames</span> <span class="p">=</span> <span class="nv">$selectedRGName</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">ResourceGroupName</span>
+</span></span><span class="line"><span class="cl">    <span class="c">#write-output $rgNames.resourcegroupname</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$i</span> <span class="p">=</span> <span class="mf">0</span>
+</span></span><span class="line"><span class="cl">    <span class="k">foreach</span> <span class="p">(</span><span class="nv">$rgName</span> <span class="k">in</span> <span class="nv">$rgNames</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$rgValue</span> <span class="p">=</span> <span class="nv">$i</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$rgText</span> <span class="p">=</span> <span class="p">[</span><span class="no">string</span><span class="p">]</span><span class="nv">$rgValue</span> <span class="p">+</span> <span class="s2">&#34; : &#34;</span> <span class="p">+</span> <span class="nv">$rgName</span><span class="p">.</span><span class="py">ResourceGroupName</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">Write-output</span> <span class="nv">$rgText</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$i</span><span class="p">++</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">Do</span> 
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="p">[</span><span class="no">int</span><span class="p">]</span><span class="nv">$rgChoice</span> <span class="p">=</span> <span class="nb">read-host</span> <span class="n">-prompt</span> <span class="s2">&#34;Select number &amp; press enter&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> 
+</span></span><span class="line"><span class="cl">    <span class="k">until</span> <span class="p">(</span><span class="nv">$rgChoice</span> <span class="o">-le</span> <span class="nv">$rgCount</span><span class="p">-</span><span class="mf">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nv">$selectedRGText</span> <span class="p">=</span> <span class="s2">&#34;You selected &#34;</span> <span class="p">+</span> <span class="nv">$selectedRGName</span><span class="p">[</span><span class="nv">$rgChoice</span><span class="p">].</span><span class="py">ResourceGroupName</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">Write-output</span> <span class="nv">$selectedRGText</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$selectedRG</span> <span class="p">=</span> <span class="nv">$selectedRGName</span><span class="p">[</span><span class="nv">$rgChoice</span><span class="p">].</span><span class="py">ResourceGroupName</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c">## selecting the vm from the selected resource group</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$azureVm</span> <span class="p">=</span> <span class="nb">get-azvm</span> <span class="n">-ResourceGroupName</span> <span class="nv">$selectedRG</span> <span class="n">-Name</span> <span class="nv">$selectedVmName</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c">## selecting the vm from the selected resource group</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$azureVm</span> <span class="p">=</span> <span class="nb">get-azvm</span> <span class="n">-ResourceGroupName</span> <span class="nv">$selectedRGName</span><span class="p">.</span><span class="py">ResourceGroupName</span> <span class="n">-Name</span> <span class="nv">$selectedVmName</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Getting information about the selected VM and establishing the current base price.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="c">## building variables for api call</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$azureVMSKU</span> <span class="p">=</span> <span class="nv">$azureVm</span><span class="p">.</span><span class="py">HardwareProfile</span><span class="p">.</span><span class="py">VmSize</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$azureVmLocation</span> <span class="p">=</span> <span class="nv">$azureVm</span><span class="p">.</span><span class="py">Location</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">## api variables</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$apiUrl</span> <span class="p">=</span> <span class="s2">&#34;https://prices.azure.com/api/retail/prices?&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$armSkuName</span> <span class="p">=</span> <span class="nv">$azureVMSKU</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">## get base information around pricing</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">$baseFilter</span> <span class="p">=</span> <span class="s2">&#34;armSkuName eq &#39;</span><span class="nv">$armSkuName</span><span class="s2">&#39; and priceType eq &#39;Consumption&#39; and armRegionName eq &#39;</span><span class="nv">$azureVmLocation</span><span class="s2">&#39;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$baseUrl</span> <span class="p">=</span> <span class="nv">$apiUrl</span> <span class="p">+</span> <span class="s2">&#34;</span><span class="se">`$</span><span class="s2">filter=</span><span class="nv">$baseFilter</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">Write-Output</span> <span class="s2">&#34;Current Url is </span><span class="nv">$baseUrl</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$baseJsonData</span> <span class="p">=</span> <span class="nb">Invoke-RestMethod</span> <span class="n">-Uri</span> <span class="nv">$baseUrl</span> <span class="n">-Method</span> <span class="n">Get</span>
+</span></span><span class="line"><span class="cl"><span class="c">## selecting most expensive price</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$baseVMPrice</span> <span class="p">=</span> <span class="p">(</span><span class="nv">$baseJsonData</span><span class="p">.</span><span class="py">Items</span>  <span class="p">|</span> <span class="nb">Where-Object</span> <span class="p">{</span> <span class="nv">$_</span><span class="p">.</span><span class="py">skuName</span> <span class="o">-notlike</span> <span class="s2">&#34;*Spot*&#34;</span> <span class="o">-and</span> <span class="nv">$_</span><span class="p">.</span><span class="py">skuName</span> <span class="o">-notlike</span> <span class="s2">&#34;*Low Priority*&#34;</span> <span class="p">}</span> <span class="p">|</span> <span class="nb">Sort-Object</span> <span class="n">unitPrice</span> <span class="n">-Descending</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">-Last</span> <span class="mf">1</span><span class="p">).</span><span class="py">unitPrice</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">## formatting for results</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$baseVMPrice</span> <span class="p">=</span> <span class="s2">&#34;{0:N4}&#34;</span> <span class="o">-f</span> <span class="nv">$baseVMPrice</span>
+</span></span><span class="line"><span class="cl"><span class="nb">Write-Output</span> <span class="s2">&#34;Base price is </span><span class="nv">$baseVMPrice</span><span class="s2">&#34;</span>
+</span></span></code></pre></div><p>Build an array to store the information for later manipulation and sorting. Filter out &ldquo;Low Priority&rdquo; and &ldquo;Spot VMs&rdquo; and deal with pagination.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">## get all pricing data for the selected vm</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$filter</span> <span class="p">=</span> <span class="s2">&#34;armSkuName eq &#39;</span><span class="nv">$armSkuName</span><span class="s2">&#39; and priceType eq &#39;Consumption&#39;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$allItems</span> <span class="p">=</span> <span class="vm">@</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># Run Query</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$url</span> <span class="p">=</span> <span class="nv">$apiUrl</span> <span class="p">+</span> <span class="s2">&#34;</span><span class="se">`$</span><span class="s2">filter=</span><span class="nv">$filter</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">Write-Output</span> <span class="s2">&#34;Current Url is </span><span class="nv">$url</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$currentJsonData</span> <span class="p">=</span> <span class="nb">Invoke-RestMethod</span> <span class="n">-Uri</span> <span class="nv">$url</span> <span class="n">-Method</span> <span class="n">Get</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$allItems</span> <span class="p">+=</span> <span class="nv">$currentJsonData</span><span class="p">.</span><span class="py">Items</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># pagination</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$NextPage</span> <span class="p">=</span> <span class="nv">$currentJsonData</span><span class="p">.</span><span class="py">NextPageLink</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="p">(</span><span class="nv">$NextPage</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">Write-Verbose</span> <span class="s2">&#34;Current Url is </span><span class="nv">$NextPage</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$currentJsonData</span> <span class="p">=</span> <span class="nb">Invoke-RestMethod</span> <span class="n">-Uri</span> <span class="nv">$NextPage</span> <span class="n">-Method</span> <span class="n">Get</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$allItems</span> <span class="p">+=</span> <span class="nv">$currentJsonData</span><span class="p">.</span><span class="py">Items</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$NextPage</span> <span class="p">=</span> <span class="nv">$currentJsonData</span><span class="p">.</span><span class="py">NextPageLink</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># filter out spot and low priority item from array</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$filteredItems</span> <span class="p">=</span> <span class="nv">$allItems</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">skuName</span><span class="p">,</span> <span class="n">meterName</span><span class="p">,</span> <span class="n">unitOfMeasure</span><span class="p">,</span> <span class="vm">@</span><span class="p">{</span><span class="n">l</span><span class="p">=</span><span class="s1">&#39;unitPrice&#39;</span><span class="p">;</span><span class="n">e</span><span class="p">={</span><span class="s2">&#34;{0:N4}&#34;</span> <span class="o">-f</span> <span class="nv">$_</span><span class="p">.</span><span class="n">unitPrice</span><span class="p">}},</span> <span class="n">armRegionName</span> <span class="p">|</span> <span class="nb">Where-Object</span> <span class="p">{</span> <span class="nv">$_</span><span class="p">.</span><span class="py">skuName</span> <span class="o">-notlike</span> <span class="s2">&#34;*Spot*&#34;</span> <span class="o">-and</span> <span class="nv">$_</span><span class="p">.</span><span class="py">skuName</span> <span class="o">-notlike</span> <span class="s2">&#34;*Low Priority*&#34;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nb">Write-Output</span> <span class="s2">&#34;Total items: </span><span class="p">$(</span><span class="nv">$filteredItems</span><span class="p">.</span><span class="n">Count</span><span class="p">)</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c">#$filteredItems</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$filteredItems</span> <span class="p">|</span> <span class="nb">Sort-Object</span> <span class="n">-Property</span> <span class="n">unitPrice</span> <span class="p">|</span> <span class="nb">Format-Table</span> <span class="n">-AutoSize</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$cheaperOptions</span> <span class="p">=</span> <span class="nv">$filteredItems</span> <span class="p">|</span> <span class="nb">Where-Object</span> <span class="n">-Property</span> <span class="n">unitPrice</span> <span class="o">-lt</span> <span class="nv">$baseVMPrice</span> <span class="p">|</span> <span class="nb">Sort-Object</span> <span class="n">-Property</span> <span class="n">unitPrice</span>
+</span></span><span class="line"><span class="cl"><span class="nb">Write-Output</span> <span class="s2">&#34;Cheaper than </span><span class="nv">$baseVMPrice</span><span class="s2"> options: </span><span class="p">$(</span><span class="nv">$cheaperOptions</span><span class="p">.</span><span class="n">Count</span><span class="p">)</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$cheaperOptions</span> <span class="p">|</span> <span class="nb">Format-Table</span> <span class="n">-Property</span> <span class="n">skuName</span><span class="p">,</span> <span class="n">meterName</span><span class="p">,</span> <span class="n">unitOfMeasure</span><span class="p">,</span> <span class="vm">@</span><span class="p">{</span><span class="n">l</span><span class="p">=</span><span class="s1">&#39;unitPrice&#39;</span><span class="p">;</span><span class="n">e</span><span class="p">={</span><span class="s2">&#34;{0:N4}&#34;</span> <span class="o">-f</span> <span class="nv">$_</span><span class="p">.</span><span class="n">unitPrice</span><span class="p">}},</span> <span class="n">armRegionName</span> <span class="n">-AutoSize</span>
+</span></span></code></pre></div><p>I have also included an option to check against specific regions if that is something you would like to do. You will get prompted if you want to check against other regions. A <strong>Y</strong> will continue to ask which regions, this is a comma seperated list, <em>swedencentral,westeurope</em> (as an example). A <strong>N</strong> will simply stop the script.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c">## how to check against specific regions</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$regionCheck</span> <span class="p">=</span> <span class="nb">read-host</span> <span class="s2">&#34;Would you like to check against specific regions? (y/n)&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span><span class="p">(</span><span class="s2">&#34;y&#34;</span><span class="p">,</span><span class="s2">&#34;n&#34;</span> <span class="o">-notcontains</span> <span class="nv">$regionCheck</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$regionCheck</span> <span class="p">=</span> <span class="nb">read-host</span> <span class="s2">&#34;Would you like to check against specific regions? (y/n)&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nv">$regionCheck</span> <span class="o">-eq</span> <span class="s2">&#34;y&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$specificRegions</span> <span class="p">=</span> <span class="nb">read-host</span> <span class="s2">&#34;please enter region names separated by comma&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$specificRegions</span> <span class="p">=</span> <span class="nv">$specificRegions</span><span class="p">.</span><span class="py">split</span><span class="p">(</span><span class="s2">&#34;,&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nv">$regionItems</span> <span class="p">=</span> <span class="vm">@</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$regionQueryBaseUrlFilter</span> <span class="p">=</span> <span class="s2">&#34;armSkuName eq &#39;</span><span class="nv">$armSkuName</span><span class="s2">&#39; and priceType eq &#39;Consumption&#39; &#34;</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">foreach</span> <span class="p">(</span><span class="nv">$item</span> <span class="k">in</span> <span class="nv">$specificRegions</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$item</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$regionQueryBaseUrlFilter</span> <span class="p">=</span> <span class="s2">&#34;armSkuName eq &#39;</span><span class="nv">$armSkuName</span><span class="s2">&#39; and priceType eq &#39;Consumption&#39; &#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$regionQueryBaseUrlFilter</span> <span class="p">=</span> <span class="nv">$regionQueryBaseUrlFilter</span> <span class="p">+</span> <span class="s2">&#34;and armRegionName eq &#39;</span><span class="nv">$item</span><span class="s2">&#39; &#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$regionQueryBaseUrlFilter</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$regionQueryUrl</span> <span class="p">=</span> <span class="nv">$apiUrl</span> <span class="p">+</span> <span class="s2">&#34;</span><span class="se">`$</span><span class="s2">filter=</span><span class="nv">$regionQueryBaseUrlFilter</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$otherRegionJsonData</span> <span class="p">=</span> <span class="nb">Invoke-RestMethod</span> <span class="n">-Uri</span> <span class="nv">$regionQueryUrl</span> <span class="n">-Method</span> <span class="n">Get</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$regionItems</span> <span class="p">+=</span> <span class="nv">$otherRegionJsonData</span><span class="p">.</span><span class="py">Items</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$NextPage</span> <span class="p">=</span> <span class="nv">$otherRegionJsonData</span><span class="p">.</span><span class="py">NextPageLink</span>
+</span></span><span class="line"><span class="cl">        <span class="k">while</span> <span class="p">(</span><span class="nv">$NextPage</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">Write-Output</span> <span class="s2">&#34;Current Url is </span><span class="nv">$NextPage</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="nv">$otherRegionJsonData</span> <span class="p">=</span> <span class="nb">Invoke-RestMethod</span> <span class="n">-Uri</span> <span class="nv">$NextPage</span> <span class="n">-Method</span> <span class="n">Get</span>
+</span></span><span class="line"><span class="cl">            <span class="nv">$regionItems</span> <span class="p">+=</span> <span class="nv">$otherRegionJsonData</span><span class="p">.</span><span class="py">Items</span>
+</span></span><span class="line"><span class="cl">            <span class="nv">$NextPage</span> <span class="p">=</span> <span class="nv">$otherRegionJsonData</span><span class="p">.</span><span class="py">NextPageLink</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="nb">Write-Output</span> <span class="s2">&#34;Output below&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$regionItems</span> <span class="p">|</span> <span class="nb">Where-Object</span> <span class="p">{</span> <span class="nv">$_</span><span class="p">.</span><span class="py">skuName</span> <span class="o">-notlike</span> <span class="s2">&#34;*Spot*&#34;</span> <span class="o">-and</span> <span class="nv">$_</span><span class="p">.</span><span class="py">skuName</span> <span class="o">-notlike</span> <span class="s2">&#34;*Low Priority*&#34;</span> <span class="p">}</span> <span class="p">|</span> <span class="nb">Format-Table</span> <span class="n">-Property</span> <span class="n">skuName</span><span class="p">,</span> <span class="n">meterName</span><span class="p">,</span> <span class="n">unitOfMeasure</span><span class="p">,</span> <span class="vm">@</span><span class="p">{</span><span class="n">l</span><span class="p">=</span><span class="s1">&#39;unitPrice&#39;</span><span class="p">;</span><span class="n">e</span><span class="p">={</span><span class="s2">&#34;{0:N4}&#34;</span> <span class="o">-f</span> <span class="nv">$_</span><span class="p">.</span><span class="n">unitPrice</span><span class="p">}},</span> <span class="n">armRegionName</span> <span class="n">-AutoSize</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span></code></pre></div><p>Full script can be found <a href="https://github.com/fskelly/flkelly-AzureCode-powershell/blob/main/cost-management/get-vms-list-costings.ps1">here</a></p>
+</div>
+        <div class="post-footer">
+            <div class="info">
+                
+                
+            </div>
+        </div>
+
+        
+            <div id="fb_comments_container">
+                    <h2>comments</h2>
+                    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "fletchercloudblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                </div>
+        
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="https://cloud.fskelly.com/js/jquery.min.3164a8ea724f9308e21c3da38c00a9ae93e06df1916f7b1a61ad8cc438da1e53.js"
+        integrity="sha256-MWSo6nJPkwjiHD2jjACprpPgbfGRb3saYa2MxDjaHlM="
+        crossorigin="anonymous"></script>
+
+
+
+
+<script type="text/javascript"
+        src="https://cloud.fskelly.com/js/bundle.min.551d602d34abc028bd83aee2559cc42480309c71830c7fab71f7d70b5c5dda3b.js"
+        integrity="sha256-VR1gLTSrwCi9g67iVZzEJIAwnHGDDH&#43;rcffXC1xd2js="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript"
+        src="https://cloud.fskelly.com/js/medium-zoom.min.e1c6918cbaa90022a5612f0bd71c7bf3be6d036614c5729cebfe14f7b91fa4bc.js"
+        integrity="sha256-4caRjLqpACKlYS8L1xx7875tA2YUxXKc6/4U97kfpLw="
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
