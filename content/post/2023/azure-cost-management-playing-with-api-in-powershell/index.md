@@ -2,8 +2,12 @@
 title: "Can I run this cheaper? Use case for the Azure Cost Management API"
 date: 2023-08-03T15:24:21+01:00
 Description: ""
-Tags: []
-Categories: []
+Tags:
+    - Azure
+    - Cost Management
+Categories: 
+    - Azure
+    - Azure Native
 DisableComments: false
 ---
 
