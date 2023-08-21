@@ -2,7 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://cloud.fskelly.com/tags/azure/</loc>
+    <lastmod>2023-08-03T15:24:21+01:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/categories/azure/</loc>
+    <lastmod>2023-08-03T15:24:21+01:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/categories/azure-native/</loc>
+    <lastmod>2023-08-03T15:24:21+01:00</lastmod>
+  </url><url>
     <loc>https://cloud.fskelly.com/post/2023/azure-cost-management-playing-with-api-in-powershell/</loc>
+    <lastmod>2023-08-03T15:24:21+01:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/categories/</loc>
+    <lastmod>2023-08-03T15:24:21+01:00</lastmod>
+  </url><url>
+    <loc>https://cloud.fskelly.com/tags/cost-management/</loc>
     <lastmod>2023-08-03T15:24:21+01:00</lastmod>
   </url><url>
     <loc>https://cloud.fskelly.com/</loc>
@@ -11,13 +26,13 @@
     <loc>https://cloud.fskelly.com/post/</loc>
     <lastmod>2023-08-03T15:24:21+01:00</lastmod>
   </url><url>
+    <loc>https://cloud.fskelly.com/tags/</loc>
+    <lastmod>2023-08-03T15:24:21+01:00</lastmod>
+  </url><url>
     <loc>https://cloud.fskelly.com/tags/avs/</loc>
     <lastmod>2023-05-19T09:39:57+01:00</lastmod>
   </url><url>
     <loc>https://cloud.fskelly.com/categories/azure-vmware-solution/</loc>
-    <lastmod>2023-05-19T09:39:57+01:00</lastmod>
-  </url><url>
-    <loc>https://cloud.fskelly.com/categories/</loc>
     <lastmod>2023-05-19T09:39:57+01:00</lastmod>
   </url><url>
     <loc>https://cloud.fskelly.com/tags/identity/</loc>
@@ -27,9 +42,6 @@
     <lastmod>2023-05-19T09:39:57+01:00</lastmod>
   </url><url>
     <loc>https://cloud.fskelly.com/post/2023/avs-new-ldaps-run-command/</loc>
-    <lastmod>2023-05-19T09:39:57+01:00</lastmod>
-  </url><url>
-    <loc>https://cloud.fskelly.com/tags/</loc>
     <lastmod>2023-05-19T09:39:57+01:00</lastmod>
   </url><url>
     <loc>https://cloud.fskelly.com/post/2023/avs-ldaps-configure-part1/</loc>
@@ -43,9 +55,6 @@
   </url><url>
     <loc>https://cloud.fskelly.com/post/2023/avs-ldaps-configure-part4/</loc>
     <lastmod>2023-01-25T08:45:43+00:00</lastmod>
-  </url><url>
-    <loc>https://cloud.fskelly.com/categories/azure/</loc>
-    <lastmod>2022-10-03T13:59:06+01:00</lastmod>
   </url><url>
     <loc>https://cloud.fskelly.com/tags/azure-resource-graph/</loc>
     <lastmod>2022-10-03T13:59:06+01:00</lastmod>
@@ -106,9 +115,6 @@
   </url><url>
     <loc>https://cloud.fskelly.com/post/2022/new-to-avs-nomon-networking-1/</loc>
     <lastmod>2022-03-09T16:06:00+00:00</lastmod>
-  </url><url>
-    <loc>https://cloud.fskelly.com/tags/azure/</loc>
-    <lastmod>2021-12-09T08:00:00+00:00</lastmod>
   </url><url>
     <loc>https://cloud.fskelly.com/post/2021/2021-arg-networking-mgmt-more/</loc>
     <lastmod>2021-12-09T08:00:00+00:00</lastmod>

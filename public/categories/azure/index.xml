@@ -6,7 +6,17 @@
     <description>Recent content in Azure on Fletcher&#39;s Cloud Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Oct 2022 13:59:06 +0100</lastBuildDate><atom:link href="https://cloud.fskelly.com/categories/azure/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Aug 2023 15:24:21 +0100</lastBuildDate><atom:link href="https://cloud.fskelly.com/categories/azure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Can I run this cheaper? Use case for the Azure Cost Management API</title>
+      <link>https://cloud.fskelly.com/post/2023/azure-cost-management-playing-with-api-in-powershell/</link>
+      <pubDate>Thu, 03 Aug 2023 15:24:21 +0100</pubDate>
+      
+      <guid>https://cloud.fskelly.com/post/2023/azure-cost-management-playing-with-api-in-powershell/</guid>
+      <description>What are we doing? I was given inspiration by a colleague, Ben Hummerstone who used a Azure Python Function, whilst super cool and interesting, I am a PowerShell advocate through and through. So I used PowerShell and wrote a script to show some of the use cases. This is just the tip of the iceberg and the script has been built to show some of the options available.
+Constraints / limitations The primary focus of this script is IaaS.</description>
+    </item>
+    
     <item>
       <title>Using Azure Resource Graph and Tags to lock items in Azure</title>
       <link>https://cloud.fskelly.com/post/2022/using-arg-tolock-resources/</link>
