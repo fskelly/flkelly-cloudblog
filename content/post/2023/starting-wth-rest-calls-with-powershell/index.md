@@ -21,7 +21,7 @@ I am working more and more with the Azure REST APIs now. My [first dive into cos
 
 1. Primary focus is on the Azure API.
 1. Using Azure Tokens.
-1. ENterprise Application is already registered.
+1. Enterprise Application is already registered.
 1. You have securely stored your secret for the above point.
 1. Designed to be modular - so you can run these in snippets/sections.
 1. This is **NOT PRODUCTION** ready yet.
