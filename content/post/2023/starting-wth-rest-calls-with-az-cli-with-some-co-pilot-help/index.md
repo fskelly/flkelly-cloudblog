@@ -17,7 +17,7 @@ draft: true
 
 ## What are we doing?
 
-I am working more and more with the Azure REST APIs now. My [previous post using API with Powershell](https://cloud.fskelly.com/post/2023/starting-wth-rest-calls-with-powershell/) got me thinking about opening the idea to go beyond [PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/overview). I am very open with people around my lack of skill with [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/), I do however want to learn some new things. 
+I am working more and more with the Azure REST APIs now. My [previous post using API with Powershell](https://cloud.fskelly.com/post/2023/starting-wth-rest-calls-with-powershell/) got me thinking about opening the idea to go beyond [PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/overview). I am very open with people around my lack of skill with [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/), I do however want to learn some new things.
 
 We also have this great technology called [GitHub Copilot](https://github.com/features/copilot) and [ChatGPT](https://openai.com/blog/chatgpt), so I figured let me dig into "AI" as I am a techy at heart and let me improve my skills with Azure CLI.
 
@@ -85,21 +85,17 @@ Now we have our token and we can move onto the next phase, for this I am using a
 
 You will see here that the API call needs authorization (US Spelling) and we are using the token from earlier _"Authorization" = "Bearer $token"_.
 
-```powershell
-$subscriptionId = read-host "Enter your subscription ID"
-$apiVersion = "2020-09-01"
+```bash
+read -p "Enter your subscription ID: " subscriptionId
+apiVersion="2020-09-01"
 
-$headers = @{
-    "Authorization" = "Bearer $token"
-}
+# step below can be used to get the access token for the current session
+#accessToken=$(az account get-access-token --resource=https://management.azure.com --query accessToken -o tsv)
 
-$params = @{
-    Uri = "https://management.azure.com/subscriptions/$subscriptionId/resourcegroups?api-version=$apiVersion"
-    Method = "GET"
-}
-
-$queryResult = Invoke-RestMethod @params -Headers $headers 
-$queryResult.value | select-object -Property name,location
+headers="Authorization: Bearer $accessToken"
+uri="https://management.azure.com/subscriptions/$subscriptionId/resourcegroups?api-version=$apiVersion"
+queryResult=$(curl -s -H "$headers" -X GET $uri)
+echo $queryResult | jq -r '.value[] | {name: .name, location: .location}'
 ```
 
 This same principle can be applied to any API call, just change the scope and the API call. I will be adding more to this as I go along, but this is a good start.
