@@ -1,5 +1,6 @@
 # Set your API key and endpoint
-$apiKey = "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"
+# Key added by accident and disabled by OpenAI
+$apiKey = ""
 $endpoint = "https://api.openai.com/v1/chat/completions"
 
 # Set the headers
