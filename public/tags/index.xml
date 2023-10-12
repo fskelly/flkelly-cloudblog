@@ -6,13 +6,40 @@
     <description>Recent content in Tags on Fletcher&#39;s Cloud Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Aug 2023 09:09:54 +0100</lastBuildDate><atom:link href="https://cloud.fskelly.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Oct 2023 13:34:50 +0100</lastBuildDate><atom:link href="https://cloud.fskelly.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>api</title>
       <link>https://cloud.fskelly.com/tags/api/</link>
-      <pubDate>Thu, 17 Aug 2023 09:09:54 +0100</pubDate>
+      <pubDate>Wed, 11 Oct 2023 13:34:50 +0100</pubDate>
       
       <guid>https://cloud.fskelly.com/tags/api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Azure CLI</title>
+      <link>https://cloud.fskelly.com/tags/azure-cli/</link>
+      <pubDate>Wed, 11 Oct 2023 13:34:50 +0100</pubDate>
+      
+      <guid>https://cloud.fskelly.com/tags/azure-cli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Copilot</title>
+      <link>https://cloud.fskelly.com/tags/copilot/</link>
+      <pubDate>Wed, 11 Oct 2023 13:34:50 +0100</pubDate>
+      
+      <guid>https://cloud.fskelly.com/tags/copilot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>REST</title>
+      <link>https://cloud.fskelly.com/tags/rest/</link>
+      <pubDate>Wed, 11 Oct 2023 13:34:50 +0100</pubDate>
+      
+      <guid>https://cloud.fskelly.com/tags/rest/</guid>
       <description></description>
     </item>
     
@@ -22,15 +49,6 @@
       <pubDate>Thu, 17 Aug 2023 09:09:54 +0100</pubDate>
       
       <guid>https://cloud.fskelly.com/tags/powershell/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>REST</title>
-      <link>https://cloud.fskelly.com/tags/rest/</link>
-      <pubDate>Thu, 17 Aug 2023 09:09:54 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/rest/</guid>
       <description></description>
     </item>
     

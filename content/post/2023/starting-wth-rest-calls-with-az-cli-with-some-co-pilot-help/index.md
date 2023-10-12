@@ -12,7 +12,7 @@ Categories:
     - Azure Native
     - AI
 DisableComments: false
-draft: true
+draft: false
 ---
 
 ## What are we doing?

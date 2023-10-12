@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Copilot on Fletcher&#39;s Cloud Journey</title>
+    <link>https://cloud.fskelly.com/tags/copilot/</link>
+    <description>Recent content in Copilot on Fletcher&#39;s Cloud Journey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 11 Oct 2023 13:34:50 +0100</lastBuildDate><atom:link href="https://cloud.fskelly.com/tags/copilot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Starting Wth Rest Calls With AzCli With Some Copilot Help</title>
+      <link>https://cloud.fskelly.com/post/2023/starting-wth-rest-calls-with-az-cli-with-some-co-pilot-help/</link>
+      <pubDate>Wed, 11 Oct 2023 13:34:50 +0100</pubDate>
+      
+      <guid>https://cloud.fskelly.com/post/2023/starting-wth-rest-calls-with-az-cli-with-some-co-pilot-help/</guid>
+      <description>What are we doing? I am working more and more with the Azure REST APIs now. My previous post using API with Powershell got me thinking about opening the idea to go beyond PowerShell. I am very open with people around my lack of skill with Azure CLI, I do however want to learn some new things.
+We also have this great technology called GitHub Copilot and ChatGPT, so I figured let me dig into &amp;ldquo;AI&amp;rdquo; as I am a techy at heart and let me improve my skills with Azure CLI.</description>
+    </item>
+    
+  </channel>
+</rss>
