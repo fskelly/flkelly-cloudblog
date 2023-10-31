@@ -6,7 +6,16 @@
     <description>Recent content in Azure VMware Solution on Fletcher&#39;s Cloud Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 May 2023 09:39:57 +0100</lastBuildDate><atom:link href="https://cloud.fskelly.com/categories/azure-vmware-solution/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Oct 2023 10:23:27 +0100</lastBuildDate><atom:link href="https://cloud.fskelly.com/categories/azure-vmware-solution/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure VMware Solution Starter Links</title>
+      <link>https://cloud.fskelly.com/post/2023/azure-vmware-solution-starter-links/</link>
+      <pubDate>Thu, 26 Oct 2023 10:23:27 +0100</pubDate>
+      
+      <guid>https://cloud.fskelly.com/post/2023/azure-vmware-solution-starter-links/</guid>
+      <description>What are we doing? Providing people with a list of useful links and blog posts to help you get grounded in Azure VMware Solution. Some of the links are bery high-level and others are very detailed. Each link or blog post will address different items at different depths so you can hopefully find the exact link or information that you are looking for to make your journey in Azure VMware Solution a little easier.</description>
+    </item>
+    
     <item>
       <title>New LDAPS run-command for Azure VMware Solution</title>
       <link>https://cloud.fskelly.com/post/2023/avs-new-ldaps-run-command/</link>

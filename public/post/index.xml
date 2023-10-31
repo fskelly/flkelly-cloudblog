@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Fletcher&#39;s Cloud Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Oct 2023 13:34:50 +0100</lastBuildDate><atom:link href="https://cloud.fskelly.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Oct 2023 10:23:27 +0100</lastBuildDate><atom:link href="https://cloud.fskelly.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure VMware Solution Starter Links</title>
+      <link>https://cloud.fskelly.com/post/2023/azure-vmware-solution-starter-links/</link>
+      <pubDate>Thu, 26 Oct 2023 10:23:27 +0100</pubDate>
+      
+      <guid>https://cloud.fskelly.com/post/2023/azure-vmware-solution-starter-links/</guid>
+      <description>What are we doing? Providing people with a list of useful links and blog posts to help you get grounded in Azure VMware Solution. Some of the links are bery high-level and others are very detailed. Each link or blog post will address different items at different depths so you can hopefully find the exact link or information that you are looking for to make your journey in Azure VMware Solution a little easier.</description>
+    </item>
+    
     <item>
       <title>Starting Wth Rest Calls With AzCli With Some Copilot Help</title>
       <link>https://cloud.fskelly.com/post/2023/starting-wth-rest-calls-with-az-cli-with-some-co-pilot-help/</link>
