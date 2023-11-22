@@ -6,7 +6,16 @@
     <description>Recent content in Getting Started on Fletcher&#39;s Cloud Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Oct 2023 10:23:27 +0100</lastBuildDate><atom:link href="https://cloud.fskelly.com/tags/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Nov 2023 09:54:43 +0000</lastBuildDate><atom:link href="https://cloud.fskelly.com/tags/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure VMware Solution How Do I &#39;Monitor my SDDC Deployment&#39;</title>
+      <link>https://cloud.fskelly.com/post/2023/azure-vmware-solution-how-do-i-monitor-sddc-deployment/</link>
+      <pubDate>Tue, 21 Nov 2023 09:54:43 +0000</pubDate>
+      
+      <guid>https://cloud.fskelly.com/post/2023/azure-vmware-solution-how-do-i-monitor-sddc-deployment/</guid>
+      <description>What are we doing? As I spend more time with my customers and my teams within my organization, I am learning that there a lot of aspects of Azure VMware Solution that we take for granted and simply skim over as we assume (badly) that everyone knows exactly how to &amp;ldquo;the basics&amp;rdquo;. With this series of &amp;ldquo;How Do I&amp;rdquo; posts, I am going to try and address some of the more common questions that I get asked and hopefully provide some useful information to help you on your Azure VMware Solution journey.</description>
+    </item>
+    
     <item>
       <title>Azure VMware Solution Starter Links</title>
       <link>https://cloud.fskelly.com/post/2023/azure-vmware-solution-starter-links/</link>
