@@ -18,11 +18,21 @@ None
 Prompts the user to monitor a deployment and select a private cloud to check the deployment status.
 
 .NOTES
-Author: Your Name
-Date: Current Date
+Author: Fletcher Kelly
+Date: 22-11-2023
 #>
 
 #deployment check
+
+## Do yo have AVS Module installed?
+if (Get-Module -ListAvailable -Name Az.VMware)
+{ write-output "Module exists"
+} else {
+    write-output "Module does not exist"
+    write-output "Installing Module"
+    Install-Module -Name Az.VMware
+}
+
 Write-Output "Waiting 60 seconds before checking deployment status"
 Start-Sleep -s 60
 $YesOrNo = Read-Host "Do you need to monitor a deployment (y/n)"
