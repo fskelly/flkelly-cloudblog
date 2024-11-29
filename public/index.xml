@@ -1,368 +1,236 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Fletcher&#39;s Cloud Journey</title>
-    <link>https://cloud.fskelly.com/</link>
-    <description>Recent content on Fletcher&#39;s Cloud Journey</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 21 Nov 2023 09:54:43 +0000</lastBuildDate><atom:link href="https://cloud.fskelly.com/index.xml" rel="self" type="application/rss+xml" />
+    <title>Fletcher&#39;s Cloud Blog</title>
+    <link>https://username.github.io/</link>
+    <description>Recent content on Fletcher&#39;s Cloud Blog</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 21 Nov 2023 09:54:43 +0000</lastBuildDate>
+    <atom:link href="https://username.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Azure VMware Solution How Do I &#39;Monitor my SDDC Deployment&#39;</title>
-      <link>https://cloud.fskelly.com/post/2023/azure-vmware-solution-how-do-i-monitor-sddc-deployment/</link>
+      <link>https://username.github.io/post/2023/azure-vmware-solution-how-do-i-monitor-sddc-deployment/</link>
       <pubDate>Tue, 21 Nov 2023 09:54:43 +0000</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2023/azure-vmware-solution-how-do-i-monitor-sddc-deployment/</guid>
-      <description>What are we doing? As I spend more time with my customers and my teams within my organization, I am learning that there a lot of aspects of Azure VMware Solution that we take for granted and simply skim over as we assume (badly) that everyone knows exactly how to &amp;ldquo;the basics&amp;rdquo;. With this series of &amp;ldquo;How Do I&amp;rdquo; posts, I am going to try and address some of the more common questions that I get asked and hopefully provide some useful information to help you on your Azure VMware Solution journey.</description>
+      <guid>https://username.github.io/post/2023/azure-vmware-solution-how-do-i-monitor-sddc-deployment/</guid>
+      <description>&lt;h2 id=&#34;what-are-we-doing&#34;&gt;What are we doing?&lt;/h2&gt;&#xA;&lt;p&gt;As I spend more time with my customers and my teams within my organization, I am learning that there a lot of aspects of Azure VMware Solution that we take for granted and simply skim over as we assume (badly) that everyone knows exactly how to &amp;ldquo;the basics&amp;rdquo;. With this series of &amp;ldquo;How Do I&amp;rdquo; posts, I am going to try and address some of the more common questions that I get asked and hopefully provide some useful information to help you on your Azure VMware Solution journey. I will endeavour to copy as many topics as I can and I am always open to ideas and suggestions. You can reach out to me on &lt;a href=&#34;https://www.twitter.com/fskelly&#34;&gt;Twitter&lt;/a&gt; or post a suggestion for the log on &lt;a href=&#34;https://github.com/fskelly/flkelly-cloudblog/issues&#34;&gt;GitHub&lt;/a&gt; - please remember these are designed to be short and sweet and not full blown tutorials.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Azure VMware Solution Starter Links</title>
-      <link>https://cloud.fskelly.com/post/2023/azure-vmware-solution-starter-links/</link>
+      <link>https://username.github.io/post/2023/azure-vmware-solution-starter-links/</link>
       <pubDate>Thu, 26 Oct 2023 10:23:27 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2023/azure-vmware-solution-starter-links/</guid>
-      <description>What are we doing? Providing people with a list of useful links and blog posts to help you get grounded in Azure VMware Solution. Some of the links are bery high-level and others are very detailed. Each link or blog post will address different items at different depths so you can hopefully find the exact link or information that you are looking for to make your journey in Azure VMware Solution a little easier.</description>
+      <guid>https://username.github.io/post/2023/azure-vmware-solution-starter-links/</guid>
+      <description>&lt;h2 id=&#34;what-are-we-doing&#34;&gt;What are we doing?&lt;/h2&gt;&#xA;&lt;p&gt;Providing people with a list of useful links and blog posts to help you get grounded in Azure VMware Solution. Some of the links are bery high-level and others are very detailed. Each link or blog post will address different items at different depths so you can hopefully find the exact link or information that you are looking for to make your journey in Azure VMware Solution a little easier.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Starting Wth Rest Calls With AzCli With Some Copilot Help</title>
-      <link>https://cloud.fskelly.com/post/2023/starting-wth-rest-calls-with-az-cli-with-some-co-pilot-help/</link>
+      <link>https://username.github.io/post/2023/starting-wth-rest-calls-with-az-cli-with-some-co-pilot-help/</link>
       <pubDate>Wed, 11 Oct 2023 13:34:50 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2023/starting-wth-rest-calls-with-az-cli-with-some-co-pilot-help/</guid>
-      <description>What are we doing? I am working more and more with the Azure REST APIs now. My previous post using API with Powershell got me thinking about opening the idea to go beyond PowerShell. I am very open with people around my lack of skill with Azure CLI, I do however want to learn some new things.
-We also have this great technology called GitHub Copilot and ChatGPT, so I figured let me dig into &amp;ldquo;AI&amp;rdquo; as I am a techy at heart and let me improve my skills with Azure CLI.</description>
+      <guid>https://username.github.io/post/2023/starting-wth-rest-calls-with-az-cli-with-some-co-pilot-help/</guid>
+      <description>&lt;h2 id=&#34;what-are-we-doing&#34;&gt;What are we doing?&lt;/h2&gt;&#xA;&lt;p&gt;I am working more and more with the Azure REST APIs now. My &lt;a href=&#34;https://cloud.fskelly.com/post/2023/starting-wth-rest-calls-with-powershell/&#34;&gt;previous post using API with Powershell&lt;/a&gt; got me thinking about opening the idea to go beyond &lt;a href=&#34;https://learn.microsoft.com/en-us/powershell/scripting/overview&#34;&gt;PowerShell&lt;/a&gt;. I am very open with people around my lack of skill with &lt;a href=&#34;https://learn.microsoft.com/en-us/cli/azure/&#34;&gt;Azure CLI&lt;/a&gt;, I do however want to learn some new things.&lt;/p&gt;&#xA;&lt;p&gt;We also have this great technology called &lt;a href=&#34;https://github.com/features/copilot&#34;&gt;GitHub Copilot&lt;/a&gt; and &lt;a href=&#34;https://openai.com/blog/chatgpt&#34;&gt;ChatGPT&lt;/a&gt;, so I figured let me dig into &amp;ldquo;AI&amp;rdquo; as I am a techy at heart and let me improve my skills with Azure CLI.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Starting Wth API Rest Calls With Powershell</title>
-      <link>https://cloud.fskelly.com/post/2023/starting-wth-rest-calls-with-powershell/</link>
+      <link>https://username.github.io/post/2023/starting-wth-rest-calls-with-powershell/</link>
       <pubDate>Thu, 17 Aug 2023 09:09:54 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2023/starting-wth-rest-calls-with-powershell/</guid>
-      <description>What are we doing? I am working more and more with the Azure REST APIs now. My first dive into cost management was a big hit, so I am expanding on that. The main consideration around that particular API is that is it open. Bu this, I mean a simple HTTP request will return results, no authentication or additional headers or the like are needed. So nice and easy. As we dive more into API and REST API&amp;rsquo;s, this is likely to change.</description>
+      <guid>https://username.github.io/post/2023/starting-wth-rest-calls-with-powershell/</guid>
+      <description>&lt;h2 id=&#34;what-are-we-doing&#34;&gt;What are we doing?&lt;/h2&gt;&#xA;&lt;p&gt;I am working more and more with the Azure REST APIs now. My &lt;a href=&#34;https://cloud.fskelly.com/post/2023/azure-cost-management-playing-with-api-in-powershell/&#34;&gt;first dive into cost management&lt;/a&gt; was a big hit, so I am expanding on that. The main consideration around that particular API is that is it open. Bu this, I mean a simple HTTP request will return results, no authentication or additional headers or the like are needed. So nice and easy. As we dive more into API and REST API&amp;rsquo;s, this is likely to change. This post, with more planned, is designed to make this easier and break it down into smaller chunks. THese chunks/snippets can be re-used and the principles in the chunks/snippets can be applied to other API&amp;rsquo;s. These in particular are aimed at Azure API&amp;rsquo;s.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Can I run this cheaper? Use case for the Azure Cost Management API</title>
-      <link>https://cloud.fskelly.com/post/2023/azure-cost-management-playing-with-api-in-powershell/</link>
+      <link>https://username.github.io/post/2023/azure-cost-management-playing-with-api-in-powershell/</link>
       <pubDate>Thu, 03 Aug 2023 15:24:21 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2023/azure-cost-management-playing-with-api-in-powershell/</guid>
-      <description>What are we doing? I was given inspiration by a colleague, Ben Hummerstone who used a Azure Python Function, whilst super cool and interesting, I am a PowerShell advocate through and through. So I used PowerShell and wrote a script to show some of the use cases. This is just the tip of the iceberg and the script has been built to show some of the options available.
-Constraints / limitations The primary focus of this script is IaaS.</description>
+      <guid>https://username.github.io/post/2023/azure-cost-management-playing-with-api-in-powershell/</guid>
+      <description>&lt;h2 id=&#34;what-are-we-doing&#34;&gt;What are we doing?&lt;/h2&gt;&#xA;&lt;p&gt;I was given inspiration by a colleague, &lt;a href=&#34;https://www.linkedin.com/in/bhummerstone/&#34;&gt;Ben Hummerstone&lt;/a&gt; who used a &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-python?tabs=asgi%2Capplication-level&amp;amp;pivots=python-mode-configuration&#34;&gt;Azure Python Function&lt;/a&gt;, whilst super cool and interesting, I am a PowerShell advocate through and through. So I used PowerShell and wrote a script to show some of the use cases. This is just the tip of the iceberg and the script has been built to show some of the options available.&lt;/p&gt;&#xA;&lt;h2 id=&#34;constraints--limitations&#34;&gt;Constraints / limitations&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;The primary focus of this script is IaaS.&lt;/li&gt;&#xA;&lt;li&gt;Could be better implemented as a function. If there is enough of an ask, I might build this into a function.&lt;/li&gt;&#xA;&lt;li&gt;Built for my sample use cases.&lt;/li&gt;&#xA;&lt;li&gt;This is a quick and dirty implementation.&lt;/li&gt;&#xA;&lt;li&gt;This is &lt;strong&gt;NOT PRODUCTION&lt;/strong&gt; ready yet.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;lets-build-this&#34;&gt;Lets build this&lt;/h2&gt;&#xA;&lt;h3 id=&#34;steps&#34;&gt;Steps&lt;/h3&gt;&#xA;&lt;p&gt;You will need the following&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>New LDAPS run-command for Azure VMware Solution</title>
-      <link>https://cloud.fskelly.com/post/2023/avs-new-ldaps-run-command/</link>
+      <link>https://username.github.io/post/2023/avs-new-ldaps-run-command/</link>
       <pubDate>Fri, 19 May 2023 09:39:57 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2023/avs-new-ldaps-run-command/</guid>
-      <description>What are we doing? Showing a newer version of the New-LDAPSIDentitySource Run-Command within Azure VMware Solution
-Lets build this If you have been following along and you have used our previous article(s) - AZURE VMWARE SOLUTION: A COMPREHENSIVE GUIDE TO LDAPS IDENTITY INTEGRATION - PART 1 - you would have realized that this quite a process. We took our many customers feedback to our Product Group (PG) within Microsoft and we have worked with them, to create a new version of the &amp;ldquo;Run-Command&amp;rdquo; and this has been released publicly.</description>
+      <guid>https://username.github.io/post/2023/avs-new-ldaps-run-command/</guid>
+      <description>&lt;h2 id=&#34;what-are-we-doing&#34;&gt;What are we doing?&lt;/h2&gt;&#xA;&lt;p&gt;Showing a newer version of the New-LDAPSIDentitySource Run-Command within Azure VMware Solution&lt;/p&gt;&#xA;&lt;h2 id=&#34;lets-build-this&#34;&gt;Lets build this&lt;/h2&gt;&#xA;&lt;p&gt;If you have been following along and you have used our previous article(s) - &lt;a href=&#34;https://cloud.fskelly.com/post/2023/avs-ldaps-configure-part1/&#34;&gt;AZURE VMWARE SOLUTION: A COMPREHENSIVE GUIDE TO LDAPS IDENTITY INTEGRATION - PART 1&lt;/a&gt; - you would have realized that this quite a process. We took our many customers feedback to our Product Group (PG) within &lt;a href=&#34;https://www.microsoft.com&#34;&gt;Microsoft&lt;/a&gt; and we have worked with them, to create a new version of the &amp;ldquo;Run-Command&amp;rdquo; and this has been released publicly.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Azure VMware Solution: A comprehensive guide to LDAPS identity integration - Part 1</title>
-      <link>https://cloud.fskelly.com/post/2023/avs-ldaps-configure-part1/</link>
+      <link>https://username.github.io/post/2023/avs-ldaps-configure-part1/</link>
       <pubDate>Wed, 25 Jan 2023 08:45:43 +0000</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2023/avs-ldaps-configure-part1/</guid>
-      <description>Author(s): Robin Heringa and Fletcher Kelly
-Implementing LDAPS identity integration with Azure VMware Solution series - 1 of 4 This is the first part of the blog series on how to implement LDAPS identity integration with Azure VMware Solution. Other parts of this series can be found here:
-LDAPS integration - part 2 of 4 LDAPS integration - part 3 of 4 LDAPS integration - part 4 of 4 Azure VMware Solution (AVS) offers a fully managed software defined data center based on VMware vSphere technologies in the shape of an Azure PaaS service.</description>
+      <guid>https://username.github.io/post/2023/avs-ldaps-configure-part1/</guid>
+      <description>&lt;p&gt;Author(s): &lt;a href=&#34;https://username.github.io/page/robinheringa/&#34;&gt;Robin Heringa&lt;/a&gt; and &lt;a href=&#34;https://username.github.io/page/fletcherkelly/&#34;&gt;Fletcher Kelly&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;implementing-ldaps-identity-integration-with-azure-vmware-solution-series---1-of-4&#34;&gt;Implementing LDAPS identity integration with Azure VMware Solution series - 1 of 4&lt;/h1&gt;&#xA;&lt;p&gt;This is the first part of the blog series on how to implement LDAPS identity integration with Azure VMware Solution. Other parts of this series can be found here:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../avs-ldaps-configure-part2/&#34;&gt;LDAPS integration - part 2 of 4&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../avs-ldaps-configure-part3/&#34;&gt;LDAPS integration - part 3 of 4&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../avs-ldaps-configure-part4/&#34;&gt;LDAPS integration - part 4 of 4&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Azure VMware Solution (AVS) offers a fully managed software defined data center based on VMware vSphere technologies in the shape of an Azure PaaS service. The PaaS nature of Azure VMware Solution results in a service that is functionally equivalent to your well-known on-premises VMware deployment you may have been using for years with some specific “restrictions” as Microsoft provides a service level agreement and therefor Microsoft is responsible for ensuring a robust and resilient platform in deployment and operation.  Azure VMware Solution is functionally equivalent to on-premises VMware but due to the PaaS nature of the service there are significant technical differences to properly consider.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Azure VMware Solution: A comprehensive guide to LDAPS identity integration - Part 2</title>
-      <link>https://cloud.fskelly.com/post/2023/avs-ldaps-configure-part2/</link>
+      <link>https://username.github.io/post/2023/avs-ldaps-configure-part2/</link>
       <pubDate>Wed, 25 Jan 2023 08:45:43 +0000</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2023/avs-ldaps-configure-part2/</guid>
-      <description>Author(s): Robin Heringa and Fletcher Kelly
-Implementing LDAPS identity integration with Azure VMware Solution series - 2 of 4 This is the second part of the blog series on how to implement LDAPS identity integration with Azure VMware Solution. Other parts of this series can be found here:
-LDAPS integration - part 1 of 4 LDAPS integration - part 3 of 4 LDAPS integration - part 4 of 4 Configure DNS forwarding prerequisite Before we can configure integration with an external identity store (e.</description>
+      <guid>https://username.github.io/post/2023/avs-ldaps-configure-part2/</guid>
+      <description>&lt;p&gt;Author(s): &lt;a href=&#34;https://username.github.io/page/robinheringa/&#34;&gt;Robin Heringa&lt;/a&gt; and &lt;a href=&#34;https://username.github.io/page/fletcherkelly/&#34;&gt;Fletcher Kelly&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;implementing-ldaps-identity-integration-with-azure-vmware-solution-series---2-of-4&#34;&gt;Implementing LDAPS identity integration with Azure VMware Solution series - 2 of 4&lt;/h1&gt;&#xA;&lt;p&gt;This is the second part of the blog series on how to implement LDAPS identity integration with Azure VMware Solution. Other parts of this series can be found here:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../avs-ldaps-configure-part1/&#34;&gt;LDAPS integration - part 1 of 4&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../avs-ldaps-configure-part3/&#34;&gt;LDAPS integration - part 3 of 4&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../avs-ldaps-configure-part4/&#34;&gt;LDAPS integration - part 4 of 4&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;configure-dns-forwarding-prerequisite&#34;&gt;Configure DNS forwarding prerequisite&lt;/h2&gt;&#xA;&lt;p&gt;Before we can configure integration with an external identity store (e.g. Active Directory Domain Services) we need to make sure that the AVS platform components have the ability to resolve customer DNS zones hosting the LDAPS domain records. This configuration must be made through the Azure Portal blades for Azure VMware Solution.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Azure VMware Solution: A comprehensive guide to LDAPS identity integration - Part 3</title>
-      <link>https://cloud.fskelly.com/post/2023/avs-ldaps-configure-part3/</link>
+      <link>https://username.github.io/post/2023/avs-ldaps-configure-part3/</link>
       <pubDate>Wed, 25 Jan 2023 08:45:43 +0000</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2023/avs-ldaps-configure-part3/</guid>
-      <description>Author(s): Robin Heringa and Fletcher Kelly
-Implementing LDAPS identity integration with Azure VMware Solution series - 3 of 4 This is the third part of the blog series on how to implement LDAPS identity integration with Azure VMware Solution. Other parts of this series can be found here:
-LDAPS integration - part 1 of 4 LDAPS integration - part 2 of 4 LDAPS integration - part 4 of 4 Implement LDAPS integration The following sections will guide you through the required process step-by-step</description>
+      <guid>https://username.github.io/post/2023/avs-ldaps-configure-part3/</guid>
+      <description>&lt;p&gt;Author(s): &lt;a href=&#34;https://username.github.io/page/robinheringa/&#34;&gt;Robin Heringa&lt;/a&gt; and &lt;a href=&#34;https://username.github.io/page/fletcherkelly/&#34;&gt;Fletcher Kelly&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;implementing-ldaps-identity-integration-with-azure-vmware-solution-series---3-of-4&#34;&gt;Implementing LDAPS identity integration with Azure VMware Solution series - 3 of 4&lt;/h1&gt;&#xA;&lt;p&gt;This is the third part of the blog series on how to implement LDAPS identity integration with Azure VMware Solution. Other parts of this series can be found here:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../avs-ldaps-configure-part1/&#34;&gt;LDAPS integration - part 1 of 4&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../avs-ldaps-configure-part2/&#34;&gt;LDAPS integration - part 2 of 4&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../avs-ldaps-configure-part4/&#34;&gt;LDAPS integration - part 4 of 4&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h1 id=&#34;implement-ldaps-integration&#34;&gt;Implement LDAPS integration&lt;/h1&gt;&#xA;&lt;p&gt;The following sections will guide you through the required process step-by-step&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Azure VMware Solution: A comprehensive guide to LDAPS identity integration - Part 4</title>
-      <link>https://cloud.fskelly.com/post/2023/avs-ldaps-configure-part4/</link>
+      <link>https://username.github.io/post/2023/avs-ldaps-configure-part4/</link>
       <pubDate>Wed, 25 Jan 2023 08:45:43 +0000</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2023/avs-ldaps-configure-part4/</guid>
-      <description>Author(s): Robin Heringa and Fletcher Kelly
-Implementing LDAPS identity integration with Azure VMware Solution series - 4 of 4 This is the fourth and final part of the blog series on how to implement LDAPS identity integration with Azure VMware Solution. Other parts of this series can be found here:
-LDAPS integration - part 1 of 4 LDAPS integration - part 2 of 4 LDAPS integration - part 3 of 4 These steps, for now, are run manually from the Azure Portal.</description>
+      <guid>https://username.github.io/post/2023/avs-ldaps-configure-part4/</guid>
+      <description>&lt;p&gt;Author(s): &lt;a href=&#34;https://username.github.io/page/robinheringa/&#34;&gt;Robin Heringa&lt;/a&gt; and &lt;a href=&#34;https://username.github.io/page/fletcherkelly/&#34;&gt;Fletcher Kelly&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;implementing-ldaps-identity-integration-with-azure-vmware-solution-series---4-of-4&#34;&gt;Implementing LDAPS identity integration with Azure VMware Solution series - 4 of 4&lt;/h1&gt;&#xA;&lt;p&gt;This is the fourth and final part of the blog series on how to implement LDAPS identity integration with Azure VMware Solution. Other parts of this series can be found here:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../avs-ldaps-configure-part1/&#34;&gt;LDAPS integration - part 1 of 4&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../avs-ldaps-configure-part2/&#34;&gt;LDAPS integration - part 2 of 4&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../avs-ldaps-configure-part3/&#34;&gt;LDAPS integration - part 3 of 4&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;These steps, for now, are run manually from the Azure Portal. This will be found &amp;ldquo;Azure VMware Solution&amp;rdquo; and under Operations, Run command. Then select &amp;ldquo;New-LDAPSIdentitySource&amp;rdquo;. An automated way of executing the run-command is in the making. Please check back soon as this article will be updated as soon as this is available.&#xA;Navigate to Azure Portal and ensure you are on AVS Private Cloud blade&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Using Azure Resource Graph and Tags to lock items in Azure</title>
-      <link>https://cloud.fskelly.com/post/2022/using-arg-tolock-resources/</link>
+      <link>https://username.github.io/post/2022/using-arg-tolock-resources/</link>
       <pubDate>Mon, 03 Oct 2022 13:59:06 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2022/using-arg-tolock-resources/</guid>
-      <description>What are we doing? We are going to use Azure Resource Graph to find items with a specific tag, in this case {&amp;ldquo;toBeLocked&amp;rdquo;=&amp;ldquo;Yes&amp;rdquo;} and then place a resource lock on them.
-Constraints / limitations Use Azure Resource Graph to perform the search. Very fast and gives you a new way to interface with Azure Resources. As part of this post, I am giving samples below to create items, you could use these for testing.</description>
+      <guid>https://username.github.io/post/2022/using-arg-tolock-resources/</guid>
+      <description>&lt;h2 id=&#34;what-are-we-doing&#34;&gt;What are we doing?&lt;/h2&gt;&#xA;&lt;p&gt;We are going to use Azure Resource Graph to find items with a specific tag, in this case &lt;em&gt;{&amp;ldquo;toBeLocked&amp;rdquo;=&amp;ldquo;Yes&amp;rdquo;}&lt;/em&gt; and then place a resource lock on them.&lt;/p&gt;&#xA;&lt;h2 id=&#34;constraints--limitations&#34;&gt;Constraints / limitations&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Use Azure Resource Graph to perform the search. Very fast and gives you a new way to interface with Azure Resources.&lt;/li&gt;&#xA;&lt;li&gt;As part of this post, I am giving samples below to create items, you could use these for testing. Please test and make sure with production environment.&lt;/li&gt;&#xA;&lt;li&gt;You are using an account that can create locks and potentially remove if needed during the testing.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;lets-build-this&#34;&gt;Lets build this&lt;/h2&gt;&#xA;&lt;h3 id=&#34;steps&#34;&gt;Steps&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Create sample items&lt;/li&gt;&#xA;&lt;li&gt;Build Azure Resource Graph Queries&lt;/li&gt;&#xA;&lt;li&gt;Getting items from the query programmatically&lt;/li&gt;&#xA;&lt;li&gt;Adding locks&lt;/li&gt;&#xA;&lt;li&gt;Result&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;create-sample-items-to-lock&#34;&gt;Create sample items to lock&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;## create resource group&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$rgName&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;toberesourcelocked&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$rgLocation&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;northeurope&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$rg&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;new-azresourcegroup&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-name&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$rgname&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-location&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$rgLocation&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;## create items&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$guid&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;New-Guid&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$saName&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;sa&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$saSuffix&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$guid&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;ToString&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;().&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;Split&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;-&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)[&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]+&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$guid&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;ToString&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;().&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;Split&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;-&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)[&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$saName&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$saName&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;replace&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;-&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))+&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$saSuffix&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;New-AzStorageAccount&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-ResourceGroupName&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$rgName&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Name&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$saName&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Location&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$rgLocation&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-AccountType&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Standard_LRS&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;## create tag(s)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$tags&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;vm&#34;&gt;@&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;toBeLocked&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Yes&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;## get items in Resource Group and tag them&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$items&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Get-AzResource&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-ResourceGroupName&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$rgName&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;foreach&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$item&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$items&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;Update-AzTag&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-ResourceId&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$item&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;ResourceId&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Tag&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$tags&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Operation&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Replace&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt; &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;## update resource group with tag(s)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;Update-AzTag&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-ResourceId&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$rg&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;ResourceId&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Tag&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$tags&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Operation&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Replace&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;build-azure-resource-graph-queries&#34;&gt;Build Azure Resource Graph Queries&lt;/h3&gt;&#xA;&lt;h4 id=&#34;including-resource-groups&#34;&gt;Including Resource Groups&lt;/h4&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;resourcecontainers&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| where type == &amp;#34;microsoft.resources/subscriptions/resourcegroups&amp;#34;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| mv-expand bagexpansion=array tags&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| where isnotempty(tags)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| where tags[0] =~ &amp;#39;toBeLocked&amp;#39; and tags[1] =~ &amp;#39;Yes&amp;#39;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| project  name,type,location,subscriptionId,tags&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| union (resources &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| mv-expand bagexpansion=array tags&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| where isnotempty(tags)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| where tags[0] =~ &amp;#39;toBeLocked&amp;#39; and tags[1] =~ &amp;#39;Yes&amp;#39;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| project name,type,location,subscriptionId,tags,id)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;excluding-resource-groups&#34;&gt;Excluding Resource Groups&lt;/h4&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Resources&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| mv-expand bagexpansion=array tags&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| where isnotempty(tags)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| where tags[0] =~ &amp;#39;toBeLocked&amp;#39; and tags[1] =~ &amp;#39;Yes&amp;#39;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;resource-groups-only&#34;&gt;Resource Groups Only&lt;/h4&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ResourceContainers&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| where type =~ &amp;#39;microsoft.resources/subscriptions/resourcegroups&amp;#39;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| where tags[&amp;#39;toBeLocked&amp;#39;] =~ &amp;#39;Yes&amp;#39;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;getting-items-from-the-query-programmatically&#34;&gt;Getting items from the query programmatically&lt;/h3&gt;&#xA;&lt;p&gt;We now have the required queries and you can pick whichever one above suits your needs, I am going to be using &lt;a href=&#34;#including-resource-groups&#34;&gt;Including Resource Groups&lt;/a&gt;. Now we need a way to act against these resources. I am personally quite a fan of &lt;a href=&#34;https://learn.microsoft.com/en-us/powershell/&#34;&gt;PowerShell&lt;/a&gt; so I will provide this sample. You can use &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/governance/resource-graph/first-query-powershell#add-the-resource-graph-module&#34;&gt;this&lt;/a&gt; as a base for my example below. When running the query in &lt;a href=&#34;https://learn.microsoft.com/en-us/powershell/&#34;&gt;PowerShell&lt;/a&gt;, I find &lt;a href=&#34;https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_splatting?view=powershell-7.2&#34;&gt;splatting&lt;/a&gt; is easiest for &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/governance/resource-graph/&#34;&gt;Azure Resource Graph&lt;/a&gt; queries&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Using Arc to SSH into Linux and Windows</title>
-      <link>https://cloud.fskelly.com/post/2022/arc-ssh-windows-linux/</link>
+      <link>https://username.github.io/post/2022/arc-ssh-windows-linux/</link>
       <pubDate>Tue, 27 Sep 2022 08:03:53 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2022/arc-ssh-windows-linux/</guid>
-      <description>What are we doing? We are going to use Azure Arc to SSH into a Linux (ubuntu 20.04) and a Windows Server (Server 2019) machine and run commands.
-Constraints / limitations Use only Azure ARC. Use only public endpoints (I have not yet tested this with Private Endpoints) and my VPN is not currently connected to Azure. Considerations As of the time of this blog post (27-Sep-2022), the Azure Arc SSH functionality is in preview.</description>
+      <guid>https://username.github.io/post/2022/arc-ssh-windows-linux/</guid>
+      <description>&lt;h2 id=&#34;what-are-we-doing&#34;&gt;What are we doing?&lt;/h2&gt;&#xA;&lt;p&gt;We are going to use Azure Arc to SSH into a Linux (ubuntu 20.04) and a Windows Server (Server 2019) machine and run commands.&lt;/p&gt;&#xA;&lt;h2 id=&#34;constraints--limitations&#34;&gt;Constraints / limitations&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Use only Azure ARC.&lt;/li&gt;&#xA;&lt;li&gt;Use only public endpoints (I have not yet tested this with Private Endpoints) and my VPN is not currently connected to Azure.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;considerations&#34;&gt;Considerations&lt;/h2&gt;&#xA;&lt;p&gt;As of the time of this blog post (27-Sep-2022), the &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/azure-arc/servers/ssh-arc-overview&#34;&gt;Azure Arc SSH&lt;/a&gt; functionality is in preview.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Check Powershell Console Type</title>
-      <link>https://cloud.fskelly.com/post/2022/check-powershell-type/</link>
+      <link>https://username.github.io/post/2022/check-powershell-type/</link>
       <pubDate>Wed, 14 Sep 2022 11:14:30 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2022/check-powershell-type/</guid>
-      <description>I have been working with some Microsoft Hybrid technologies. My specific example here is around Azure Arc-enabled VMware vSphere aspects. When running the scripts provided here there is a key aspect.
-Do NOT run this in the PowerShell ISE.
-Even with this strong recommendation, it is often accidentally used as it is really easy to perform this action with a right click option and this got me to thinking about how can I check this via code?</description>
+      <guid>https://username.github.io/post/2022/check-powershell-type/</guid>
+      <description>&lt;p&gt;I have been working with some Microsoft Hybrid technologies. My specific example here is around &lt;a href=&#34;https://docs.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/overview&#34;&gt;Azure Arc-enabled VMware vSphere&lt;/a&gt; aspects. When running the scripts provided here there is a key aspect.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Do NOT run this in the PowerShell ISE.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Even with this strong recommendation, it is often accidentally used as it is really easy to perform this action with a right click option and this got me to thinking about how can I check this via code?&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Using SSH Keys with Bicep based Linux VM templates</title>
-      <link>https://cloud.fskelly.com/post/2022/bicep-linux-vm-ssh-keys/</link>
+      <link>https://username.github.io/post/2022/bicep-linux-vm-ssh-keys/</link>
       <pubDate>Mon, 20 Jun 2022 08:54:21 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2022/bicep-linux-vm-ssh-keys/</guid>
-      <description>I this post, I use bicep files for the deployment of Linux VMs AND I add some magic with PowerSehll to allow for the creation or using of existing SSH keys with these VMs.
-I am a HUGE fan of SSH keys with Linux VMs for obvious reasons. I could just not find a script or scenario that covered this topic in a way that I actually like. I like to show more details and explain.</description>
+      <guid>https://username.github.io/post/2022/bicep-linux-vm-ssh-keys/</guid>
+      <description>&lt;p&gt;I this post, I use bicep files for the deployment of Linux VMs AND I add some magic with PowerSehll to allow for the creation or using of existing SSH keys with these VMs.&lt;/p&gt;&#xA;&lt;p&gt;I am a HUGE fan of SSH keys with Linux VMs for obvious reasons. I could just not find a script or scenario that covered this topic in a way that I actually like. I like to show more details and explain.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Using Openssh and creating SSH Keys with Powershell</title>
-      <link>https://cloud.fskelly.com/post/2022/openssh-powershell/</link>
+      <link>https://username.github.io/post/2022/openssh-powershell/</link>
       <pubDate>Mon, 25 Apr 2022 14:27:03 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2022/openssh-powershell/</guid>
-      <description>In this post I show you my process for creating SSH Keys for Linux Machines.
-I use a fair amount of Linux in my work career (creating VMs and the like within Azure). Linux VMs are great for testing with, they use SSH and are configured and ready for testing VERY quickly in Azure. I also use a fair amount of Linux in personal life, with Home assistant and Plex.</description>
+      <guid>https://username.github.io/post/2022/openssh-powershell/</guid>
+      <description>&lt;p&gt;In this post I show you my process for creating SSH Keys for Linux Machines.&lt;/p&gt;&#xA;&lt;p&gt;I use a fair amount of Linux in my work career (creating VMs and the like within Azure). Linux VMs are great for testing with, they use SSH and are configured and ready for testing VERY quickly in Azure. I also use a fair amount of Linux in personal life, with &lt;a href=&#34;https://home-assisant.io&#34;&gt;Home assistant&lt;/a&gt; and &lt;a href=&#34;https://plex.tv&#34;&gt;Plex&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;I know many people use username and password with Linux environments and there is nothing wrong with this, I simply think that keys are better :smile: . I believe this for a few reasons.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Using Azure Virtual WAN to connect to Azure VMware Solution</title>
-      <link>https://cloud.fskelly.com/post/2022/poc-vwan-avs/</link>
+      <link>https://username.github.io/post/2022/poc-vwan-avs/</link>
       <pubDate>Mon, 28 Mar 2022 07:27:16 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2022/poc-vwan-avs/</guid>
-      <description>How do I connect my on-premises environment to AVS in a quick and simple way? There are a few patterns available for connecting Azure VMware Solution to your on-premises network. There is specific guidance for PRODUCTION deployments here here. The option we are talking about here is for a different use case.
-Specific use case: A PoC (Proof of Concept) type environment or smaller environments for testing with a plan to grow after the fact.</description>
+      <guid>https://username.github.io/post/2022/poc-vwan-avs/</guid>
+      <description>&lt;h2 id=&#34;how-do-i-connect-my-on-premises-environment-to-avs-in-a-quick-and-simple-way&#34;&gt;How do I connect my on-premises environment to AVS in a quick and simple way?&lt;/h2&gt;&#xA;&lt;p&gt;There are a few patterns available for connecting &lt;a href=&#34;https://docs.microsoft.com/en-us/azure/azure-vmware/introduction&#34;&gt;Azure VMware Solution&lt;/a&gt; to your on-premises network. There is specific guidance for PRODUCTION deployments here &lt;a href=&#34;https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/eslz-network-topology-connectivity&#34;&gt;here&lt;/a&gt;. The option we are talking about here is for a different use case.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Specific use case:&lt;/strong&gt; A &lt;em&gt;&lt;strong&gt;PoC (Proof of Concept)&lt;/strong&gt;&lt;/em&gt; type environment or smaller environments for testing with a plan to grow after the fact.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Azure VMware Solution: To &#39;Internet Enabled&#39; or not?</title>
-      <link>https://cloud.fskelly.com/post/2022/avs-to-internet-able-or-not/</link>
+      <link>https://username.github.io/post/2022/avs-to-internet-able-or-not/</link>
       <pubDate>Thu, 17 Mar 2022 16:06:00 +0000</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2022/avs-to-internet-able-or-not/</guid>
-      <description>Guest Post Author: Robin Heringa
-What else do I need to know when using Azure VMware Solution (AVS)?
-As you all (probably) know by now Azure VMware Solution is a managed service offered by Microsoft providing a managed VMware vSphere environment to customers. With this offering customers no longer need to worry about hardware maintenance, hardware refresh and software maintenance for the core VMware components (ESXi, vCenter and NSX-T).
-By default, after initial deployment of Azure VMware Solution, virtual machines do not have the ability to egress to the Internet.</description>
+      <guid>https://username.github.io/post/2022/avs-to-internet-able-or-not/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Guest Post&lt;/strong&gt;&#xA;Author: &lt;a href=&#34;https://username.github.io/page/robinheringa/&#34;&gt;Robin Heringa&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;What else do I need to know when using Azure VMware Solution (AVS)?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;As you all (probably) know by now Azure VMware Solution is a managed service offered by Microsoft providing a managed VMware vSphere environment to customers. With this offering customers no longer need to worry about hardware maintenance, hardware refresh and software maintenance for the core VMware components (ESXi, vCenter and NSX-T).&lt;/p&gt;&#xA;&lt;p&gt;By default, after initial deployment of Azure VMware Solution, virtual machines do not have the ability to egress to the Internet. One of the options to enable Internet access is to &amp;ldquo;flip&amp;rdquo; the &amp;ldquo;Internet Enabled&amp;rdquo; toggle in the connectivity pane of the management blades in the Azure Portal:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>I want to use Azure VMware Solution, what should I know about networking?</title>
-      <link>https://cloud.fskelly.com/post/2022/new-to-avs-nomon-networking-1/</link>
+      <link>https://username.github.io/post/2022/new-to-avs-nomon-networking-1/</link>
       <pubDate>Wed, 09 Mar 2022 16:06:00 +0000</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2022/new-to-avs-nomon-networking-1/</guid>
-      <description>Author: Fletcher Kelly
-What else do I need to know when using Azure VMware Solution (AVS)?
-Networking Edition
-I have been working with many customers over the last little while that are looking at Azure VMware Solution (AVS).
-Often the idea and use case for the customer is correct. There are a few great reasons to use AVS. If you fit within the use cases, you are in for a real treat.</description>
+      <guid>https://username.github.io/post/2022/new-to-avs-nomon-networking-1/</guid>
+      <description>&lt;p&gt;Author: &lt;a href=&#34;http://localhost:1313/page/fletcherkelly/&#34;&gt;Fletcher Kelly&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;What else do I need to know when using Azure VMware Solution (AVS)?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;&lt;strong&gt;Networking Edition&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;I have been working with many customers over the last little while that are looking at Azure VMware Solution (AVS).&lt;/p&gt;&#xA;&lt;p&gt;Often the idea and use case for the customer is correct. There are a few great reasons to use AVS. If you fit within the use cases, you are in for a real treat.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Azure Resource Graph - More queries for Networking and Management Groups</title>
-      <link>https://cloud.fskelly.com/post/2021/2021-arg-networking-mgmt-more/</link>
+      <link>https://username.github.io/post/2021/2021-arg-networking-mgmt-more/</link>
       <pubDate>Thu, 09 Dec 2021 08:00:00 +0000</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2021/2021-arg-networking-mgmt-more/</guid>
-      <description>Just some more queries I have developed.
-Networking Don&amp;rsquo;t create unnecessarily large virtual networks (for example, /16) to ensure that IP address space isn&amp;rsquo;t wasted.
-resources | where type == &amp;#34;microsoft.network/virtualnetworks&amp;#34; | extend addressSpace = todynamic(properties.addressSpace) | extend addressPrefix = todynamic(properties.addressSpace.addressPrefixes) | mvexpand addressSpace | mvexpand addressPrefix | extend addressMask = split(addressPrefix,&amp;#39;/&amp;#39;)[1] | where addressMask &amp;lt;= 16 Smallest recommended size for a GatewaySubnet is /27
-When you are planning your gateway subnet size, refer to the documentation for the configuration that you are planning to create.</description>
+      <guid>https://username.github.io/post/2021/2021-arg-networking-mgmt-more/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;Just some more queries I have developed.&lt;/p&gt;&#xA;&lt;h2 id=&#34;networking&#34;&gt;Networking&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Don&amp;rsquo;t create unnecessarily large virtual networks (for example, /16) to ensure that IP address space isn&amp;rsquo;t wasted.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;resources&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| where type == &amp;#34;microsoft.network/virtualnetworks&amp;#34;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| extend addressSpace = todynamic(properties.addressSpace)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| extend addressPrefix = todynamic(properties.addressSpace.addressPrefixes)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| mvexpand addressSpace&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| mvexpand addressPrefix&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| extend addressMask = split(addressPrefix,&amp;#39;/&amp;#39;)[1]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| where addressMask &amp;lt;= 16&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Smallest recommended size for a GatewaySubnet is /27&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Azure Resource Group Enterprise Scale Landing Zone queries</title>
-      <link>https://cloud.fskelly.com/post/2021/arg-mg--query-quick-post/</link>
+      <link>https://username.github.io/post/2021/arg-mg--query-quick-post/</link>
       <pubDate>Wed, 25 Aug 2021 05:58:18 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2021/arg-mg--query-quick-post/</guid>
-      <description>Azure Resource Graph Examples This is just a quick post. I am slowly working on building a collection of Resource Graph Queries - they can be found here and will grow over time. It just takes some time to build these.
-They will be broken down into a folder structure based upon the Critical Design Areas of Enterprise Scale Landing Zone
-Hope this helps and keep an eye out for more.</description>
+      <guid>https://username.github.io/post/2021/arg-mg--query-quick-post/</guid>
+      <description>&lt;h1 id=&#34;azure-resource-graph-examples&#34;&gt;Azure Resource Graph Examples&lt;/h1&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;This is just a quick post. I am slowly working on building a collection of Resource Graph Queries - they can be found &lt;a href=&#34;https://github.com/fskelly/azure-resource-graph/tree/main/enterpriseScale&#34;&gt;here&lt;/a&gt; and will grow over time. It just takes some time to build these.&lt;/p&gt;&#xA;&lt;p&gt;They will be broken down into a folder structure based upon the &lt;a href=&#34;https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/enterprise-scale/design-guidelines&#34;&gt;Critical Design Areas of Enterprise Scale Landing Zone&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/public/images/blogImages/2021/azureresourcegraph/folderStructure.png?raw=true&#34; alt=&#34;folderStructure&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Bicep Troubleshooting</title>
-      <link>https://cloud.fskelly.com/post/2021/bicep-troubleshooting/</link>
+      <link>https://username.github.io/post/2021/bicep-troubleshooting/</link>
       <pubDate>Fri, 02 Jul 2021 05:40:16 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2021/bicep-troubleshooting/</guid>
-      <description>Some basic &amp;ldquo;troubleshooting&amp;rdquo; with Azure Bicep So, let me start with this. The team and the community behind Azure Bicep are amazing. There are some great examples here. I often use these as a base and the rip apart or add to meet my needs, you do NOT need to start from ground zero. :smile:
-When you are deploying bicep templates you command will look something like this.
-$bicepFile = &amp;#34;.</description>
+      <guid>https://username.github.io/post/2021/bicep-troubleshooting/</guid>
+      <description>&lt;h1 id=&#34;some-basic-troubleshooting-with-azure-bicephttpsdocsmicrosoftcomen-usazureazure-resource-managerbicepoverview&#34;&gt;Some basic &amp;ldquo;troubleshooting&amp;rdquo; with &lt;a href=&#34;https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview&#34;&gt;Azure Bicep&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;p&gt;So, let me start with this. The team and the community behind Azure Bicep are amazing. There are some great examples &lt;a href=&#34;https://github.com/Azure/bicep&#34;&gt;here&lt;/a&gt;. I often use these as a base and the rip apart or add to meet my needs, you do &lt;strong&gt;NOT&lt;/strong&gt; need to start from ground zero. :smile:&lt;/p&gt;&#xA;&lt;p&gt;When you are deploying bicep templates you command will look something like this.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$bicepFile&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;.\main.bicep&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;New-AzResourceGroupDeployment&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-ResourceGroupName&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;resourceGroupName&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-TemplateFile&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;bicepFilePath&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-name&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;deploymentname&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I love to use repeatable code, so mine has more variables and would look like this.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Cli List Locations and Peers</title>
-      <link>https://cloud.fskelly.com/post/2021/cli-list-locations-and-peers/</link>
+      <link>https://username.github.io/post/2021/cli-list-locations-and-peers/</link>
       <pubDate>Wed, 05 May 2021 07:03:02 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2021/cli-list-locations-and-peers/</guid>
-      <description>How to use the Azure CLI to list Azure Locations and their peers So this will be a &amp;ldquo;quick post&amp;rdquo; that shows some great functionality within the Azure CLI with az account list-locations. With this command you can expect some output like below, you actually get a lot of content back.
-{ &amp;#34;displayName&amp;#34;: &amp;#34;Brazil Southeast&amp;#34;, &amp;#34;id&amp;#34;: &amp;#34;/subscriptions/949ef534-07f5-4138-8b79-aae16a71310c/locations/brazilsoutheast&amp;#34;, &amp;#34;metadata&amp;#34;: { &amp;#34;geographyGroup&amp;#34;: &amp;#34;South America&amp;#34;, &amp;#34;latitude&amp;#34;: &amp;#34;-22.90278&amp;#34;, &amp;#34;longitude&amp;#34;: &amp;#34;-43.2075&amp;#34;, &amp;#34;pairedRegion&amp;#34;: [ { &amp;#34;id&amp;#34;: &amp;#34;/subscriptions/949ef534-07f5-4138-8b79-aae16a71310c/locations/brazilsouth&amp;#34;, &amp;#34;name&amp;#34;: &amp;#34;brazilsouth&amp;#34;, &amp;#34;subscriptionId&amp;#34;: null } ], &amp;#34;physicalLocation&amp;#34;: &amp;#34;Rio&amp;#34;, &amp;#34;regionCategory&amp;#34;: &amp;#34;Other&amp;#34;, &amp;#34;regionType&amp;#34;: &amp;#34;Physical&amp;#34; }, &amp;#34;name&amp;#34;: &amp;#34;brazilsoutheast&amp;#34;, &amp;#34;regionalDisplayName&amp;#34;: &amp;#34;(South America) Brazil Southeast&amp;#34;, &amp;#34;subscriptionId&amp;#34;: null } If you look at some of the examples, you will also see some &amp;ldquo;logical&amp;rdquo; locations, example below, there is a way of adding a query to remove these to display only &amp;ldquo;physical&amp;rdquo; locations.</description>
+      <guid>https://username.github.io/post/2021/cli-list-locations-and-peers/</guid>
+      <description>&lt;h1 id=&#34;how-to-use-the-azure-cli-to-list-azure-locations-and-their-peers&#34;&gt;How to use the Azure CLI to list Azure Locations and their peers&lt;/h1&gt;&#xA;&lt;p&gt;So this will be a &amp;ldquo;quick post&amp;rdquo; that shows some great functionality within the &lt;a href=&#34;https://docs.microsoft.com/en-us/cli/azure/install-azure-cli&#34;&gt;Azure CLI&lt;/a&gt; with &lt;code&gt;az account list-locations&lt;/code&gt;. With this command you can expect some output like below, you actually get a lot of content back.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s2&#34;&gt;&amp;#34;displayName&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;Brazil Southeast&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s2&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;/subscriptions/949ef534-07f5-4138-8b79-aae16a71310c/locations/brazilsoutheast&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s2&#34;&gt;&amp;#34;metadata&amp;#34;&lt;/span&gt;: &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;s2&#34;&gt;&amp;#34;geographyGroup&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;South America&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;s2&#34;&gt;&amp;#34;latitude&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;-22.90278&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;s2&#34;&gt;&amp;#34;longitude&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;-43.2075&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;s2&#34;&gt;&amp;#34;pairedRegion&amp;#34;&lt;/span&gt;: &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;s2&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;/subscriptions/949ef534-07f5-4138-8b79-aae16a71310c/locations/brazilsouth&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;s2&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;brazilsouth&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;s2&#34;&gt;&amp;#34;subscriptionId&amp;#34;&lt;/span&gt;: null&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;s2&#34;&gt;&amp;#34;physicalLocation&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;Rio&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;s2&#34;&gt;&amp;#34;regionCategory&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;Other&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;s2&#34;&gt;&amp;#34;regionType&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;Physical&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s2&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;brazilsoutheast&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s2&#34;&gt;&amp;#34;regionalDisplayName&amp;#34;&lt;/span&gt;: &lt;span class=&#34;s2&#34;&gt;&amp;#34;(South America) Brazil Southeast&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s2&#34;&gt;&amp;#34;subscriptionId&amp;#34;&lt;/span&gt;: null&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you look at some of the examples, you will also see some &lt;em&gt;&amp;ldquo;logical&amp;rdquo;&lt;/em&gt; locations, example below, there is a way of adding a query to remove these to display only &lt;strong&gt;&amp;ldquo;physical&amp;rdquo;&lt;/strong&gt; locations.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Azure Rest Api Postman Basics</title>
-      <link>https://cloud.fskelly.com/post/2021/azure-rest-api-postman-basics/</link>
+      <link>https://username.github.io/post/2021/azure-rest-api-postman-basics/</link>
       <pubDate>Wed, 14 Apr 2021 09:02:18 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2021/azure-rest-api-postman-basics/</guid>
-      <description>Absolute basics with Azure and PostMan Getting started Many of the articles I have found online with regards to the Azure REST API assume a fair level of familiarity with Azure which can be a good and bad thing. You see the Azure Portal makes interacting with the Azure REST API very easy as a lot of the &amp;ldquo;prerequisite&amp;rdquo; work is done in the portal as part of the process. For this blog post we will work on something quite basic, &amp;ldquo;Create a Virtual Machine&amp;rdquo;.</description>
+      <guid>https://username.github.io/post/2021/azure-rest-api-postman-basics/</guid>
+      <description>&lt;h1 id=&#34;absolute-basics-with-azure-and-postmanwwwpostmancom&#34;&gt;Absolute basics with Azure and &lt;a href=&#34;www.postman.com&#34;&gt;PostMan&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;getting-started&#34;&gt;Getting started&lt;/h2&gt;&#xA;&lt;p&gt;Many of the articles I have found online with regards to the &lt;a href=&#34;https://docs.microsoft.com/en-us/rest/api/azure/&#34;&gt;Azure REST API&lt;/a&gt; assume a fair level of familiarity with &lt;a href=&#34;https://azure.microsoft.com/en-us/&#34;&gt;Azure&lt;/a&gt; which can be a good and bad thing. You see the &lt;a href=&#34;https://portal.azure.com&#34;&gt;Azure Portal&lt;/a&gt; makes interacting with the Azure REST API very easy as a lot of the &amp;ldquo;prerequisite&amp;rdquo; work is done in the portal as part of the process. For this blog post we will work on something quite basic, &amp;ldquo;&lt;a href=&#34;https://portal.azure.com/#create/Microsoft.VirtualMachine&#34;&gt;Create a Virtual Machine&lt;/a&gt;&amp;rdquo;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Expiring Keys and Secrets within Azure Key Vault</title>
-      <link>https://cloud.fskelly.com/post/2021/expiring-keys-azure-key-vault/</link>
+      <link>https://username.github.io/post/2021/expiring-keys-azure-key-vault/</link>
       <pubDate>Mon, 18 Jan 2021 07:06:03 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2021/expiring-keys-azure-key-vault/</guid>
-      <description>I was working with a customer the other day and a fairly simple ask came up, I however could not find an immediate answer within the portal.
-How do I check for expiring keys within the Azure KeyVault?
-Now being a PowerShell person, I never gave this much thought as for most tasks or actions I perform on the Azure Platform is done through PowerShell, AP, or CLI. So easy enough, however, not everyone knows how to do this in PowerShell.</description>
+      <guid>https://username.github.io/post/2021/expiring-keys-azure-key-vault/</guid>
+      <description>&lt;p&gt;I was working with a customer the other day and a fairly simple ask came up, I however could not find an immediate answer within the portal.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;How do I check for expiring keys within the Azure KeyVault?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Now being a PowerShell person, I never gave this much thought as for most tasks or actions I perform on the Azure Platform is done through PowerShell, AP, or CLI. So easy enough, however, not everyone knows how to do this in PowerShell. So, I created a simple script.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Azure Ghost Cms and Cdn</title>
-      <link>https://cloud.fskelly.com/post/2021/azure-ghost-cms-and-cdn/</link>
+      <link>https://username.github.io/post/2021/azure-ghost-cms-and-cdn/</link>
       <pubDate>Mon, 11 Jan 2021 07:00:18 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2021/azure-ghost-cms-and-cdn/</guid>
-      <description>I moved my blog onto HUGO. Not everyone would want to do this necessarily, there is a bit of a learning curve, part of the reason I DID IT :). However there are other platforms you can use and still add more functionality if you want.
-You can use Ghost and add an Azure CDN. This is what this blog post will cover.
-There are some very clever people out there that have made this very easy for you.</description>
+      <guid>https://username.github.io/post/2021/azure-ghost-cms-and-cdn/</guid>
+      <description>&lt;p&gt;I moved my blog onto HUGO. Not everyone would want to do this necessarily, there is a bit of a learning curve, part of the reason &lt;strong&gt;I DID IT&lt;/strong&gt; :). However there are other platforms you can use and still add more functionality if you want.&lt;/p&gt;&#xA;&lt;p&gt;You can use &lt;a href=&#34;https://ghost.org/&#34;&gt;Ghost&lt;/a&gt; and add an &lt;a href=&#34;https://docs.microsoft.com/en-us/azure/cdn/cdn-overview&#34;&gt;Azure CDN&lt;/a&gt;. This is what this blog post will cover.&lt;/p&gt;&#xA;&lt;p&gt;There are some very clever people out there that have made this very easy for you. From my research you have 2 main options.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>My New Blog Home with Azure Static Web App</title>
-      <link>https://cloud.fskelly.com/post/2021/my-new-blog-home/</link>
+      <link>https://username.github.io/post/2021/my-new-blog-home/</link>
       <pubDate>Tue, 05 Jan 2021 15:57:04 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2021/my-new-blog-home/</guid>
-      <description>So, I have spent the last few days / weeks deciding the best way to host a blog. Now I have a decidedly &amp;ldquo;split personality&amp;rdquo;. By this I mean I like to segregate my work and personal hobbies. This can be quite beneficial as this allows me to test a few things.
-A few key decisions Must be version controlled - good practice and forces me to get more familiar with git.</description>
+      <guid>https://username.github.io/post/2021/my-new-blog-home/</guid>
+      <description>&lt;p&gt;So, I have spent the last few days / weeks deciding the best way to host a blog. Now I have a decidedly &amp;ldquo;split personality&amp;rdquo;. By this I mean I like to segregate my work and personal hobbies. This can be quite beneficial as this allows me to test a few things.&lt;/p&gt;&#xA;&lt;h3 id=&#34;a-few-key-decisions&#34;&gt;A few key decisions&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Must be version controlled - good practice and forces me to get more familiar with &lt;a href=&#34;https://git-scm.com/&#34;&gt;git&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Must be reliable and redundant, or at least enough to re-deploy if needed - see point 1 :) .&lt;/li&gt;&#xA;&lt;li&gt;Must be as cheap as possible to run and be fairly quick.&lt;/li&gt;&#xA;&lt;li&gt;Must be a learning experience.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Points &lt;strong&gt;1&lt;/strong&gt; and &lt;strong&gt;2&lt;/strong&gt; makes &lt;a href=&#34;https://git-scm.com/&#34;&gt;git&lt;/a&gt; a natural choice. Point &lt;strong&gt;3&lt;/strong&gt; makes &lt;a href=&#34;https://azure.microsoft.com/en-us/&#34;&gt;Azure&lt;/a&gt; or &lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub Pages&lt;/a&gt; a natural choice. For point &lt;strong&gt;4&lt;/strong&gt;, With this being my &lt;em&gt;&amp;ldquo;work persona&amp;rdquo;&lt;/em&gt; I chose Azure Static Web App. I have used GitHub Pages for my &lt;em&gt;&amp;ldquo;personal persona&amp;rdquo;&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://cloud.fskelly.com/about/</link>
-      <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://cloud.fskelly.com/about/</guid>
-      <description>Who Am I? I am a Microsoft Employee, working within Azure Engineering as a FastTrack For Azure (FTA) Engineer, focusing primarily on Infra and working with customers across the globe with their respective journeys to the cloud. I was previously a Cloud Solutions Architect (CSA) for Microsoft as well. I was in the Microsoft Partner space for many years before that.
-What is FastTrack For Azure? FastTrack for Azure is a technical enablement program for organizations with cloud projects that enables the rapid, effective design, and deployment of Azure solutions in the cloud.</description>
-    </item>
-    
     <item>
       <title>About Blog</title>
-      <link>https://cloud.fskelly.com/page/about/</link>
+      <link>https://username.github.io/page/about/</link>
       <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://cloud.fskelly.com/page/about/</guid>
-      <description>The Blog This is just my personal blog of Azure Code and Azure Experiences. I use mainly PowerShell. I have other repos focused on other scripting languages like az cli, Terrafrom and REST API calls. I am constatly testing, changing or adding contnet, I try to get the code/samples as accurate as possible. Looking to expand content to include more topics and have more people blogging from the FastTrack for Azure team.</description>
+      <guid>https://username.github.io/page/about/</guid>
+      <description>&lt;h3 id=&#34;the-blog&#34;&gt;The Blog&lt;/h3&gt;&#xA;&lt;p&gt;This is just my personal blog of Azure Code and Azure Experiences. I use mainly &lt;a href=&#34;https://docs.microsoft.com/en-us/powershell/azure/overview?view=azps-1.4.0&#34;&gt;PowerShell&lt;/a&gt;. I have other repos focused on other scripting languages like&#xA;&lt;a href=&#34;https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest&#34;&gt;az cli&lt;/a&gt;, &lt;a href=&#34;https://www.terraform.io&#34;&gt;Terrafrom&lt;/a&gt; and &lt;a href=&#34;https://docs.microsoft.com/en-us/rest/api/azure/&#34;&gt;REST API&lt;/a&gt; calls. I am constatly testing, changing or adding contnet, I try to get the code/samples as accurate as possible. &lt;!-- raw HTML omitted --&gt;&lt;/p&gt;&#xA;&lt;p&gt;Looking to expand content to include more topics and have more people blogging from the FastTrack for Azure team.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>About Fletcher Kelly</title>
-      <link>https://cloud.fskelly.com/page/fletcherkelly/</link>
+      <link>https://username.github.io/page/fletcherkelly/</link>
       <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://cloud.fskelly.com/page/fletcherkelly/</guid>
-      <description>Who Am I? I am a Microsoft Employee, working within Azure Engineering as a FastTrack For Azure (FTA) Engineer, focusing primarily on Infra and working with customers across the globe with their respective journeys to the cloud. I was previously a Cloud Solutions Architect (CSA) for Microsoft as well. I was in the Microsoft Partner space for many years before that.
-What is FastTrack For Azure? FastTrack for Azure is a technical enablement program for organizations with cloud projects that enables the rapid, effective design, and deployment of Azure solutions in the cloud.</description>
+      <guid>https://username.github.io/page/fletcherkelly/</guid>
+      <description>&lt;h2 id=&#34;who-am-i&#34;&gt;Who Am I?&lt;/h2&gt;&#xA;&lt;p&gt;I am a Microsoft Employee, working within Azure Engineering as a FastTrack For Azure (FTA) Engineer, focusing primarily on Infra and working with customers across the globe with their respective journeys to the cloud. I was previously a Cloud Solutions Architect (CSA) for Microsoft as well. I was in the Microsoft Partner space for many years before that.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-fasttrack-for-azure&#34;&gt;What is FastTrack For Azure?&lt;/h2&gt;&#xA;&lt;p&gt;FastTrack for Azure is a technical enablement program for organizations with cloud projects that enables the rapid, effective design, and deployment of Azure solutions in the cloud. It includes tailored guidance from Azure engineers that leverages proven practices and architectural guides.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>About Robin Heringa</title>
-      <link>https://cloud.fskelly.com/page/robinheringa/</link>
+      <link>https://username.github.io/page/robinheringa/</link>
       <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://cloud.fskelly.com/page/robinheringa/</guid>
-      <description>Robin Heringa is an engineer in the FastTrack for Azure team at Microsoft working directly with customers on Azure Infrastructure projects. Robin is passionate about all Azure infrastructure technologies with a focus on Azure Management &amp;amp; Security and Azure VMware Solution. Robin has been with Microsoft for almost 15 years and working on IT Data Center &amp;amp; Cloud projects for 24 years.</description>
+      <guid>https://username.github.io/page/robinheringa/</guid>
+      <description>&lt;link rel=&#34;stylesheet&#34; href=&#34;https://username.github.io/css/hugo-easy-gallery.css&#34; /&gt;&#xD;&#xA;&lt;div class=&#34;box&#34; style=&#34;max-width:200&#34;&gt;&#xD;&#xA;  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;img&#34;&gt;&#xD;&#xA;      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://username.github.io/images/robinHeringa.png&#34; alt=&#34;Ronin Heringa&#34;/&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;    &lt;a href=&#34;https://username.github.io/images/robinHeringa.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;&#xD;&#xA;  &lt;/figure&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;Robin Heringa is an engineer in the FastTrack for Azure team at Microsoft working directly with customers on Azure Infrastructure projects. Robin is passionate about all Azure infrastructure technologies with a focus on Azure Management &amp;amp; Security and Azure VMware Solution.&#xA;Robin has been with Microsoft for almost 15 years and working on IT Data Center &amp;amp; Cloud projects for 24 years.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Importance of Networking Azure</title>
-      <link>https://cloud.fskelly.com/post/2019/importance-of-networking-azure/</link>
+      <link>https://username.github.io/post/2019/importance-of-networking-azure/</link>
       <pubDate>Wed, 07 Aug 2019 16:33:36 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2019/importance-of-networking-azure/</guid>
-      <description>As a start to this blog post, I think it is important to understand how I see my role as a CSA (Cloud Solution Architect) with my customer. I am primarily a trusted advisor and my customers respect what I have to say, I question and challenge my customers in a constructive way to approach the challenge or problem statement in a different way. I have an amazing role of using Azure as my LEGO playpen and then building a custom solution (LEGO model) to help my customers.</description>
+      <guid>https://username.github.io/post/2019/importance-of-networking-azure/</guid>
+      <description>&lt;p&gt;As a start to this blog post, I think it is important to understand how I see my role as a CSA (Cloud Solution Architect) with my customer. I am primarily a trusted advisor and my customers respect what I have to say, I question and challenge my customers in a constructive way to approach the challenge or problem statement in a different way. I have an amazing role of using Azure as my LEGO playpen and then building a custom solution (LEGO model) to help my customers.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Csa Tools of the Trade</title>
-      <link>https://cloud.fskelly.com/post/2019/csa-tools-of-the-trade/</link>
+      <link>https://username.github.io/post/2019/csa-tools-of-the-trade/</link>
       <pubDate>Tue, 09 Jul 2019 16:46:43 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2019/csa-tools-of-the-trade/</guid>
-      <description>So a question I often get asked is &amp;ldquo;what tools or products do you use?&amp;rdquo;. So I decided to do a post around the tools and technologies that I personally use on a daily basis. So to start this is what people see on my screen on a daily basis.
-This is my most common tool, Visual Studio Code, the version shown above is actually the Insiders Build. The primary reason for this tool is that is a &amp;ldquo;container&amp;rdquo; for other tools and functionality.</description>
+      <guid>https://username.github.io/post/2019/csa-tools-of-the-trade/</guid>
+      <description>&lt;p&gt;So a question I often get asked is &amp;ldquo;what tools or products do you use?&amp;rdquo;. So I decided to do a post around the tools and technologies that I personally use on a daily basis. So to start this is what people see on my screen on a daily basis.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://github.com/fskelly/fletchercloud/blob/master/static/images/blogImages/vscodeScreenShot.png?raw=true&#34; alt=&#34;VSCode&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;This is my most common tool, Visual Studio Code, the version shown above is actually the Insiders Build. The primary reason for this tool is that is a &amp;ldquo;container&amp;rdquo; for other tools and functionality. The extra functionality is enabled with extensions, my most used extensions are as follows:&lt;/p&gt;</description>
     </item>
-    
-    <item>
-      <title>Archives</title>
-      <link>https://cloud.fskelly.com/page/archives/</link>
-      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cloud.fskelly.com/page/archives/</guid>
-      <description></description>
-    </item>
-    
     <item>
       <title>Network Security Group Change Alerting</title>
-      <link>https://cloud.fskelly.com/post/2019/network-security-group-change-alerting/</link>
+      <link>https://username.github.io/post/2019/network-security-group-change-alerting/</link>
       <pubDate>Wed, 20 Feb 2019 08:21:49 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2019/network-security-group-change-alerting/</guid>
-      <description>So, I was with a customer and they are asking for a fairly standard alert.
-&amp;ldquo;Please alert me when an NSG is added or modified&amp;rdquo;. Seems simply enough, however this is not as simply as you think. So I used my favourite search and found the following, “How to receive an email on Azure Network Security Group Rule changes“, this is great content and after testing, it works exactly as expected.</description>
+      <guid>https://username.github.io/post/2019/network-security-group-change-alerting/</guid>
+      <description>&lt;p&gt;So, I was with a customer and they are asking for a fairly standard alert.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&amp;ldquo;Please alert me when an NSG is added or modified&amp;rdquo;&lt;/strong&gt;. Seems simply enough, however this is not as simply as you think. So I used my favourite search and found the following, “How to receive an email on Azure Network Security Group Rule changes“, this is great content and after testing, it works exactly as expected. I just found one little concern with this approach; this is simply finding the required ID for the action group. I have now investigated and found some code to make this a little easier.&lt;/p&gt;</description>
     </item>
-    
-    <item>
-      <title>Search</title>
-      <link>https://cloud.fskelly.com/page/search/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cloud.fskelly.com/page/search/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>

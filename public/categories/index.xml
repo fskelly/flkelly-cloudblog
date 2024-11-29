@@ -1,137 +1,110 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Fletcher&#39;s Cloud Journey</title>
-    <link>https://cloud.fskelly.com/categories/</link>
-    <description>Recent content in Categories on Fletcher&#39;s Cloud Journey</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 21 Nov 2023 09:54:43 +0000</lastBuildDate><atom:link href="https://cloud.fskelly.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <title>Categories on Fletcher&#39;s Cloud Blog</title>
+    <link>https://username.github.io/categories/</link>
+    <description>Recent content in Categories on Fletcher&#39;s Cloud Blog</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 21 Nov 2023 09:54:43 +0000</lastBuildDate>
+    <atom:link href="https://username.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Azure VMware Solution</title>
-      <link>https://cloud.fskelly.com/categories/azure-vmware-solution/</link>
+      <link>https://username.github.io/categories/azure-vmware-solution/</link>
       <pubDate>Tue, 21 Nov 2023 09:54:43 +0000</pubDate>
-      
-      <guid>https://cloud.fskelly.com/categories/azure-vmware-solution/</guid>
+      <guid>https://username.github.io/categories/azure-vmware-solution/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>AI</title>
-      <link>https://cloud.fskelly.com/categories/ai/</link>
+      <link>https://username.github.io/categories/ai/</link>
       <pubDate>Wed, 11 Oct 2023 13:34:50 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/categories/ai/</guid>
+      <guid>https://username.github.io/categories/ai/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Azure</title>
-      <link>https://cloud.fskelly.com/categories/azure/</link>
+      <link>https://username.github.io/categories/azure/</link>
       <pubDate>Wed, 11 Oct 2023 13:34:50 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/categories/azure/</guid>
+      <guid>https://username.github.io/categories/azure/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Azure Native</title>
-      <link>https://cloud.fskelly.com/categories/azure-native/</link>
+      <link>https://username.github.io/categories/azure-native/</link>
       <pubDate>Wed, 11 Oct 2023 13:34:50 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/categories/azure-native/</guid>
+      <guid>https://username.github.io/categories/azure-native/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Azure Resource Graph</title>
-      <link>https://cloud.fskelly.com/categories/azure-resource-graph/</link>
+      <link>https://username.github.io/categories/azure-resource-graph/</link>
       <pubDate>Mon, 03 Oct 2022 13:59:06 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/categories/azure-resource-graph/</guid>
+      <guid>https://username.github.io/categories/azure-resource-graph/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Hybrid</title>
-      <link>https://cloud.fskelly.com/categories/hybrid/</link>
+      <link>https://username.github.io/categories/hybrid/</link>
       <pubDate>Tue, 27 Sep 2022 08:03:53 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/categories/hybrid/</guid>
+      <guid>https://username.github.io/categories/hybrid/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Azure Hybrid</title>
-      <link>https://cloud.fskelly.com/categories/azure-hybrid/</link>
+      <link>https://username.github.io/categories/azure-hybrid/</link>
       <pubDate>Wed, 14 Sep 2022 11:14:30 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/categories/azure-hybrid/</guid>
+      <guid>https://username.github.io/categories/azure-hybrid/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>IaC</title>
-      <link>https://cloud.fskelly.com/categories/iac/</link>
+      <link>https://username.github.io/categories/iac/</link>
       <pubDate>Mon, 20 Jun 2022 08:54:21 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/categories/iac/</guid>
+      <guid>https://username.github.io/categories/iac/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Scripting</title>
-      <link>https://cloud.fskelly.com/categories/scripting/</link>
+      <link>https://username.github.io/categories/scripting/</link>
       <pubDate>Mon, 25 Apr 2022 14:27:03 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/categories/scripting/</guid>
+      <guid>https://username.github.io/categories/scripting/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Management Group</title>
-      <link>https://cloud.fskelly.com/categories/management-group/</link>
+      <link>https://username.github.io/categories/management-group/</link>
       <pubDate>Thu, 09 Dec 2021 08:00:00 +0000</pubDate>
-      
-      <guid>https://cloud.fskelly.com/categories/management-group/</guid>
+      <guid>https://username.github.io/categories/management-group/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Networking</title>
-      <link>https://cloud.fskelly.com/categories/networking/</link>
+      <link>https://username.github.io/categories/networking/</link>
       <pubDate>Thu, 09 Dec 2021 08:00:00 +0000</pubDate>
-      
-      <guid>https://cloud.fskelly.com/categories/networking/</guid>
+      <guid>https://username.github.io/categories/networking/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Resource Graph</title>
-      <link>https://cloud.fskelly.com/categories/resource-graph/</link>
+      <link>https://username.github.io/categories/resource-graph/</link>
       <pubDate>Thu, 09 Dec 2021 08:00:00 +0000</pubDate>
-      
-      <guid>https://cloud.fskelly.com/categories/resource-graph/</guid>
+      <guid>https://username.github.io/categories/resource-graph/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>command line</title>
-      <link>https://cloud.fskelly.com/categories/command-line/</link>
+      <title>Command Line</title>
+      <link>https://username.github.io/categories/command-line/</link>
       <pubDate>Wed, 05 May 2021 07:03:02 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/categories/command-line/</guid>
+      <guid>https://username.github.io/categories/command-line/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>API</title>
-      <link>https://cloud.fskelly.com/categories/api/</link>
+      <link>https://username.github.io/categories/api/</link>
       <pubDate>Wed, 14 Apr 2021 09:02:18 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/categories/api/</guid>
+      <guid>https://username.github.io/categories/api/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

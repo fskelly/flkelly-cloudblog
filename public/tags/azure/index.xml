@@ -1,74 +1,54 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>azure on Fletcher&#39;s Cloud Journey</title>
-    <link>https://cloud.fskelly.com/tags/azure/</link>
-    <description>Recent content in azure on Fletcher&#39;s Cloud Journey</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 03 Aug 2023 15:24:21 +0100</lastBuildDate><atom:link href="https://cloud.fskelly.com/tags/azure/index.xml" rel="self" type="application/rss+xml" />
+    <title>Azure on Fletcher&#39;s Cloud Blog</title>
+    <link>https://username.github.io/tags/azure/</link>
+    <description>Recent content in Azure on Fletcher&#39;s Cloud Blog</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 03 Aug 2023 15:24:21 +0100</lastBuildDate>
+    <atom:link href="https://username.github.io/tags/azure/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Can I run this cheaper? Use case for the Azure Cost Management API</title>
-      <link>https://cloud.fskelly.com/post/2023/azure-cost-management-playing-with-api-in-powershell/</link>
+      <link>https://username.github.io/post/2023/azure-cost-management-playing-with-api-in-powershell/</link>
       <pubDate>Thu, 03 Aug 2023 15:24:21 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2023/azure-cost-management-playing-with-api-in-powershell/</guid>
-      <description>What are we doing? I was given inspiration by a colleague, Ben Hummerstone who used a Azure Python Function, whilst super cool and interesting, I am a PowerShell advocate through and through. So I used PowerShell and wrote a script to show some of the use cases. This is just the tip of the iceberg and the script has been built to show some of the options available.
-Constraints / limitations The primary focus of this script is IaaS.</description>
+      <guid>https://username.github.io/post/2023/azure-cost-management-playing-with-api-in-powershell/</guid>
+      <description>&lt;h2 id=&#34;what-are-we-doing&#34;&gt;What are we doing?&lt;/h2&gt;&#xA;&lt;p&gt;I was given inspiration by a colleague, &lt;a href=&#34;https://www.linkedin.com/in/bhummerstone/&#34;&gt;Ben Hummerstone&lt;/a&gt; who used a &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-python?tabs=asgi%2Capplication-level&amp;amp;pivots=python-mode-configuration&#34;&gt;Azure Python Function&lt;/a&gt;, whilst super cool and interesting, I am a PowerShell advocate through and through. So I used PowerShell and wrote a script to show some of the use cases. This is just the tip of the iceberg and the script has been built to show some of the options available.&lt;/p&gt;&#xA;&lt;h2 id=&#34;constraints--limitations&#34;&gt;Constraints / limitations&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;The primary focus of this script is IaaS.&lt;/li&gt;&#xA;&lt;li&gt;Could be better implemented as a function. If there is enough of an ask, I might build this into a function.&lt;/li&gt;&#xA;&lt;li&gt;Built for my sample use cases.&lt;/li&gt;&#xA;&lt;li&gt;This is a quick and dirty implementation.&lt;/li&gt;&#xA;&lt;li&gt;This is &lt;strong&gt;NOT PRODUCTION&lt;/strong&gt; ready yet.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;lets-build-this&#34;&gt;Lets build this&lt;/h2&gt;&#xA;&lt;h3 id=&#34;steps&#34;&gt;Steps&lt;/h3&gt;&#xA;&lt;p&gt;You will need the following&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Azure Resource Graph - More queries for Networking and Management Groups</title>
-      <link>https://cloud.fskelly.com/post/2021/2021-arg-networking-mgmt-more/</link>
+      <link>https://username.github.io/post/2021/2021-arg-networking-mgmt-more/</link>
       <pubDate>Thu, 09 Dec 2021 08:00:00 +0000</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2021/2021-arg-networking-mgmt-more/</guid>
-      <description>Just some more queries I have developed.
-Networking Don&amp;rsquo;t create unnecessarily large virtual networks (for example, /16) to ensure that IP address space isn&amp;rsquo;t wasted.
-resources | where type == &amp;#34;microsoft.network/virtualnetworks&amp;#34; | extend addressSpace = todynamic(properties.addressSpace) | extend addressPrefix = todynamic(properties.addressSpace.addressPrefixes) | mvexpand addressSpace | mvexpand addressPrefix | extend addressMask = split(addressPrefix,&amp;#39;/&amp;#39;)[1] | where addressMask &amp;lt;= 16 Smallest recommended size for a GatewaySubnet is /27
-When you are planning your gateway subnet size, refer to the documentation for the configuration that you are planning to create.</description>
+      <guid>https://username.github.io/post/2021/2021-arg-networking-mgmt-more/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;Just some more queries I have developed.&lt;/p&gt;&#xA;&lt;h2 id=&#34;networking&#34;&gt;Networking&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Don&amp;rsquo;t create unnecessarily large virtual networks (for example, /16) to ensure that IP address space isn&amp;rsquo;t wasted.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;resources&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| where type == &amp;#34;microsoft.network/virtualnetworks&amp;#34;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| extend addressSpace = todynamic(properties.addressSpace)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| extend addressPrefix = todynamic(properties.addressSpace.addressPrefixes)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| mvexpand addressSpace&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| mvexpand addressPrefix&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| extend addressMask = split(addressPrefix,&amp;#39;/&amp;#39;)[1]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| where addressMask &amp;lt;= 16&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Smallest recommended size for a GatewaySubnet is /27&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Azure Resource Group Enterprise Scale Landing Zone queries</title>
-      <link>https://cloud.fskelly.com/post/2021/arg-mg--query-quick-post/</link>
+      <link>https://username.github.io/post/2021/arg-mg--query-quick-post/</link>
       <pubDate>Wed, 25 Aug 2021 05:58:18 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2021/arg-mg--query-quick-post/</guid>
-      <description>Azure Resource Graph Examples This is just a quick post. I am slowly working on building a collection of Resource Graph Queries - they can be found here and will grow over time. It just takes some time to build these.
-They will be broken down into a folder structure based upon the Critical Design Areas of Enterprise Scale Landing Zone
-Hope this helps and keep an eye out for more.</description>
+      <guid>https://username.github.io/post/2021/arg-mg--query-quick-post/</guid>
+      <description>&lt;h1 id=&#34;azure-resource-graph-examples&#34;&gt;Azure Resource Graph Examples&lt;/h1&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;This is just a quick post. I am slowly working on building a collection of Resource Graph Queries - they can be found &lt;a href=&#34;https://github.com/fskelly/azure-resource-graph/tree/main/enterpriseScale&#34;&gt;here&lt;/a&gt; and will grow over time. It just takes some time to build these.&lt;/p&gt;&#xA;&lt;p&gt;They will be broken down into a folder structure based upon the &lt;a href=&#34;https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/enterprise-scale/design-guidelines&#34;&gt;Critical Design Areas of Enterprise Scale Landing Zone&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/public/images/blogImages/2021/azureresourcegraph/folderStructure.png?raw=true&#34; alt=&#34;folderStructure&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Azure Rest Api Postman Basics</title>
-      <link>https://cloud.fskelly.com/post/2021/azure-rest-api-postman-basics/</link>
+      <link>https://username.github.io/post/2021/azure-rest-api-postman-basics/</link>
       <pubDate>Wed, 14 Apr 2021 09:02:18 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2021/azure-rest-api-postman-basics/</guid>
-      <description>Absolute basics with Azure and PostMan Getting started Many of the articles I have found online with regards to the Azure REST API assume a fair level of familiarity with Azure which can be a good and bad thing. You see the Azure Portal makes interacting with the Azure REST API very easy as a lot of the &amp;ldquo;prerequisite&amp;rdquo; work is done in the portal as part of the process. For this blog post we will work on something quite basic, &amp;ldquo;Create a Virtual Machine&amp;rdquo;.</description>
+      <guid>https://username.github.io/post/2021/azure-rest-api-postman-basics/</guid>
+      <description>&lt;h1 id=&#34;absolute-basics-with-azure-and-postmanwwwpostmancom&#34;&gt;Absolute basics with Azure and &lt;a href=&#34;www.postman.com&#34;&gt;PostMan&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;getting-started&#34;&gt;Getting started&lt;/h2&gt;&#xA;&lt;p&gt;Many of the articles I have found online with regards to the &lt;a href=&#34;https://docs.microsoft.com/en-us/rest/api/azure/&#34;&gt;Azure REST API&lt;/a&gt; assume a fair level of familiarity with &lt;a href=&#34;https://azure.microsoft.com/en-us/&#34;&gt;Azure&lt;/a&gt; which can be a good and bad thing. You see the &lt;a href=&#34;https://portal.azure.com&#34;&gt;Azure Portal&lt;/a&gt; makes interacting with the Azure REST API very easy as a lot of the &amp;ldquo;prerequisite&amp;rdquo; work is done in the portal as part of the process. For this blog post we will work on something quite basic, &amp;ldquo;&lt;a href=&#34;https://portal.azure.com/#create/Microsoft.VirtualMachine&#34;&gt;Create a Virtual Machine&lt;/a&gt;&amp;rdquo;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Azure Ghost Cms and Cdn</title>
-      <link>https://cloud.fskelly.com/post/2021/azure-ghost-cms-and-cdn/</link>
+      <link>https://username.github.io/post/2021/azure-ghost-cms-and-cdn/</link>
       <pubDate>Mon, 11 Jan 2021 07:00:18 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2021/azure-ghost-cms-and-cdn/</guid>
-      <description>I moved my blog onto HUGO. Not everyone would want to do this necessarily, there is a bit of a learning curve, part of the reason I DID IT :). However there are other platforms you can use and still add more functionality if you want.
-You can use Ghost and add an Azure CDN. This is what this blog post will cover.
-There are some very clever people out there that have made this very easy for you.</description>
+      <guid>https://username.github.io/post/2021/azure-ghost-cms-and-cdn/</guid>
+      <description>&lt;p&gt;I moved my blog onto HUGO. Not everyone would want to do this necessarily, there is a bit of a learning curve, part of the reason &lt;strong&gt;I DID IT&lt;/strong&gt; :). However there are other platforms you can use and still add more functionality if you want.&lt;/p&gt;&#xA;&lt;p&gt;You can use &lt;a href=&#34;https://ghost.org/&#34;&gt;Ghost&lt;/a&gt; and add an &lt;a href=&#34;https://docs.microsoft.com/en-us/azure/cdn/cdn-overview&#34;&gt;Azure CDN&lt;/a&gt;. This is what this blog post will cover.&lt;/p&gt;&#xA;&lt;p&gt;There are some very clever people out there that have made this very easy for you. From my research you have 2 main options.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>My New Blog Home with Azure Static Web App</title>
-      <link>https://cloud.fskelly.com/post/2021/my-new-blog-home/</link>
+      <link>https://username.github.io/post/2021/my-new-blog-home/</link>
       <pubDate>Tue, 05 Jan 2021 15:57:04 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2021/my-new-blog-home/</guid>
-      <description>So, I have spent the last few days / weeks deciding the best way to host a blog. Now I have a decidedly &amp;ldquo;split personality&amp;rdquo;. By this I mean I like to segregate my work and personal hobbies. This can be quite beneficial as this allows me to test a few things.
-A few key decisions Must be version controlled - good practice and forces me to get more familiar with git.</description>
+      <guid>https://username.github.io/post/2021/my-new-blog-home/</guid>
+      <description>&lt;p&gt;So, I have spent the last few days / weeks deciding the best way to host a blog. Now I have a decidedly &amp;ldquo;split personality&amp;rdquo;. By this I mean I like to segregate my work and personal hobbies. This can be quite beneficial as this allows me to test a few things.&lt;/p&gt;&#xA;&lt;h3 id=&#34;a-few-key-decisions&#34;&gt;A few key decisions&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Must be version controlled - good practice and forces me to get more familiar with &lt;a href=&#34;https://git-scm.com/&#34;&gt;git&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Must be reliable and redundant, or at least enough to re-deploy if needed - see point 1 :) .&lt;/li&gt;&#xA;&lt;li&gt;Must be as cheap as possible to run and be fairly quick.&lt;/li&gt;&#xA;&lt;li&gt;Must be a learning experience.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Points &lt;strong&gt;1&lt;/strong&gt; and &lt;strong&gt;2&lt;/strong&gt; makes &lt;a href=&#34;https://git-scm.com/&#34;&gt;git&lt;/a&gt; a natural choice. Point &lt;strong&gt;3&lt;/strong&gt; makes &lt;a href=&#34;https://azure.microsoft.com/en-us/&#34;&gt;Azure&lt;/a&gt; or &lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub Pages&lt;/a&gt; a natural choice. For point &lt;strong&gt;4&lt;/strong&gt;, With this being my &lt;em&gt;&amp;ldquo;work persona&amp;rdquo;&lt;/em&gt; I chose Azure Static Web App. I have used GitHub Pages for my &lt;em&gt;&amp;ldquo;personal persona&amp;rdquo;&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,0 +1,608 @@
+
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+ 
+
+
+      <title>LDAP - </title>
+
+  <meta name="author" content="Fletcher Kelly"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Fletcher\u0027s Cloud Blog",
+    
+    "url": "https:\/\/username.github.io\/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/username.github.io\/"
+  
+  
+  
+  
+}
+</script>
+
+<meta property="og:title" content="LDAP" />
+<meta property="og:url" content="https://username.github.io/series/ldap/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Fletcher&#39;s Cloud Blog" />
+
+  <meta name="twitter:title" content="LDAP" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="generator" content="Hugo 0.139.2">
+  <link rel="alternate" href="https://username.github.io/index.xml" type="application/rss+xml" title="Fletcher&#39;s Cloud Blog"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css" integrity="sha384-h/hnnw1Bi4nbpD6kE7nYfCXzovi622sY5WBxww8ARKwpdLj5kUWjRuyiXaD1U2JT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"><link rel="stylesheet" href="https://username.github.io/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://username.github.io/css/highlight.min.css" /><link rel="stylesheet" href="https://username.github.io/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://username.github.io/">Fletcher&#39;s Cloud Blog</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="/">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="/tags">Tags</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About Blog" href="/page/about/">About Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About Fletcher Kelly" href="/page/fletcherkelly/">About Fletcher Kelly</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About Robin Heringa" href="/page/robinheringa/">About Robin Heringa</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="series-heading">
+              
+                <h1>LDAP</h1>
+              
+              
+                <hr class="small">
+              
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </header>
+
+
+    
+  <div class="container" role="main">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+        <div class="posts-list">
+          
+            <article class="post-preview">
+    <a href="https://username.github.io/post/2023/avs-new-ldaps-run-command/">
+        <h2 class="post-title">New LDAPS run-command for Azure VMware Solution</h2>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on May 19, 2023
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;192&nbsp;words
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Fletcher Kelly
+    
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        <h2 id="what-are-we-doing">What are we doing?</h2>
+<p>Showing a newer version of the New-LDAPSIDentitySource Run-Command within Azure VMware Solution</p>
+<h2 id="lets-build-this">Lets build this</h2>
+<p>If you have been following along and you have used our previous article(s) - <a href="https://cloud.fskelly.com/post/2023/avs-ldaps-configure-part1/">AZURE VMWARE SOLUTION: A COMPREHENSIVE GUIDE TO LDAPS IDENTITY INTEGRATION - PART 1</a> - you would have realized that this quite a process. We took our many customers feedback to our Product Group (PG) within <a href="https://www.microsoft.com">Microsoft</a> and we have worked with them, to create a new version of the &ldquo;Run-Command&rdquo; and this has been released publicly.</p>
+        <a href="https://username.github.io/post/2023/avs-new-ldaps-run-command/" class="post-read-more">[Read More]</a>
+        
+    </div>
+
+    
+    <div class="blog-tags">
+        
+       
+       <a href="https://username.github.io/tags/avs/">AVS</a>&nbsp;
+        
+       
+       <a href="https://username.github.io/tags/identity/">Identity</a>&nbsp;
+        
+       
+       <a href="https://username.github.io/tags/ldaps/">LDAPS</a>&nbsp;
+         
+    </div>
+    
+
+</article>
+          
+            <article class="post-preview">
+    <a href="https://username.github.io/post/2023/avs-ldaps-configure-part1/">
+        <h2 class="post-title">Azure VMware Solution: A comprehensive guide to LDAPS identity integration - Part 1</h2>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on January 25, 2023
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;minutes
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;650&nbsp;words
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Fletcher Kelly
+    
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        <p>Author(s): <a href="/page/robinheringa/">Robin Heringa</a> and <a href="/page/fletcherkelly/">Fletcher Kelly</a></p>
+<h1 id="implementing-ldaps-identity-integration-with-azure-vmware-solution-series---1-of-4">Implementing LDAPS identity integration with Azure VMware Solution series - 1 of 4</h1>
+<p>This is the first part of the blog series on how to implement LDAPS identity integration with Azure VMware Solution. Other parts of this series can be found here:</p>
+<ol>
+<li><a href="../avs-ldaps-configure-part2/">LDAPS integration - part 2 of 4</a></li>
+<li><a href="../avs-ldaps-configure-part3/">LDAPS integration - part 3 of 4</a></li>
+<li><a href="../avs-ldaps-configure-part4/">LDAPS integration - part 4 of 4</a></li>
+</ol>
+<p>Azure VMware Solution (AVS) offers a fully managed software defined data center based on VMware vSphere technologies in the shape of an Azure PaaS service. The PaaS nature of Azure VMware Solution results in a service that is functionally equivalent to your well-known on-premises VMware deployment you may have been using for years with some specific “restrictions” as Microsoft provides a service level agreement and therefor Microsoft is responsible for ensuring a robust and resilient platform in deployment and operation.  Azure VMware Solution is functionally equivalent to on-premises VMware but due to the PaaS nature of the service there are significant technical differences to properly consider.</p>
+        <a href="https://username.github.io/post/2023/avs-ldaps-configure-part1/" class="post-read-more">[Read More]</a>
+        
+    </div>
+
+    
+    <div class="blog-tags">
+        
+       
+       <a href="https://username.github.io/tags/avs/">AVS</a>&nbsp;
+        
+       
+       <a href="https://username.github.io/tags/identity/">Identity</a>&nbsp;
+        
+       
+       <a href="https://username.github.io/tags/ldaps/">LDAPS</a>&nbsp;
+         
+    </div>
+    
+
+</article>
+          
+            <article class="post-preview">
+    <a href="https://username.github.io/post/2023/avs-ldaps-configure-part2/">
+        <h2 class="post-title">Azure VMware Solution: A comprehensive guide to LDAPS identity integration - Part 2</h2>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on January 25, 2023
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;minutes
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;650&nbsp;words
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Fletcher Kelly
+    
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        <p>Author(s): <a href="/page/robinheringa/">Robin Heringa</a> and <a href="/page/fletcherkelly/">Fletcher Kelly</a></p>
+<h1 id="implementing-ldaps-identity-integration-with-azure-vmware-solution-series---2-of-4">Implementing LDAPS identity integration with Azure VMware Solution series - 2 of 4</h1>
+<p>This is the second part of the blog series on how to implement LDAPS identity integration with Azure VMware Solution. Other parts of this series can be found here:</p>
+<ol>
+<li><a href="../avs-ldaps-configure-part1/">LDAPS integration - part 1 of 4</a></li>
+<li><a href="../avs-ldaps-configure-part3/">LDAPS integration - part 3 of 4</a></li>
+<li><a href="../avs-ldaps-configure-part4/">LDAPS integration - part 4 of 4</a></li>
+</ol>
+<h2 id="configure-dns-forwarding-prerequisite">Configure DNS forwarding prerequisite</h2>
+<p>Before we can configure integration with an external identity store (e.g. Active Directory Domain Services) we need to make sure that the AVS platform components have the ability to resolve customer DNS zones hosting the LDAPS domain records. This configuration must be made through the Azure Portal blades for Azure VMware Solution.</p>
+        <a href="https://username.github.io/post/2023/avs-ldaps-configure-part2/" class="post-read-more">[Read More]</a>
+        
+    </div>
+
+    
+    <div class="blog-tags">
+        
+       
+       <a href="https://username.github.io/tags/avs/">AVS</a>&nbsp;
+        
+       
+       <a href="https://username.github.io/tags/identity/">Identity</a>&nbsp;
+        
+       
+       <a href="https://username.github.io/tags/ldaps/">LDAPS</a>&nbsp;
+         
+    </div>
+    
+
+</article>
+          
+            <article class="post-preview">
+    <a href="https://username.github.io/post/2023/avs-ldaps-configure-part3/">
+        <h2 class="post-title">Azure VMware Solution: A comprehensive guide to LDAPS identity integration - Part 3</h2>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on January 25, 2023
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;10&nbsp;minutes
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;2085&nbsp;words
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Fletcher Kelly
+    
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        <p>Author(s): <a href="/page/robinheringa/">Robin Heringa</a> and <a href="/page/fletcherkelly/">Fletcher Kelly</a></p>
+<h1 id="implementing-ldaps-identity-integration-with-azure-vmware-solution-series---3-of-4">Implementing LDAPS identity integration with Azure VMware Solution series - 3 of 4</h1>
+<p>This is the third part of the blog series on how to implement LDAPS identity integration with Azure VMware Solution. Other parts of this series can be found here:</p>
+<ol>
+<li><a href="../avs-ldaps-configure-part1/">LDAPS integration - part 1 of 4</a></li>
+<li><a href="../avs-ldaps-configure-part2/">LDAPS integration - part 2 of 4</a></li>
+<li><a href="../avs-ldaps-configure-part4/">LDAPS integration - part 4 of 4</a></li>
+</ol>
+<h1 id="implement-ldaps-integration">Implement LDAPS integration</h1>
+<p>The following sections will guide you through the required process step-by-step</p>
+        <a href="https://username.github.io/post/2023/avs-ldaps-configure-part3/" class="post-read-more">[Read More]</a>
+        
+    </div>
+
+    
+    <div class="blog-tags">
+        
+       
+       <a href="https://username.github.io/tags/avs/">AVS</a>&nbsp;
+        
+       
+       <a href="https://username.github.io/tags/identity/">Identity</a>&nbsp;
+        
+       
+       <a href="https://username.github.io/tags/ldaps/">LDAPS</a>&nbsp;
+         
+    </div>
+    
+
+</article>
+          
+            <article class="post-preview">
+    <a href="https://username.github.io/post/2023/avs-ldaps-configure-part4/">
+        <h2 class="post-title">Azure VMware Solution: A comprehensive guide to LDAPS identity integration - Part 4</h2>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on January 25, 2023
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;minutes
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;540&nbsp;words
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Fletcher Kelly
+    
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        <p>Author(s): <a href="/page/robinheringa/">Robin Heringa</a> and <a href="/page/fletcherkelly/">Fletcher Kelly</a></p>
+<h1 id="implementing-ldaps-identity-integration-with-azure-vmware-solution-series---4-of-4">Implementing LDAPS identity integration with Azure VMware Solution series - 4 of 4</h1>
+<p>This is the fourth and final part of the blog series on how to implement LDAPS identity integration with Azure VMware Solution. Other parts of this series can be found here:</p>
+<ol>
+<li><a href="../avs-ldaps-configure-part1/">LDAPS integration - part 1 of 4</a></li>
+<li><a href="../avs-ldaps-configure-part2/">LDAPS integration - part 2 of 4</a></li>
+<li><a href="../avs-ldaps-configure-part3/">LDAPS integration - part 3 of 4</a></li>
+</ol>
+<p>These steps, for now, are run manually from the Azure Portal. This will be found &ldquo;Azure VMware Solution&rdquo; and under Operations, Run command. Then select &ldquo;New-LDAPSIdentitySource&rdquo;. An automated way of executing the run-command is in the making. Please check back soon as this article will be updated as soon as this is available.
+Navigate to Azure Portal and ensure you are on AVS Private Cloud blade</p>
+        <a href="https://username.github.io/post/2023/avs-ldaps-configure-part4/" class="post-read-more">[Read More]</a>
+        
+    </div>
+
+    
+    <div class="blog-tags">
+        
+       
+       <a href="https://username.github.io/tags/avs/">AVS</a>&nbsp;
+        
+       
+       <a href="https://username.github.io/tags/identity/">Identity</a>&nbsp;
+        
+       
+       <a href="https://username.github.io/tags/ldaps/">LDAPS</a>&nbsp;
+         
+    </div>
+    
+
+</article>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+      <footer>
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+		
+		  <a href="https://github.com/fskelly" title="GitHub">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+		
+		  <a href="https://linkedin.com/in/fletcherkelly" title="LinkedIn">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          
+          <li>
+            <a href="/series/ldap/index.xml" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              Fletcher Kelly
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2024
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://username.github.io/">Fletcher&#39;s Cloud Blog</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.139.2</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js" integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha384-w5y/xIeYixWvfM+A1cEbmHPURnvyqmVg5eVENruEdDjcyRLUSNej7512JQGspFUr" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+<script src="https://username.github.io/js/main.js"></script>
+<script src="https://username.github.io/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://username.github.io/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+

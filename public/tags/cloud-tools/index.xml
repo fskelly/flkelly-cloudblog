@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>cloud tools on Fletcher&#39;s Cloud Journey</title>
-    <link>https://cloud.fskelly.com/tags/cloud-tools/</link>
-    <description>Recent content in cloud tools on Fletcher&#39;s Cloud Journey</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 09 Jul 2019 16:46:43 +0200</lastBuildDate><atom:link href="https://cloud.fskelly.com/tags/cloud-tools/index.xml" rel="self" type="application/rss+xml" />
+    <title>Cloud Tools on Fletcher&#39;s Cloud Blog</title>
+    <link>https://username.github.io/tags/cloud-tools/</link>
+    <description>Recent content in Cloud Tools on Fletcher&#39;s Cloud Blog</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 09 Jul 2019 16:46:43 +0200</lastBuildDate>
+    <atom:link href="https://username.github.io/tags/cloud-tools/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Csa Tools of the Trade</title>
-      <link>https://cloud.fskelly.com/post/2019/csa-tools-of-the-trade/</link>
+      <link>https://username.github.io/post/2019/csa-tools-of-the-trade/</link>
       <pubDate>Tue, 09 Jul 2019 16:46:43 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2019/csa-tools-of-the-trade/</guid>
-      <description>So a question I often get asked is &amp;ldquo;what tools or products do you use?&amp;rdquo;. So I decided to do a post around the tools and technologies that I personally use on a daily basis. So to start this is what people see on my screen on a daily basis.
-This is my most common tool, Visual Studio Code, the version shown above is actually the Insiders Build. The primary reason for this tool is that is a &amp;ldquo;container&amp;rdquo; for other tools and functionality.</description>
+      <guid>https://username.github.io/post/2019/csa-tools-of-the-trade/</guid>
+      <description>&lt;p&gt;So a question I often get asked is &amp;ldquo;what tools or products do you use?&amp;rdquo;. So I decided to do a post around the tools and technologies that I personally use on a daily basis. So to start this is what people see on my screen on a daily basis.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://github.com/fskelly/fletchercloud/blob/master/static/images/blogImages/vscodeScreenShot.png?raw=true&#34; alt=&#34;VSCode&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;This is my most common tool, Visual Studio Code, the version shown above is actually the Insiders Build. The primary reason for this tool is that is a &amp;ldquo;container&amp;rdquo; for other tools and functionality. The extra functionality is enabled with extensions, my most used extensions are as follows:&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
