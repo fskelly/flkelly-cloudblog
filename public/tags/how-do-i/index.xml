@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>How Do I on Fletcher&#39;s Cloud Blog</title>
-    <link>http://localhost:1313/tags/how-do-i/</link>
+    <link>https://username.github.io/tags/how-do-i/</link>
     <description>Recent content in How Do I on Fletcher&#39;s Cloud Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 21 Nov 2023 09:54:43 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/how-do-i/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://username.github.io/tags/how-do-i/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Azure VMware Solution How Do I &#39;Monitor my SDDC Deployment&#39;</title>
-      <link>http://localhost:1313/post/2023/azure-vmware-solution-how-do-i-monitor-sddc-deployment/</link>
+      <link>https://username.github.io/post/2023/azure-vmware-solution-how-do-i-monitor-sddc-deployment/</link>
       <pubDate>Tue, 21 Nov 2023 09:54:43 +0000</pubDate>
-      <guid>http://localhost:1313/post/2023/azure-vmware-solution-how-do-i-monitor-sddc-deployment/</guid>
+      <guid>https://username.github.io/post/2023/azure-vmware-solution-how-do-i-monitor-sddc-deployment/</guid>
       <description>&lt;h2 id=&#34;what-are-we-doing&#34;&gt;What are we doing?&lt;/h2&gt;&#xA;&lt;p&gt;As I spend more time with my customers and my teams within my organization, I am learning that there a lot of aspects of Azure VMware Solution that we take for granted and simply skim over as we assume (badly) that everyone knows exactly how to &amp;ldquo;the basics&amp;rdquo;. With this series of &amp;ldquo;How Do I&amp;rdquo; posts, I am going to try and address some of the more common questions that I get asked and hopefully provide some useful information to help you on your Azure VMware Solution journey. I will endeavour to copy as many topics as I can and I am always open to ideas and suggestions. You can reach out to me on &lt;a href=&#34;https://www.twitter.com/fskelly&#34;&gt;Twitter&lt;/a&gt; or post a suggestion for the log on &lt;a href=&#34;https://github.com/fskelly/flkelly-cloudblog/issues&#34;&gt;GitHub&lt;/a&gt; - please remember these are designed to be short and sweet and not full blown tutorials.&lt;/p&gt;</description>
     </item>
   </channel>

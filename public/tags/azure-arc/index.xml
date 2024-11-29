@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Azure Arc on Fletcher&#39;s Cloud Blog</title>
-    <link>http://localhost:1313/tags/azure-arc/</link>
+    <link>https://username.github.io/tags/azure-arc/</link>
     <description>Recent content in Azure Arc on Fletcher&#39;s Cloud Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 27 Sep 2022 08:03:53 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/azure-arc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://username.github.io/tags/azure-arc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using Arc to SSH into Linux and Windows</title>
-      <link>http://localhost:1313/post/2022/arc-ssh-windows-linux/</link>
+      <link>https://username.github.io/post/2022/arc-ssh-windows-linux/</link>
       <pubDate>Tue, 27 Sep 2022 08:03:53 +0100</pubDate>
-      <guid>http://localhost:1313/post/2022/arc-ssh-windows-linux/</guid>
+      <guid>https://username.github.io/post/2022/arc-ssh-windows-linux/</guid>
       <description>&lt;h2 id=&#34;what-are-we-doing&#34;&gt;What are we doing?&lt;/h2&gt;&#xA;&lt;p&gt;We are going to use Azure Arc to SSH into a Linux (ubuntu 20.04) and a Windows Server (Server 2019) machine and run commands.&lt;/p&gt;&#xA;&lt;h2 id=&#34;constraints--limitations&#34;&gt;Constraints / limitations&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Use only Azure ARC.&lt;/li&gt;&#xA;&lt;li&gt;Use only public endpoints (I have not yet tested this with Private Endpoints) and my VPN is not currently connected to Azure.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;considerations&#34;&gt;Considerations&lt;/h2&gt;&#xA;&lt;p&gt;As of the time of this blog post (27-Sep-2022), the &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/azure-arc/servers/ssh-arc-overview&#34;&gt;Azure Arc SSH&lt;/a&gt; functionality is in preview.&lt;/p&gt;</description>
     </item>
   </channel>

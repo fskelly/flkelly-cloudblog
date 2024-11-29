@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on Fletcher&#39;s Cloud Blog</title>
-    <link>http://localhost:1313/tags/hugo/</link>
+    <link>https://username.github.io/tags/hugo/</link>
     <description>Recent content in Hugo on Fletcher&#39;s Cloud Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 11 Jan 2021 07:00:18 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://username.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Azure Ghost Cms and Cdn</title>
-      <link>http://localhost:1313/post/2021/azure-ghost-cms-and-cdn/</link>
+      <link>https://username.github.io/post/2021/azure-ghost-cms-and-cdn/</link>
       <pubDate>Mon, 11 Jan 2021 07:00:18 +0200</pubDate>
-      <guid>http://localhost:1313/post/2021/azure-ghost-cms-and-cdn/</guid>
+      <guid>https://username.github.io/post/2021/azure-ghost-cms-and-cdn/</guid>
       <description>&lt;p&gt;I moved my blog onto HUGO. Not everyone would want to do this necessarily, there is a bit of a learning curve, part of the reason &lt;strong&gt;I DID IT&lt;/strong&gt; :). However there are other platforms you can use and still add more functionality if you want.&lt;/p&gt;&#xA;&lt;p&gt;You can use &lt;a href=&#34;https://ghost.org/&#34;&gt;Ghost&lt;/a&gt; and add an &lt;a href=&#34;https://docs.microsoft.com/en-us/azure/cdn/cdn-overview&#34;&gt;Azure CDN&lt;/a&gt;. This is what this blog post will cover.&lt;/p&gt;&#xA;&lt;p&gt;There are some very clever people out there that have made this very easy for you. From my research you have 2 main options.&lt;/p&gt;</description>
     </item>
   </channel>

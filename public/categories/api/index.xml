@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>API on Fletcher&#39;s Cloud Blog</title>
-    <link>http://localhost:1313/categories/api/</link>
+    <link>https://username.github.io/categories/api/</link>
     <description>Recent content in API on Fletcher&#39;s Cloud Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 14 Apr 2021 09:02:18 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/api/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://username.github.io/categories/api/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Azure Rest Api Postman Basics</title>
-      <link>http://localhost:1313/post/2021/azure-rest-api-postman-basics/</link>
+      <link>https://username.github.io/post/2021/azure-rest-api-postman-basics/</link>
       <pubDate>Wed, 14 Apr 2021 09:02:18 +0200</pubDate>
-      <guid>http://localhost:1313/post/2021/azure-rest-api-postman-basics/</guid>
+      <guid>https://username.github.io/post/2021/azure-rest-api-postman-basics/</guid>
       <description>&lt;h1 id=&#34;absolute-basics-with-azure-and-postmanwwwpostmancom&#34;&gt;Absolute basics with Azure and &lt;a href=&#34;www.postman.com&#34;&gt;PostMan&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;getting-started&#34;&gt;Getting started&lt;/h2&gt;&#xA;&lt;p&gt;Many of the articles I have found online with regards to the &lt;a href=&#34;https://docs.microsoft.com/en-us/rest/api/azure/&#34;&gt;Azure REST API&lt;/a&gt; assume a fair level of familiarity with &lt;a href=&#34;https://azure.microsoft.com/en-us/&#34;&gt;Azure&lt;/a&gt; which can be a good and bad thing. You see the &lt;a href=&#34;https://portal.azure.com&#34;&gt;Azure Portal&lt;/a&gt; makes interacting with the Azure REST API very easy as a lot of the &amp;ldquo;prerequisite&amp;rdquo; work is done in the portal as part of the process. For this blog post we will work on something quite basic, &amp;ldquo;&lt;a href=&#34;https://portal.azure.com/#create/Microsoft.VirtualMachine&#34;&gt;Create a Virtual Machine&lt;/a&gt;&amp;rdquo;.&lt;/p&gt;</description>
     </item>
   </channel>

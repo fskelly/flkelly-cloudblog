@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cost Management on Fletcher&#39;s Cloud Blog</title>
-    <link>http://localhost:1313/tags/cost-management/</link>
+    <link>https://username.github.io/tags/cost-management/</link>
     <description>Recent content in Cost Management on Fletcher&#39;s Cloud Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 03 Aug 2023 15:24:21 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/cost-management/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://username.github.io/tags/cost-management/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Can I run this cheaper? Use case for the Azure Cost Management API</title>
-      <link>http://localhost:1313/post/2023/azure-cost-management-playing-with-api-in-powershell/</link>
+      <link>https://username.github.io/post/2023/azure-cost-management-playing-with-api-in-powershell/</link>
       <pubDate>Thu, 03 Aug 2023 15:24:21 +0100</pubDate>
-      <guid>http://localhost:1313/post/2023/azure-cost-management-playing-with-api-in-powershell/</guid>
+      <guid>https://username.github.io/post/2023/azure-cost-management-playing-with-api-in-powershell/</guid>
       <description>&lt;h2 id=&#34;what-are-we-doing&#34;&gt;What are we doing?&lt;/h2&gt;&#xA;&lt;p&gt;I was given inspiration by a colleague, &lt;a href=&#34;https://www.linkedin.com/in/bhummerstone/&#34;&gt;Ben Hummerstone&lt;/a&gt; who used a &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-python?tabs=asgi%2Capplication-level&amp;amp;pivots=python-mode-configuration&#34;&gt;Azure Python Function&lt;/a&gt;, whilst super cool and interesting, I am a PowerShell advocate through and through. So I used PowerShell and wrote a script to show some of the use cases. This is just the tip of the iceberg and the script has been built to show some of the options available.&lt;/p&gt;&#xA;&lt;h2 id=&#34;constraints--limitations&#34;&gt;Constraints / limitations&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;The primary focus of this script is IaaS.&lt;/li&gt;&#xA;&lt;li&gt;Could be better implemented as a function. If there is enough of an ask, I might build this into a function.&lt;/li&gt;&#xA;&lt;li&gt;Built for my sample use cases.&lt;/li&gt;&#xA;&lt;li&gt;This is a quick and dirty implementation.&lt;/li&gt;&#xA;&lt;li&gt;This is &lt;strong&gt;NOT PRODUCTION&lt;/strong&gt; ready yet.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;lets-build-this&#34;&gt;Lets build this&lt;/h2&gt;&#xA;&lt;h3 id=&#34;steps&#34;&gt;Steps&lt;/h3&gt;&#xA;&lt;p&gt;You will need the following&lt;/p&gt;</description>
     </item>
   </channel>

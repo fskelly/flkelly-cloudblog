@@ -2,7 +2,7 @@
 title: "Using the AZ Rest CLI command"
 date: 2024-08-29T16:00:56Z
 author: "Fletcher Kelly"
-draft: true
+draft: false
 ---
 
 
