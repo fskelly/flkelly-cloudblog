@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>10 on Fletcher&#39;s Cloud Blog</title>
-    <link>https://swacloudblogflkelly.z1.web.core.windows.net/10/</link>
+    <link>/10/</link>
     <description>Recent content in 10 on Fletcher&#39;s Cloud Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="https://swacloudblogflkelly.z1.web.core.windows.net/10/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/10/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

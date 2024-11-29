@@ -2,248 +2,248 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Fletcher&#39;s Cloud Blog</title>
-    <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Fletcher&#39;s Cloud Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 21 Nov 2023 09:54:43 +0000</lastBuildDate>
-    <atom:link href="https://swacloudblogflkelly.z1.web.core.windows.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Getting Started</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/getting-started/</link>
+      <link>/tags/getting-started/</link>
       <pubDate>Tue, 21 Nov 2023 09:54:43 +0000</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/tags/getting-started/</guid>
+      <guid>/tags/getting-started/</guid>
       <description></description>
     </item>
     <item>
       <title>How Do I</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/how-do-i/</link>
+      <link>/tags/how-do-i/</link>
       <pubDate>Tue, 21 Nov 2023 09:54:43 +0000</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/tags/how-do-i/</guid>
+      <guid>/tags/how-do-i/</guid>
       <description></description>
     </item>
     <item>
       <title>Information</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/information/</link>
+      <link>/tags/information/</link>
       <pubDate>Tue, 21 Nov 2023 09:54:43 +0000</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/tags/information/</guid>
+      <guid>/tags/information/</guid>
       <description></description>
     </item>
     <item>
       <title>Links</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/links/</link>
+      <link>/tags/links/</link>
       <pubDate>Thu, 26 Oct 2023 10:23:27 +0100</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/tags/links/</guid>
+      <guid>/tags/links/</guid>
       <description></description>
     </item>
     <item>
       <title>API</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/api/</link>
+      <link>/tags/api/</link>
       <pubDate>Wed, 11 Oct 2023 13:34:50 +0100</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/tags/api/</guid>
+      <guid>/tags/api/</guid>
       <description></description>
     </item>
     <item>
       <title>Azure CLI</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/azure-cli/</link>
+      <link>/tags/azure-cli/</link>
       <pubDate>Wed, 11 Oct 2023 13:34:50 +0100</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/tags/azure-cli/</guid>
+      <guid>/tags/azure-cli/</guid>
       <description></description>
     </item>
     <item>
       <title>Copilot</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/copilot/</link>
+      <link>/tags/copilot/</link>
       <pubDate>Wed, 11 Oct 2023 13:34:50 +0100</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/tags/copilot/</guid>
+      <guid>/tags/copilot/</guid>
       <description></description>
     </item>
     <item>
       <title>REST</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/rest/</link>
+      <link>/tags/rest/</link>
       <pubDate>Wed, 11 Oct 2023 13:34:50 +0100</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/tags/rest/</guid>
+      <guid>/tags/rest/</guid>
       <description></description>
     </item>
     <item>
       <title>PowerShell</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/powershell/</link>
+      <link>/tags/powershell/</link>
       <pubDate>Thu, 17 Aug 2023 09:09:54 +0100</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/tags/powershell/</guid>
+      <guid>/tags/powershell/</guid>
       <description></description>
     </item>
     <item>
       <title>Azure</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/azure/</link>
+      <link>/tags/azure/</link>
       <pubDate>Thu, 03 Aug 2023 15:24:21 +0100</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/tags/azure/</guid>
+      <guid>/tags/azure/</guid>
       <description></description>
     </item>
     <item>
       <title>Cost Management</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/cost-management/</link>
+      <link>/tags/cost-management/</link>
       <pubDate>Thu, 03 Aug 2023 15:24:21 +0100</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/tags/cost-management/</guid>
+      <guid>/tags/cost-management/</guid>
       <description></description>
     </item>
     <item>
       <title>AVS</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/avs/</link>
+      <link>/tags/avs/</link>
       <pubDate>Fri, 19 May 2023 09:39:57 +0100</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/tags/avs/</guid>
+      <guid>/tags/avs/</guid>
       <description></description>
     </item>
     <item>
       <title>Identity</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/identity/</link>
+      <link>/tags/identity/</link>
       <pubDate>Fri, 19 May 2023 09:39:57 +0100</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/tags/identity/</guid>
+      <guid>/tags/identity/</guid>
       <description></description>
     </item>
     <item>
       <title>LDAPS</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/ldaps/</link>
+      <link>/tags/ldaps/</link>
       <pubDate>Fri, 19 May 2023 09:39:57 +0100</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/tags/ldaps/</guid>
+      <guid>/tags/ldaps/</guid>
       <description></description>
     </item>
     <item>
       <title>Azure Resource Graph</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/azure-resource-graph/</link>
+      <link>/tags/azure-resource-graph/</link>
       <pubDate>Mon, 03 Oct 2022 13:59:06 +0100</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/tags/azure-resource-graph/</guid>
+      <guid>/tags/azure-resource-graph/</guid>
       <description></description>
     </item>
     <item>
       <title>Azure Arc</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/azure-arc/</link>
+      <link>/tags/azure-arc/</link>
       <pubDate>Tue, 27 Sep 2022 08:03:53 +0100</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/tags/azure-arc/</guid>
+      <guid>/tags/azure-arc/</guid>
       <description></description>
     </item>
     <item>
       <title>Hybrid</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/hybrid/</link>
+      <link>/tags/hybrid/</link>
       <pubDate>Wed, 14 Sep 2022 11:14:30 +0100</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/tags/hybrid/</guid>
+      <guid>/tags/hybrid/</guid>
       <description></description>
     </item>
     <item>
       <title>Bicep</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/bicep/</link>
+      <link>/tags/bicep/</link>
       <pubDate>Mon, 20 Jun 2022 08:54:21 +0100</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/tags/bicep/</guid>
+      <guid>/tags/bicep/</guid>
       <description></description>
     </item>
     <item>
       <title>SSH</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/ssh/</link>
+      <link>/tags/ssh/</link>
       <pubDate>Mon, 20 Jun 2022 08:54:21 +0100</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/tags/ssh/</guid>
+      <guid>/tags/ssh/</guid>
       <description></description>
     </item>
     <item>
       <title>Networking</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/networking/</link>
+      <link>/tags/networking/</link>
       <pubDate>Mon, 28 Mar 2022 07:27:16 +0100</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/tags/networking/</guid>
+      <guid>/tags/networking/</guid>
       <description></description>
     </item>
     <item>
       <title>Blog</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/blog/</link>
+      <link>/tags/blog/</link>
       <pubDate>Thu, 09 Dec 2021 08:00:00 +0000</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/tags/blog/</guid>
+      <guid>/tags/blog/</guid>
       <description></description>
     </item>
     <item>
       <title>ESLZ</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/eslz/</link>
+      <link>/tags/eslz/</link>
       <pubDate>Thu, 09 Dec 2021 08:00:00 +0000</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/tags/eslz/</guid>
+      <guid>/tags/eslz/</guid>
       <description></description>
     </item>
     <item>
       <title>Resource Graph</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/resource-graph/</link>
+      <link>/tags/resource-graph/</link>
       <pubDate>Thu, 09 Dec 2021 08:00:00 +0000</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/tags/resource-graph/</guid>
+      <guid>/tags/resource-graph/</guid>
       <description></description>
     </item>
     <item>
       <title>Quick Post</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/quick-post/</link>
+      <link>/tags/quick-post/</link>
       <pubDate>Wed, 25 Aug 2021 05:58:18 +0200</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/tags/quick-post/</guid>
+      <guid>/tags/quick-post/</guid>
       <description></description>
     </item>
     <item>
       <title>Az Cli</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/az-cli/</link>
+      <link>/tags/az-cli/</link>
       <pubDate>Wed, 05 May 2021 07:03:02 +0200</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/tags/az-cli/</guid>
+      <guid>/tags/az-cli/</guid>
       <description></description>
     </item>
     <item>
       <title>Postman</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/postman/</link>
+      <link>/tags/postman/</link>
       <pubDate>Wed, 14 Apr 2021 09:02:18 +0200</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/tags/postman/</guid>
+      <guid>/tags/postman/</guid>
       <description></description>
     </item>
     <item>
       <title>Cdn</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/cdn/</link>
+      <link>/tags/cdn/</link>
       <pubDate>Mon, 11 Jan 2021 07:00:18 +0200</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/tags/cdn/</guid>
+      <guid>/tags/cdn/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/hugo/</link>
+      <link>/tags/hugo/</link>
       <pubDate>Mon, 11 Jan 2021 07:00:18 +0200</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/tags/hugo/</guid>
+      <guid>/tags/hugo/</guid>
       <description></description>
     </item>
     <item>
       <title>Static Web</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/static-web/</link>
+      <link>/tags/static-web/</link>
       <pubDate>Tue, 05 Jan 2021 15:57:04 +0200</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/tags/static-web/</guid>
+      <guid>/tags/static-web/</guid>
       <description></description>
     </item>
     <item>
       <title>Architecture</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/architecture/</link>
+      <link>/tags/architecture/</link>
       <pubDate>Wed, 07 Aug 2019 16:33:36 +0200</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/tags/architecture/</guid>
+      <guid>/tags/architecture/</guid>
       <description></description>
     </item>
     <item>
       <title>CSA</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/csa/</link>
+      <link>/tags/csa/</link>
       <pubDate>Wed, 07 Aug 2019 16:33:36 +0200</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/tags/csa/</guid>
+      <guid>/tags/csa/</guid>
       <description></description>
     </item>
     <item>
       <title>Cloud Tools</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/cloud-tools/</link>
+      <link>/tags/cloud-tools/</link>
       <pubDate>Tue, 09 Jul 2019 16:46:43 +0200</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/tags/cloud-tools/</guid>
+      <guid>/tags/cloud-tools/</guid>
       <description></description>
     </item>
     <item>
       <title>Azure Monitor</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/azure-monitor/</link>
+      <link>/tags/azure-monitor/</link>
       <pubDate>Wed, 20 Feb 2019 08:21:49 +0200</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/tags/azure-monitor/</guid>
+      <guid>/tags/azure-monitor/</guid>
       <description></description>
     </item>
     <item>
       <title>Nsg</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/nsg/</link>
+      <link>/tags/nsg/</link>
       <pubDate>Wed, 20 Feb 2019 08:21:49 +0200</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/tags/nsg/</guid>
+      <guid>/tags/nsg/</guid>
       <description></description>
     </item>
   </channel>

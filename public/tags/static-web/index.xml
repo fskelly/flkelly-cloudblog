@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Static Web on Fletcher&#39;s Cloud Blog</title>
-    <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/static-web/</link>
+    <link>/tags/static-web/</link>
     <description>Recent content in Static Web on Fletcher&#39;s Cloud Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 05 Jan 2021 15:57:04 +0200</lastBuildDate>
-    <atom:link href="https://swacloudblogflkelly.z1.web.core.windows.net/tags/static-web/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/static-web/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My New Blog Home with Azure Static Web App</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/post/2021/my-new-blog-home/</link>
+      <link>/post/2021/my-new-blog-home/</link>
       <pubDate>Tue, 05 Jan 2021 15:57:04 +0200</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/post/2021/my-new-blog-home/</guid>
+      <guid>/post/2021/my-new-blog-home/</guid>
       <description>&lt;p&gt;So, I have spent the last few days / weeks deciding the best way to host a blog. Now I have a decidedly &amp;ldquo;split personality&amp;rdquo;. By this I mean I like to segregate my work and personal hobbies. This can be quite beneficial as this allows me to test a few things.&lt;/p&gt;&#xA;&lt;h3 id=&#34;a-few-key-decisions&#34;&gt;A few key decisions&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Must be version controlled - good practice and forces me to get more familiar with &lt;a href=&#34;https://git-scm.com/&#34;&gt;git&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Must be reliable and redundant, or at least enough to re-deploy if needed - see point 1 :) .&lt;/li&gt;&#xA;&lt;li&gt;Must be as cheap as possible to run and be fairly quick.&lt;/li&gt;&#xA;&lt;li&gt;Must be a learning experience.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Points &lt;strong&gt;1&lt;/strong&gt; and &lt;strong&gt;2&lt;/strong&gt; makes &lt;a href=&#34;https://git-scm.com/&#34;&gt;git&lt;/a&gt; a natural choice. Point &lt;strong&gt;3&lt;/strong&gt; makes &lt;a href=&#34;https://azure.microsoft.com/en-us/&#34;&gt;Azure&lt;/a&gt; or &lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub Pages&lt;/a&gt; a natural choice. For point &lt;strong&gt;4&lt;/strong&gt;, With this being my &lt;em&gt;&amp;ldquo;work persona&amp;rdquo;&lt;/em&gt; I chose Azure Static Web App. I have used GitHub Pages for my &lt;em&gt;&amp;ldquo;personal persona&amp;rdquo;&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
   </channel>

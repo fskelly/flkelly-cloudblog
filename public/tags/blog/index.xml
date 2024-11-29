@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Fletcher&#39;s Cloud Blog</title>
-    <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/blog/</link>
+    <link>/tags/blog/</link>
     <description>Recent content in Blog on Fletcher&#39;s Cloud Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 09 Dec 2021 08:00:00 +0000</lastBuildDate>
-    <atom:link href="https://swacloudblogflkelly.z1.web.core.windows.net/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Azure Resource Graph - More queries for Networking and Management Groups</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/post/2021/2021-arg-networking-mgmt-more/</link>
+      <link>/post/2021/2021-arg-networking-mgmt-more/</link>
       <pubDate>Thu, 09 Dec 2021 08:00:00 +0000</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/post/2021/2021-arg-networking-mgmt-more/</guid>
+      <guid>/post/2021/2021-arg-networking-mgmt-more/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;Just some more queries I have developed.&lt;/p&gt;&#xA;&lt;h2 id=&#34;networking&#34;&gt;Networking&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Don&amp;rsquo;t create unnecessarily large virtual networks (for example, /16) to ensure that IP address space isn&amp;rsquo;t wasted.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;resources&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| where type == &amp;#34;microsoft.network/virtualnetworks&amp;#34;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| extend addressSpace = todynamic(properties.addressSpace)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| extend addressPrefix = todynamic(properties.addressSpace.addressPrefixes)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| mvexpand addressSpace&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| mvexpand addressPrefix&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| extend addressMask = split(addressPrefix,&amp;#39;/&amp;#39;)[1]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| where addressMask &amp;lt;= 16&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Smallest recommended size for a GatewaySubnet is /27&lt;/p&gt;</description>
     </item>
     <item>
       <title>Azure Resource Group Enterprise Scale Landing Zone queries</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/post/2021/arg-mg--query-quick-post/</link>
+      <link>/post/2021/arg-mg--query-quick-post/</link>
       <pubDate>Wed, 25 Aug 2021 05:58:18 +0200</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/post/2021/arg-mg--query-quick-post/</guid>
-      <description>&lt;h1 id=&#34;azure-resource-graph-examples&#34;&gt;Azure Resource Graph Examples&lt;/h1&gt;&#xA;&lt;p&gt;THis is just a quick post. I am slowly working on building a collection of Resource Grpah Queries - they can be found &lt;a href=&#34;https://github.com/fskelly/azure-resource-graph/tree/main/enterpriseScale&#34;&gt;here&lt;/a&gt; and will grow over time. It just takes some time to build these.&lt;/p&gt;&#xA;&lt;p&gt;They will be broken down into a folder structure based upon the &lt;a href=&#34;https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/enterprise-scale/design-guidelines&#34;&gt;Critical Design Areas of Enterprise Scale Landing Zone&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/public/images/blogImages/2021/azureresourcegraph/folderStructure.png?raw=true&#34; alt=&#34;folderStructure&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;&#xA;&lt;p&gt;Hope this helps and keep an eye out for more.&lt;/p&gt;</description>
+      <guid>/post/2021/arg-mg--query-quick-post/</guid>
+      <description>&lt;h1 id=&#34;azure-resource-graph-examples&#34;&gt;Azure Resource Graph Examples&lt;/h1&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;This is just a quick post. I am slowly working on building a collection of Resource Graph Queries - they can be found &lt;a href=&#34;https://github.com/fskelly/azure-resource-graph/tree/main/enterpriseScale&#34;&gt;here&lt;/a&gt; and will grow over time. It just takes some time to build these.&lt;/p&gt;&#xA;&lt;p&gt;They will be broken down into a folder structure based upon the &lt;a href=&#34;https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/enterprise-scale/design-guidelines&#34;&gt;Critical Design Areas of Enterprise Scale Landing Zone&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/public/images/blogImages/2021/azureresourcegraph/folderStructure.png?raw=true&#34; alt=&#34;folderStructure&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Azure Ghost Cms and Cdn</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/post/2021/azure-ghost-cms-and-cdn/</link>
+      <link>/post/2021/azure-ghost-cms-and-cdn/</link>
       <pubDate>Mon, 11 Jan 2021 07:00:18 +0200</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/post/2021/azure-ghost-cms-and-cdn/</guid>
+      <guid>/post/2021/azure-ghost-cms-and-cdn/</guid>
       <description>&lt;p&gt;I moved my blog onto HUGO. Not everyone would want to do this necessarily, there is a bit of a learning curve, part of the reason &lt;strong&gt;I DID IT&lt;/strong&gt; :). However there are other platforms you can use and still add more functionality if you want.&lt;/p&gt;&#xA;&lt;p&gt;You can use &lt;a href=&#34;https://ghost.org/&#34;&gt;Ghost&lt;/a&gt; and add an &lt;a href=&#34;https://docs.microsoft.com/en-us/azure/cdn/cdn-overview&#34;&gt;Azure CDN&lt;/a&gt;. This is what this blog post will cover.&lt;/p&gt;&#xA;&lt;p&gt;There are some very clever people out there that have made this very easy for you. From my research you have 2 main options.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ARG on Fletcher&#39;s Cloud Blog</title>
-    <link>https://swacloudblogflkelly.z1.web.core.windows.net/categories/arg/</link>
+    <link>//localhost:1313/categories/arg/</link>
     <description>Recent content in ARG on Fletcher&#39;s Cloud Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 25 Aug 2021 05:58:18 +0200</lastBuildDate>
-    <atom:link href="https://swacloudblogflkelly.z1.web.core.windows.net/categories/arg/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/categories/arg/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Azure Resource Group Enterprise Scale Landing Zone queries</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/post/2021/arg-mg--query-quick-post/</link>
+      <link>//localhost:1313/post/2021/arg-mg--query-quick-post/</link>
       <pubDate>Wed, 25 Aug 2021 05:58:18 +0200</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/post/2021/arg-mg--query-quick-post/</guid>
+      <guid>//localhost:1313/post/2021/arg-mg--query-quick-post/</guid>
       <description>&lt;h1 id=&#34;azure-resource-graph-examples&#34;&gt;Azure Resource Graph Examples&lt;/h1&gt;&#xA;&lt;p&gt;THis is just a quick post. I am slowly working on building a collection of Resource Grpah Queries - they can be found &lt;a href=&#34;https://github.com/fskelly/azure-resource-graph/tree/main/enterpriseScale&#34;&gt;here&lt;/a&gt; and will grow over time. It just takes some time to build these.&lt;/p&gt;&#xA;&lt;p&gt;They will be broken down into a folder structure based upon the &lt;a href=&#34;https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/enterprise-scale/design-guidelines&#34;&gt;Critical Design Areas of Enterprise Scale Landing Zone&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://github.com/fskelly/flkelly-cloudblog/blob/main/public/images/blogImages/2021/azureresourcegraph/folderStructure.png?raw=true&#34; alt=&#34;folderStructure&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;&#xA;&lt;p&gt;Hope this helps and keep an eye out for more.&lt;/p&gt;</description>
     </item>
   </channel>

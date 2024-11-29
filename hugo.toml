@@ -1,4 +1,5 @@
-baseurl = "https://swacloudblogflkelly.z1.web.core.windows.net/"
+# baseurl = "https://swacloudblogflkelly.z1.web.core.windows.net/"
+baseurl = "/"
 DefaultContentLanguage = "en"
 title = "Fletcher's Cloud Blog"
 # Using theme as git submodule

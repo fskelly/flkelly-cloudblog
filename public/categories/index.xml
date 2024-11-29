@@ -2,115 +2,108 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Fletcher&#39;s Cloud Blog</title>
-    <link>https://swacloudblogflkelly.z1.web.core.windows.net/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on Fletcher&#39;s Cloud Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 21 Nov 2023 09:54:43 +0000</lastBuildDate>
-    <atom:link href="https://swacloudblogflkelly.z1.web.core.windows.net/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Azure VMware Solution</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/categories/azure-vmware-solution/</link>
+      <link>/categories/azure-vmware-solution/</link>
       <pubDate>Tue, 21 Nov 2023 09:54:43 +0000</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/categories/azure-vmware-solution/</guid>
+      <guid>/categories/azure-vmware-solution/</guid>
       <description></description>
     </item>
     <item>
       <title>AI</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/categories/ai/</link>
+      <link>/categories/ai/</link>
       <pubDate>Wed, 11 Oct 2023 13:34:50 +0100</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/categories/ai/</guid>
+      <guid>/categories/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>Azure</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/categories/azure/</link>
+      <link>/categories/azure/</link>
       <pubDate>Wed, 11 Oct 2023 13:34:50 +0100</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/categories/azure/</guid>
+      <guid>/categories/azure/</guid>
       <description></description>
     </item>
     <item>
       <title>Azure Native</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/categories/azure-native/</link>
+      <link>/categories/azure-native/</link>
       <pubDate>Wed, 11 Oct 2023 13:34:50 +0100</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/categories/azure-native/</guid>
+      <guid>/categories/azure-native/</guid>
       <description></description>
     </item>
     <item>
       <title>Azure Resource Graph</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/categories/azure-resource-graph/</link>
+      <link>/categories/azure-resource-graph/</link>
       <pubDate>Mon, 03 Oct 2022 13:59:06 +0100</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/categories/azure-resource-graph/</guid>
+      <guid>/categories/azure-resource-graph/</guid>
       <description></description>
     </item>
     <item>
       <title>Hybrid</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/categories/hybrid/</link>
+      <link>/categories/hybrid/</link>
       <pubDate>Tue, 27 Sep 2022 08:03:53 +0100</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/categories/hybrid/</guid>
+      <guid>/categories/hybrid/</guid>
       <description></description>
     </item>
     <item>
       <title>Azure Hybrid</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/categories/azure-hybrid/</link>
+      <link>/categories/azure-hybrid/</link>
       <pubDate>Wed, 14 Sep 2022 11:14:30 +0100</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/categories/azure-hybrid/</guid>
+      <guid>/categories/azure-hybrid/</guid>
       <description></description>
     </item>
     <item>
       <title>IaC</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/categories/iac/</link>
+      <link>/categories/iac/</link>
       <pubDate>Mon, 20 Jun 2022 08:54:21 +0100</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/categories/iac/</guid>
+      <guid>/categories/iac/</guid>
       <description></description>
     </item>
     <item>
       <title>Scripting</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/categories/scripting/</link>
+      <link>/categories/scripting/</link>
       <pubDate>Mon, 25 Apr 2022 14:27:03 +0100</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/categories/scripting/</guid>
+      <guid>/categories/scripting/</guid>
       <description></description>
     </item>
     <item>
       <title>Management Group</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/categories/management-group/</link>
+      <link>/categories/management-group/</link>
       <pubDate>Thu, 09 Dec 2021 08:00:00 +0000</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/categories/management-group/</guid>
+      <guid>/categories/management-group/</guid>
       <description></description>
     </item>
     <item>
       <title>Networking</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/categories/networking/</link>
+      <link>/categories/networking/</link>
       <pubDate>Thu, 09 Dec 2021 08:00:00 +0000</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/categories/networking/</guid>
+      <guid>/categories/networking/</guid>
       <description></description>
     </item>
     <item>
       <title>Resource Graph</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/categories/resource-graph/</link>
+      <link>/categories/resource-graph/</link>
       <pubDate>Thu, 09 Dec 2021 08:00:00 +0000</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/categories/resource-graph/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>ARG</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/categories/arg/</link>
-      <pubDate>Wed, 25 Aug 2021 05:58:18 +0200</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/categories/arg/</guid>
+      <guid>/categories/resource-graph/</guid>
       <description></description>
     </item>
     <item>
       <title>Command Line</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/categories/command-line/</link>
+      <link>/categories/command-line/</link>
       <pubDate>Wed, 05 May 2021 07:03:02 +0200</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/categories/command-line/</guid>
+      <guid>/categories/command-line/</guid>
       <description></description>
     </item>
     <item>
       <title>API</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/categories/api/</link>
+      <link>/categories/api/</link>
       <pubDate>Wed, 14 Apr 2021 09:02:18 +0200</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/categories/api/</guid>
+      <guid>/categories/api/</guid>
       <description></description>
     </item>
   </channel>

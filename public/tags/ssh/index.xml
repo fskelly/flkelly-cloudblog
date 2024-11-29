@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SSH on Fletcher&#39;s Cloud Blog</title>
-    <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/ssh/</link>
+    <link>/tags/ssh/</link>
     <description>Recent content in SSH on Fletcher&#39;s Cloud Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 20 Jun 2022 08:54:21 +0100</lastBuildDate>
-    <atom:link href="https://swacloudblogflkelly.z1.web.core.windows.net/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using SSH Keys with Bicep based Linux VM templates</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/post/2022/bicep-linux-vm-ssh-keys/</link>
+      <link>/post/2022/bicep-linux-vm-ssh-keys/</link>
       <pubDate>Mon, 20 Jun 2022 08:54:21 +0100</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/post/2022/bicep-linux-vm-ssh-keys/</guid>
+      <guid>/post/2022/bicep-linux-vm-ssh-keys/</guid>
       <description>&lt;p&gt;I this post, I use bicep files for the deployment of Linux VMs AND I add some magic with PowerSehll to allow for the creation or using of existing SSH keys with these VMs.&lt;/p&gt;&#xA;&lt;p&gt;I am a HUGE fan of SSH keys with Linux VMs for obvious reasons. I could just not find a script or scenario that covered this topic in a way that I actually like. I like to show more details and explain.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Using Openssh and creating SSH Keys with Powershell</title>
-      <link>https://swacloudblogflkelly.z1.web.core.windows.net/post/2022/openssh-powershell/</link>
+      <link>/post/2022/openssh-powershell/</link>
       <pubDate>Mon, 25 Apr 2022 14:27:03 +0100</pubDate>
-      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/post/2022/openssh-powershell/</guid>
+      <guid>/post/2022/openssh-powershell/</guid>
       <description>&lt;p&gt;In this post I show you my process for creating SSH Keys for Linux Machines.&lt;/p&gt;&#xA;&lt;p&gt;I use a fair amount of Linux in my work career (creating VMs and the like within Azure). Linux VMs are great for testing with, they use SSH and are configured and ready for testing VERY quickly in Azure. I also use a fair amount of Linux in personal life, with &lt;a href=&#34;https://home-assisant.io&#34;&gt;Home assistant&lt;/a&gt; and &lt;a href=&#34;https://plex.tv&#34;&gt;Plex&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;I know many people use username and password with Linux environments and there is nothing wrong with this, I simply think that keys are better :smile: . I believe this for a few reasons.&lt;/p&gt;</description>
     </item>
   </channel>
