@@ -8,7 +8,7 @@ draft: true
 
 What are we doing?
 
-With this post I am going to show you how you can easily do Azure API calls and “skip” a lot of the difficult items. I have been on something interesting tools to help my customers, when I can talk more about it, I will. As part of this tooling exercise, the Azure REST API is used extensively. With “normal” applications like APIDog, ThunderClient and the like, you often need to get a token and then add this to the header as an auth object and this involves configuration on EntraID and the like. This is not necessarily the best approach for what I was looking for. I was looking for a quick testing framework for Azure REST API calls and then look at the output to be further extract with JQ.
+With this post I am going to show you how you can easily do Azure API calls and “skip” a lot of the difficult items. I have been on something interesting tools to help my customers, when I can talk more about it, I will. As part of this tooling exercise, the Azure REST API is used extensively. With “normal” applications like APIDog, ThunderClient and the like, you often need to get a token and then add this to the header as an auth object and this involves configuration on EntraID and the like. This is not necessarily the best approach for what I was looking for. I was looking for a quick testing framework for Azure REST API calls and then look at the output to be further extracted / manipulated with JQ.
 
 These are the principal / considerations
 
@@ -24,7 +24,7 @@ The command looks like this.
 GET https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachines?api-version=2024-07-01
 ```
 
-We need to provide some variable(s) or information as marked by items in braces (“{}”), so we need to provide **"subscriptionId"** and **"resourceGroupName"**. I will endavour to provide as much information as possible, however for safety reason, some items will be obfisicated.
+We need to provide some variable(s) or information as marked by items in braces (“{}”), so we need to provide **"subscriptionId"** and **"resourceGroupName"**. I will endeavour to provide as much information as possible, however for safety reason, some items will be obfuscated.
 
 **Please remember to login first az login, as the az rest command uses the context of the currently authenticated to Azure user, hence no auth tokens.**
 
