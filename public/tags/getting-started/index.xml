@@ -1,29 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Getting Started on Fletcher&#39;s Cloud Journey</title>
-    <link>https://cloud.fskelly.com/tags/getting-started/</link>
-    <description>Recent content in Getting Started on Fletcher&#39;s Cloud Journey</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 21 Nov 2023 09:54:43 +0000</lastBuildDate><atom:link href="https://cloud.fskelly.com/tags/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    <title>Getting Started on Fletcher&#39;s Cloud Blog</title>
+    <link>http://localhost:1313/tags/getting-started/</link>
+    <description>Recent content in Getting Started on Fletcher&#39;s Cloud Blog</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 21 Nov 2023 09:54:43 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/getting-started/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Azure VMware Solution How Do I &#39;Monitor my SDDC Deployment&#39;</title>
-      <link>https://cloud.fskelly.com/post/2023/azure-vmware-solution-how-do-i-monitor-sddc-deployment/</link>
+      <link>http://localhost:1313/post/2023/azure-vmware-solution-how-do-i-monitor-sddc-deployment/</link>
       <pubDate>Tue, 21 Nov 2023 09:54:43 +0000</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2023/azure-vmware-solution-how-do-i-monitor-sddc-deployment/</guid>
-      <description>What are we doing? As I spend more time with my customers and my teams within my organization, I am learning that there a lot of aspects of Azure VMware Solution that we take for granted and simply skim over as we assume (badly) that everyone knows exactly how to &amp;ldquo;the basics&amp;rdquo;. With this series of &amp;ldquo;How Do I&amp;rdquo; posts, I am going to try and address some of the more common questions that I get asked and hopefully provide some useful information to help you on your Azure VMware Solution journey.</description>
+      <guid>http://localhost:1313/post/2023/azure-vmware-solution-how-do-i-monitor-sddc-deployment/</guid>
+      <description>&lt;h2 id=&#34;what-are-we-doing&#34;&gt;What are we doing?&lt;/h2&gt;&#xA;&lt;p&gt;As I spend more time with my customers and my teams within my organization, I am learning that there a lot of aspects of Azure VMware Solution that we take for granted and simply skim over as we assume (badly) that everyone knows exactly how to &amp;ldquo;the basics&amp;rdquo;. With this series of &amp;ldquo;How Do I&amp;rdquo; posts, I am going to try and address some of the more common questions that I get asked and hopefully provide some useful information to help you on your Azure VMware Solution journey. I will endeavour to copy as many topics as I can and I am always open to ideas and suggestions. You can reach out to me on &lt;a href=&#34;https://www.twitter.com/fskelly&#34;&gt;Twitter&lt;/a&gt; or post a suggestion for the log on &lt;a href=&#34;https://github.com/fskelly/flkelly-cloudblog/issues&#34;&gt;GitHub&lt;/a&gt; - please remember these are designed to be short and sweet and not full blown tutorials.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Azure VMware Solution Starter Links</title>
-      <link>https://cloud.fskelly.com/post/2023/azure-vmware-solution-starter-links/</link>
+      <link>http://localhost:1313/post/2023/azure-vmware-solution-starter-links/</link>
       <pubDate>Thu, 26 Oct 2023 10:23:27 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/post/2023/azure-vmware-solution-starter-links/</guid>
-      <description>What are we doing? Providing people with a list of useful links and blog posts to help you get grounded in Azure VMware Solution. Some of the links are bery high-level and others are very detailed. Each link or blog post will address different items at different depths so you can hopefully find the exact link or information that you are looking for to make your journey in Azure VMware Solution a little easier.</description>
+      <guid>http://localhost:1313/post/2023/azure-vmware-solution-starter-links/</guid>
+      <description>&lt;h2 id=&#34;what-are-we-doing&#34;&gt;What are we doing?&lt;/h2&gt;&#xA;&lt;p&gt;Providing people with a list of useful links and blog posts to help you get grounded in Azure VMware Solution. Some of the links are bery high-level and others are very detailed. Each link or blog post will address different items at different depths so you can hopefully find the exact link or information that you are looking for to make your journey in Azure VMware Solution a little easier.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

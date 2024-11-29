@@ -2,267 +2,273 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://cloud.fskelly.com/categories/azure-vmware-solution/</loc>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-08-29T16:00:56+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2024-08-29T16:00:56+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2024/using-the-az-rest-cli-command/</loc>
+    <lastmod>2024-08-29T16:00:56+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/azure-vmware-solution/</loc>
     <lastmod>2023-11-21T09:54:43+00:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/post/2023/azure-vmware-solution-how-do-i-monitor-sddc-deployment/</loc>
+    <loc>http://localhost:1313/post/2023/azure-vmware-solution-how-do-i-monitor-sddc-deployment/</loc>
     <lastmod>2023-11-21T09:54:43+00:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2023-11-21T09:54:43+00:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/</loc>
+    <loc>http://localhost:1313/tags/getting-started/</loc>
     <lastmod>2023-11-21T09:54:43+00:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/getting-started/</loc>
+    <loc>http://localhost:1313/tags/how-do-i/</loc>
     <lastmod>2023-11-21T09:54:43+00:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/how-do-i/</loc>
+    <loc>http://localhost:1313/tags/information/</loc>
     <lastmod>2023-11-21T09:54:43+00:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/information/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2023-11-21T09:54:43+00:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/post/</loc>
-    <lastmod>2023-11-21T09:54:43+00:00</lastmod>
-  </url><url>
-    <loc>https://cloud.fskelly.com/tags/</loc>
-    <lastmod>2023-11-21T09:54:43+00:00</lastmod>
-  </url><url>
-    <loc>https://cloud.fskelly.com/post/2023/azure-vmware-solution-starter-links/</loc>
+    <loc>http://localhost:1313/post/2023/azure-vmware-solution-starter-links/</loc>
     <lastmod>2023-10-26T10:23:27+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/links/</loc>
+    <loc>http://localhost:1313/tags/links/</loc>
     <lastmod>2023-10-26T10:23:27+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/categories/ai/</loc>
+    <loc>http://localhost:1313/categories/ai/</loc>
     <lastmod>2023-10-11T13:34:50+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/api/</loc>
+    <loc>http://localhost:1313/tags/api/</loc>
     <lastmod>2023-10-11T13:34:50+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/categories/azure/</loc>
+    <loc>http://localhost:1313/categories/azure/</loc>
     <lastmod>2023-10-11T13:34:50+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/azure-cli/</loc>
+    <loc>http://localhost:1313/tags/azure-cli/</loc>
     <lastmod>2023-10-11T13:34:50+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/categories/azure-native/</loc>
+    <loc>http://localhost:1313/categories/azure-native/</loc>
     <lastmod>2023-10-11T13:34:50+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/copilot/</loc>
+    <loc>http://localhost:1313/tags/copilot/</loc>
     <lastmod>2023-10-11T13:34:50+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/rest/</loc>
+    <loc>http://localhost:1313/tags/rest/</loc>
     <lastmod>2023-10-11T13:34:50+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/post/2023/starting-wth-rest-calls-with-az-cli-with-some-co-pilot-help/</loc>
+    <loc>http://localhost:1313/post/2023/starting-wth-rest-calls-with-az-cli-with-some-co-pilot-help/</loc>
     <lastmod>2023-10-11T13:34:50+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/powershell/</loc>
+    <loc>http://localhost:1313/tags/powershell/</loc>
     <lastmod>2023-08-17T09:09:54+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/post/2023/starting-wth-rest-calls-with-powershell/</loc>
+    <loc>http://localhost:1313/post/2023/starting-wth-rest-calls-with-powershell/</loc>
     <lastmod>2023-08-17T09:09:54+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/azure/</loc>
+    <loc>http://localhost:1313/tags/azure/</loc>
     <lastmod>2023-08-03T15:24:21+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/post/2023/azure-cost-management-playing-with-api-in-powershell/</loc>
+    <loc>http://localhost:1313/post/2023/azure-cost-management-playing-with-api-in-powershell/</loc>
     <lastmod>2023-08-03T15:24:21+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/cost-management/</loc>
+    <loc>http://localhost:1313/tags/cost-management/</loc>
     <lastmod>2023-08-03T15:24:21+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/avs/</loc>
+    <loc>http://localhost:1313/tags/avs/</loc>
     <lastmod>2023-05-19T09:39:57+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/identity/</loc>
+    <loc>http://localhost:1313/tags/identity/</loc>
     <lastmod>2023-05-19T09:39:57+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/ldaps/</loc>
+    <loc>http://localhost:1313/series/ldap/</loc>
     <lastmod>2023-05-19T09:39:57+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/post/2023/avs-new-ldaps-run-command/</loc>
+    <loc>http://localhost:1313/tags/ldaps/</loc>
     <lastmod>2023-05-19T09:39:57+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/post/2023/avs-ldaps-configure-part1/</loc>
+    <loc>http://localhost:1313/post/2023/avs-new-ldaps-run-command/</loc>
+    <lastmod>2023-05-19T09:39:57+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/series/</loc>
+    <lastmod>2023-05-19T09:39:57+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/2023/avs-ldaps-configure-part1/</loc>
     <lastmod>2023-01-25T08:45:43+00:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/post/2023/avs-ldaps-configure-part2/</loc>
+    <loc>http://localhost:1313/post/2023/avs-ldaps-configure-part2/</loc>
     <lastmod>2023-01-25T08:45:43+00:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/post/2023/avs-ldaps-configure-part3/</loc>
+    <loc>http://localhost:1313/post/2023/avs-ldaps-configure-part3/</loc>
     <lastmod>2023-01-25T08:45:43+00:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/post/2023/avs-ldaps-configure-part4/</loc>
+    <loc>http://localhost:1313/post/2023/avs-ldaps-configure-part4/</loc>
     <lastmod>2023-01-25T08:45:43+00:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/azure-resource-graph/</loc>
+    <loc>http://localhost:1313/post/2023/avs-ldaps-configure/</loc>
+    <lastmod>2023-01-09T08:39:32+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/azure-resource-graph/</loc>
     <lastmod>2022-10-03T13:59:06+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/categories/azure-resource-graph/</loc>
+    <loc>http://localhost:1313/categories/azure-resource-graph/</loc>
     <lastmod>2022-10-03T13:59:06+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/post/2022/using-arg-tolock-resources/</loc>
+    <loc>http://localhost:1313/post/2022/using-arg-tolock-resources/</loc>
     <lastmod>2022-10-03T13:59:06+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/azure-arc/</loc>
+    <loc>http://localhost:1313/tags/azure-arc/</loc>
     <lastmod>2022-09-27T08:03:53+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/categories/hybrid/</loc>
+    <loc>http://localhost:1313/categories/hybrid/</loc>
     <lastmod>2022-09-27T08:03:53+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/post/2022/arc-ssh-windows-linux/</loc>
+    <loc>http://localhost:1313/post/2022/arc-ssh-windows-linux/</loc>
     <lastmod>2022-09-27T08:03:53+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/categories/azure-hybrid/</loc>
+    <loc>http://localhost:1313/categories/azure-hybrid/</loc>
     <lastmod>2022-09-14T11:14:30+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/post/2022/check-powershell-type/</loc>
+    <loc>http://localhost:1313/post/2022/check-powershell-type/</loc>
     <lastmod>2022-09-14T11:14:30+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/hybrid/</loc>
+    <loc>http://localhost:1313/tags/hybrid/</loc>
     <lastmod>2022-09-14T11:14:30+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/bicep/</loc>
+    <loc>http://localhost:1313/tags/bicep/</loc>
     <lastmod>2022-06-20T08:54:21+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/categories/iac/</loc>
+    <loc>http://localhost:1313/categories/iac/</loc>
     <lastmod>2022-06-20T08:54:21+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/ssh/</loc>
+    <loc>http://localhost:1313/tags/ssh/</loc>
     <lastmod>2022-06-20T08:54:21+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/post/2022/bicep-linux-vm-ssh-keys/</loc>
+    <loc>http://localhost:1313/post/2022/bicep-linux-vm-ssh-keys/</loc>
     <lastmod>2022-06-20T08:54:21+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/categories/scripting/</loc>
+    <loc>http://localhost:1313/categories/scripting/</loc>
     <lastmod>2022-04-25T14:27:03+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/post/2022/openssh-powershell/</loc>
+    <loc>http://localhost:1313/post/2022/openssh-powershell/</loc>
     <lastmod>2022-04-25T14:27:03+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/networking/</loc>
+    <loc>http://localhost:1313/tags/networking/</loc>
     <lastmod>2022-03-28T07:27:16+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/post/2022/poc-vwan-avs/</loc>
+    <loc>http://localhost:1313/post/2022/poc-vwan-avs/</loc>
     <lastmod>2022-03-28T07:27:16+01:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/post/2022/avs-to-internet-able-or-not/</loc>
+    <loc>http://localhost:1313/post/2022/avs-to-internet-able-or-not/</loc>
     <lastmod>2022-03-17T16:06:00+00:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/post/2022/new-to-avs-nomon-networking-1/</loc>
+    <loc>http://localhost:1313/post/2022/new-to-avs-nomon-networking-1/</loc>
     <lastmod>2022-03-09T16:06:00+00:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/post/2021/2021-arg-networking-mgmt-more/</loc>
+    <loc>http://localhost:1313/post/2021/2021-arg-networking-mgmt-more/</loc>
     <lastmod>2021-12-09T08:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/blog/</loc>
+    <loc>http://localhost:1313/tags/blog/</loc>
     <lastmod>2021-12-09T08:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/eslz/</loc>
+    <loc>http://localhost:1313/tags/eslz/</loc>
     <lastmod>2021-12-09T08:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/categories/management-group/</loc>
+    <loc>http://localhost:1313/categories/management-group/</loc>
     <lastmod>2021-12-09T08:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/categories/networking/</loc>
+    <loc>http://localhost:1313/categories/networking/</loc>
     <lastmod>2021-12-09T08:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/resource-graph/</loc>
+    <loc>http://localhost:1313/tags/resource-graph/</loc>
     <lastmod>2021-12-09T08:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/categories/resource-graph/</loc>
+    <loc>http://localhost:1313/categories/resource-graph/</loc>
     <lastmod>2021-12-09T08:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/post/2021/arg-mg--query-quick-post/</loc>
+    <loc>http://localhost:1313/post/2021/arg-mg--query-quick-post/</loc>
     <lastmod>2021-08-25T05:58:18+02:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/quick-post/</loc>
+    <loc>http://localhost:1313/tags/quick-post/</loc>
     <lastmod>2021-08-25T05:58:18+02:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/post/2021/bicep-troubleshooting/</loc>
+    <loc>http://localhost:1313/post/2021/bicep-troubleshooting/</loc>
     <lastmod>2021-07-02T05:40:16+02:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/az-cli/</loc>
+    <loc>http://localhost:1313/tags/az-cli/</loc>
     <lastmod>2021-05-05T07:03:02+02:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/post/2021/cli-list-locations-and-peers/</loc>
+    <loc>http://localhost:1313/post/2021/cli-list-locations-and-peers/</loc>
     <lastmod>2021-05-05T07:03:02+02:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/categories/command-line/</loc>
+    <loc>http://localhost:1313/categories/command-line/</loc>
     <lastmod>2021-05-05T07:03:02+02:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/categories/api/</loc>
+    <loc>http://localhost:1313/categories/api/</loc>
     <lastmod>2021-04-14T09:02:18+02:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/post/2021/azure-rest-api-postman-basics/</loc>
+    <loc>http://localhost:1313/post/2021/azure-rest-api-postman-basics/</loc>
     <lastmod>2021-04-14T09:02:18+02:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/postman/</loc>
+    <loc>http://localhost:1313/tags/postman/</loc>
     <lastmod>2021-04-14T09:02:18+02:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/post/2021/expiring-keys-azure-key-vault/</loc>
+    <loc>http://localhost:1313/post/2021/expiring-keys-azure-key-vault/</loc>
     <lastmod>2021-01-18T07:06:03+02:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/post/2021/azure-ghost-cms-and-cdn/</loc>
+    <loc>http://localhost:1313/post/2021/azure-ghost-cms-and-cdn/</loc>
     <lastmod>2021-01-11T07:00:18+02:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/cdn/</loc>
+    <loc>http://localhost:1313/tags/cdn/</loc>
     <lastmod>2021-01-11T07:00:18+02:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/hugo/</loc>
+    <loc>http://localhost:1313/tags/hugo/</loc>
     <lastmod>2021-01-11T07:00:18+02:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/post/2021/my-new-blog-home/</loc>
+    <loc>http://localhost:1313/post/2021/my-new-blog-home/</loc>
     <lastmod>2021-01-05T15:57:04+02:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/static-web/</loc>
+    <loc>http://localhost:1313/tags/static-web/</loc>
     <lastmod>2021-01-05T15:57:04+02:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/about/</loc>
-    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://cloud.fskelly.com/page/about/</loc>
+    <loc>http://localhost:1313/page/about/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/page/fletcherkelly/</loc>
+    <loc>http://localhost:1313/page/fletcherkelly/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/page/robinheringa/</loc>
+    <loc>http://localhost:1313/page/robinheringa/</loc>
     <lastmod>2022-03-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/page/</loc>
+    <loc>http://localhost:1313/page/</loc>
     <lastmod>2022-03-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/architecture/</loc>
+    <loc>http://localhost:1313/tags/architecture/</loc>
     <lastmod>2019-08-07T16:33:36+02:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/csa/</loc>
+    <loc>http://localhost:1313/tags/csa/</loc>
     <lastmod>2019-08-07T16:33:36+02:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/post/2019/importance-of-networking-azure/</loc>
+    <loc>http://localhost:1313/post/2019/importance-of-networking-azure/</loc>
     <lastmod>2019-08-07T16:33:36+02:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/cloud-tools/</loc>
+    <loc>http://localhost:1313/tags/cloud-tools/</loc>
     <lastmod>2019-07-09T16:46:43+02:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/post/2019/csa-tools-of-the-trade/</loc>
+    <loc>http://localhost:1313/post/2019/csa-tools-of-the-trade/</loc>
     <lastmod>2019-07-09T16:46:43+02:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/page/archives/</loc>
-    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://cloud.fskelly.com/tags/azure-monitor/</loc>
+    <loc>http://localhost:1313/tags/azure-monitor/</loc>
     <lastmod>2019-02-20T08:21:49+02:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/post/2019/network-security-group-change-alerting/</loc>
+    <loc>http://localhost:1313/post/2019/network-security-group-change-alerting/</loc>
     <lastmod>2019-02-20T08:21:49+02:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/tags/nsg/</loc>
+    <loc>http://localhost:1313/tags/nsg/</loc>
     <lastmod>2019-02-20T08:21:49+02:00</lastmod>
   </url><url>
-    <loc>https://cloud.fskelly.com/page/search/</loc>
+    <loc>http://localhost:1313/10/</loc>
   </url>
 </urlset>

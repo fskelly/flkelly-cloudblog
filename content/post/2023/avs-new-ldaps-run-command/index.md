@@ -10,6 +10,7 @@ Categories:
     - Azure VMware Solution
 DisableComments: false
 draft: false
+series: LDAP
 ---
 
 ## What are we doing?

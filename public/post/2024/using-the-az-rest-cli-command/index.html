@@ -1,0 +1,536 @@
+
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+ 
+
+
+      <title>Using the AZ Rest CLI command - </title>
+
+  <meta name="description" content="What are we doing?
+With this post I am going to show you how you can easily do Azure API calls and “skip” a lot of the difficult items. I have been on something interesting tools to help my customers, when I can talk more about it, I will. As part of this tooling exercise, the Azure REST API is used extensively. With “normal” applications like APIDog, ThunderClient and the like, you often need to get a token and then add this to the header as an auth object and this involves configuration on EntraID and the like. This is not necessarily the best approach for what I was looking for. I was looking for a quick testing framework for Azure REST API calls and then look at the output to be further extracted / manipulated with JQ.">
+  <meta name="author" content="Fletcher Kelly"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Fletcher\u0027s Cloud Blog",
+    
+    "url": "http:\/\/localhost:1313\/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "http:\/\/localhost:1313\/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "http:\/\/localhost:1313\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "http:\/\/localhost:1313\/post\/2024\/using-the-az-rest-cli-command\/",
+          "name": "Using the az rest CLI command"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Fletcher Kelly"
+  },
+  "headline": "Using the AZ Rest CLI command",
+  "description" : "What are we doing?\nWith this post I am going to show you how you can easily do Azure API calls and “skip” a lot of the difficult items. I have been on something interesting tools to help my customers, when I can talk more about it, I will. As part of this tooling exercise, the Azure REST API is used extensively. With “normal” applications like APIDog, ThunderClient and the like, you often need to get a token and then add this to the header as an auth object and this involves configuration on EntraID and the like. This is not necessarily the best approach for what I was looking for. I was looking for a quick testing framework for Azure REST API calls and then look at the output to be further extracted \/ manipulated with JQ.\n",
+  "inLanguage" : "en",
+  "wordCount":  481 ,
+  "datePublished" : "2024-08-29T16:00:56\u002b00:00",
+  "dateModified" : "2024-08-29T16:00:56\u002b00:00",
+  "image" : "http:\/\/localhost:1313\/",
+  "keywords" : [ "" ],
+  "mainEntityOfPage" : "http:\/\/localhost:1313\/post\/2024\/using-the-az-rest-cli-command\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "http:\/\/localhost:1313\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "http:\/\/localhost:1313\/",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+
+<meta property="og:title" content="Using the AZ Rest CLI command" />
+<meta property="og:description" content="What are we doing?
+With this post I am going to show you how you can easily do Azure API calls and “skip” a lot of the difficult items. I have been on something interesting tools to help my customers, when I can talk more about it, I will. As part of this tooling exercise, the Azure REST API is used extensively. With “normal” applications like APIDog, ThunderClient and the like, you often need to get a token and then add this to the header as an auth object and this involves configuration on EntraID and the like. This is not necessarily the best approach for what I was looking for. I was looking for a quick testing framework for Azure REST API calls and then look at the output to be further extracted / manipulated with JQ.">
+<meta property="og:url" content="http://localhost:1313/post/2024/using-the-az-rest-cli-command/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Fletcher&#39;s Cloud Blog" />
+
+  <meta name="twitter:title" content="Using the AZ Rest CLI command" />
+  <meta name="twitter:description" content="What are we doing?
+With this post I am going to show you how you can easily do Azure API calls and “skip” a lot of the difficult items. I have been on something interesting tools to help my customers, …">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="generator" content="Hugo 0.139.2">
+  <link rel="alternate" href="http://localhost:1313/index.xml" type="application/rss+xml" title="Fletcher&#39;s Cloud Blog"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css" integrity="sha384-h/hnnw1Bi4nbpD6kE7nYfCXzovi622sY5WBxww8ARKwpdLj5kUWjRuyiXaD1U2JT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"><link rel="stylesheet" href="http://localhost:1313/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="http://localhost:1313/css/highlight.min.css" /><link rel="stylesheet" href="http://localhost:1313/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://localhost:1313/">Fletcher&#39;s Cloud Blog</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="/">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="/tags">Tags</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About Blog" href="/page/about/">About Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About Fletcher Kelly" href="/page/fletcherkelly/">About Fletcher Kelly</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About Robin Heringa" href="/page/robinheringa/">About Robin Heringa</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              
+                <h1>Using the AZ Rest CLI command</h1>
+              
+              
+              
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on August 29, 2024
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;minutes
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;481&nbsp;words
+  
+  
+    
+      
+        &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Fletcher Kelly
+      
+    
+  
+  
+</span>
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>What are we doing?</p>
+<p>With this post I am going to show you how you can easily do Azure API calls and “skip” a lot of the difficult items. I have been on something interesting tools to help my customers, when I can talk more about it, I will. As part of this tooling exercise, the Azure REST API is used extensively. With “normal” applications like APIDog, ThunderClient and the like, you often need to get a token and then add this to the header as an auth object and this involves configuration on EntraID and the like. This is not necessarily the best approach for what I was looking for. I was looking for a quick testing framework for Azure REST API calls and then look at the output to be further extracted / manipulated with JQ.</p>
+<p>These are the principal / considerations</p>
+<ol>
+<li>This is NOT designed to replace a full API solution like APIDog or Postman or ThunderClient</li>
+<li>Designed for quick queries against the Azure REST API</li>
+<li>Uses the currently logged on person credentials to run queries</li>
+</ol>
+<p>Ok, so down to business, the tool/command that I am using is “az rest”. Using this tool is quite easy but thanks to some additional insights from a colleague in my team you can make it even easier. So, how do we use the command. Let’s say we wanted to make the following request – Virtual Machines – List.</p>
+<p>The command looks like this.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">GET https://management.azure.com/subscriptions/<span class="o">{</span>subscriptionId<span class="o">}</span>/resourceGroups/<span class="o">{</span>resourceGroupName<span class="o">}</span>/providers/Microsoft.Compute/virtualMachines?api-version<span class="o">=</span>2024-07-01
+</span></span></code></pre></div><p>We need to provide some variable(s) or information as marked by items in braces (“{}”), so we need to provide <strong>&ldquo;subscriptionId&rdquo;</strong> and <strong>&ldquo;resourceGroupName&rdquo;</strong>. I will endeavour to provide as much information as possible, however for safety reason, some items will be obfuscated.</p>
+<p><strong>Please remember to login first az login, as the az rest command uses the context of the currently authenticated to Azure user, hence no auth tokens.</strong></p>
+<p>Here is a quick shell script to show this and allow you to test.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">	
+</span></span><span class="line"><span class="cl"><span class="c1"># Set your variables here</span>
+</span></span><span class="line"><span class="cl"><span class="nv">subscriptionId</span><span class="o">=</span><span class="s2">&#34;&lt;your_subscription_id&gt;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">resourceGroupName</span><span class="o">=</span><span class="s2">&#34;&lt;your_resource_group_name&gt;&#34;</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="c1"># Construct the URL</span>
+</span></span><span class="line"><span class="cl"><span class="nv">url</span><span class="o">=</span><span class="s2">&#34;https://management.azure.com/subscriptions/</span><span class="si">${</span><span class="nv">subscriptionId</span><span class="si">}</span><span class="s2">/resourceGroups/</span><span class="si">${</span><span class="nv">resourceGroupName</span><span class="si">}</span><span class="s2">/providers/Microsoft.Compute/virtualMachines?api-version=2024-07-01&#34;</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="c1"># Use az rest command</span>
+</span></span><span class="line"><span class="cl">az rest --method get --url <span class="nv">$url</span>
+</span></span></code></pre></div><p>You will get a result similar to the below,</p>
+
+<link rel="stylesheet" href="http://localhost:1313/css/hugo-easy-gallery.css" />
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/images/blogImages/2024/using-az-rest-cli-command/result1.png" alt="az rest result"/>
+    </div>
+    <a href="/images/blogImages/2024/using-az-rest-cli-command/result1.png" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+<p>For me and the testing I am doing, this is a great, rapid and repeatable way of testing queries and quickly testing if the URI is valid before spending many hours troubleshooting the <strong>&ldquo;why is this not working&rdquo;</strong> versus <strong>&ldquo;is my URI correct&rdquo;</strong>.</p>
+<p>What is also quite handy is the fact that the <strong>&ldquo;<a href="https://management.azure.com">https://management.azure.com</a>&rdquo;</strong> aspect can be dropped as this is already assumed, and as such you run a query directly against the ID to get more information or an ID returned from an Azure Resource Graph Query, with the correct API version appended in this example</p>
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/images/blogImages/2024/using-az-rest-cli-command/result2.png" alt="az rest result2"/>
+    </div>
+    <a href="/images/blogImages/2024/using-az-rest-cli-command/result2.png" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+<p>Without the API Version appended</p>
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/images/blogImages/2024/using-az-rest-cli-command/failure.png" alt="failure"/>
+    </div>
+    <a href="/images/blogImages/2024/using-az-rest-cli-command/failure.png" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+<p>With the correct API version appended 👍</p>
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/images/blogImages/2024/using-az-rest-cli-command/image-4.png" alt="failure"/>
+    </div>
+    <a href="/images/blogImages/2024/using-az-rest-cli-command/image-4.png" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/images/blogImages/2024/using-az-rest-cli-command/image-5.png" alt="failure"/>
+    </div>
+    <a href="/images/blogImages/2024/using-az-rest-cli-command/image-5.png" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+<p>You can now do the same process with other IDs that are returned.</p>
+
+
+        
+
+        
+            <hr/>
+            <section id="social-share">
+              <div class="list-inline footer-links">
+                
+
+<div class="share-box" aria-hidden="true">
+    <ul class="share">
+      
+      <li>
+        <a href="//twitter.com/share?url=http%3a%2f%2flocalhost%3a1313%2fpost%2f2024%2fusing-the-az-rest-cli-command%2f&amp;text=Using%20the%20AZ%20Rest%20CLI%20command&amp;via=" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2f2024%2fusing-the-az-rest-cli-command%2f" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fpost%2f2024%2fusing-the-az-rest-cli-command%2f&amp;title=Using%20the%20AZ%20Rest%20CLI%20command" target="_blank" title="Share on Reddit">
+          <i class="fab fa-reddit"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fpost%2f2024%2fusing-the-az-rest-cli-command%2f&amp;title=Using%20the%20AZ%20Rest%20CLI%20command" target="_blank" title="Share on LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.stumbleupon.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fpost%2f2024%2fusing-the-az-rest-cli-command%2f&amp;title=Using%20the%20AZ%20Rest%20CLI%20command" target="_blank" title="Share on StumbleUpon">
+          <i class="fab fa-stumbleupon"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2fpost%2f2024%2fusing-the-az-rest-cli-command%2f&amp;description=Using%20the%20AZ%20Rest%20CLI%20command" target="_blank" title="Share on Pinterest">
+          <i class="fab fa-pinterest"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+
+              </div>
+            </section>
+        
+
+        
+          
+
+          
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="http://localhost:1313/post/2023/azure-vmware-solution-how-do-i-monitor-sddc-deployment/" data-toggle="tooltip" data-placement="top" title="Azure VMware Solution How Do I &#39;Monitor my SDDC Deployment&#39;">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+
+      
+      
+      
+      
+      
+        
+      
+
+    </div>
+  </div>
+</div>
+
+      <footer>
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+		
+		  <a href="https://github.com/fskelly" title="GitHub">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+		
+		  <a href="https://linkedin.com/in/fletcherkelly" title="LinkedIn">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              Fletcher Kelly
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2024
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="http://localhost:1313/">Fletcher&#39;s Cloud Blog</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.139.2</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js" integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha384-w5y/xIeYixWvfM+A1cEbmHPURnvyqmVg5eVENruEdDjcyRLUSNej7512JQGspFUr" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+<script src="http://localhost:1313/js/main.js"></script>
+<script src="http://localhost:1313/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="http://localhost:1313/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+

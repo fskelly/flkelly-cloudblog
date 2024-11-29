@@ -1,317 +1,250 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Fletcher&#39;s Cloud Journey</title>
-    <link>https://cloud.fskelly.com/tags/</link>
-    <description>Recent content in Tags on Fletcher&#39;s Cloud Journey</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 21 Nov 2023 09:54:43 +0000</lastBuildDate><atom:link href="https://cloud.fskelly.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <title>Tags on Fletcher&#39;s Cloud Blog</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on Fletcher&#39;s Cloud Blog</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 21 Nov 2023 09:54:43 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Getting Started</title>
-      <link>https://cloud.fskelly.com/tags/getting-started/</link>
+      <link>http://localhost:1313/tags/getting-started/</link>
       <pubDate>Tue, 21 Nov 2023 09:54:43 +0000</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/getting-started/</guid>
+      <guid>http://localhost:1313/tags/getting-started/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>How Do I</title>
-      <link>https://cloud.fskelly.com/tags/how-do-i/</link>
+      <link>http://localhost:1313/tags/how-do-i/</link>
       <pubDate>Tue, 21 Nov 2023 09:54:43 +0000</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/how-do-i/</guid>
+      <guid>http://localhost:1313/tags/how-do-i/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Information</title>
-      <link>https://cloud.fskelly.com/tags/information/</link>
+      <link>http://localhost:1313/tags/information/</link>
       <pubDate>Tue, 21 Nov 2023 09:54:43 +0000</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/information/</guid>
+      <guid>http://localhost:1313/tags/information/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Links</title>
-      <link>https://cloud.fskelly.com/tags/links/</link>
+      <link>http://localhost:1313/tags/links/</link>
       <pubDate>Thu, 26 Oct 2023 10:23:27 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/links/</guid>
+      <guid>http://localhost:1313/tags/links/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>api</title>
-      <link>https://cloud.fskelly.com/tags/api/</link>
+      <title>API</title>
+      <link>http://localhost:1313/tags/api/</link>
       <pubDate>Wed, 11 Oct 2023 13:34:50 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/api/</guid>
+      <guid>http://localhost:1313/tags/api/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Azure CLI</title>
-      <link>https://cloud.fskelly.com/tags/azure-cli/</link>
+      <link>http://localhost:1313/tags/azure-cli/</link>
       <pubDate>Wed, 11 Oct 2023 13:34:50 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/azure-cli/</guid>
+      <guid>http://localhost:1313/tags/azure-cli/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Copilot</title>
-      <link>https://cloud.fskelly.com/tags/copilot/</link>
+      <link>http://localhost:1313/tags/copilot/</link>
       <pubDate>Wed, 11 Oct 2023 13:34:50 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/copilot/</guid>
+      <guid>http://localhost:1313/tags/copilot/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>REST</title>
-      <link>https://cloud.fskelly.com/tags/rest/</link>
+      <link>http://localhost:1313/tags/rest/</link>
       <pubDate>Wed, 11 Oct 2023 13:34:50 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/rest/</guid>
+      <guid>http://localhost:1313/tags/rest/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>Powershell</title>
-      <link>https://cloud.fskelly.com/tags/powershell/</link>
+      <title>PowerShell</title>
+      <link>http://localhost:1313/tags/powershell/</link>
       <pubDate>Thu, 17 Aug 2023 09:09:54 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/powershell/</guid>
+      <guid>http://localhost:1313/tags/powershell/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>azure</title>
-      <link>https://cloud.fskelly.com/tags/azure/</link>
+      <title>Azure</title>
+      <link>http://localhost:1313/tags/azure/</link>
       <pubDate>Thu, 03 Aug 2023 15:24:21 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/azure/</guid>
+      <guid>http://localhost:1313/tags/azure/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Cost Management</title>
-      <link>https://cloud.fskelly.com/tags/cost-management/</link>
+      <link>http://localhost:1313/tags/cost-management/</link>
       <pubDate>Thu, 03 Aug 2023 15:24:21 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/cost-management/</guid>
+      <guid>http://localhost:1313/tags/cost-management/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>AVS</title>
-      <link>https://cloud.fskelly.com/tags/avs/</link>
+      <link>http://localhost:1313/tags/avs/</link>
       <pubDate>Fri, 19 May 2023 09:39:57 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/avs/</guid>
+      <guid>http://localhost:1313/tags/avs/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Identity</title>
-      <link>https://cloud.fskelly.com/tags/identity/</link>
+      <link>http://localhost:1313/tags/identity/</link>
       <pubDate>Fri, 19 May 2023 09:39:57 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/identity/</guid>
+      <guid>http://localhost:1313/tags/identity/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>LDAPS</title>
-      <link>https://cloud.fskelly.com/tags/ldaps/</link>
+      <link>http://localhost:1313/tags/ldaps/</link>
       <pubDate>Fri, 19 May 2023 09:39:57 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/ldaps/</guid>
+      <guid>http://localhost:1313/tags/ldaps/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Azure Resource Graph</title>
-      <link>https://cloud.fskelly.com/tags/azure-resource-graph/</link>
+      <link>http://localhost:1313/tags/azure-resource-graph/</link>
       <pubDate>Mon, 03 Oct 2022 13:59:06 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/azure-resource-graph/</guid>
+      <guid>http://localhost:1313/tags/azure-resource-graph/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Azure Arc</title>
-      <link>https://cloud.fskelly.com/tags/azure-arc/</link>
+      <link>http://localhost:1313/tags/azure-arc/</link>
       <pubDate>Tue, 27 Sep 2022 08:03:53 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/azure-arc/</guid>
+      <guid>http://localhost:1313/tags/azure-arc/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Hybrid</title>
-      <link>https://cloud.fskelly.com/tags/hybrid/</link>
+      <link>http://localhost:1313/tags/hybrid/</link>
       <pubDate>Wed, 14 Sep 2022 11:14:30 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/hybrid/</guid>
+      <guid>http://localhost:1313/tags/hybrid/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>bicep</title>
-      <link>https://cloud.fskelly.com/tags/bicep/</link>
+      <title>Bicep</title>
+      <link>http://localhost:1313/tags/bicep/</link>
       <pubDate>Mon, 20 Jun 2022 08:54:21 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/bicep/</guid>
+      <guid>http://localhost:1313/tags/bicep/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>SSH</title>
-      <link>https://cloud.fskelly.com/tags/ssh/</link>
+      <link>http://localhost:1313/tags/ssh/</link>
       <pubDate>Mon, 20 Jun 2022 08:54:21 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/ssh/</guid>
+      <guid>http://localhost:1313/tags/ssh/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Networking</title>
-      <link>https://cloud.fskelly.com/tags/networking/</link>
+      <link>http://localhost:1313/tags/networking/</link>
       <pubDate>Mon, 28 Mar 2022 07:27:16 +0100</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/networking/</guid>
+      <guid>http://localhost:1313/tags/networking/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>blog</title>
-      <link>https://cloud.fskelly.com/tags/blog/</link>
+      <title>Blog</title>
+      <link>http://localhost:1313/tags/blog/</link>
       <pubDate>Thu, 09 Dec 2021 08:00:00 +0000</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/blog/</guid>
+      <guid>http://localhost:1313/tags/blog/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>ESLZ</title>
-      <link>https://cloud.fskelly.com/tags/eslz/</link>
+      <link>http://localhost:1313/tags/eslz/</link>
       <pubDate>Thu, 09 Dec 2021 08:00:00 +0000</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/eslz/</guid>
+      <guid>http://localhost:1313/tags/eslz/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>resource graph</title>
-      <link>https://cloud.fskelly.com/tags/resource-graph/</link>
+      <title>Resource Graph</title>
+      <link>http://localhost:1313/tags/resource-graph/</link>
       <pubDate>Thu, 09 Dec 2021 08:00:00 +0000</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/resource-graph/</guid>
+      <guid>http://localhost:1313/tags/resource-graph/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>quick post</title>
-      <link>https://cloud.fskelly.com/tags/quick-post/</link>
+      <title>Quick Post</title>
+      <link>http://localhost:1313/tags/quick-post/</link>
       <pubDate>Wed, 25 Aug 2021 05:58:18 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/quick-post/</guid>
+      <guid>http://localhost:1313/tags/quick-post/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>az cli</title>
-      <link>https://cloud.fskelly.com/tags/az-cli/</link>
+      <title>Az Cli</title>
+      <link>http://localhost:1313/tags/az-cli/</link>
       <pubDate>Wed, 05 May 2021 07:03:02 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/az-cli/</guid>
+      <guid>http://localhost:1313/tags/az-cli/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>postman</title>
-      <link>https://cloud.fskelly.com/tags/postman/</link>
+      <title>Postman</title>
+      <link>http://localhost:1313/tags/postman/</link>
       <pubDate>Wed, 14 Apr 2021 09:02:18 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/postman/</guid>
+      <guid>http://localhost:1313/tags/postman/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>cdn</title>
-      <link>https://cloud.fskelly.com/tags/cdn/</link>
+      <title>Cdn</title>
+      <link>http://localhost:1313/tags/cdn/</link>
       <pubDate>Mon, 11 Jan 2021 07:00:18 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/cdn/</guid>
+      <guid>http://localhost:1313/tags/cdn/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>hugo</title>
-      <link>https://cloud.fskelly.com/tags/hugo/</link>
+      <title>Hugo</title>
+      <link>http://localhost:1313/tags/hugo/</link>
       <pubDate>Mon, 11 Jan 2021 07:00:18 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/hugo/</guid>
+      <guid>http://localhost:1313/tags/hugo/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>static web</title>
-      <link>https://cloud.fskelly.com/tags/static-web/</link>
+      <title>Static Web</title>
+      <link>http://localhost:1313/tags/static-web/</link>
       <pubDate>Tue, 05 Jan 2021 15:57:04 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/static-web/</guid>
+      <guid>http://localhost:1313/tags/static-web/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Architecture</title>
-      <link>https://cloud.fskelly.com/tags/architecture/</link>
+      <link>http://localhost:1313/tags/architecture/</link>
       <pubDate>Wed, 07 Aug 2019 16:33:36 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/architecture/</guid>
+      <guid>http://localhost:1313/tags/architecture/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>CSA</title>
-      <link>https://cloud.fskelly.com/tags/csa/</link>
+      <link>http://localhost:1313/tags/csa/</link>
       <pubDate>Wed, 07 Aug 2019 16:33:36 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/csa/</guid>
+      <guid>http://localhost:1313/tags/csa/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>cloud tools</title>
-      <link>https://cloud.fskelly.com/tags/cloud-tools/</link>
+      <title>Cloud Tools</title>
+      <link>http://localhost:1313/tags/cloud-tools/</link>
       <pubDate>Tue, 09 Jul 2019 16:46:43 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/cloud-tools/</guid>
+      <guid>http://localhost:1313/tags/cloud-tools/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>azure monitor</title>
-      <link>https://cloud.fskelly.com/tags/azure-monitor/</link>
+      <title>Azure Monitor</title>
+      <link>http://localhost:1313/tags/azure-monitor/</link>
       <pubDate>Wed, 20 Feb 2019 08:21:49 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/azure-monitor/</guid>
+      <guid>http://localhost:1313/tags/azure-monitor/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>nsg</title>
-      <link>https://cloud.fskelly.com/tags/nsg/</link>
+      <title>Nsg</title>
+      <link>http://localhost:1313/tags/nsg/</link>
       <pubDate>Wed, 20 Feb 2019 08:21:49 +0200</pubDate>
-      
-      <guid>https://cloud.fskelly.com/tags/nsg/</guid>
+      <guid>http://localhost:1313/tags/nsg/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

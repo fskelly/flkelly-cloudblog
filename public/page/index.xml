@@ -1,57 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pages on Fletcher&#39;s Cloud Journey</title>
-    <link>https://cloud.fskelly.com/page/</link>
-    <description>Recent content in Pages on Fletcher&#39;s Cloud Journey</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 05 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://cloud.fskelly.com/page/index.xml" rel="self" type="application/rss+xml" />
+    <title>Pages on Fletcher&#39;s Cloud Blog</title>
+    <link>http://localhost:1313/page/</link>
+    <description>Recent content in Pages on Fletcher&#39;s Cloud Blog</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 28 Mar 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About Blog</title>
-      <link>https://cloud.fskelly.com/page/about/</link>
+      <link>http://localhost:1313/page/about/</link>
       <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://cloud.fskelly.com/page/about/</guid>
-      <description>The Blog This is just my personal blog of Azure Code and Azure Experiences. I use mainly PowerShell. I have other repos focused on other scripting languages like az cli, Terrafrom and REST API calls. I am constatly testing, changing or adding contnet, I try to get the code/samples as accurate as possible. Looking to expand content to include more topics and have more people blogging from the FastTrack for Azure team.</description>
+      <guid>http://localhost:1313/page/about/</guid>
+      <description>&lt;h3 id=&#34;the-blog&#34;&gt;The Blog&lt;/h3&gt;&#xA;&lt;p&gt;This is just my personal blog of Azure Code and Azure Experiences. I use mainly &lt;a href=&#34;https://docs.microsoft.com/en-us/powershell/azure/overview?view=azps-1.4.0&#34;&gt;PowerShell&lt;/a&gt;. I have other repos focused on other scripting languages like&#xA;&lt;a href=&#34;https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest&#34;&gt;az cli&lt;/a&gt;, &lt;a href=&#34;https://www.terraform.io&#34;&gt;Terrafrom&lt;/a&gt; and &lt;a href=&#34;https://docs.microsoft.com/en-us/rest/api/azure/&#34;&gt;REST API&lt;/a&gt; calls. I am constatly testing, changing or adding contnet, I try to get the code/samples as accurate as possible. &lt;!-- raw HTML omitted --&gt;&lt;/p&gt;&#xA;&lt;p&gt;Looking to expand content to include more topics and have more people blogging from the FastTrack for Azure team.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>About Fletcher Kelly</title>
-      <link>https://cloud.fskelly.com/page/fletcherkelly/</link>
+      <link>http://localhost:1313/page/fletcherkelly/</link>
       <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://cloud.fskelly.com/page/fletcherkelly/</guid>
-      <description>Who Am I? I am a Microsoft Employee, working within Azure Engineering as a FastTrack For Azure (FTA) Engineer, focusing primarily on Infra and working with customers across the globe with their respective journeys to the cloud. I was previously a Cloud Solutions Architect (CSA) for Microsoft as well. I was in the Microsoft Partner space for many years before that.
-What is FastTrack For Azure? FastTrack for Azure is a technical enablement program for organizations with cloud projects that enables the rapid, effective design, and deployment of Azure solutions in the cloud.</description>
+      <guid>http://localhost:1313/page/fletcherkelly/</guid>
+      <description>&lt;h2 id=&#34;who-am-i&#34;&gt;Who Am I?&lt;/h2&gt;&#xA;&lt;p&gt;I am a Microsoft Employee, working within Azure Engineering as a FastTrack For Azure (FTA) Engineer, focusing primarily on Infra and working with customers across the globe with their respective journeys to the cloud. I was previously a Cloud Solutions Architect (CSA) for Microsoft as well. I was in the Microsoft Partner space for many years before that.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-fasttrack-for-azure&#34;&gt;What is FastTrack For Azure?&lt;/h2&gt;&#xA;&lt;p&gt;FastTrack for Azure is a technical enablement program for organizations with cloud projects that enables the rapid, effective design, and deployment of Azure solutions in the cloud. It includes tailored guidance from Azure engineers that leverages proven practices and architectural guides.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>About Robin Heringa</title>
-      <link>https://cloud.fskelly.com/page/robinheringa/</link>
+      <link>http://localhost:1313/page/robinheringa/</link>
       <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://cloud.fskelly.com/page/robinheringa/</guid>
-      <description>Robin Heringa is an engineer in the FastTrack for Azure team at Microsoft working directly with customers on Azure Infrastructure projects. Robin is passionate about all Azure infrastructure technologies with a focus on Azure Management &amp;amp; Security and Azure VMware Solution. Robin has been with Microsoft for almost 15 years and working on IT Data Center &amp;amp; Cloud projects for 24 years.</description>
+      <guid>http://localhost:1313/page/robinheringa/</guid>
+      <description>&lt;link rel=&#34;stylesheet&#34; href=&#34;http://localhost:1313/css/hugo-easy-gallery.css&#34; /&gt;&#xD;&#xA;&lt;div class=&#34;box&#34; style=&#34;max-width:200&#34;&gt;&#xD;&#xA;  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;img&#34;&gt;&#xD;&#xA;      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;http://localhost:1313/images/robinHeringa.png&#34; alt=&#34;Ronin Heringa&#34;/&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;    &lt;a href=&#34;http://localhost:1313/images/robinHeringa.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;&#xD;&#xA;  &lt;/figure&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;Robin Heringa is an engineer in the FastTrack for Azure team at Microsoft working directly with customers on Azure Infrastructure projects. Robin is passionate about all Azure infrastructure technologies with a focus on Azure Management &amp;amp; Security and Azure VMware Solution.&#xA;Robin has been with Microsoft for almost 15 years and working on IT Data Center &amp;amp; Cloud projects for 24 years.&lt;/p&gt;</description>
     </item>
-    
-    <item>
-      <title>Archives</title>
-      <link>https://cloud.fskelly.com/page/archives/</link>
-      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cloud.fskelly.com/page/archives/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Search</title>
-      <link>https://cloud.fskelly.com/page/search/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cloud.fskelly.com/page/search/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>

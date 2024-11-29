@@ -14,7 +14,7 @@ draft: false
 
 ## What are we doing?
 
-Providing people with a list of useful links and blog posts to help you get grounded in Azure VMware Solution. Some of the links are bery high-level and others are very detailed. Each link or blog post will address different items at different depths so you can hopefully find the exact link or information that you are looking for to make your journey in Azure VMware Solution a little easier.
+Providing people with a list of useful links and blog posts to help you get grounded in Azure VMware Solution. Some of the links are very high-level and others are very detailed. Each link or blog post will address different items at different depths so you can hopefully find the exact link or information that you are looking for to make your journey in Azure VMware Solution a little easier.
 
 ### Azure VMware Solution Architecture  
   
