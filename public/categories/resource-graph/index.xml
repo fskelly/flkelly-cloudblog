@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Resource Graph on Fletcher&#39;s Cloud Blog</title>
-    <link>https://username.github.io/categories/resource-graph/</link>
+    <link>https://swacloudblogflkelly.z1.web.core.windows.net/categories/resource-graph/</link>
     <description>Recent content in Resource Graph on Fletcher&#39;s Cloud Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 09 Dec 2021 08:00:00 +0000</lastBuildDate>
-    <atom:link href="https://username.github.io/categories/resource-graph/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://swacloudblogflkelly.z1.web.core.windows.net/categories/resource-graph/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Azure Resource Graph - More queries for Networking and Management Groups</title>
-      <link>https://username.github.io/post/2021/2021-arg-networking-mgmt-more/</link>
+      <link>https://swacloudblogflkelly.z1.web.core.windows.net/post/2021/2021-arg-networking-mgmt-more/</link>
       <pubDate>Thu, 09 Dec 2021 08:00:00 +0000</pubDate>
-      <guid>https://username.github.io/post/2021/2021-arg-networking-mgmt-more/</guid>
+      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/post/2021/2021-arg-networking-mgmt-more/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;Just some more queries I have developed.&lt;/p&gt;&#xA;&lt;h2 id=&#34;networking&#34;&gt;Networking&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Don&amp;rsquo;t create unnecessarily large virtual networks (for example, /16) to ensure that IP address space isn&amp;rsquo;t wasted.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;resources&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| where type == &amp;#34;microsoft.network/virtualnetworks&amp;#34;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| extend addressSpace = todynamic(properties.addressSpace)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| extend addressPrefix = todynamic(properties.addressSpace.addressPrefixes)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| mvexpand addressSpace&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| mvexpand addressPrefix&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| extend addressMask = split(addressPrefix,&amp;#39;/&amp;#39;)[1]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| where addressMask &amp;lt;= 16&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Smallest recommended size for a GatewaySubnet is /27&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Scripting on Fletcher&#39;s Cloud Blog</title>
-    <link>https://username.github.io/categories/scripting/</link>
+    <link>https://swacloudblogflkelly.z1.web.core.windows.net/categories/scripting/</link>
     <description>Recent content in Scripting on Fletcher&#39;s Cloud Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 25 Apr 2022 14:27:03 +0100</lastBuildDate>
-    <atom:link href="https://username.github.io/categories/scripting/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://swacloudblogflkelly.z1.web.core.windows.net/categories/scripting/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using Openssh and creating SSH Keys with Powershell</title>
-      <link>https://username.github.io/post/2022/openssh-powershell/</link>
+      <link>https://swacloudblogflkelly.z1.web.core.windows.net/post/2022/openssh-powershell/</link>
       <pubDate>Mon, 25 Apr 2022 14:27:03 +0100</pubDate>
-      <guid>https://username.github.io/post/2022/openssh-powershell/</guid>
+      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/post/2022/openssh-powershell/</guid>
       <description>&lt;p&gt;In this post I show you my process for creating SSH Keys for Linux Machines.&lt;/p&gt;&#xA;&lt;p&gt;I use a fair amount of Linux in my work career (creating VMs and the like within Azure). Linux VMs are great for testing with, they use SSH and are configured and ready for testing VERY quickly in Azure. I also use a fair amount of Linux in personal life, with &lt;a href=&#34;https://home-assisant.io&#34;&gt;Home assistant&lt;/a&gt; and &lt;a href=&#34;https://plex.tv&#34;&gt;Plex&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;I know many people use username and password with Linux environments and there is nothing wrong with this, I simply think that keys are better :smile: . I believe this for a few reasons.&lt;/p&gt;</description>
     </item>
   </channel>

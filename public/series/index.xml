@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on Fletcher&#39;s Cloud Blog</title>
-    <link>https://username.github.io/series/</link>
+    <link>https://swacloudblogflkelly.z1.web.core.windows.net/series/</link>
     <description>Recent content in Series on Fletcher&#39;s Cloud Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 19 May 2023 09:39:57 +0100</lastBuildDate>
-    <atom:link href="https://username.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://swacloudblogflkelly.z1.web.core.windows.net/series/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LDAP</title>
-      <link>https://username.github.io/series/ldap/</link>
+      <link>https://swacloudblogflkelly.z1.web.core.windows.net/series/ldap/</link>
       <pubDate>Fri, 19 May 2023 09:39:57 +0100</pubDate>
-      <guid>https://username.github.io/series/ldap/</guid>
+      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/series/ldap/</guid>
       <description></description>
     </item>
   </channel>

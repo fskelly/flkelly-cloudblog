@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Links on Fletcher&#39;s Cloud Blog</title>
-    <link>https://username.github.io/tags/links/</link>
+    <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/links/</link>
     <description>Recent content in Links on Fletcher&#39;s Cloud Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 26 Oct 2023 10:23:27 +0100</lastBuildDate>
-    <atom:link href="https://username.github.io/tags/links/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://swacloudblogflkelly.z1.web.core.windows.net/tags/links/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Azure VMware Solution Starter Links</title>
-      <link>https://username.github.io/post/2023/azure-vmware-solution-starter-links/</link>
+      <link>https://swacloudblogflkelly.z1.web.core.windows.net/post/2023/azure-vmware-solution-starter-links/</link>
       <pubDate>Thu, 26 Oct 2023 10:23:27 +0100</pubDate>
-      <guid>https://username.github.io/post/2023/azure-vmware-solution-starter-links/</guid>
+      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/post/2023/azure-vmware-solution-starter-links/</guid>
       <description>&lt;h2 id=&#34;what-are-we-doing&#34;&gt;What are we doing?&lt;/h2&gt;&#xA;&lt;p&gt;Providing people with a list of useful links and blog posts to help you get grounded in Azure VMware Solution. Some of the links are very high-level and others are very detailed. Each link or blog post will address different items at different depths so you can hopefully find the exact link or information that you are looking for to make your journey in Azure VMware Solution a little easier.&lt;/p&gt;</description>
     </item>
   </channel>

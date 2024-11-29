@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nsg on Fletcher&#39;s Cloud Blog</title>
-    <link>https://username.github.io/tags/nsg/</link>
+    <link>https://swacloudblogflkelly.z1.web.core.windows.net/tags/nsg/</link>
     <description>Recent content in Nsg on Fletcher&#39;s Cloud Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 20 Feb 2019 08:21:49 +0200</lastBuildDate>
-    <atom:link href="https://username.github.io/tags/nsg/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://swacloudblogflkelly.z1.web.core.windows.net/tags/nsg/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Network Security Group Change Alerting</title>
-      <link>https://username.github.io/post/2019/network-security-group-change-alerting/</link>
+      <link>https://swacloudblogflkelly.z1.web.core.windows.net/post/2019/network-security-group-change-alerting/</link>
       <pubDate>Wed, 20 Feb 2019 08:21:49 +0200</pubDate>
-      <guid>https://username.github.io/post/2019/network-security-group-change-alerting/</guid>
+      <guid>https://swacloudblogflkelly.z1.web.core.windows.net/post/2019/network-security-group-change-alerting/</guid>
       <description>&lt;p&gt;So, I was with a customer and they are asking for a fairly standard alert.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&amp;ldquo;Please alert me when an NSG is added or modified&amp;rdquo;&lt;/strong&gt;. Seems simply enough, however this is not as simply as you think. So I used my favourite search and found the following, “How to receive an email on Azure Network Security Group Rule changes“, this is great content and after testing, it works exactly as expected. I just found one little concern with this approach; this is simply finding the required ID for the action group. I have now investigated and found some code to make this a little easier.&lt;/p&gt;</description>
     </item>
   </channel>
