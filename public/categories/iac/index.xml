@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IaC on Fletcher&#39;s Cloud Blog</title>
-    <link>https://username.github.io/categories/iac/</link>
+    <link>http://localhost:1313/categories/iac/</link>
     <description>Recent content in IaC on Fletcher&#39;s Cloud Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 20 Jun 2022 08:54:21 +0100</lastBuildDate>
-    <atom:link href="https://username.github.io/categories/iac/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/iac/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using SSH Keys with Bicep based Linux VM templates</title>
-      <link>https://username.github.io/post/2022/bicep-linux-vm-ssh-keys/</link>
+      <link>http://localhost:1313/post/2022/bicep-linux-vm-ssh-keys/</link>
       <pubDate>Mon, 20 Jun 2022 08:54:21 +0100</pubDate>
-      <guid>https://username.github.io/post/2022/bicep-linux-vm-ssh-keys/</guid>
+      <guid>http://localhost:1313/post/2022/bicep-linux-vm-ssh-keys/</guid>
       <description>&lt;p&gt;I this post, I use bicep files for the deployment of Linux VMs AND I add some magic with PowerSehll to allow for the creation or using of existing SSH keys with these VMs.&lt;/p&gt;&#xA;&lt;p&gt;I am a HUGE fan of SSH keys with Linux VMs for obvious reasons. I could just not find a script or scenario that covered this topic in a way that I actually like. I like to show more details and explain.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bicep Troubleshooting</title>
-      <link>https://username.github.io/post/2021/bicep-troubleshooting/</link>
+      <link>http://localhost:1313/post/2021/bicep-troubleshooting/</link>
       <pubDate>Fri, 02 Jul 2021 05:40:16 +0200</pubDate>
-      <guid>https://username.github.io/post/2021/bicep-troubleshooting/</guid>
+      <guid>http://localhost:1313/post/2021/bicep-troubleshooting/</guid>
       <description>&lt;h1 id=&#34;some-basic-troubleshooting-with-azure-bicephttpsdocsmicrosoftcomen-usazureazure-resource-managerbicepoverview&#34;&gt;Some basic &amp;ldquo;troubleshooting&amp;rdquo; with &lt;a href=&#34;https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview&#34;&gt;Azure Bicep&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;p&gt;So, let me start with this. The team and the community behind Azure Bicep are amazing. There are some great examples &lt;a href=&#34;https://github.com/Azure/bicep&#34;&gt;here&lt;/a&gt;. I often use these as a base and the rip apart or add to meet my needs, you do &lt;strong&gt;NOT&lt;/strong&gt; need to start from ground zero. :smile:&lt;/p&gt;&#xA;&lt;p&gt;When you are deploying bicep templates you command will look something like this.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$bicepFile&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;.\main.bicep&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;New-AzResourceGroupDeployment&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-ResourceGroupName&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;resourceGroupName&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-TemplateFile&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;bicepFilePath&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-name&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;deploymentname&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I love to use repeatable code, so mine has more variables and would look like this.&lt;/p&gt;</description>
     </item>
   </channel>

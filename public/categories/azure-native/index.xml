@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Azure Native on Fletcher&#39;s Cloud Blog</title>
-    <link>https://username.github.io/categories/azure-native/</link>
+    <link>http://localhost:1313/categories/azure-native/</link>
     <description>Recent content in Azure Native on Fletcher&#39;s Cloud Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 11 Oct 2023 13:34:50 +0100</lastBuildDate>
-    <atom:link href="https://username.github.io/categories/azure-native/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/azure-native/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Starting Wth Rest Calls With AzCli With Some Copilot Help</title>
-      <link>https://username.github.io/post/2023/starting-wth-rest-calls-with-az-cli-with-some-co-pilot-help/</link>
+      <link>http://localhost:1313/post/2023/starting-wth-rest-calls-with-az-cli-with-some-co-pilot-help/</link>
       <pubDate>Wed, 11 Oct 2023 13:34:50 +0100</pubDate>
-      <guid>https://username.github.io/post/2023/starting-wth-rest-calls-with-az-cli-with-some-co-pilot-help/</guid>
+      <guid>http://localhost:1313/post/2023/starting-wth-rest-calls-with-az-cli-with-some-co-pilot-help/</guid>
       <description>&lt;h2 id=&#34;what-are-we-doing&#34;&gt;What are we doing?&lt;/h2&gt;&#xA;&lt;p&gt;I am working more and more with the Azure REST APIs now. My &lt;a href=&#34;https://cloud.fskelly.com/post/2023/starting-wth-rest-calls-with-powershell/&#34;&gt;previous post using API with Powershell&lt;/a&gt; got me thinking about opening the idea to go beyond &lt;a href=&#34;https://learn.microsoft.com/en-us/powershell/scripting/overview&#34;&gt;PowerShell&lt;/a&gt;. I am very open with people around my lack of skill with &lt;a href=&#34;https://learn.microsoft.com/en-us/cli/azure/&#34;&gt;Azure CLI&lt;/a&gt;, I do however want to learn some new things.&lt;/p&gt;&#xA;&lt;p&gt;We also have this great technology called &lt;a href=&#34;https://github.com/features/copilot&#34;&gt;GitHub Copilot&lt;/a&gt; and &lt;a href=&#34;https://openai.com/blog/chatgpt&#34;&gt;ChatGPT&lt;/a&gt;, so I figured let me dig into &amp;ldquo;AI&amp;rdquo; as I am a techy at heart and let me improve my skills with Azure CLI.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Starting Wth API Rest Calls With Powershell</title>
-      <link>https://username.github.io/post/2023/starting-wth-rest-calls-with-powershell/</link>
+      <link>http://localhost:1313/post/2023/starting-wth-rest-calls-with-powershell/</link>
       <pubDate>Thu, 17 Aug 2023 09:09:54 +0100</pubDate>
-      <guid>https://username.github.io/post/2023/starting-wth-rest-calls-with-powershell/</guid>
+      <guid>http://localhost:1313/post/2023/starting-wth-rest-calls-with-powershell/</guid>
       <description>&lt;h2 id=&#34;what-are-we-doing&#34;&gt;What are we doing?&lt;/h2&gt;&#xA;&lt;p&gt;I am working more and more with the Azure REST APIs now. My &lt;a href=&#34;https://cloud.fskelly.com/post/2023/azure-cost-management-playing-with-api-in-powershell/&#34;&gt;first dive into cost management&lt;/a&gt; was a big hit, so I am expanding on that. The main consideration around that particular API is that is it open. Bu this, I mean a simple HTTP request will return results, no authentication or additional headers or the like are needed. So nice and easy. As we dive more into API and REST API&amp;rsquo;s, this is likely to change. This post, with more planned, is designed to make this easier and break it down into smaller chunks. THese chunks/snippets can be re-used and the principles in the chunks/snippets can be applied to other API&amp;rsquo;s. These in particular are aimed at Azure API&amp;rsquo;s.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Can I run this cheaper? Use case for the Azure Cost Management API</title>
-      <link>https://username.github.io/post/2023/azure-cost-management-playing-with-api-in-powershell/</link>
+      <link>http://localhost:1313/post/2023/azure-cost-management-playing-with-api-in-powershell/</link>
       <pubDate>Thu, 03 Aug 2023 15:24:21 +0100</pubDate>
-      <guid>https://username.github.io/post/2023/azure-cost-management-playing-with-api-in-powershell/</guid>
+      <guid>http://localhost:1313/post/2023/azure-cost-management-playing-with-api-in-powershell/</guid>
       <description>&lt;h2 id=&#34;what-are-we-doing&#34;&gt;What are we doing?&lt;/h2&gt;&#xA;&lt;p&gt;I was given inspiration by a colleague, &lt;a href=&#34;https://www.linkedin.com/in/bhummerstone/&#34;&gt;Ben Hummerstone&lt;/a&gt; who used a &lt;a href=&#34;https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-python?tabs=asgi%2Capplication-level&amp;amp;pivots=python-mode-configuration&#34;&gt;Azure Python Function&lt;/a&gt;, whilst super cool and interesting, I am a PowerShell advocate through and through. So I used PowerShell and wrote a script to show some of the use cases. This is just the tip of the iceberg and the script has been built to show some of the options available.&lt;/p&gt;&#xA;&lt;h2 id=&#34;constraints--limitations&#34;&gt;Constraints / limitations&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;The primary focus of this script is IaaS.&lt;/li&gt;&#xA;&lt;li&gt;Could be better implemented as a function. If there is enough of an ask, I might build this into a function.&lt;/li&gt;&#xA;&lt;li&gt;Built for my sample use cases.&lt;/li&gt;&#xA;&lt;li&gt;This is a quick and dirty implementation.&lt;/li&gt;&#xA;&lt;li&gt;This is &lt;strong&gt;NOT PRODUCTION&lt;/strong&gt; ready yet.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;lets-build-this&#34;&gt;Lets build this&lt;/h2&gt;&#xA;&lt;h3 id=&#34;steps&#34;&gt;Steps&lt;/h3&gt;&#xA;&lt;p&gt;You will need the following&lt;/p&gt;</description>
     </item>
   </channel>

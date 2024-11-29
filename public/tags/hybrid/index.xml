@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hybrid on Fletcher&#39;s Cloud Blog</title>
-    <link>https://username.github.io/tags/hybrid/</link>
+    <link>http://localhost:1313/tags/hybrid/</link>
     <description>Recent content in Hybrid on Fletcher&#39;s Cloud Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 14 Sep 2022 11:14:30 +0100</lastBuildDate>
-    <atom:link href="https://username.github.io/tags/hybrid/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/hybrid/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Check Powershell Console Type</title>
-      <link>https://username.github.io/post/2022/check-powershell-type/</link>
+      <link>http://localhost:1313/post/2022/check-powershell-type/</link>
       <pubDate>Wed, 14 Sep 2022 11:14:30 +0100</pubDate>
-      <guid>https://username.github.io/post/2022/check-powershell-type/</guid>
+      <guid>http://localhost:1313/post/2022/check-powershell-type/</guid>
       <description>&lt;p&gt;I have been working with some Microsoft Hybrid technologies. My specific example here is around &lt;a href=&#34;https://docs.microsoft.com/en-us/azure/azure-arc/vmware-vsphere/overview&#34;&gt;Azure Arc-enabled VMware vSphere&lt;/a&gt; aspects. When running the scripts provided here there is a key aspect.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Do NOT run this in the PowerShell ISE.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Even with this strong recommendation, it is often accidentally used as it is really easy to perform this action with a right click option and this got me to thinking about how can I check this via code?&lt;/p&gt;</description>
     </item>
   </channel>

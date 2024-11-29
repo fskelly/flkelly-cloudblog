@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Networking on Fletcher&#39;s Cloud Blog</title>
-    <link>https://username.github.io/tags/networking/</link>
+    <link>http://localhost:1313/tags/networking/</link>
     <description>Recent content in Networking on Fletcher&#39;s Cloud Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 28 Mar 2022 07:27:16 +0100</lastBuildDate>
-    <atom:link href="https://username.github.io/tags/networking/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/networking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using Azure Virtual WAN to connect to Azure VMware Solution</title>
-      <link>https://username.github.io/post/2022/poc-vwan-avs/</link>
+      <link>http://localhost:1313/post/2022/poc-vwan-avs/</link>
       <pubDate>Mon, 28 Mar 2022 07:27:16 +0100</pubDate>
-      <guid>https://username.github.io/post/2022/poc-vwan-avs/</guid>
+      <guid>http://localhost:1313/post/2022/poc-vwan-avs/</guid>
       <description>&lt;h2 id=&#34;how-do-i-connect-my-on-premises-environment-to-avs-in-a-quick-and-simple-way&#34;&gt;How do I connect my on-premises environment to AVS in a quick and simple way?&lt;/h2&gt;&#xA;&lt;p&gt;There are a few patterns available for connecting &lt;a href=&#34;https://docs.microsoft.com/en-us/azure/azure-vmware/introduction&#34;&gt;Azure VMware Solution&lt;/a&gt; to your on-premises network. There is specific guidance for PRODUCTION deployments here &lt;a href=&#34;https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-vmware/eslz-network-topology-connectivity&#34;&gt;here&lt;/a&gt;. The option we are talking about here is for a different use case.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Specific use case:&lt;/strong&gt; A &lt;em&gt;&lt;strong&gt;PoC (Proof of Concept)&lt;/strong&gt;&lt;/em&gt; type environment or smaller environments for testing with a plan to grow after the fact.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Azure VMware Solution: To &#39;Internet Enabled&#39; or not?</title>
-      <link>https://username.github.io/post/2022/avs-to-internet-able-or-not/</link>
+      <link>http://localhost:1313/post/2022/avs-to-internet-able-or-not/</link>
       <pubDate>Thu, 17 Mar 2022 16:06:00 +0000</pubDate>
-      <guid>https://username.github.io/post/2022/avs-to-internet-able-or-not/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Guest Post&lt;/strong&gt;&#xA;Author: &lt;a href=&#34;https://username.github.io/page/robinheringa/&#34;&gt;Robin Heringa&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;What else do I need to know when using Azure VMware Solution (AVS)?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;As you all (probably) know by now Azure VMware Solution is a managed service offered by Microsoft providing a managed VMware vSphere environment to customers. With this offering customers no longer need to worry about hardware maintenance, hardware refresh and software maintenance for the core VMware components (ESXi, vCenter and NSX-T).&lt;/p&gt;&#xA;&lt;p&gt;By default, after initial deployment of Azure VMware Solution, virtual machines do not have the ability to egress to the Internet. One of the options to enable Internet access is to &amp;ldquo;flip&amp;rdquo; the &amp;ldquo;Internet Enabled&amp;rdquo; toggle in the connectivity pane of the management blades in the Azure Portal:&lt;/p&gt;</description>
+      <guid>http://localhost:1313/post/2022/avs-to-internet-able-or-not/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Guest Post&lt;/strong&gt;&#xA;Author: &lt;a href=&#34;http://localhost:1313/page/robinheringa/&#34;&gt;Robin Heringa&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;What else do I need to know when using Azure VMware Solution (AVS)?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;As you all (probably) know by now Azure VMware Solution is a managed service offered by Microsoft providing a managed VMware vSphere environment to customers. With this offering customers no longer need to worry about hardware maintenance, hardware refresh and software maintenance for the core VMware components (ESXi, vCenter and NSX-T).&lt;/p&gt;&#xA;&lt;p&gt;By default, after initial deployment of Azure VMware Solution, virtual machines do not have the ability to egress to the Internet. One of the options to enable Internet access is to &amp;ldquo;flip&amp;rdquo; the &amp;ldquo;Internet Enabled&amp;rdquo; toggle in the connectivity pane of the management blades in the Azure Portal:&lt;/p&gt;</description>
     </item>
     <item>
       <title>I want to use Azure VMware Solution, what should I know about networking?</title>
-      <link>https://username.github.io/post/2022/new-to-avs-nomon-networking-1/</link>
+      <link>http://localhost:1313/post/2022/new-to-avs-nomon-networking-1/</link>
       <pubDate>Wed, 09 Mar 2022 16:06:00 +0000</pubDate>
-      <guid>https://username.github.io/post/2022/new-to-avs-nomon-networking-1/</guid>
+      <guid>http://localhost:1313/post/2022/new-to-avs-nomon-networking-1/</guid>
       <description>&lt;p&gt;Author: &lt;a href=&#34;http://localhost:1313/page/fletcherkelly/&#34;&gt;Fletcher Kelly&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;What else do I need to know when using Azure VMware Solution (AVS)?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;&lt;strong&gt;Networking Edition&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;I have been working with many customers over the last little while that are looking at Azure VMware Solution (AVS).&lt;/p&gt;&#xA;&lt;p&gt;Often the idea and use case for the customer is correct. There are a few great reasons to use AVS. If you fit within the use cases, you are in for a real treat.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Importance of Networking Azure</title>
-      <link>https://username.github.io/post/2019/importance-of-networking-azure/</link>
+      <link>http://localhost:1313/post/2019/importance-of-networking-azure/</link>
       <pubDate>Wed, 07 Aug 2019 16:33:36 +0200</pubDate>
-      <guid>https://username.github.io/post/2019/importance-of-networking-azure/</guid>
+      <guid>http://localhost:1313/post/2019/importance-of-networking-azure/</guid>
       <description>&lt;p&gt;As a start to this blog post, I think it is important to understand how I see my role as a CSA (Cloud Solution Architect) with my customer. I am primarily a trusted advisor and my customers respect what I have to say, I question and challenge my customers in a constructive way to approach the challenge or problem statement in a different way. I have an amazing role of using Azure as my LEGO playpen and then building a custom solution (LEGO model) to help my customers.&lt;/p&gt;</description>
     </item>
   </channel>
