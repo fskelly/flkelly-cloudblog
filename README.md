@@ -2,6 +2,7 @@
 
 This is the backend for my Cloud based blog  
 [Fletcher's Cloud Blog](https://cloud.fskelly.com)
+https://swacloudblogflkelly.z1.web.core.windows.net/
 
 My build command
 
@@ -31,5 +32,5 @@ hugo new post/{{year}}/{{postTitle}}.md
 ```
 
 ![blog](https://img.shields.io/website-up-down-green-red/https/cloud.fskelly.com.svg)  
-[![Azure Static Web Apps CI/CD](https://github.com/fskelly/flkelly-cloudblog/actions/workflows/azure-static-web-apps-lively-field-0f34d4403.yml/badge.svg)](https://github.com/fskelly/flkelly-cloudblog/actions/workflows/azure-static-web-apps-lively-field-0f34d4403.yml)
-![Website maintained](https://img.shields.io/maintenance/yes/2022?style=plastic)
+[![Deploy To Azure](https://github.com/fskelly/flkelly-cloudblog/actions/workflows/deploy-hugo-storage-account-copy.yml/badge.svg)](https://github.com/fskelly/flkelly-cloudblog/actions/workflows/deploy-hugo-storage-account-copy.yml)
+![Website maintained](https://img.shields.io/maintenance/yes/2024?style=plastic)
